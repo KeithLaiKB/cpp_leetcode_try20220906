@@ -1,0 +1,5 @@
+vector<int>* intvec = new vector<int>();
+vector<int> ans;
+
+
+push_back(i);
