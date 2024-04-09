@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "t1_pre2_t349_IntersectionofTwoArrays"
+			"path" : "t1_pre1_t242_ValidAnagram"
 		}
 	],
 	"backtrace" : 1,
@@ -24,7 +24,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 13,
+				"line" : 14,
 				"parent" : 0
 			}
 		]
@@ -35,10 +35,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g"
-				},
-				{
-					"fragment" : "-std=gnu++14"
+					"fragment" : "-g -std=gnu++20 -fdiagnostics-color=always"
 				}
 			],
 			"language" : "CXX",
@@ -48,15 +45,16 @@
 				[
 					1
 				],
-				"standard" : "14"
+				"standard" : "20"
 			},
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1
 			]
 		}
 	],
-	"id" : "t1_pre2_t349_IntersectionofTwoArrays::@6890427a1f51a3e7e1df",
+	"id" : "t1_pre1_t242_ValidAnagram::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -72,8 +70,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "t1_pre2_t349_IntersectionofTwoArrays",
-	"nameOnDisk" : "t1_pre2_t349_IntersectionofTwoArrays",
+	"name" : "t1_pre1_t242_ValidAnagram",
+	"nameOnDisk" : "t1_pre1_t242_ValidAnagram",
 	"paths" : 
 	{
 		"build" : ".",
@@ -85,7 +83,15 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				2
 			]
 		}
 	],
@@ -94,8 +100,19 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "mysrc/array/mygroup1_unordermap_and_unorderset/t1_pre2_t349_IntersectionofTwoArrays.cpp",
+			"path" : "mysrc/array/mygroup1_unordermap_and_unorderset/t1_pre1_t242_ValidAnagram.cpp",
 			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "mysrc/updatetoCPlus20_test/updatetocplus20test.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "mysrc/updatetoCPlus20_test/updatetocplus20test.h",
+			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "EXECUTABLE"

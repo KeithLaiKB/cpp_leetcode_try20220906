@@ -1,0 +1,13 @@
+/home/kt/MySoftware/MyProgram/JetBrains/Clion/clion-2023.3.4/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/kt/MySoftware/MyProgram/JetBrains/Clion/clion-2023.3.4/bin/ninja/linux/x64/ninja -G Ninja -S /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1 -B /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug
+    -- src/t1_TwoSum.cpp will be compiled to bin/t1_TwoSum
+    -- src/t1_pre1_t242_ValidAnagram.cpp will be compiled to bin/t1_pre1_t242_ValidAnagram
+    -- src/t1_pre1_t242_ValidAnagram_method2.cpp will be compiled to bin/t1_pre1_t242_ValidAnagram_method2
+    -- src/t1_pre2_t349_IntersectionofTwoArrays.cpp will be compiled to bin/t1_pre2_t349_IntersectionofTwoArrays
+    -- src/t121_BestTimeToBuyAndSellStock.cpp will be compiled to bin/t121_BestTimeToBuyAndSellStock
+    -- src/t5_pre1_t647_Palindromic_Substrings.cpp will be compiled to bin/t5_pre1_t647_Palindromic_Substrings
+    -- src/main.cpp will be compiled to bin/main
+    -- src/main2.cpp will be compiled to bin/main2
+    -- src/updatetocplus20test.cpp will be compiled to bin/updatetocplus20test
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug

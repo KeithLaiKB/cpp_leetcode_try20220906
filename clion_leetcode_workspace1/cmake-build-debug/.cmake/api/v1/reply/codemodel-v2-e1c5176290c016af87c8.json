@@ -20,7 +20,10 @@
 						2,
 						3,
 						4,
-						5
+						5,
+						6,
+						7,
+						8
 					]
 				}
 			],
@@ -40,7 +43,10 @@
 						2,
 						3,
 						4,
-						5
+						5,
+						6,
+						7,
+						8
 					]
 				}
 			],
@@ -49,43 +55,64 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "main::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-main-Debug-fa2209c67b90d084d0e1.json",
+					"jsonFile" : "target-main-Debug-2ba0ef8d886f7683625e.json",
 					"name" : "main",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "main2::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-main2-Debug-978fc986e583db302d37.json",
+					"jsonFile" : "target-main2-Debug-fde70e25a0428e1861b7.json",
 					"name" : "main2",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
+					"id" : "t121_BestTimeToBuyAndSellStock::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-t121_BestTimeToBuyAndSellStock-Debug-33ae9d5bdae7ff8c51df.json",
+					"name" : "t121_BestTimeToBuyAndSellStock",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "t1_TwoSum::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-t1_TwoSum-Debug-a7238a2a15cf24d2e55e.json",
+					"jsonFile" : "target-t1_TwoSum-Debug-0234c7a02f3eb084d5ac.json",
 					"name" : "t1_TwoSum",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "t1_pre1_t242_ValidAnagram::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-t1_pre1_t242_ValidAnagram-Debug-2ec3a4a0fae3254d4fb9.json",
+					"jsonFile" : "target-t1_pre1_t242_ValidAnagram-Debug-af20fa6127208b12094d.json",
 					"name" : "t1_pre1_t242_ValidAnagram",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "t1_pre1_t242_ValidAnagram_method2::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-t1_pre1_t242_ValidAnagram_method2-Debug-f465ade24981bc27debf.json",
+					"jsonFile" : "target-t1_pre1_t242_ValidAnagram_method2-Debug-f875374f74dd71e2cb69.json",
 					"name" : "t1_pre1_t242_ValidAnagram_method2",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "t1_pre2_t349_IntersectionofTwoArrays::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-t1_pre2_t349_IntersectionofTwoArrays-Debug-830f7d62e2955bf53f04.json",
+					"jsonFile" : "target-t1_pre2_t349_IntersectionofTwoArrays-Debug-4edc72a4931d5a50d32e.json",
 					"name" : "t1_pre2_t349_IntersectionofTwoArrays",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "t5_pre1_t647_Palindromic_Substrings::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-t5_pre1_t647_Palindromic_Substrings-Debug-095fa3fb320923c9fdfb.json",
+					"name" : "t5_pre1_t647_Palindromic_Substrings",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "updatetocplus20test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-updatetocplus20test-Debug-e58bc1557267095c594d.json",
+					"name" : "updatetocplus20test",
 					"projectIndex" : 0
 				}
 			]
@@ -100,6 +127,6 @@
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 3
+		"minor" : 6
 	}
 }
