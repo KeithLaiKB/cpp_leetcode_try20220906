@@ -5,9 +5,10 @@
     -- src/t1_pre2_t349_IntersectionofTwoArrays.cpp will be compiled to bin/t1_pre2_t349_IntersectionofTwoArrays
     -- src/t121_BestTimeToBuyAndSellStock.cpp will be compiled to bin/t121_BestTimeToBuyAndSellStock
     -- src/t5_pre1_t647_Palindromic_Substrings.cpp will be compiled to bin/t5_pre1_t647_Palindromic_Substrings
+    -- src/t704_BinarySearch.cpp will be compiled to bin/t704_BinarySearch
     -- src/main.cpp will be compiled to bin/main
     -- src/main2.cpp will be compiled to bin/main2
     -- src/updatetocplus20test.cpp will be compiled to bin/updatetocplus20test
--- Configuring done (0.1s)
+-- Configuring done (0.0s)
 -- Generating done (0.0s)
 -- Build files have been written to: /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug

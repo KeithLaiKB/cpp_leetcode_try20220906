@@ -5,14 +5,11 @@
 using namespace std;
 
 /**
- * 关于hashmap时间复杂度
- * 如果能在桶里直接找到 则复杂度为o(1)
- * 如果找不到
- *  则需要在桶里找,
- *      如果桶内数量<=6   则桶内是链表      则时间复杂度(包括查找桶内)为   o(1)+o(n)       = o(n)
- *      如果桶内数量>6    则桶内是红黑树     则时间复杂度(包括查找同内)为   o(1)+o(log2^n) = o(log2^n)
- *
- * 这个6好像不一定对, 但大概这么一个意思
+ * Given an array of integers nums which is sorted in ascending order,
+ * and an integer target, write a function to search target in nums.
+ * If target exists, then return its index. Otherwise, return -1.
+
+ * You must write an algorithm with O(log n) runtime complexity.
  */
 class Solution {
 public:
@@ -22,8 +19,31 @@ public:
     ~Solution(){
 
     }
+    // 时间复杂度：O(log n)
+    // 空间复杂度：O(1)
     int search(vector<int>& nums, int target) {
+        int st=0;
+        int ed=nums.size()-1;
+        int mid=-1;
 
+        int rs_indx = -1;   // -1 means cannot find
+
+        for (;st<ed;){
+            mid = (st+ed)/2 ;
+            if (nums[mid]==target)
+            {
+                rs_indx = mid;
+                break;
+            }
+            else if (target<nums[mid]){
+                ed=mid-1;
+            }
+            else if (target>nums[mid]){
+                st=mid+1;
+            }
+            cout<<"st:"<<st<<"mid:"<<mid<<"ed:"<<ed<<endl;
+        }
+        return rs_indx;
     }
 };
 
@@ -37,26 +57,20 @@ int main() {
 
     vector<int> intvec_rs1;
     // insert example
+    intvec->push_back(-1);
+    intvec->push_back(0);
+    intvec->push_back(3);
+    intvec->push_back(5);
+    intvec->push_back(9);
+    intvec->push_back(12);
 
-    intvec->push_back(2);
-    intvec->push_back(7);
-    intvec->push_back(11);
-    intvec->push_back(15);
+    //mytarget = 9;
+    mytarget = 6;
 
-    mytarget = 9;
+    int indx_rs1 = -1;
+    indx_rs1 = solut1->search(*intvec,mytarget);
+    cout<<"position index:"<<indx_rs1<<endl;
 
-    intvec_rs1 = solut1->twoSum(*intvec,mytarget);
-    int i =0;
-    for(i=0;i<=intvec_rs1.size()-1;i++)
-    {
-        cout<<intvec_rs1[i]<<endl;
-    }
-
-    string str1 = "abc";
-    string str2 = "abc";
-    if(str1.compare(str2)==0){
-        cout<<"yes"<<endl;
-    }
 
     return 0;
 }

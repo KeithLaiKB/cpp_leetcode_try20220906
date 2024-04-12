@@ -11,8 +11,6 @@ set(CMAKE_CXX_STANDARD 20)
 file (GLOB_RECURSE files mysrc/*.cpp)
 foreach (file ${files})
     string(REGEX REPLACE ".+/(.+)\\..*" "\\1" exe ${file})
-    add_executable (${exe} ${file}
-            mysrc/updatetoCPlus20_test/updatetocplus20test.cpp
-            mysrc/updatetoCPlus20_test/updatetocplus20test.h)
+    add_executable (${exe} ${file} )
     message (\ \ \ \ --\ src/${exe}.cpp\ will\ be\ compiled\ to\ bin/${exe})
 endforeach ()

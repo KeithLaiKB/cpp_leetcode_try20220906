@@ -55,12 +55,6 @@ build CMakeFiles/t1_TwoSum.dir/mysrc/daimakuangxianglu/array/mygroup1_unordermap
   OBJECT_DIR = CMakeFiles/t1_TwoSum.dir
   OBJECT_FILE_DIR = CMakeFiles/t1_TwoSum.dir/mysrc/daimakuangxianglu/array/mygroup1_unordermap_and_unorderset
 
-build CMakeFiles/t1_TwoSum.dir/mysrc/updatetoCPlus20_test/updatetocplus20test.cpp.o: CXX_COMPILER__t1_TwoSum_unscanned_Debug /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/updatetoCPlus20_test/updatetocplus20test.cpp || cmake_object_order_depends_target_t1_TwoSum
-  DEP_FILE = CMakeFiles/t1_TwoSum.dir/mysrc/updatetoCPlus20_test/updatetocplus20test.cpp.o.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles/t1_TwoSum.dir
-  OBJECT_FILE_DIR = CMakeFiles/t1_TwoSum.dir/mysrc/updatetoCPlus20_test
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target t1_TwoSum
@@ -69,7 +63,7 @@ build CMakeFiles/t1_TwoSum.dir/mysrc/updatetoCPlus20_test/updatetocplus20test.cp
 #############################################
 # Link the executable t1_TwoSum
 
-build t1_TwoSum: CXX_EXECUTABLE_LINKER__t1_TwoSum_Debug CMakeFiles/t1_TwoSum.dir/mysrc/daimakuangxianglu/array/mygroup1_unordermap_and_unorderset/t1_TwoSum.cpp.o CMakeFiles/t1_TwoSum.dir/mysrc/updatetoCPlus20_test/updatetocplus20test.cpp.o
+build t1_TwoSum: CXX_EXECUTABLE_LINKER__t1_TwoSum_Debug CMakeFiles/t1_TwoSum.dir/mysrc/daimakuangxianglu/array/mygroup1_unordermap_and_unorderset/t1_TwoSum.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/t1_TwoSum.dir
   POST_BUILD = :
@@ -92,12 +86,6 @@ build CMakeFiles/t1_pre1_t242_ValidAnagram.dir/mysrc/daimakuangxianglu/array/myg
   OBJECT_DIR = CMakeFiles/t1_pre1_t242_ValidAnagram.dir
   OBJECT_FILE_DIR = CMakeFiles/t1_pre1_t242_ValidAnagram.dir/mysrc/daimakuangxianglu/array/mygroup1_unordermap_and_unorderset
 
-build CMakeFiles/t1_pre1_t242_ValidAnagram.dir/mysrc/updatetoCPlus20_test/updatetocplus20test.cpp.o: CXX_COMPILER__t1_pre1_t242_ValidAnagram_unscanned_Debug /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/updatetoCPlus20_test/updatetocplus20test.cpp || cmake_object_order_depends_target_t1_pre1_t242_ValidAnagram
-  DEP_FILE = CMakeFiles/t1_pre1_t242_ValidAnagram.dir/mysrc/updatetoCPlus20_test/updatetocplus20test.cpp.o.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles/t1_pre1_t242_ValidAnagram.dir
-  OBJECT_FILE_DIR = CMakeFiles/t1_pre1_t242_ValidAnagram.dir/mysrc/updatetoCPlus20_test
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target t1_pre1_t242_ValidAnagram
@@ -106,7 +94,7 @@ build CMakeFiles/t1_pre1_t242_ValidAnagram.dir/mysrc/updatetoCPlus20_test/update
 #############################################
 # Link the executable t1_pre1_t242_ValidAnagram
 
-build t1_pre1_t242_ValidAnagram: CXX_EXECUTABLE_LINKER__t1_pre1_t242_ValidAnagram_Debug CMakeFiles/t1_pre1_t242_ValidAnagram.dir/mysrc/daimakuangxianglu/array/mygroup1_unordermap_and_unorderset/t1_pre1_t242_ValidAnagram.cpp.o CMakeFiles/t1_pre1_t242_ValidAnagram.dir/mysrc/updatetoCPlus20_test/updatetocplus20test.cpp.o
+build t1_pre1_t242_ValidAnagram: CXX_EXECUTABLE_LINKER__t1_pre1_t242_ValidAnagram_Debug CMakeFiles/t1_pre1_t242_ValidAnagram.dir/mysrc/daimakuangxianglu/array/mygroup1_unordermap_and_unorderset/t1_pre1_t242_ValidAnagram.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/t1_pre1_t242_ValidAnagram.dir
   POST_BUILD = :
@@ -129,12 +117,6 @@ build CMakeFiles/t1_pre1_t242_ValidAnagram_method2.dir/mysrc/daimakuangxianglu/a
   OBJECT_DIR = CMakeFiles/t1_pre1_t242_ValidAnagram_method2.dir
   OBJECT_FILE_DIR = CMakeFiles/t1_pre1_t242_ValidAnagram_method2.dir/mysrc/daimakuangxianglu/array/mygroup1_unordermap_and_unorderset
 
-build CMakeFiles/t1_pre1_t242_ValidAnagram_method2.dir/mysrc/updatetoCPlus20_test/updatetocplus20test.cpp.o: CXX_COMPILER__t1_pre1_t242_ValidAnagram_method2_unscanned_Debug /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/updatetoCPlus20_test/updatetocplus20test.cpp || cmake_object_order_depends_target_t1_pre1_t242_ValidAnagram_method2
-  DEP_FILE = CMakeFiles/t1_pre1_t242_ValidAnagram_method2.dir/mysrc/updatetoCPlus20_test/updatetocplus20test.cpp.o.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles/t1_pre1_t242_ValidAnagram_method2.dir
-  OBJECT_FILE_DIR = CMakeFiles/t1_pre1_t242_ValidAnagram_method2.dir/mysrc/updatetoCPlus20_test
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target t1_pre1_t242_ValidAnagram_method2
@@ -143,7 +125,7 @@ build CMakeFiles/t1_pre1_t242_ValidAnagram_method2.dir/mysrc/updatetoCPlus20_tes
 #############################################
 # Link the executable t1_pre1_t242_ValidAnagram_method2
 
-build t1_pre1_t242_ValidAnagram_method2: CXX_EXECUTABLE_LINKER__t1_pre1_t242_ValidAnagram_method2_Debug CMakeFiles/t1_pre1_t242_ValidAnagram_method2.dir/mysrc/daimakuangxianglu/array/mygroup1_unordermap_and_unorderset/t1_pre1_t242_ValidAnagram_method2.cpp.o CMakeFiles/t1_pre1_t242_ValidAnagram_method2.dir/mysrc/updatetoCPlus20_test/updatetocplus20test.cpp.o
+build t1_pre1_t242_ValidAnagram_method2: CXX_EXECUTABLE_LINKER__t1_pre1_t242_ValidAnagram_method2_Debug CMakeFiles/t1_pre1_t242_ValidAnagram_method2.dir/mysrc/daimakuangxianglu/array/mygroup1_unordermap_and_unorderset/t1_pre1_t242_ValidAnagram_method2.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/t1_pre1_t242_ValidAnagram_method2.dir
   POST_BUILD = :
@@ -166,12 +148,6 @@ build CMakeFiles/t1_pre2_t349_IntersectionofTwoArrays.dir/mysrc/daimakuangxiangl
   OBJECT_DIR = CMakeFiles/t1_pre2_t349_IntersectionofTwoArrays.dir
   OBJECT_FILE_DIR = CMakeFiles/t1_pre2_t349_IntersectionofTwoArrays.dir/mysrc/daimakuangxianglu/array/mygroup1_unordermap_and_unorderset
 
-build CMakeFiles/t1_pre2_t349_IntersectionofTwoArrays.dir/mysrc/updatetoCPlus20_test/updatetocplus20test.cpp.o: CXX_COMPILER__t1_pre2_t349_IntersectionofTwoArrays_unscanned_Debug /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/updatetoCPlus20_test/updatetocplus20test.cpp || cmake_object_order_depends_target_t1_pre2_t349_IntersectionofTwoArrays
-  DEP_FILE = CMakeFiles/t1_pre2_t349_IntersectionofTwoArrays.dir/mysrc/updatetoCPlus20_test/updatetocplus20test.cpp.o.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles/t1_pre2_t349_IntersectionofTwoArrays.dir
-  OBJECT_FILE_DIR = CMakeFiles/t1_pre2_t349_IntersectionofTwoArrays.dir/mysrc/updatetoCPlus20_test
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target t1_pre2_t349_IntersectionofTwoArrays
@@ -180,7 +156,7 @@ build CMakeFiles/t1_pre2_t349_IntersectionofTwoArrays.dir/mysrc/updatetoCPlus20_
 #############################################
 # Link the executable t1_pre2_t349_IntersectionofTwoArrays
 
-build t1_pre2_t349_IntersectionofTwoArrays: CXX_EXECUTABLE_LINKER__t1_pre2_t349_IntersectionofTwoArrays_Debug CMakeFiles/t1_pre2_t349_IntersectionofTwoArrays.dir/mysrc/daimakuangxianglu/array/mygroup1_unordermap_and_unorderset/t1_pre2_t349_IntersectionofTwoArrays.cpp.o CMakeFiles/t1_pre2_t349_IntersectionofTwoArrays.dir/mysrc/updatetoCPlus20_test/updatetocplus20test.cpp.o
+build t1_pre2_t349_IntersectionofTwoArrays: CXX_EXECUTABLE_LINKER__t1_pre2_t349_IntersectionofTwoArrays_Debug CMakeFiles/t1_pre2_t349_IntersectionofTwoArrays.dir/mysrc/daimakuangxianglu/array/mygroup1_unordermap_and_unorderset/t1_pre2_t349_IntersectionofTwoArrays.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/t1_pre2_t349_IntersectionofTwoArrays.dir
   POST_BUILD = :
@@ -203,12 +179,6 @@ build CMakeFiles/t121_BestTimeToBuyAndSellStock.dir/mysrc/daimakuangxianglu/arra
   OBJECT_DIR = CMakeFiles/t121_BestTimeToBuyAndSellStock.dir
   OBJECT_FILE_DIR = CMakeFiles/t121_BestTimeToBuyAndSellStock.dir/mysrc/daimakuangxianglu/array/mygroup2
 
-build CMakeFiles/t121_BestTimeToBuyAndSellStock.dir/mysrc/updatetoCPlus20_test/updatetocplus20test.cpp.o: CXX_COMPILER__t121_BestTimeToBuyAndSellStock_unscanned_Debug /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/updatetoCPlus20_test/updatetocplus20test.cpp || cmake_object_order_depends_target_t121_BestTimeToBuyAndSellStock
-  DEP_FILE = CMakeFiles/t121_BestTimeToBuyAndSellStock.dir/mysrc/updatetoCPlus20_test/updatetocplus20test.cpp.o.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles/t121_BestTimeToBuyAndSellStock.dir
-  OBJECT_FILE_DIR = CMakeFiles/t121_BestTimeToBuyAndSellStock.dir/mysrc/updatetoCPlus20_test
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target t121_BestTimeToBuyAndSellStock
@@ -217,7 +187,7 @@ build CMakeFiles/t121_BestTimeToBuyAndSellStock.dir/mysrc/updatetoCPlus20_test/u
 #############################################
 # Link the executable t121_BestTimeToBuyAndSellStock
 
-build t121_BestTimeToBuyAndSellStock: CXX_EXECUTABLE_LINKER__t121_BestTimeToBuyAndSellStock_Debug CMakeFiles/t121_BestTimeToBuyAndSellStock.dir/mysrc/daimakuangxianglu/array/mygroup2/t121_BestTimeToBuyAndSellStock.cpp.o CMakeFiles/t121_BestTimeToBuyAndSellStock.dir/mysrc/updatetoCPlus20_test/updatetocplus20test.cpp.o
+build t121_BestTimeToBuyAndSellStock: CXX_EXECUTABLE_LINKER__t121_BestTimeToBuyAndSellStock_Debug CMakeFiles/t121_BestTimeToBuyAndSellStock.dir/mysrc/daimakuangxianglu/array/mygroup2/t121_BestTimeToBuyAndSellStock.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/t121_BestTimeToBuyAndSellStock.dir
   POST_BUILD = :
@@ -240,12 +210,6 @@ build CMakeFiles/t5_pre1_t647_Palindromic_Substrings.dir/mysrc/daimakuangxianglu
   OBJECT_DIR = CMakeFiles/t5_pre1_t647_Palindromic_Substrings.dir
   OBJECT_FILE_DIR = CMakeFiles/t5_pre1_t647_Palindromic_Substrings.dir/mysrc/daimakuangxianglu/array/mygroup22
 
-build CMakeFiles/t5_pre1_t647_Palindromic_Substrings.dir/mysrc/updatetoCPlus20_test/updatetocplus20test.cpp.o: CXX_COMPILER__t5_pre1_t647_Palindromic_Substrings_unscanned_Debug /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/updatetoCPlus20_test/updatetocplus20test.cpp || cmake_object_order_depends_target_t5_pre1_t647_Palindromic_Substrings
-  DEP_FILE = CMakeFiles/t5_pre1_t647_Palindromic_Substrings.dir/mysrc/updatetoCPlus20_test/updatetocplus20test.cpp.o.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles/t5_pre1_t647_Palindromic_Substrings.dir
-  OBJECT_FILE_DIR = CMakeFiles/t5_pre1_t647_Palindromic_Substrings.dir/mysrc/updatetoCPlus20_test
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target t5_pre1_t647_Palindromic_Substrings
@@ -254,13 +218,44 @@ build CMakeFiles/t5_pre1_t647_Palindromic_Substrings.dir/mysrc/updatetoCPlus20_t
 #############################################
 # Link the executable t5_pre1_t647_Palindromic_Substrings
 
-build t5_pre1_t647_Palindromic_Substrings: CXX_EXECUTABLE_LINKER__t5_pre1_t647_Palindromic_Substrings_Debug CMakeFiles/t5_pre1_t647_Palindromic_Substrings.dir/mysrc/daimakuangxianglu/array/mygroup22/t5_pre1_t647_Palindromic_Substrings.cpp.o CMakeFiles/t5_pre1_t647_Palindromic_Substrings.dir/mysrc/updatetoCPlus20_test/updatetocplus20test.cpp.o
+build t5_pre1_t647_Palindromic_Substrings: CXX_EXECUTABLE_LINKER__t5_pre1_t647_Palindromic_Substrings_Debug CMakeFiles/t5_pre1_t647_Palindromic_Substrings.dir/mysrc/daimakuangxianglu/array/mygroup22/t5_pre1_t647_Palindromic_Substrings.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/t5_pre1_t647_Palindromic_Substrings.dir
   POST_BUILD = :
   PRE_LINK = :
   TARGET_FILE = t5_pre1_t647_Palindromic_Substrings
   TARGET_PDB = t5_pre1_t647_Palindromic_Substrings.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target t704_BinarySearch
+
+
+#############################################
+# Order-only phony target for t704_BinarySearch
+
+build cmake_object_order_depends_target_t704_BinarySearch: phony || CMakeFiles/t704_BinarySearch.dir
+
+build CMakeFiles/t704_BinarySearch.dir/mysrc/daimakuangxianglu/array/seq1_t704_binarysearch/t704_BinarySearch.cpp.o: CXX_COMPILER__t704_BinarySearch_unscanned_Debug /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/array/seq1_t704_binarysearch/t704_BinarySearch.cpp || cmake_object_order_depends_target_t704_BinarySearch
+  DEP_FILE = CMakeFiles/t704_BinarySearch.dir/mysrc/daimakuangxianglu/array/seq1_t704_binarysearch/t704_BinarySearch.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/t704_BinarySearch.dir
+  OBJECT_FILE_DIR = CMakeFiles/t704_BinarySearch.dir/mysrc/daimakuangxianglu/array/seq1_t704_binarysearch
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target t704_BinarySearch
+
+
+#############################################
+# Link the executable t704_BinarySearch
+
+build t704_BinarySearch: CXX_EXECUTABLE_LINKER__t704_BinarySearch_Debug CMakeFiles/t704_BinarySearch.dir/mysrc/daimakuangxianglu/array/seq1_t704_binarysearch/t704_BinarySearch.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/t704_BinarySearch.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = t704_BinarySearch
+  TARGET_PDB = t704_BinarySearch.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target main
@@ -277,12 +272,6 @@ build CMakeFiles/main.dir/mysrc/main.cpp.o: CXX_COMPILER__main_unscanned_Debug /
   OBJECT_DIR = CMakeFiles/main.dir
   OBJECT_FILE_DIR = CMakeFiles/main.dir/mysrc
 
-build CMakeFiles/main.dir/mysrc/updatetoCPlus20_test/updatetocplus20test.cpp.o: CXX_COMPILER__main_unscanned_Debug /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/updatetoCPlus20_test/updatetocplus20test.cpp || cmake_object_order_depends_target_main
-  DEP_FILE = CMakeFiles/main.dir/mysrc/updatetoCPlus20_test/updatetocplus20test.cpp.o.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles/main.dir
-  OBJECT_FILE_DIR = CMakeFiles/main.dir/mysrc/updatetoCPlus20_test
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target main
@@ -291,7 +280,7 @@ build CMakeFiles/main.dir/mysrc/updatetoCPlus20_test/updatetocplus20test.cpp.o: 
 #############################################
 # Link the executable main
 
-build main: CXX_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/mysrc/main.cpp.o CMakeFiles/main.dir/mysrc/updatetoCPlus20_test/updatetocplus20test.cpp.o
+build main: CXX_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/mysrc/main.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/main.dir
   POST_BUILD = :
@@ -314,12 +303,6 @@ build CMakeFiles/main2.dir/mysrc/main2.cpp.o: CXX_COMPILER__main2_unscanned_Debu
   OBJECT_DIR = CMakeFiles/main2.dir
   OBJECT_FILE_DIR = CMakeFiles/main2.dir/mysrc
 
-build CMakeFiles/main2.dir/mysrc/updatetoCPlus20_test/updatetocplus20test.cpp.o: CXX_COMPILER__main2_unscanned_Debug /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/updatetoCPlus20_test/updatetocplus20test.cpp || cmake_object_order_depends_target_main2
-  DEP_FILE = CMakeFiles/main2.dir/mysrc/updatetoCPlus20_test/updatetocplus20test.cpp.o.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles/main2.dir
-  OBJECT_FILE_DIR = CMakeFiles/main2.dir/mysrc/updatetoCPlus20_test
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target main2
@@ -328,7 +311,7 @@ build CMakeFiles/main2.dir/mysrc/updatetoCPlus20_test/updatetocplus20test.cpp.o:
 #############################################
 # Link the executable main2
 
-build main2: CXX_EXECUTABLE_LINKER__main2_Debug CMakeFiles/main2.dir/mysrc/main2.cpp.o CMakeFiles/main2.dir/mysrc/updatetoCPlus20_test/updatetocplus20test.cpp.o
+build main2: CXX_EXECUTABLE_LINKER__main2_Debug CMakeFiles/main2.dir/mysrc/main2.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/main2.dir
   POST_BUILD = :
@@ -401,7 +384,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug
 
-build all: phony t1_TwoSum t1_pre1_t242_ValidAnagram t1_pre1_t242_ValidAnagram_method2 t1_pre2_t349_IntersectionofTwoArrays t121_BestTimeToBuyAndSellStock t5_pre1_t647_Palindromic_Substrings main main2 updatetocplus20test
+build all: phony t1_TwoSum t1_pre1_t242_ValidAnagram t1_pre1_t242_ValidAnagram_method2 t1_pre2_t349_IntersectionofTwoArrays t121_BestTimeToBuyAndSellStock t5_pre1_t647_Palindromic_Substrings t704_BinarySearch main main2 updatetocplus20test
 
 # =============================================================================
 # Built-in targets
