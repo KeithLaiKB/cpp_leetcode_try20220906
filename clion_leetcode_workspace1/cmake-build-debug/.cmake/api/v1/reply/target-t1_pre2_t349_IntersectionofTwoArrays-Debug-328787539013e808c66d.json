@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "t1_TwoSum"
+			"path" : "t1_pre2_t349_IntersectionofTwoArrays"
 		}
 	],
 	"backtrace" : 1,
@@ -54,7 +54,7 @@
 			]
 		}
 	],
-	"id" : "t1_TwoSum::@6890427a1f51a3e7e1df",
+	"id" : "t1_pre2_t349_IntersectionofTwoArrays::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -70,8 +70,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "t1_TwoSum",
-	"nameOnDisk" : "t1_TwoSum",
+	"name" : "t1_pre2_t349_IntersectionofTwoArrays",
+	"nameOnDisk" : "t1_pre2_t349_IntersectionofTwoArrays",
 	"paths" : 
 	{
 		"build" : ".",
@@ -100,7 +100,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "mysrc/array/mygroup1_unordermap_and_unorderset/t1_TwoSum.cpp",
+			"path" : "mysrc/daimakuangxianglu/array/mygroup1_unordermap_and_unorderset/t1_pre2_t349_IntersectionofTwoArrays.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "t121_BestTimeToBuyAndSellStock"
+			"path" : "t1_TwoSum"
 		}
 	],
 	"backtrace" : 1,
@@ -54,7 +54,7 @@
 			]
 		}
 	],
-	"id" : "t121_BestTimeToBuyAndSellStock::@6890427a1f51a3e7e1df",
+	"id" : "t1_TwoSum::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -70,8 +70,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "t121_BestTimeToBuyAndSellStock",
-	"nameOnDisk" : "t121_BestTimeToBuyAndSellStock",
+	"name" : "t1_TwoSum",
+	"nameOnDisk" : "t1_TwoSum",
 	"paths" : 
 	{
 		"build" : ".",
@@ -100,7 +100,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "mysrc/array/mygroup2/t121_BestTimeToBuyAndSellStock.cpp",
+			"path" : "mysrc/daimakuangxianglu/array/mygroup1_unordermap_and_unorderset/t1_TwoSum.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

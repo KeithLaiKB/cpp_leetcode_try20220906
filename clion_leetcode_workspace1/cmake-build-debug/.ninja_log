@@ -1,12 +1,10 @@
 # ninja log v5
-0	674	1662510859970396181	CMakeFiles/t1_TwoSum.dir/mysrc/array/mygroup1_unordermap_and_unorderset/t1_TwoSum.cpp.o	eb298466bdb79035
 39	996	1712639809320128020	CMakeFiles/t121_BestTimeToBuyAndSellStock.dir/mysrc/updatetoCPlus20_test/updatetocplus20test.cpp.o	2b4b2cfb84a76a27
-1	43	1712640437968304258	build.ninja	38d059a9568f03e5
+1	43	1712941518770060365	build.ninja	38d059a9568f03e5
 676	732	1662510860026396927	t1_TwoSum	cb78dd7b28527a9a
 0	39	1712639808364103044	CMakeFiles/t121_BestTimeToBuyAndSellStock.dir/mysrc/array/mygroup2/t121_BestTimeToBuyAndSellStock.cpp.o	b7b251bacae9e1d3
 532	586	1662510819125852832	t1_pre1_t242_ValidAnagram	9ddf0ea98207a6e4
 1108	1172	1712639818888382800	updatetocplus20test	af062a88a37dfb67
-0	532	1662510819073852140	CMakeFiles/t1_pre1_t242_ValidAnagram.dir/mysrc/array/mygroup1_unordermap_and_unorderset/t1_pre1_t242_ValidAnagram.cpp.o	1c5642cfffa303fb
 998	1083	1712639809408130325	t121_BestTimeToBuyAndSellStock	d9f3a7c261f3aa11
 429	504	1662509802579429887	clion_leetcode_workspace1	fe1c278480e064a0
 0	1108	1712639818824381069	CMakeFiles/updatetocplus20test.dir/mysrc/updatetoCPlus20_test/updatetocplus20test.cpp.o	55d4bb793bc7042d
