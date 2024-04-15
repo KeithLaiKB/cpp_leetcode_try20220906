@@ -258,6 +258,37 @@ build t704_BinarySearch: CXX_EXECUTABLE_LINKER__t704_BinarySearch_Debug CMakeFil
   TARGET_PDB = t704_BinarySearch.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target t27_RemoveElement
+
+
+#############################################
+# Order-only phony target for t27_RemoveElement
+
+build cmake_object_order_depends_target_t27_RemoveElement: phony || CMakeFiles/t27_RemoveElement.dir
+
+build CMakeFiles/t27_RemoveElement.dir/mysrc/daimakuangxianglu/array/seq2_t27_RemoveElement/t27_RemoveElement.cpp.o: CXX_COMPILER__t27_RemoveElement_unscanned_Debug /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/array/seq2_t27_RemoveElement/t27_RemoveElement.cpp || cmake_object_order_depends_target_t27_RemoveElement
+  DEP_FILE = CMakeFiles/t27_RemoveElement.dir/mysrc/daimakuangxianglu/array/seq2_t27_RemoveElement/t27_RemoveElement.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/t27_RemoveElement.dir
+  OBJECT_FILE_DIR = CMakeFiles/t27_RemoveElement.dir/mysrc/daimakuangxianglu/array/seq2_t27_RemoveElement
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target t27_RemoveElement
+
+
+#############################################
+# Link the executable t27_RemoveElement
+
+build t27_RemoveElement: CXX_EXECUTABLE_LINKER__t27_RemoveElement_Debug CMakeFiles/t27_RemoveElement.dir/mysrc/daimakuangxianglu/array/seq2_t27_RemoveElement/t27_RemoveElement.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/t27_RemoveElement.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = t27_RemoveElement
+  TARGET_PDB = t27_RemoveElement.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target main
 
 
@@ -384,7 +415,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug
 
-build all: phony t1_TwoSum t1_pre1_t242_ValidAnagram t1_pre1_t242_ValidAnagram_method2 t1_pre2_t349_IntersectionofTwoArrays t121_BestTimeToBuyAndSellStock t5_pre1_t647_Palindromic_Substrings t704_BinarySearch main main2 updatetocplus20test
+build all: phony t1_TwoSum t1_pre1_t242_ValidAnagram t1_pre1_t242_ValidAnagram_method2 t1_pre2_t349_IntersectionofTwoArrays t121_BestTimeToBuyAndSellStock t5_pre1_t647_Palindromic_Substrings t704_BinarySearch t27_RemoveElement main main2 updatetocplus20test
 
 # =============================================================================
 # Built-in targets

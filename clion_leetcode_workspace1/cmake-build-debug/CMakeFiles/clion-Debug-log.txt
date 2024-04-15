@@ -6,6 +6,7 @@
     -- src/t121_BestTimeToBuyAndSellStock.cpp will be compiled to bin/t121_BestTimeToBuyAndSellStock
     -- src/t5_pre1_t647_Palindromic_Substrings.cpp will be compiled to bin/t5_pre1_t647_Palindromic_Substrings
     -- src/t704_BinarySearch.cpp will be compiled to bin/t704_BinarySearch
+    -- src/t27_RemoveElement.cpp will be compiled to bin/t27_RemoveElement
     -- src/main.cpp will be compiled to bin/main
     -- src/main2.cpp will be compiled to bin/main2
     -- src/updatetocplus20test.cpp will be compiled to bin/updatetocplus20test

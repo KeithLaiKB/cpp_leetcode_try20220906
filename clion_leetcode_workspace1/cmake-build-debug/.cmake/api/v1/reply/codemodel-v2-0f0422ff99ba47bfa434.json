@@ -1,0 +1,150 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "clion_leetcode_workspace1",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "main::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-main-Debug-c83c26dbdbaedd17f745.json",
+					"name" : "main",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "main2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-main2-Debug-b57a3bbd8a7b3de6b244.json",
+					"name" : "main2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "t121_BestTimeToBuyAndSellStock::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-t121_BestTimeToBuyAndSellStock-Debug-06cf70be6651f8a1a3a6.json",
+					"name" : "t121_BestTimeToBuyAndSellStock",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "t1_TwoSum::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-t1_TwoSum-Debug-0c7f1963641758198452.json",
+					"name" : "t1_TwoSum",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "t1_pre1_t242_ValidAnagram::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-t1_pre1_t242_ValidAnagram-Debug-3320bf83fd38a79db9db.json",
+					"name" : "t1_pre1_t242_ValidAnagram",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "t1_pre1_t242_ValidAnagram_method2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-t1_pre1_t242_ValidAnagram_method2-Debug-0f42a748cd33bfba2d2a.json",
+					"name" : "t1_pre1_t242_ValidAnagram_method2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "t1_pre2_t349_IntersectionofTwoArrays::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-t1_pre2_t349_IntersectionofTwoArrays-Debug-9a0e9a9f91e50cdf05fd.json",
+					"name" : "t1_pre2_t349_IntersectionofTwoArrays",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "t27_RemoveElement::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-t27_RemoveElement-Debug-8e8f3416afe1b09017bf.json",
+					"name" : "t27_RemoveElement",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "t5_pre1_t647_Palindromic_Substrings::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-t5_pre1_t647_Palindromic_Substrings-Debug-401c7649518bf7b0c84c.json",
+					"name" : "t5_pre1_t647_Palindromic_Substrings",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "t704_BinarySearch::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-t704_BinarySearch-Debug-169c5f142ea0b16d756f.json",
+					"name" : "t704_BinarySearch",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "updatetocplus20test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-updatetocplus20test-Debug-30dcfdbfd2f9cda19526.json",
+					"name" : "updatetocplus20test",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+		"source" : "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
