@@ -25,13 +25,13 @@ public:
 
     }
     // 时间复杂度：O(n)
-    // 空间复杂度：O(1)   他是直接在原来数组上改变, 因为他不关心里面有没有改变, 只关心返回的k是不是正确的
+    // 空间复杂度：O(n)   我在sortedSquares中创建了一个数组来做result
     vector<int> sortedSquares(vector<int>& nums) {
         int og_length = nums.size();
         int st_indx = 0;
         int ed_indx = og_length -1;
 
-        vector<int> intvec_rs(nums.size(),-999);
+        vector<int> intvec_rs(nums.size(),-999);        //注意 这里如果返回的话 不用担心他是局部变量 使得main函数用不了的安全问题, 因为RVO会帮我们解决
         int ed_rsindx=nums.size()-1;
 
         int st_num_tmp_sqr=-1;
