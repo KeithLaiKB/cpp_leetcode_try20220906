@@ -22,3 +22,8 @@ vec.reserve(100);  // 预留足够的capacity， 当然如果你这100的capacit
 你的
 vec.size()是 5
 vec.capacity()是 100
+
+
+初始化方法三(制定多少元素, 每个位置上默认是什么值):
+vector<int> intvec_result(3,6);
+结果得到{6,6,6}

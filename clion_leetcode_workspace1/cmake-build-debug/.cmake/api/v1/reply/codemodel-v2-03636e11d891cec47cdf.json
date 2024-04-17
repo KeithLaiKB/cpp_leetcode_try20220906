@@ -25,7 +25,8 @@
 						7,
 						8,
 						9,
-						10
+						10,
+						11
 					]
 				}
 			],
@@ -50,7 +51,8 @@
 						7,
 						8,
 						9,
-						10
+						10,
+						11
 					]
 				}
 			],
@@ -124,6 +126,13 @@
 					"id" : "t704_BinarySearch::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-t704_BinarySearch-Debug-169c5f142ea0b16d756f.json",
 					"name" : "t704_BinarySearch",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "t977_SquaresOfASortedArray::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-t977_SquaresOfASortedArray-Debug-a10a2c27cf52e0392303.json",
+					"name" : "t977_SquaresOfASortedArray",
 					"projectIndex" : 0
 				},
 				{

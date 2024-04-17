@@ -5,11 +5,19 @@
 using namespace std;
 
 /**
- * Given an array of integers nums which is sorted in ascending order,
- * and an integer target, write a function to search target in nums.
- * If target exists, then return its index. Otherwise, return -1.
-
- * You must write an algorithm with O(log n) runtime complexity.
+ * Given an integer array nums and an integer val, remove all occurrences of val in nums in-place.
+ * The order of the elements may be changed.
+ * Then return the number of elements in nums which are not equal to val.
+ *
+ * Consider the number of elements in nums which are not equal to val be k, to get accepted, you need to do the following things:
+ * Change the array nums such that the first k elements of nums contain the elements which are not equal to val.
+ * The remaining elements of nums are not important as well as the size of nums.
+ * Return k.
+ *
+ * Example:
+ * Input: nums = [0,1,2,2,3,0,4,2], val = 2
+ * Output: 5, nums = [0,1,4,0,3,_,_,_]
+ *
  */
 class Solution {
 public:
@@ -19,7 +27,7 @@ public:
     ~Solution(){
 
     }
-    // 时间复杂度：O(log n)
+    // 时间复杂度：O(n)
     // 空间复杂度：O(1)   他是直接在原来数组上改变, 因为他不关心里面有没有改变, 只关心返回的k是不是正确的
     int removeElement(vector<int>& nums, int val) {
         int og_length = nums.size();

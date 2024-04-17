@@ -289,6 +289,37 @@ build t27_RemoveElement: CXX_EXECUTABLE_LINKER__t27_RemoveElement_Debug CMakeFil
   TARGET_PDB = t27_RemoveElement.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target t977_SquaresOfASortedArray
+
+
+#############################################
+# Order-only phony target for t977_SquaresOfASortedArray
+
+build cmake_object_order_depends_target_t977_SquaresOfASortedArray: phony || CMakeFiles/t977_SquaresOfASortedArray.dir
+
+build CMakeFiles/t977_SquaresOfASortedArray.dir/mysrc/daimakuangxianglu/array/seq3_t977_SquaresOfASortedArray/t977_SquaresOfASortedArray.cpp.o: CXX_COMPILER__t977_SquaresOfASortedArray_unscanned_Debug /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/array/seq3_t977_SquaresOfASortedArray/t977_SquaresOfASortedArray.cpp || cmake_object_order_depends_target_t977_SquaresOfASortedArray
+  DEP_FILE = CMakeFiles/t977_SquaresOfASortedArray.dir/mysrc/daimakuangxianglu/array/seq3_t977_SquaresOfASortedArray/t977_SquaresOfASortedArray.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/t977_SquaresOfASortedArray.dir
+  OBJECT_FILE_DIR = CMakeFiles/t977_SquaresOfASortedArray.dir/mysrc/daimakuangxianglu/array/seq3_t977_SquaresOfASortedArray
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target t977_SquaresOfASortedArray
+
+
+#############################################
+# Link the executable t977_SquaresOfASortedArray
+
+build t977_SquaresOfASortedArray: CXX_EXECUTABLE_LINKER__t977_SquaresOfASortedArray_Debug CMakeFiles/t977_SquaresOfASortedArray.dir/mysrc/daimakuangxianglu/array/seq3_t977_SquaresOfASortedArray/t977_SquaresOfASortedArray.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/t977_SquaresOfASortedArray.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = t977_SquaresOfASortedArray
+  TARGET_PDB = t977_SquaresOfASortedArray.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target main
 
 
@@ -415,7 +446,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug
 
-build all: phony t1_TwoSum t1_pre1_t242_ValidAnagram t1_pre1_t242_ValidAnagram_method2 t1_pre2_t349_IntersectionofTwoArrays t121_BestTimeToBuyAndSellStock t5_pre1_t647_Palindromic_Substrings t704_BinarySearch t27_RemoveElement main main2 updatetocplus20test
+build all: phony t1_TwoSum t1_pre1_t242_ValidAnagram t1_pre1_t242_ValidAnagram_method2 t1_pre2_t349_IntersectionofTwoArrays t121_BestTimeToBuyAndSellStock t5_pre1_t647_Palindromic_Substrings t704_BinarySearch t27_RemoveElement t977_SquaresOfASortedArray main main2 updatetocplus20test
 
 # =============================================================================
 # Built-in targets
