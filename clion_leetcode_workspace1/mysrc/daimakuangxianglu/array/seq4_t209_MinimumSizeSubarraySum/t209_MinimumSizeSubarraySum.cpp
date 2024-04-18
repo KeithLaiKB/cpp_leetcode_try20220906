@@ -31,7 +31,12 @@ public:
         int st_indx = 0;
         int ed_indx = 0;
 
+        //这题目用不到  但是我想用来记录 从而更好的发现这个程序的规律
+        // 例如 如果 过程中 最小length相同的 array有两组
+        // 他记录的是最开始的那组, 所以你会发现 {2,1,4} 它没记录7而是记录之前的8
         int minimal_sum = 0;
+
+
         int sum_tmp1 = 0;
         int minimal_length = INT32_MAX;
 
@@ -39,6 +44,7 @@ public:
         for (; ed_indx <= nums.size()-1; ed_indx++) {
             sum_tmp1 = sum_tmp1 + nums[ed_indx];
 
+            //output test
             for(int myloadi=st_indx;myloadi<=ed_indx;myloadi++){
                 cout<<nums[myloadi]<<"\t";
                 if(myloadi==ed_indx){
@@ -47,11 +53,22 @@ public:
             }
 
             if (sum_tmp1 >= target) {
+                // 符合标准 先记下当前的sublength
+                int sub_length = ed_indx - st_indx + 1;
+                if(minimal_length > sub_length){
+                    minimal_length = sub_length;
+                    minimal_sum = sum_tmp1;
+                    //output test
+                    cout<<"(length:"<<minimal_length<<"sum:"<<minimal_sum<<")"<<endl;
+                }
+
+                // 达到标准 就把 st_indx 往后推,
+                // 尝试获得比较小 而且 符合 target的范围
                 for (; st_indx <= ed_indx;) {
                     sum_tmp1 = sum_tmp1 - nums[st_indx];
                     st_indx++;
 
-
+                    //output test
                     for(int myloadi=st_indx;myloadi<=ed_indx;myloadi++){
                         cout<<nums[myloadi]<<"\t";
                         if(myloadi==ed_indx){
@@ -59,17 +76,24 @@ public:
                         }
                     }
 
+                    // 缩小失败, 返回到外层循环 让它去移动ed_index
                     if (sum_tmp1 < target) {
                         break;
                     }
-                    int sub_length = ed_indx - st_indx + 1;
-                    minimal_length = minimal_length < sub_length? minimal_length : sub_length;
-                    minimal_sum = sum_tmp1;
+
+                    // 缩小成功 查看是否比之前的length还要小
+                    sub_length = ed_indx - st_indx + 1;
+                    if(minimal_length > sub_length){
+                        minimal_length = sub_length;
+                        minimal_sum = sum_tmp1;
+
+                    }
+                    //output test
                     cout<<"(length:"<<minimal_length<<"sum:"<<minimal_sum<<")"<<endl;
                 }
             }
             else if (sum_tmp1 < target) {
-                //
+                // do nothing
             }
 
         }
