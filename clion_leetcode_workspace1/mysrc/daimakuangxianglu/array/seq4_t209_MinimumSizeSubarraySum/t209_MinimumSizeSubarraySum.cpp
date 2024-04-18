@@ -25,6 +25,16 @@ public:
     ~Solution(){
 
     }
+
+    void myOutput_Vector(vector<int>& nums, int st_indx, int ed_indx){
+        for(int i=st_indx;i<=ed_indx;i++){
+            cout<<nums[i]<<"\t";
+            if(i==ed_indx){
+                cout<<endl;
+            }
+        }
+    }
+
     // 时间复杂度：O(n)
     // 空间复杂度：O(1)   我在sortedSquares中创建了一个数组来做result
     int minSubArrayLen(int target, vector<int>& nums) {
@@ -45,12 +55,7 @@ public:
             sum_tmp1 = sum_tmp1 + nums[ed_indx];
 
             //output test
-            for(int myloadi=st_indx;myloadi<=ed_indx;myloadi++){
-                cout<<nums[myloadi]<<"\t";
-                if(myloadi==ed_indx){
-                    cout<<endl;
-                }
-            }
+            myOutput_Vector(nums,st_indx,ed_indx);
 
             if (sum_tmp1 >= target) {
                 // 符合标准 先记下当前的sublength
@@ -69,12 +74,7 @@ public:
                     st_indx++;
 
                     //output test
-                    for(int myloadi=st_indx;myloadi<=ed_indx;myloadi++){
-                        cout<<nums[myloadi]<<"\t";
-                        if(myloadi==ed_indx){
-                            cout<<endl;
-                        }
-                    }
+                    myOutput_Vector(nums,st_indx,ed_indx);
 
                     // 缩小失败, 返回到外层循环 让它去移动ed_index
                     if (sum_tmp1 < target) {
@@ -86,7 +86,6 @@ public:
                     if(minimal_length > sub_length){
                         minimal_length = sub_length;
                         minimal_sum = sum_tmp1;
-
                     }
                     //output test
                     cout<<"(length:"<<minimal_length<<"sum:"<<minimal_sum<<")"<<endl;
@@ -95,7 +94,6 @@ public:
             else if (sum_tmp1 < target) {
                 // do nothing
             }
-
         }
 
         return minimal_length == INT32_MAX ? 0 : minimal_length;
