@@ -26,7 +26,7 @@ public:
 
     }
 
-    void myOutput_Vector(vector<int>& nums, int st_indx, int ed_indx){
+    void myOutput_VectorBintB(vector<int>& nums, int st_indx, int ed_indx){
         for(int i=st_indx;i<=ed_indx;i++){
             cout<<nums[i]<<"\t";
             if(i==ed_indx){
@@ -55,7 +55,7 @@ public:
             sum_tmp1 = sum_tmp1 + nums[ed_indx];
 
             //output test
-            myOutput_Vector(nums,st_indx,ed_indx);
+            myOutput_VectorBintB(nums,st_indx,ed_indx);
 
             if (sum_tmp1 >= target) {
                 // 符合标准 先记下当前的sublength
@@ -74,7 +74,7 @@ public:
                     st_indx++;
 
                     //output test
-                    myOutput_Vector(nums,st_indx,ed_indx);
+                    myOutput_VectorBintB(nums,st_indx,ed_indx);
 
                     // 缩小失败, 返回到外层循环 让它去移动ed_index
                     if (sum_tmp1 < target) {
