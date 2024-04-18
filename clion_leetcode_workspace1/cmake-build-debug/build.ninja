@@ -320,6 +320,99 @@ build t977_SquaresOfASortedArray: CXX_EXECUTABLE_LINKER__t977_SquaresOfASortedAr
   TARGET_PDB = t977_SquaresOfASortedArray.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target t209_MinimumSizeSubarraySum
+
+
+#############################################
+# Order-only phony target for t209_MinimumSizeSubarraySum
+
+build cmake_object_order_depends_target_t209_MinimumSizeSubarraySum: phony || CMakeFiles/t209_MinimumSizeSubarraySum.dir
+
+build CMakeFiles/t209_MinimumSizeSubarraySum.dir/mysrc/daimakuangxianglu/array/seq4_t209_MinimumSizeSubarraySum/t209_MinimumSizeSubarraySum.cpp.o: CXX_COMPILER__t209_MinimumSizeSubarraySum_unscanned_Debug /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/array/seq4_t209_MinimumSizeSubarraySum/t209_MinimumSizeSubarraySum.cpp || cmake_object_order_depends_target_t209_MinimumSizeSubarraySum
+  DEP_FILE = CMakeFiles/t209_MinimumSizeSubarraySum.dir/mysrc/daimakuangxianglu/array/seq4_t209_MinimumSizeSubarraySum/t209_MinimumSizeSubarraySum.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/t209_MinimumSizeSubarraySum.dir
+  OBJECT_FILE_DIR = CMakeFiles/t209_MinimumSizeSubarraySum.dir/mysrc/daimakuangxianglu/array/seq4_t209_MinimumSizeSubarraySum
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target t209_MinimumSizeSubarraySum
+
+
+#############################################
+# Link the executable t209_MinimumSizeSubarraySum
+
+build t209_MinimumSizeSubarraySum: CXX_EXECUTABLE_LINKER__t209_MinimumSizeSubarraySum_Debug CMakeFiles/t209_MinimumSizeSubarraySum.dir/mysrc/daimakuangxianglu/array/seq4_t209_MinimumSizeSubarraySum/t209_MinimumSizeSubarraySum.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/t209_MinimumSizeSubarraySum.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = t209_MinimumSizeSubarraySum
+  TARGET_PDB = t209_MinimumSizeSubarraySum.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target t209_MinimumSizeSubarraySum_daimakuagnixanglu
+
+
+#############################################
+# Order-only phony target for t209_MinimumSizeSubarraySum_daimakuagnixanglu
+
+build cmake_object_order_depends_target_t209_MinimumSizeSubarraySum_daimakuagnixanglu: phony || CMakeFiles/t209_MinimumSizeSubarraySum_daimakuagnixanglu.dir
+
+build CMakeFiles/t209_MinimumSizeSubarraySum_daimakuagnixanglu.dir/mysrc/daimakuangxianglu/array/seq4_t209_MinimumSizeSubarraySum/t209_MinimumSizeSubarraySum_daimakuagnixanglu.cpp.o: CXX_COMPILER__t209_MinimumSizeSubarraySum_daimakuagnixanglu_unscanned_Debug /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/array/seq4_t209_MinimumSizeSubarraySum/t209_MinimumSizeSubarraySum_daimakuagnixanglu.cpp || cmake_object_order_depends_target_t209_MinimumSizeSubarraySum_daimakuagnixanglu
+  DEP_FILE = CMakeFiles/t209_MinimumSizeSubarraySum_daimakuagnixanglu.dir/mysrc/daimakuangxianglu/array/seq4_t209_MinimumSizeSubarraySum/t209_MinimumSizeSubarraySum_daimakuagnixanglu.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/t209_MinimumSizeSubarraySum_daimakuagnixanglu.dir
+  OBJECT_FILE_DIR = CMakeFiles/t209_MinimumSizeSubarraySum_daimakuagnixanglu.dir/mysrc/daimakuangxianglu/array/seq4_t209_MinimumSizeSubarraySum
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target t209_MinimumSizeSubarraySum_daimakuagnixanglu
+
+
+#############################################
+# Link the executable t209_MinimumSizeSubarraySum_daimakuagnixanglu
+
+build t209_MinimumSizeSubarraySum_daimakuagnixanglu: CXX_EXECUTABLE_LINKER__t209_MinimumSizeSubarraySum_daimakuagnixanglu_Debug CMakeFiles/t209_MinimumSizeSubarraySum_daimakuagnixanglu.dir/mysrc/daimakuangxianglu/array/seq4_t209_MinimumSizeSubarraySum/t209_MinimumSizeSubarraySum_daimakuagnixanglu.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/t209_MinimumSizeSubarraySum_daimakuagnixanglu.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = t209_MinimumSizeSubarraySum_daimakuagnixanglu
+  TARGET_PDB = t209_MinimumSizeSubarraySum_daimakuagnixanglu.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target t209_MinimumSizeSubarraySum_leetcode
+
+
+#############################################
+# Order-only phony target for t209_MinimumSizeSubarraySum_leetcode
+
+build cmake_object_order_depends_target_t209_MinimumSizeSubarraySum_leetcode: phony || CMakeFiles/t209_MinimumSizeSubarraySum_leetcode.dir
+
+build CMakeFiles/t209_MinimumSizeSubarraySum_leetcode.dir/mysrc/daimakuangxianglu/array/seq4_t209_MinimumSizeSubarraySum/t209_MinimumSizeSubarraySum_leetcode.cpp.o: CXX_COMPILER__t209_MinimumSizeSubarraySum_leetcode_unscanned_Debug /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/array/seq4_t209_MinimumSizeSubarraySum/t209_MinimumSizeSubarraySum_leetcode.cpp || cmake_object_order_depends_target_t209_MinimumSizeSubarraySum_leetcode
+  DEP_FILE = CMakeFiles/t209_MinimumSizeSubarraySum_leetcode.dir/mysrc/daimakuangxianglu/array/seq4_t209_MinimumSizeSubarraySum/t209_MinimumSizeSubarraySum_leetcode.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/t209_MinimumSizeSubarraySum_leetcode.dir
+  OBJECT_FILE_DIR = CMakeFiles/t209_MinimumSizeSubarraySum_leetcode.dir/mysrc/daimakuangxianglu/array/seq4_t209_MinimumSizeSubarraySum
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target t209_MinimumSizeSubarraySum_leetcode
+
+
+#############################################
+# Link the executable t209_MinimumSizeSubarraySum_leetcode
+
+build t209_MinimumSizeSubarraySum_leetcode: CXX_EXECUTABLE_LINKER__t209_MinimumSizeSubarraySum_leetcode_Debug CMakeFiles/t209_MinimumSizeSubarraySum_leetcode.dir/mysrc/daimakuangxianglu/array/seq4_t209_MinimumSizeSubarraySum/t209_MinimumSizeSubarraySum_leetcode.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/t209_MinimumSizeSubarraySum_leetcode.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = t209_MinimumSizeSubarraySum_leetcode
+  TARGET_PDB = t209_MinimumSizeSubarraySum_leetcode.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target main
 
 
@@ -446,7 +539,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug
 
-build all: phony t1_TwoSum t1_pre1_t242_ValidAnagram t1_pre1_t242_ValidAnagram_method2 t1_pre2_t349_IntersectionofTwoArrays t121_BestTimeToBuyAndSellStock t5_pre1_t647_Palindromic_Substrings t704_BinarySearch t27_RemoveElement t977_SquaresOfASortedArray main main2 updatetocplus20test
+build all: phony t1_TwoSum t1_pre1_t242_ValidAnagram t1_pre1_t242_ValidAnagram_method2 t1_pre2_t349_IntersectionofTwoArrays t121_BestTimeToBuyAndSellStock t5_pre1_t647_Palindromic_Substrings t704_BinarySearch t27_RemoveElement t977_SquaresOfASortedArray t209_MinimumSizeSubarraySum t209_MinimumSizeSubarraySum_daimakuagnixanglu t209_MinimumSizeSubarraySum_leetcode main main2 updatetocplus20test
 
 # =============================================================================
 # Built-in targets
