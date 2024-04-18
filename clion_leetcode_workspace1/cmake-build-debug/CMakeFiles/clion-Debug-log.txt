@@ -8,6 +8,7 @@
     -- src/t704_BinarySearch.cpp will be compiled to bin/t704_BinarySearch
     -- src/t27_RemoveElement.cpp will be compiled to bin/t27_RemoveElement
     -- src/t977_SquaresOfASortedArray.cpp will be compiled to bin/t977_SquaresOfASortedArray
+    -- src/t76_MinimumSizeSubarraySum.cpp will be compiled to bin/t76_MinimumSizeSubarraySum
     -- src/t209_MinimumSizeSubarraySum.cpp will be compiled to bin/t209_MinimumSizeSubarraySum
     -- src/t209_MinimumSizeSubarraySum_daimakuagnixanglu.cpp will be compiled to bin/t209_MinimumSizeSubarraySum_daimakuagnixanglu
     -- src/t209_MinimumSizeSubarraySum_leetcode.cpp will be compiled to bin/t209_MinimumSizeSubarraySum_leetcode

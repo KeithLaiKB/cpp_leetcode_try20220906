@@ -29,7 +29,8 @@
 						11,
 						12,
 						13,
-						14
+						14,
+						15
 					]
 				}
 			],
@@ -58,7 +59,8 @@
 						11,
 						12,
 						13,
-						14
+						14,
+						15
 					]
 				}
 			],
@@ -153,6 +155,13 @@
 					"id" : "t704_BinarySearch::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-t704_BinarySearch-Debug-169c5f142ea0b16d756f.json",
 					"name" : "t704_BinarySearch",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "t76_MinimumSizeSubarraySum::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-t76_MinimumSizeSubarraySum-Debug-54bc5a1e352a379aad46.json",
+					"name" : "t76_MinimumSizeSubarraySum",
 					"projectIndex" : 0
 				},
 				{

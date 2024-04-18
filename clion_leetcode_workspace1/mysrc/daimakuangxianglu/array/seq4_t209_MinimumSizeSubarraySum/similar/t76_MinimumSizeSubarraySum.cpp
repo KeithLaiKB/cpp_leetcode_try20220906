@@ -6,13 +6,13 @@ using namespace std;
 
 /**
  *
- * Given an array of positive integers nums and a positive integer target,
- * return the minimal length of a subarray whose sum is greater than or equal to target.
- * If there is no such subarray, return 0 instead.
+ * Given two strings s and t of lengths m and n respectively,
+ * return the minimum window substring of s such that every character in t (including duplicates) is included in the window.
+ * If there is no such substring, return the empty string ""
  *
  * Example:
- * Input: target = 7, nums = [2,3,1,2,4,3]
- * Output: 2
+ * Input: s = "ADOBECODEBANC", t = "ABC"
+ * Output: "BANC"
  * Explanation: The subarray [4,3] has the minimal length under the problem constraint.
  * 7=4+3
  *
@@ -105,7 +105,7 @@ public:
 int main() {
     cout << "result" << endl;
     Solution* solut1 = new Solution();
-    vector<int> intvec={3,3,2,1,4,3};           //用我的这个例子比较好
+    vector<int> intvec={3,3,2,1,4,3};
     //vector<int> intvec={2,3,1,2,4,3};
     intvec.reserve(100000);  //这是题目要求里length说的. 虽然暂时没有100000个
     //vector<int> intvec={3,2,2,3};
