@@ -1,3 +1,8 @@
+vector 如果不是new 创立的话
+    他本身对象实在栈上的
+        但是他管理的内容是在堆里的
+
+
 vector<int>* intvec = new vector<int>();
 vector<int> ans;
 
