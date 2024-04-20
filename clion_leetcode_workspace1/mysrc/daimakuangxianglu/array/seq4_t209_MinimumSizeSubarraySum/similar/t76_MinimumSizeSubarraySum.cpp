@@ -172,13 +172,18 @@ public:
                 }
 
             }
+            // test output
             myOutput_string(og,st_indx,ed_indx);
         }
 
 
 
-
-        return og.substr(rs_st_indx,rs_min_length);
+        if(rs_min_length==INT32_MAX){
+            return "";
+        }
+        else{
+            return og.substr(rs_st_indx,rs_min_length);
+        }
     }
 
 };
