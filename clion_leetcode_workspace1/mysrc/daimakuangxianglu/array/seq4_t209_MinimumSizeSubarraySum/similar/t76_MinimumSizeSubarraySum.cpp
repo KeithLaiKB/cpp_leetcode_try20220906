@@ -155,6 +155,25 @@ public:
                         myOutput_string(og,st_indx,ed_indx);
                     }
                 }
+                // 既然能插的进去 就看一下 能不能缩小一下
+                else if(og_window_freq[c_tmp]==target_freq[c_tmp]){
+                    // test output
+                    myOutput_string(og,st_indx,ed_indx);
+                    for(;st_indx<=ed_indx;){
+                        //
+                        //例如 og=sab 中找 target=b
+                        //
+                        // 例如这个a 就不存在的
+                        if(target_freq.find(og[st_indx])==target_freq.end() ){
+                            st_indx++;
+                        }
+                        else{
+                            break;
+                        }
+                        // test output
+                        myOutput_string(og,st_indx,ed_indx);
+                    }
+                }
 
                 //结束查看 当前window的有效长度 == target的长度
                 //也就是
@@ -195,8 +214,11 @@ int main() {
 
 
 
-    string str_og("ADOBECODEBANC");
-    string target("ABC");
+    string str_og("ab");
+    string target("b");
+
+    //string str_og("ADOBECODEBANC");
+    //string target("ABC");
 
     //string str_og("CEBGCBAECADBCACGGE"); //我自己的
     //string target("ABCC");
