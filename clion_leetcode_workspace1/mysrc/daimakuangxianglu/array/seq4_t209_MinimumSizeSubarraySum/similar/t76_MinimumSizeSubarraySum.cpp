@@ -111,9 +111,10 @@ public:
 
 
                         //然后准备进行删除
-                        for(;st_indx<=ed_indx;st_indx++){
+                        for(;st_indx<=ed_indx;){
                             //分析头部的第一位, 从而准备删除这一位
                             char ch_tmp2=og[st_indx];
+                            ++st_indx;
 
                             //如果删除的当前字符 是有效字符
                             if(target_freq.find(ch_tmp2)!=target_freq.end()){
@@ -130,16 +131,28 @@ public:
                                 }
                                 // 如果删除 该字符以后 他的有效次数仍然达标
                                 else{
-                                    //缩小后 仍然达标的话 先看是不是 比之前的总长度更小,
-                                    //如果是的话则记录下来
-                                    if(ed_indx-(st_indx+1)+1 < rs_min_len){
-                                        rs_min_len = ed_indx-(st_indx+1)+1; //从删除了的这一个字符的下一个位置开始算长度
-                                        rs_st_indx = st_indx+1;       //记录当前想要删除的位置的下一个位置
-                                        rs_ed_indx = ed_indx;
-                                    }
-                                    // 然后继续下一轮循环 从而st_index++缩小范围
+                                    // 到后面查看是否删除后 有效是否达标
+                                    // do nothing
                                 }
 
+                            }
+                            //如果删除的当前字符 不是有效字符
+                            else{
+                                // 到后面查看是否删除后 有效是否达标
+                                // do nothing
+                            }
+
+                            // 查看是否删除后 有效是否达标
+                            if(eff_total_len==target.size()){
+                                //发现
+                                //删除从而缩小后 仍然达标的话 先看是不是 比之前的总长度更小,
+                                //如果是的话则记录下来
+                                if(ed_indx-st_indx+1 < rs_min_len){
+                                    rs_min_len = ed_indx-st_indx+1; //从删除了的这一个字符的下一个位置开始算长度
+                                    rs_st_indx = st_indx;       //记录当前想要删除的位置的下一个位置
+                                    rs_ed_indx = ed_indx;
+                                }
+                                // 然后继续下一轮循环 从而st_index++缩小范围
                             }
                         }
 
@@ -174,11 +187,11 @@ int main() {
 
 
 
-    string str_og("bba");
-    string target("ab");
+    //string str_og("bba");
+    //string target("ab");
 
-    //string str_og("ADOBECODEBANC");
-    //string target("ABC");
+    string str_og("ADOBECODEBANC");
+    string target("ABC");
 
     //string str_og("CEBGCBAECADBCACGGE"); //我自己的
     //string target("ABCC");
