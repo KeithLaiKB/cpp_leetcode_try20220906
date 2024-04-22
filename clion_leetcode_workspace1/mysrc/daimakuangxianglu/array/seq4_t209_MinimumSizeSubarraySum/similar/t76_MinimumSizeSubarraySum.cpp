@@ -130,6 +130,9 @@ public:
                                     break;
                                 }
                                 // 如果删除 该字符以后 他的有效次数仍然达标
+                                // ADOBECODEBANC 中 的
+                                //    BECODEBA 删除B
+                                //     ECODEBA
                                 else{
                                     // 到后面查看是否删除后 有效是否达标
                                     // do nothing
@@ -137,6 +140,9 @@ public:
 
                             }
                             //如果删除的当前字符 不是有效字符
+                            // ADOBECODEBANC  中 的
+                            //    BECODEBA  删除E
+                            //      CODEBA
                             else{
                                 // 到后面查看是否删除后 有效是否达标
                                 // do nothing
