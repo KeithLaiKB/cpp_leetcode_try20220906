@@ -55,153 +55,113 @@ public:
     // target = "ABCC"
     // 我这个自创的肯定最小的就是那个BCAC
     string minWindow(string og, string target){
-        int st_indx = 0;
-        int ed_indx = 0;
-
-
-        int rs_st_indx=-1;
-        int rs_ed_indx=-1;
-        int rs_min_length=INT32_MAX;        //包括有效字符的最小串的长度
-
-        //需要被包含的串 的每个字符 以及出现的次数, 因为这个子串 有可能是"ABCCC", 那么包含它的大串 C 也要出现三次
         unordered_map<char,int> target_freq;
         unordered_map<char,int> og_window_freq;
 
-        int window_effect_len=0;        //只包含有效字母
-        int window_total_len=0;         //总长度
+        //og 的指针 从而建立window
+        int st_indx = 0;
+        int ed_indx = 0;
 
+        int rs_st_indx=-1;
+        int rs_ed_indx=-1;
+        int rs_min_len=INT32_MAX;        //包括有效字符的最小串的长度
 
+        //window中存在的有效数字
+        //例如 target中
+        //    A=1 B=1 C=2
+        //    但是window中
+        //    A=1 B=2 C=2 eff_len仍然是3, B多余的那个我不算在内
+        int eff_total_len = 0;
 
-        //建立
-        // A B C
-        // 1 1 2
-        for(int i = 0;i<=target.size()-1;i++){
-            target_freq[target[i]]++;       //不用我们专门生成对应的key 和value之后 再自增, c++发现如果不存在可以直接自己生成操作
+        for(int i=0;i<=target.size()-1;i++){
+            ++target_freq[target[i]];
         }
 
-        //如果大数组的长度 还没有 要涵括的子数组长,
-        //那么就不用匹配了, 因为根本匹配不了
-        if(og.size()<target.size()){
-            return "";
-        }
 
+        for(;ed_indx<=og.size()-1;ed_indx++){
+            char ch_tmp= og[ed_indx];
+            //
+            // 为了能够缩小 og_window_freq的空间, 但是会可能消耗一些时间 去find
+            // 如果当前增加的字符 是有效字符
+            if(target_freq.find(ch_tmp)!=target_freq.end()){
+                ++og_window_freq[ch_tmp];   //存储window出现的 有效字母 和 其出现次数
 
+                // 如果此时该字符(已经增加本次)已经出现的数度 已经 达到了 或者 超过了 规定的次数
+                if(og_window_freq[ch_tmp] > target_freq[ch_tmp]){
+                    //则不增加本次的出现次数 到 总次数中
+                    //do nothing
+                }
+                // 如果此时该字符(已经增加本次)已经出现的数度 没有 达到了 和 超过了 规定的次数
+                else{
+                    ++eff_total_len;    //增加本次出现的次数 到 window中有效字符 出现的 总次数中
+                    //
+                    // 每当 总次数 增加, 去判断是否 达标
+                    // 例如og 搜索到 ABBC  target要求是BAC
+                    // 那么 eff_total_len = 3 达标
+                    if(eff_total_len==target.size()){
 
-        for(;ed_indx<= og.size()-1;ed_indx++){
-            char c_tmp=og[ed_indx];
-            //在target_freq中的 ABC找不到对应元素
-            if(target_freq.find(c_tmp)==target_freq.end()){
-                //则不管他
-            }
-            //找到
-            else{
-                og_window_freq[c_tmp]++;
-                window_effect_len++;
-                //如果插入的 多过了要求的 例如 BGCB 缩减-> 变成GCB ->CB
-                //注意超过1位都不行
-                //{C E B G C B}
-                //{C E B G C B}     遇见第一个B前, 有效字符 或者是 非有效字符 全都删掉 例如这里的 C和E
-                //{  E B G C B}
-                //{    B G C B}     删掉B
-                //{      G C B}     删掉B以后, 遇到非有效字符, 删除
-                //{        C B}     删掉B以后, 遇到的有效字符, 不删除, 并且停止, 然后进行下一步
-                //{        C B A}
-                int del_flag = 0;   //用来判断是否已经删除第一个B
-                //
-                //
-                // 发现多余的B, 并且没有删除
-                if(og_window_freq[c_tmp]>target_freq[c_tmp]){
-                    // test output
-                    myOutput_string(og,st_indx,ed_indx);
-                    for(;st_indx<=ed_indx;){
-                        //如果当前 准备删除的字符 就是 当前准备加入的多的那个字符
-                        // BGCB 缩减-> 变成GCB
-                        if(og[st_indx]==c_tmp){
-                            //进行删除
-                            og_window_freq[c_tmp]--;    //当前的window的freq-- 就是把刚才加上的删掉
-                            window_effect_len--;        //有效长度-- 就是把刚才加上的删掉
-                            st_indx++;
-                            del_flag = 1;
+                        //达标的话 先看是不是 比之前的总长度更小,
+                        //如果是的话则记录下来
+                        if(ed_indx-st_indx+1 < rs_min_len){
+                            rs_min_len = ed_indx-st_indx+1;
+                            rs_st_indx = st_indx;
+                            rs_ed_indx = ed_indx;
                         }
 
-                        //如果当前 准备删除的字符 不是 当前准备加入的多的那个字符
-                        else{
-                            if(target_freq.find(og[st_indx])!=target_freq.end() ){
-                                // 删掉第一个B以后, 遇到的有效字符, 不删除, 并且停止, 然后进行下一步
-                                // CB 保持 -> CB
-                                if(del_flag==1){
-                                    //不进行删除
-                                    //停止整个for循环
-                                    // test output
-                                    myOutput_string(og,st_indx,ed_indx);
+
+
+                        //然后准备进行删除
+                        for(;st_indx<=ed_indx;st_indx++){
+                            //分析头部的第一位, 从而准备删除这一位
+                            char ch_tmp2=og[st_indx];
+
+                            //如果删除的当前字符 是有效字符
+                            if(target_freq.find(ch_tmp2)!=target_freq.end()){
+
+                                //删除该字符出现的次数
+                                --og_window_freq[ch_tmp2];
+
+                                // 如果删除 该字符以后 他的有效次数不达标
+                                if(og_window_freq[ch_tmp2] < target_freq[ch_tmp2]){
+                                    // 意味着 删除 该字符以后 影响到总有效次数了 例如:BA 删除了有效的字符B了
+                                    --eff_total_len; //总有效次数也减
+                                    // 停止继续缩减, 而是要增加ed_indx从而进行下一步
                                     break;
                                 }
-                                // 没有删除第一个B前, 遇到的的有效字符 删除
-                                // {C E B G C B} -> {   E B G C B}
+                                // 如果删除 该字符以后 他的有效次数仍然达标
                                 else{
-                                    og_window_freq[og[st_indx]]--;
-                                    window_effect_len--;
-                                    st_indx++;
+                                    //缩小后 仍然达标的话 先看是不是 比之前的总长度更小,
+                                    //如果是的话则记录下来
+                                    if(ed_indx-(st_indx+1)+1 < rs_min_len){
+                                        rs_min_len = ed_indx-(st_indx+1)+1; //从删除了的这一个字符的下一个位置开始算长度
+                                        rs_st_indx = st_indx+1;       //记录当前想要删除的位置的下一个位置
+                                        rs_ed_indx = ed_indx;
+                                    }
+                                    // 然后继续下一轮循环 从而st_index++缩小范围
                                 }
-                            }
-                            //如果不是任何有效字符
-                            // {   E B G C B} -> {    B G C B}
-                            else{
-                                //进行删除
-                                st_indx++;
+
                             }
                         }
-                        // test output
-                        myOutput_string(og,st_indx,ed_indx);
-                    }
-                }
-                // 既然能插的进去 就看一下 能不能缩小一下
-                else if(og_window_freq[c_tmp]==target_freq[c_tmp]){
-                    // test output
-                    myOutput_string(og,st_indx,ed_indx);
-                    for(;st_indx<=ed_indx;){
-                        //
-                        //例如 og=sab 中找 target=b
-                        //
-                        // 例如这个a 就不存在的
-                        if(target_freq.find(og[st_indx])==target_freq.end() ){
-                            st_indx++;
-                        }
-                        else{
-                            break;
-                        }
-                        // test output
-                        myOutput_string(og,st_indx,ed_indx);
-                    }
-                }
 
-                //结束查看 当前window的有效长度 == target的长度
-                //也就是
-                //A B C == A B C
-                //1 1 2    1 1 2
-                if(window_effect_len==target.size()){
-                    //然后看是不是最小的长度
-                    int len_tmp = ed_indx - st_indx + 1;
-                    // 如果比之前的答案还要小, 记下当前结果
-                    if(len_tmp<rs_min_length){
-                        rs_st_indx = st_indx;
-                        rs_ed_indx = ed_indx;
-                        rs_min_length = len_tmp;
                     }
                 }
-
             }
-            // test output
-            myOutput_string(og,st_indx,ed_indx);
+            // 如果不是有效字符
+            else{
+                // do nothing 从而移动ed_indx
+            }
+
+
+
         }
 
 
 
-        if(rs_min_length==INT32_MAX){
+        if(rs_min_len==INT32_MAX){
             return "";
         }
         else{
-            return og.substr(rs_st_indx,rs_min_length);
+            return og.substr(rs_st_indx,rs_min_len);
         }
     }
 
@@ -214,8 +174,8 @@ int main() {
 
 
 
-    string str_og("ab");
-    string target("b");
+    string str_og("bba");
+    string target("ab");
 
     //string str_og("ADOBECODEBANC");
     //string target("ABC");

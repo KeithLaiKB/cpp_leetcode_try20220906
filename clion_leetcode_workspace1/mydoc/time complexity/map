@@ -4,7 +4,20 @@ std::map	        红黑树	key有序	key不可重复	    key不可修改	O(log2n
 std::multimap	    红黑树	key有序	key可重复	    key不可修改	O(log2n)	O(log2n)
 std::unordered_map	哈希表	key无序	key不可重复	    key不可修改	O(1)        O(1)
 
+/*
+如果我有个og_map 和 target_map
+我每次都要操作og_map之后都要 去对比 是否符合target_map 里面的key_value
+最原始的做法就是
+    for(;;){
+
+    }
+*/
 
 
 
+unordered_map<char,int> target_freq;
+//如果找不到的话, target_freq.find(og[st_indx]) 的返回值是 target_freq.end()
+// target_freq.end() 指的是 这个unordermap最后一个元素 后面的 一个位置!!!而不是最后一个元素的位置
+if(target_freq.find(og[st_indx])!=target_freq.end()){
+}
 
