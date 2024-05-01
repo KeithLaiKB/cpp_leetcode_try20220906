@@ -12,6 +12,8 @@
     -- src/t209_MinimumSizeSubarraySum.cpp will be compiled to bin/t209_MinimumSizeSubarraySum
     -- src/t209_MinimumSizeSubarraySum_daimakuagnixanglu.cpp will be compiled to bin/t209_MinimumSizeSubarraySum_daimakuagnixanglu
     -- src/t209_MinimumSizeSubarraySum_leetcode.cpp will be compiled to bin/t209_MinimumSizeSubarraySum_leetcode
+    -- src/t59_SpiralMatrixII.cpp will be compiled to bin/t59_SpiralMatrixII
+    -- src/t206_ReverseLinkedList.cpp will be compiled to bin/t206_ReverseLinkedList
     -- src/main.cpp will be compiled to bin/main
     -- src/main2.cpp will be compiled to bin/main2
     -- src/updatetocplus20test.cpp will be compiled to bin/updatetocplus20test
