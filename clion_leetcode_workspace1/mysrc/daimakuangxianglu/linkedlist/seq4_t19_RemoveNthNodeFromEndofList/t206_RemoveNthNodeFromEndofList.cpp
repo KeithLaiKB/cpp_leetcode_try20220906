@@ -115,11 +115,12 @@ public:
         //如果是倒数0个那意味着什么都不删除
         if(n==0){
             //do nothing
-            cur_st = dmhead->next;
+            head = dmhead->next;
         }
         else{
             cur_todelete = cur_st->next;
             cur_st->next = cur_st->next->next;
+            head = dmhead->next;
         }
 
         delete cur_todelete;
@@ -138,14 +139,15 @@ int main() {
     Solution* solut1 = new Solution();
 
 
-    int int_arr1[] ={1,2,3,4,5};
+    //int int_arr1[] ={1,2,3,4,5};
+    int int_arr1[] ={1};
     int* int_arr1P = int_arr1;
     int len = sizeof(int_arr1)/sizeof(int_arr1[0]);
     Solution::ListNode* head1 = solut1->initLinkedlist_ints(int_arr1P,len);
     solut1->myOutput_linklist_int(head1);
 
-    Solution::ListNode* rs_head1 = solut1->removeNthFromEnd(head1,2);
-
+    Solution::ListNode* rs_head1 = solut1->removeNthFromEnd(head1,1);
+    cout<<"result"<<endl;
     solut1->myOutput_linklist_int(rs_head1);
 
 
