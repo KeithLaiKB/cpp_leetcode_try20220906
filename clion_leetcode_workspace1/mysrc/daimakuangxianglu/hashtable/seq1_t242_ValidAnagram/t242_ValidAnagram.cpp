@@ -46,7 +46,7 @@ public:
         }
 
         for(int i=0;i<=target.size()-1;i++){
-            tmp = og[i];
+            tmp = target[i];
             myhshtbl[tmp-'a']--;
         }
 
