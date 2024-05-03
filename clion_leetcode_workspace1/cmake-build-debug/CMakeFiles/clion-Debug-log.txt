@@ -13,6 +13,7 @@
     -- src/t209_MinimumSizeSubarraySum_daimakuagnixanglu.cpp will be compiled to bin/t209_MinimumSizeSubarraySum_daimakuagnixanglu
     -- src/t209_MinimumSizeSubarraySum_leetcode.cpp will be compiled to bin/t209_MinimumSizeSubarraySum_leetcode
     -- src/t59_SpiralMatrixII.cpp will be compiled to bin/t59_SpiralMatrixII
+    -- src/t242_ValidAnagram.cpp will be compiled to bin/t242_ValidAnagram
     -- src/t206_ReverseLinkedList.cpp will be compiled to bin/t206_ReverseLinkedList
     -- src/t206_RemoveNthNodeFromEndofList.cpp will be compiled to bin/t206_RemoveNthNodeFromEndofList
     -- src/t142_LinkedListCycleII.cpp will be compiled to bin/t142_LinkedListCycleII

@@ -1,6 +1,8 @@
 string 如果不是new 创立的话
     他本身对象实在栈上的
         但是他管理的内容是在堆里的
+        string s="hello";
     所以说
     c++中的string(不是new创立的) 的内容是可以变化的
         这个跟 Java中的普通String(不是new创立的) 是不同的
+        string* stringp= new string("hello");
