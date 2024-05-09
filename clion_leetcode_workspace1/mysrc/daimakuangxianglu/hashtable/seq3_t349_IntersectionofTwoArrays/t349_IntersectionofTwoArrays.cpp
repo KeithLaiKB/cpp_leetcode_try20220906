@@ -8,17 +8,17 @@ using namespace std;
 
 /**
  *
- * Given two strings s and t, return true if t is an anagram of s, and false otherwise.
- * An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase,
- * typically using all the original letters exactly once.
+ * Given two integer arrays nums1 and nums2, return an array of their intersection.
+ * Each element in the result must be unique and you may return the result in any order.
  *
  * Example1:
- * Input: words = ["bella","label","roller"]
- * Output: ["e","l","l"]
+ * Input: nums1 = [1,2,2,1], nums2 = [2,2]
+ * Output: [2]
  *
  * Example2:
- * Input: words = ["cool","lock","cook"]
- * Output: ["c","o"]
+ * Input: nums1 = [4,9,5], nums2 = [9,4,9,8,4]
+ * Output: [9,4]
+ * Explanation: [4,9] is also accepted.
  *
  */
 class Solution {
@@ -39,8 +39,9 @@ public:
         }
     }
 
-    // 时间复杂度：O(N*L) N 是整个array中 字符串的数量, L是所有字符串的平均长度
-    // 空间复杂度：O(Lmin)
+    // 时间复杂度：O(n)
+    // 空间复杂度：O(1)   我在sortedSquares中创建了一个数组来做result
+    // head = [1,2,3,4,5], n = 2
     //
     //
     // 并集(不是并集), 先用建立 一个vector 带频率的, 当然也可以直接 26个数组 当作 hashtable
