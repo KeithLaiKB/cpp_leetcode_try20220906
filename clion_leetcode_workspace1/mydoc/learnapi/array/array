@@ -24,3 +24,6 @@ array作为方法的输入参数:
 
     }
 ----------------------------------------------
+
+int hashOtherStr[26] = {0};
+memset(hashOtherStr, 0, 26 * sizeof(int));

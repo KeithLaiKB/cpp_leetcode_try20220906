@@ -1,0 +1,14 @@
+    void myOutput_VectorBintB(vector<int>& nums, int st_indx, int ed_indx){
+        for(int i=st_indx;i<=ed_indx;i++){
+            cout<<nums[i]<<"\t";
+            if(i==ed_indx){
+                cout<<endl;
+            }
+        }
+    }
+
+    void myOutput_string(string str1, int st_indx, int ed_indx){
+        int len = ed_indx - st_indx +1;
+        string str_rs1(str1.substr(st_indx,len));
+        cout<<str_rs1<<endl;
+    }
