@@ -14,6 +14,7 @@
 /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug/CMakeFiles/t59_SpiralMatrixII.dir
 /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug/CMakeFiles/t242_ValidAnagram.dir
 /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug/CMakeFiles/t1002_FindCommonCharacters.dir
+/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug/CMakeFiles/t349_IntersectionofTwoArrays.dir
 /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug/CMakeFiles/t206_ReverseLinkedList.dir
 /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug/CMakeFiles/t206_RemoveNthNodeFromEndofList.dir
 /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug/CMakeFiles/t142_LinkedListCycleII.dir

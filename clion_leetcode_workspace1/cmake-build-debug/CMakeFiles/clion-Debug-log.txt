@@ -15,6 +15,7 @@
     -- src/t59_SpiralMatrixII.cpp will be compiled to bin/t59_SpiralMatrixII
     -- src/t242_ValidAnagram.cpp will be compiled to bin/t242_ValidAnagram
     -- src/t1002_FindCommonCharacters.cpp will be compiled to bin/t1002_FindCommonCharacters
+    -- src/t349_IntersectionofTwoArrays.cpp will be compiled to bin/t349_IntersectionofTwoArrays
     -- src/t206_ReverseLinkedList.cpp will be compiled to bin/t206_ReverseLinkedList
     -- src/t206_RemoveNthNodeFromEndofList.cpp will be compiled to bin/t206_RemoveNthNodeFromEndofList
     -- src/t142_LinkedListCycleII.cpp will be compiled to bin/t142_LinkedListCycleII
@@ -22,6 +23,6 @@
     -- src/main.cpp will be compiled to bin/main
     -- src/main2.cpp will be compiled to bin/main2
     -- src/updatetocplus20test.cpp will be compiled to bin/updatetocplus20test
--- Configuring done (0.1s)
--- Generating done (0.0s)
+-- Configuring done (0.0s)
+-- Generating done (0.1s)
 -- Build files have been written to: /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug
