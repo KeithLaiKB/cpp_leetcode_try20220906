@@ -1,4 +1,4 @@
-/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug/CMakeFiles/t1_TwoSum.dir
+/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug/CMakeFiles/t1_TwoSum_past.dir
 /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug/CMakeFiles/t1_pre1_t242_ValidAnagram.dir
 /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug/CMakeFiles/t1_pre1_t242_ValidAnagram_method2.dir
 /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug/CMakeFiles/t1_pre2_t349_IntersectionofTwoArrays.dir
@@ -16,6 +16,7 @@
 /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug/CMakeFiles/t1002_FindCommonCharacters.dir
 /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug/CMakeFiles/t349_IntersectionofTwoArrays.dir
 /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug/CMakeFiles/t202_HappyNumber.dir
+/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug/CMakeFiles/t1_TwoSum.dir
 /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug/CMakeFiles/t206_ReverseLinkedList.dir
 /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug/CMakeFiles/t206_RemoveNthNodeFromEndofList.dir
 /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug/CMakeFiles/t142_LinkedListCycleII.dir
