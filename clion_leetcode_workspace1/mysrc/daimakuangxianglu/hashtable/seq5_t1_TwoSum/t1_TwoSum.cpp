@@ -43,7 +43,8 @@ public:
         }
     }
 
-    // 如果每次产生的数字 之前已经出现过了 就证明死循环了
+    // 时间复杂度：O(n)
+    // 空间复杂度：O(n)
     vector<int> twoSum(vector<int>& nums, int target) {
         unordered_map<int,int> map_tmp1;
         for(int i=0;i<=nums.size()-1;i++){
