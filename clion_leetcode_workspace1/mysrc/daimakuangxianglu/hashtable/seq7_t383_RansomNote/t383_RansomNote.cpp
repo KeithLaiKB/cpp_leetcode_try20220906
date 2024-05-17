@@ -44,12 +44,12 @@ public:
         }
     }
 
-    // 时间复杂度：O(n^2)
-    // 空间复杂度：O(n^2)
+    // 时间复杂度：O(n)
+    // 空间复杂度：O(1)
     bool canConstruct(string ransomNote, string magazine) {
 
 
-        int arr1[122-65]={0};
+        int arr1[122-65+1]={0};
         int len = sizeof (arr1)/sizeof (arr1[0]);
         int rs_bool=-1;
 
