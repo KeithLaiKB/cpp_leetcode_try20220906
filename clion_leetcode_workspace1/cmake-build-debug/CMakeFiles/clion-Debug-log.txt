@@ -19,6 +19,7 @@
     -- src/t202_HappyNumber.cpp will be compiled to bin/t202_HappyNumber
     -- src/t1_TwoSum.cpp will be compiled to bin/t1_TwoSum
     -- src/t454_4SumII.cpp will be compiled to bin/t454_4SumII
+    -- src/t383_RansomNote.cpp will be compiled to bin/t383_RansomNote
     -- src/t206_ReverseLinkedList.cpp will be compiled to bin/t206_ReverseLinkedList
     -- src/t206_RemoveNthNodeFromEndofList.cpp will be compiled to bin/t206_RemoveNthNodeFromEndofList
     -- src/t142_LinkedListCycleII.cpp will be compiled to bin/t142_LinkedListCycleII

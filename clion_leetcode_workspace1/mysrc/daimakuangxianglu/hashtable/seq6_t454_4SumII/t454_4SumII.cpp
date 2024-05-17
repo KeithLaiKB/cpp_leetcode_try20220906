@@ -47,8 +47,8 @@ public:
         }
     }
 
-    // 时间复杂度：O(n)
-    // 空间复杂度：O(n)
+    // 时间复杂度：O(n^2)
+    // 空间复杂度：O(n^2)
     int fourSumCount(vector<int>& nums1, vector<int>& nums2, vector<int>& nums3, vector<int>& nums4) {
         unordered_map<int,int> uodmap_sum1_2;
         int tmp1=0;
@@ -93,10 +93,10 @@ public:
 
 /**
  * feature:
- * 1. 要一个set去重
+ *
  *
  * 思路():
- * 1. 把过程都记录下来, 发现过程重复 证明无法最终到头
+ *
  *
  *
  * */
