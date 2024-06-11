@@ -9,6 +9,11 @@ vector<int> ans;
 
 push_back(i);
 
+如果result是 vector<vector<int>>
+那么他可以
+result.push_back(vector<int>{nums[i],nums[left],nums[right]});
+
+
 //初始化
 
 初始化方法一:

@@ -20,6 +20,8 @@
     -- src/t1_TwoSum.cpp will be compiled to bin/t1_TwoSum
     -- src/t454_4SumII.cpp will be compiled to bin/t454_4SumII
     -- src/t383_RansomNote.cpp will be compiled to bin/t383_RansomNote
+    -- src/t15_3Sum.cpp will be compiled to bin/t15_3Sum
+    -- src/t15_3Sum_two_index.cpp will be compiled to bin/t15_3Sum_two_index
     -- src/t206_ReverseLinkedList.cpp will be compiled to bin/t206_ReverseLinkedList
     -- src/t206_RemoveNthNodeFromEndofList.cpp will be compiled to bin/t206_RemoveNthNodeFromEndofList
     -- src/t142_LinkedListCycleII.cpp will be compiled to bin/t142_LinkedListCycleII
@@ -28,5 +30,5 @@
     -- src/main2.cpp will be compiled to bin/main2
     -- src/updatetocplus20test.cpp will be compiled to bin/updatetocplus20test
 -- Configuring done (0.1s)
--- Generating done (0.1s)
+-- Generating done (0.0s)
 -- Build files have been written to: /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug
