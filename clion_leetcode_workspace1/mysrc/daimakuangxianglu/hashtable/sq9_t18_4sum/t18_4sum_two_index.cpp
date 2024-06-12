@@ -70,8 +70,8 @@ public:
             // 例如 -1>-15
             // -1,-2,-3,-9 总和== -15
             // 但如果是正数 因为排序过了, 你还第一个>target 那就不用玩了, 因为他是怎么也不可能 a+b+c+d=target的了
-            if (nums[i]>target && nums[i]>0){
-                return result;
+            if (nums[i]>target && nums[i]>=0){
+                break;
             }
 
             // a 去重
@@ -84,8 +84,8 @@ public:
                 // -1,-2,-3,-9 总和== -15
                 //这种是有机会的
                 // 但是 8>-15 这种是没机会的, 因为已经排序好了的, 后面不会比前面还小
-                if(nums[i]+nums[k]>target && nums[i]+nums[k]>0){
-                    continue;
+                if(nums[i]+nums[k]>target && nums[i]+nums[k]>=0){
+                    break;
                 }
 
                 //b去重
