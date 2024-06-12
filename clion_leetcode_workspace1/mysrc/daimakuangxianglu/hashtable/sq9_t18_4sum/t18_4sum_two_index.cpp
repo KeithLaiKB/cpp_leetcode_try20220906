@@ -113,7 +113,7 @@ public:
                             ++left;
                         }
                         while(left<right && nums[right]==nums[right-1]){
-                            ++left;
+                            --right;
                         }
                         ++left;
                         --right;
