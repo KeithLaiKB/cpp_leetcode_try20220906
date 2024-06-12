@@ -1,7 +1,7 @@
 双index有
     t977    array           他不算是滑动窗口的思想, 他是靠左右两个index 往中间,然后 用一个新的数组去装
     t19     linkedlist      他不算是滑动窗口的思想, 他是固定了 左右两个index 同时往后移动
-
+    t15     hashtable       但我觉得这题和hashtable的联系 不是特别强, 他总体还是在array上滑动, 然后他用hashtable 中途保存一下 用来匹配
 
 
 双Index下有些特别的用法
