@@ -98,13 +98,13 @@ public:
                 int left = k +1;
                 int right = nums.size()-1;
                 for(;left<right;){
-                    if(nums[i]+nums[k]+nums[left]+nums[right]>target){
+                    if((long)nums[i]+nums[k]+nums[left]+nums[right]>target){
                         --right;
                     }
-                    else if(nums[i]+nums[k]+nums[left]+nums[right]<target){
+                    else if((long)nums[i]+nums[k]+nums[left]+nums[right]<target){
                         ++left;
                     }
-                    else if(nums[i]+nums[k]+nums[left]+nums[right]==target){
+                    else if((long)nums[i]+nums[k]+nums[left]+nums[right]==target){
                         //匹配成功, 放入结果中
                         result.push_back(vector<int>{nums[i],nums[k],nums[left],nums[right]});
                         //对后面将和现在一样的组合 先跳跃一次, 结合最后的++left 和 ++right 达到跳过考虑的效果，从而达到去重的效果,
