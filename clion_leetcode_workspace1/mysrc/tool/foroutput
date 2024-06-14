@@ -12,3 +12,16 @@
         string str_rs1(str1.substr(st_indx,len));
         cout<<str_rs1<<endl;
     }
+
+    void myOutput_VectorBVectorBintBB(vector<vector<int>>& nums, int st_indx, int ed_indx){
+            for(int i=st_indx;i<=ed_indx;i++){
+                for(int j=0;j<=nums[i].size()-1;j++){
+
+                    cout<<nums[i][j]<<"\t";
+                    if(j==nums[i].size()-1){
+                        cout<<endl;
+                    }
+
+                }
+            }
+    }
