@@ -108,8 +108,8 @@ public:
         }
     }
 
-    // 时间复杂度：O(n^3)
-    // 空间复杂度：O(1)
+    //时间复杂度: O(n)
+    //空间复杂度: O(1) 或 O(n)，取决于语言中字符串是否可变
     string reverseWords(string s) {
         removeExtraSpaces(s);
 

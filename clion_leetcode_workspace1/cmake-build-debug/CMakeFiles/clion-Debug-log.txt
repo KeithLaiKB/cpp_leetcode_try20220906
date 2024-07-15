@@ -27,10 +27,11 @@
     -- src/t206_RemoveNthNodeFromEndofList.cpp will be compiled to bin/t206_RemoveNthNodeFromEndofList
     -- src/t142_LinkedListCycleII.cpp will be compiled to bin/t142_LinkedListCycleII
     -- src/t151_ReverseWordsInAString.cpp will be compiled to bin/t151_ReverseWordsInAString
+    -- src/kmp.cpp will be compiled to bin/kmp
     -- src/wrong_use_refer_in_method.cpp will be compiled to bin/wrong_use_refer_in_method
     -- src/main.cpp will be compiled to bin/main
     -- src/main2.cpp will be compiled to bin/main2
     -- src/updatetocplus20test.cpp will be compiled to bin/updatetocplus20test
--- Configuring done (0.2s)
+-- Configuring done (0.0s)
 -- Generating done (0.1s)
 -- Build files have been written to: /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug
