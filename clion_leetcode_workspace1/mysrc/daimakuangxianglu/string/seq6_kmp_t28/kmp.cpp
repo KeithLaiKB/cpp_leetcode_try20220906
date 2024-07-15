@@ -151,10 +151,10 @@ public:
                 }
                 // 不相等
                 else if(str[pref_ed+1]!=str[surf_ed]){
-                    //记录下 当前pre的 前缀子串 最后一个的字符 的 index 而不是长度, 其实我觉得这里换成next[surf_ed]=-1都合理, 而且 next[surf_ed]=0 也跑过了leetcode的测试
+                    //记录下 当前pre的 前缀子串 最后一个的字符 的 index 而不是长度, 其实我觉得这里换成next[surf_ed]=-1都合理, 而且 next[surf_ed]=-1 也跑过了leetcode的测试
                     // 因为 如果这个时候都不相等, 此时 pref_ed 已经等于-1了
                     next[surf_ed]=pref_ed;
-                    //next[surf_ed]=0;
+                    //next[surf_ed]=-1;
                     cout<<"\t"<<next[surf_ed];
                     //不移动pref
                     //++pref_ed;
