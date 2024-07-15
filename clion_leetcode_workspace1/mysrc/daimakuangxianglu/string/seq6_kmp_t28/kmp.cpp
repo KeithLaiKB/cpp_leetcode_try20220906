@@ -9,19 +9,21 @@ using namespace std;
 
 /**
  *
- * Given an input string s, reverse the order of the words.
- * A word is defined as a sequence of non-space characters. The words in s will be separated by at least one space.
- * Return a string of the words in reverse order concatenated by a single space.
- * Note that s may contain leading or trailing spaces or multiple spaces between two words. The returned string should only have a single space separating the words. Do not include any extra spaces.
+ * Given two strings needle and haystack, return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
+
 
  * Example1:
- * Input: s = "the sky is blue"
- * Output: "blue is sky the"
+ * Input: haystack = "sadbutsad", needle = "sad"
+ * Output: 0
+ * Explanation: "sad" occurs at index 0 and 6.
+ * The first occurrence is at index 0, so we return 0.
  *
  * Example2:
- * Input: s = "  hello world  "
- * Output: "world hello"
+ * Input: haystack = "leetcode", needle = "leeto"
+ * Output: -1
+ * Explanation: "leeto" did not occur in "leetcode", so we return -1.
  *
+ * 这个文件 主要就是搞KMP的, 正好leetcode的28题 就是KMP 而且不需要为了 28题做任何输入输出调整, 就是完美适配
  *
  */
 class Solution {

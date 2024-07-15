@@ -917,11 +917,11 @@ build t151_ReverseWordsInAString: CXX_EXECUTABLE_LINKER__t151_ReverseWordsInAStr
 
 build cmake_object_order_depends_target_kmp: phony || CMakeFiles/kmp.dir
 
-build CMakeFiles/kmp.dir/mysrc/daimakuangxianglu/string/seq6_kmp/kmp.cpp.o: CXX_COMPILER__kmp_unscanned_Debug /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/string/seq6_kmp/kmp.cpp || cmake_object_order_depends_target_kmp
-  DEP_FILE = CMakeFiles/kmp.dir/mysrc/daimakuangxianglu/string/seq6_kmp/kmp.cpp.o.d
+build CMakeFiles/kmp.dir/mysrc/daimakuangxianglu/string/seq6_kmp_t28/kmp.cpp.o: CXX_COMPILER__kmp_unscanned_Debug /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/string/seq6_kmp_t28/kmp.cpp || cmake_object_order_depends_target_kmp
+  DEP_FILE = CMakeFiles/kmp.dir/mysrc/daimakuangxianglu/string/seq6_kmp_t28/kmp.cpp.o.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles/kmp.dir
-  OBJECT_FILE_DIR = CMakeFiles/kmp.dir/mysrc/daimakuangxianglu/string/seq6_kmp
+  OBJECT_FILE_DIR = CMakeFiles/kmp.dir/mysrc/daimakuangxianglu/string/seq6_kmp_t28
 
 
 # =============================================================================
@@ -931,7 +931,7 @@ build CMakeFiles/kmp.dir/mysrc/daimakuangxianglu/string/seq6_kmp/kmp.cpp.o: CXX_
 #############################################
 # Link the executable kmp
 
-build kmp: CXX_EXECUTABLE_LINKER__kmp_Debug CMakeFiles/kmp.dir/mysrc/daimakuangxianglu/string/seq6_kmp/kmp.cpp.o
+build kmp: CXX_EXECUTABLE_LINKER__kmp_Debug CMakeFiles/kmp.dir/mysrc/daimakuangxianglu/string/seq6_kmp_t28/kmp.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/kmp.dir
   POST_BUILD = :
