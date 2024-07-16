@@ -147,8 +147,12 @@ public:
  *
  *
  * 思路():
- *
- *
+ * 先预处理去掉空格
+ * "  sky is   blue  "
+ * -> "sky is blue"
+ *    sky is blue
+ * -> eulb si yks
+ * -> blue is sky
  *
  * */
 int main() {
