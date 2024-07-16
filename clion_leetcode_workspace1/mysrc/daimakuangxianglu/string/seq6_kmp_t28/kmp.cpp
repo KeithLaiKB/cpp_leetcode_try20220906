@@ -72,6 +72,8 @@ public:
 
         // 因为str[0]这个串 也就是str[1]的子串 是没有办法有真前缀和真后缀的
         next[0]=0;
+        cout<<"\t"<<next[0];
+
         for(;surf_ed<=str.size()-1;){
             //匹配相同 记录当前pref_ed在案 增加
             if(str[pref_ed]==str[surf_ed]){
@@ -116,13 +118,24 @@ public:
 
     }
 
-    //next数组的长度 是和当前这个str的长度一样的
+
+    /**
+     * next数组的长度 是和当前这个str的长度一样的
+     * 注意 在这种统一减一的方法中 官方起名这样 是有点歧义的,
+     * 我个人更倾向改名成 pref_ed_pre = -1, 这更能代表 pre字符串的最后一位的前一位的index
+     * 但为了说 更官方一致 我保持了  pref_ed =-1
+     *
+     * @param str
+     * @param next
+     */
     void getNext_mytryog_allminus1(string &str, int* next){
         int surf_ed = 1;
-        int pref_ed =-1;            //pre字符串的最后一位前一位的index, 整个搜查匹配都是pref_ed+1来匹配, -1使得跳转可读性更好(跳的是index 而不是需要长度-1)
+        int pref_ed =-1;            //pre字符串的最后一位的前一位的index, 整个搜查匹配都是pref_ed+1来匹配, -1使得跳转可读性更好(跳的是index 而不是需要长度-1)
 
         // 因为str[0]这个串 也就是str[1]的子串 是没有办法有真前缀和真后缀的
         next[0]=-1;
+        cout<<"\t"<<next[0];
+
         for(;surf_ed<=str.size()-1;){
             //匹配相同 记录当前pref_ed在案 增加
             if(str[pref_ed+1]==str[surf_ed]){       // pref_ed 当前pre字符串 最后一个的字符的 前一个字符的index, 所以需要 pref_ed+1

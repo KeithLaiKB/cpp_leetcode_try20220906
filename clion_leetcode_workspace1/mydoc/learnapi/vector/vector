@@ -63,8 +63,9 @@ resize---vector
 -----------------------------------
 使用.data()把指针传递给 另外一个方法中的 int*
 fun1(){
-getNext_mytryog(s,next.data());
+    vector<int> next(sub1.size());
+    getNext_mytryog_allminus1(sub1,next.data());
 }
 
-getNext_mytryog(){
+void getNext_mytryog_allminus1(string &str, int* next)(){
 }
