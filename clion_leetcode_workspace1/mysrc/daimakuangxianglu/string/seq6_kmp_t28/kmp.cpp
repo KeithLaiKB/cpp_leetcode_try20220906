@@ -201,7 +201,7 @@ public:
                 //cout<<str1[i]<<endl;
             }
             else if(str1[i]!=sub1[j]){
-                for(;j>=1 && str1[i]!=sub1[j];){
+                for(;j>=1 && str1[i]!=sub1[j];){        //让j-1>=0 因为j-1<0 就越界了
                     j = next[j-1];              // 这就是不统一减一带来的 不同, 因为他记录的是长度 所以变成下标 需要减一, 所以上面for 要 j>=1
                 }
                 //如果匹配成功 则sub往后走一位
