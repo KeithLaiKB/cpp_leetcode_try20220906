@@ -48,7 +48,8 @@
 						30,
 						31,
 						32,
-						33
+						33,
+						34
 					]
 				}
 			],
@@ -96,7 +97,8 @@
 						30,
 						31,
 						32,
-						33
+						33,
+						34
 					]
 				}
 			],
@@ -247,6 +249,13 @@
 					"id" : "t209_MinimumSizeSubarraySum_leetcode::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-t209_MinimumSizeSubarraySum_leetcode-Debug-e0efe570f8d6f981bc59.json",
 					"name" : "t209_MinimumSizeSubarraySum_leetcode",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "t20_ValidParentheses::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-t20_ValidParentheses-Debug-6e697f2834fa5d1a6cf9.json",
+					"name" : "t20_ValidParentheses",
 					"projectIndex" : 0
 				},
 				{
