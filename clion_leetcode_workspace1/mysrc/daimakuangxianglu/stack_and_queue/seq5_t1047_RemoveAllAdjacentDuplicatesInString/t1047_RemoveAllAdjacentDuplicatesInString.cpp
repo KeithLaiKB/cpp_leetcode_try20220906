@@ -23,7 +23,7 @@ using namespace std;
  * Input: s = "azxxzy"
  * Output: "ay"
  *
- * 题目中说字符串只会包含括号 但我想扩展 所以 允许其他字符在里面
+ *
  *
  */
 class Solution {
@@ -35,8 +35,8 @@ public:
 
     }
 
-    //时间复杂度: O(n+m)
-    //空间复杂度: O(m)
+    //时间复杂度: O(n)
+    //空间复杂度: O(n)
     string removeDuplicates(string str1) {
         stack<char> st1;
         for(int i=0;i<=str1.length()-1;i++){
