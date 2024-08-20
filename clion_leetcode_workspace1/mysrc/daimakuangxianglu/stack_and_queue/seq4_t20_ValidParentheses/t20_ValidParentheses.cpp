@@ -38,12 +38,12 @@ public:
 
     }
 
-    //时间复杂度: O(n+m)
-    //空间复杂度: O(m)
+    //时间复杂度: O(n)
+    //空间复杂度: O(n)
     bool isValid(string str1) {
         stack<char> st1;
         bool bl_result=false;
-        for(int i=0;i<=str1.length();i++){
+        for(int i=0;i<=str1.length()-1;i++){
             char ch_now=str1[i];
             //push
             if(ch_now =='['){

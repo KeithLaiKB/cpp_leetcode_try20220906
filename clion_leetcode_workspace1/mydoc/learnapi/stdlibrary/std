@@ -1,0 +1,4 @@
+reverse(rs1.begin(),rs1.end());
+时间复杂度o(n) 空间复杂读o(1)
+reverse(rs_rv1.begin(),rs_rv1.end());
+----------------------------------------------

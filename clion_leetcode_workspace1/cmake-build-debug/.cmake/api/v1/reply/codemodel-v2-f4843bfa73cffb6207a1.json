@@ -49,7 +49,8 @@
 						31,
 						32,
 						33,
-						34
+						34,
+						35
 					]
 				}
 			],
@@ -98,7 +99,8 @@
 						31,
 						32,
 						33,
-						34
+						34,
+						35
 					]
 				}
 			],
@@ -130,6 +132,13 @@
 					"id" : "t1002_FindCommonCharacters::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-t1002_FindCommonCharacters-Debug-cac1249a0b71e9888923.json",
 					"name" : "t1002_FindCommonCharacters",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "t1047_RemoveAllAdjacentDuplicatesInString::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-t1047_RemoveAllAdjacentDuplicatesInString-Debug-1af14f533385a9b037ec.json",
+					"name" : "t1047_RemoveAllAdjacentDuplicatesInString",
 					"projectIndex" : 0
 				},
 				{
