@@ -1,0 +1,4 @@
+mydoc里 有的基本是静态的学习文档 但是不可以执行的
+mysrc里 也会有一些学习文档 但他基本都是可以执行的
+    例如
+        探查 pointer reference 这些东西 在function当parameter的 结果

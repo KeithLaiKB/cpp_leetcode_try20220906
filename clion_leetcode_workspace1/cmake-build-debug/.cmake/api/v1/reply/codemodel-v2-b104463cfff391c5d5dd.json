@@ -51,7 +51,10 @@
 						33,
 						34,
 						35,
-						36
+						36,
+						37,
+						38,
+						39
 					]
 				}
 			],
@@ -102,7 +105,10 @@
 						33,
 						34,
 						35,
-						36
+						36,
+						37,
+						38,
+						39
 					]
 				}
 			],
@@ -113,6 +119,20 @@
 					"id" : "kmp::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-kmp-Debug-e0aa402921f013424a2d.json",
 					"name" : "kmp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "learn_class_generic1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-learn_class_generic1-Debug-4d0c49be7ce210e21fd3.json",
+					"name" : "learn_class_generic1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "learn_template_generic1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-learn_template_generic1-Debug-bbe4f8b344b11e8b6185.json",
+					"name" : "learn_template_generic1",
 					"projectIndex" : 0
 				},
 				{
@@ -274,6 +294,13 @@
 					"id" : "t20_ValidParentheses::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-t20_ValidParentheses-Debug-6e697f2834fa5d1a6cf9.json",
 					"name" : "t20_ValidParentheses",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "t239_SlidingWindowMaximum::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-t239_SlidingWindowMaximum-Debug-9f94a95f139359801a71.json",
+					"name" : "t239_SlidingWindowMaximum",
 					"projectIndex" : 0
 				},
 				{
