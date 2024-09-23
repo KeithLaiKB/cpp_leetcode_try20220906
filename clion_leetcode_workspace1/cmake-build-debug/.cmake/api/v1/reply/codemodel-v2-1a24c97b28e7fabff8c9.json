@@ -54,7 +54,9 @@
 						36,
 						37,
 						38,
-						39
+						39,
+						40,
+						41
 					]
 				}
 			],
@@ -108,7 +110,9 @@
 						36,
 						37,
 						38,
-						39
+						39,
+						40,
+						41
 					]
 				}
 			],
@@ -126,6 +130,13 @@
 					"id" : "learn_class_generic1::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-learn_class_generic1-Debug-4d0c49be7ce210e21fd3.json",
 					"name" : "learn_class_generic1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "learn_heapsort1_maxheap::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-learn_heapsort1_maxheap-Debug-3d3f88d9f4c2d6c4c861.json",
+					"name" : "learn_heapsort1_maxheap",
 					"projectIndex" : 0
 				},
 				{
@@ -315,6 +326,13 @@
 					"id" : "t27_RemoveElement::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-t27_RemoveElement-Debug-8e8f3416afe1b09017bf.json",
 					"name" : "t27_RemoveElement",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "t347_TopKFrequentElements::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-t347_TopKFrequentElements-Debug-46d36f5cf2d02041d5b3.json",
+					"name" : "t347_TopKFrequentElements",
 					"projectIndex" : 0
 				},
 				{

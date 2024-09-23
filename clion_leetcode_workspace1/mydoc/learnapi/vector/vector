@@ -77,3 +77,12 @@ fun1(){
 
 void getNext_mytryog_allminus1(string &str, int* next)(){
 }
+
+-----------------------------------------
+main中
+    solut1->Heapsort(str_vec1.data(),len);
+
+在这个局部函数中 修改r, 仍然会影响到main函数里的 str_vec1
+void Heapsort(int r[], int len)
+
+-----------------------------------------

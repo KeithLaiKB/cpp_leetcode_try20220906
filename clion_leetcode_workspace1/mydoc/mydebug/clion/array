@@ -1,0 +1,9 @@
+debug的时候 如果我想要debug这个方法里的r数组
+void SiftHeap_min(int r[], int len, int idx_root)
+
+一般来说debug模式下他只显示一个值
+
+所以
+在 下方的watch那里 输入
+例如 你的size是6 你就输入6, 数组名字是r就写r
+(int[6])*r
