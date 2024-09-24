@@ -41,6 +41,6 @@
     -- src/main2.cpp will be compiled to bin/main2
     -- src/learn_heapsort1_maxheap.cpp will be compiled to bin/learn_heapsort1_maxheap
     -- src/updatetocplus20test.cpp will be compiled to bin/updatetocplus20test
--- Configuring done (0.1s)
+-- Configuring done (0.0s)
 -- Generating done (0.1s)
 -- Build files have been written to: /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug
