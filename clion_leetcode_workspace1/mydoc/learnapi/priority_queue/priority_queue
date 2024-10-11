@@ -1,0 +1,36 @@
+priority_queue
+他可以自己自定义一个对比器，而且也能控制 大小排列
+
+对比器如下
+class MyComparison{
+public:
+    // 小根堆
+    // 谁的second值越小 放的就是越top, 然后就是top 的先被Pop掉
+    bool operator()(const pair<int,int> &num1_freq1, const pair<int,int> &num2_freq2){
+        return num1_freq1.second > num2_freq2.second;
+    }
+};
+
+
+然后建立
+priority_queue< pair<int, int>, vector<pair<int,int>>, MyComparison> prique1;
+
+
+
+插入删除的案例如下 参考了leetcode t347的代码
+    for(unordered_map<int,int>:: iterator it_tmp=map.begin();it_tmp!=map.end();it_tmp++){
+        prique1.push(*it_tmp);
+
+        // 下面这段代码只是优化使用空间 把n个空位的队列缩小成k个而已
+        // 可以删掉这段
+        // 例如 假设题目要求k=3
+        // 频数 2 4 11  已经再插入一个频数8的了
+        // 此时 为 2 4 8 11 >k=3
+        // 于是把2给弹出
+        if(prique1.size()>k){
+            prique1.pop();
+        }
+    }
+----------------------------------------------
+
+

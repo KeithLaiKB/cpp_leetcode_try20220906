@@ -8,6 +8,7 @@ using namespace std;
 // int* ptr         , int newSize               : 只 改写 输入源参数的值,     不改变 输入源 的地址
 // const int* ptr   , int size                  : 只 读取 输入源参数,        不改变 输入源 的值和地址
 
+// const vector<optional<int>> &arr;            ; const 代表不能修改arr, 但是传递参数进来的时候 是引用 而不是拷贝
 
 //×××××××××××××××××××××××××× 探查参数: int* ptr, int newSize ××××××××××××××××××××××××××××××××××××××××××
 // 这样int* ptr 只是能够改内容,

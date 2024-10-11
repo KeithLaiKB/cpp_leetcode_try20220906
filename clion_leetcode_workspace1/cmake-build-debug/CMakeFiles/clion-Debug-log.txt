@@ -13,6 +13,7 @@
     -- src/t209_MinimumSizeSubarraySum_daimakuagnixanglu.cpp will be compiled to bin/t209_MinimumSizeSubarraySum_daimakuagnixanglu
     -- src/t209_MinimumSizeSubarraySum_leetcode.cpp will be compiled to bin/t209_MinimumSizeSubarraySum_leetcode
     -- src/t59_SpiralMatrixII.cpp will be compiled to bin/t59_SpiralMatrixII
+    -- src/t144_BinaryTreePreorderTraversal_itera.cpp will be compiled to bin/t144_BinaryTreePreorderTraversal_itera
     -- src/t242_ValidAnagram.cpp will be compiled to bin/t242_ValidAnagram
     -- src/t1002_FindCommonCharacters.cpp will be compiled to bin/t1002_FindCommonCharacters
     -- src/t349_IntersectionofTwoArrays.cpp will be compiled to bin/t349_IntersectionofTwoArrays
@@ -41,6 +42,6 @@
     -- src/main2.cpp will be compiled to bin/main2
     -- src/learn_heapsort1_maxheap.cpp will be compiled to bin/learn_heapsort1_maxheap
     -- src/updatetocplus20test.cpp will be compiled to bin/updatetocplus20test
--- Configuring done (0.0s)
+-- Configuring done (0.1s)
 -- Generating done (0.1s)
 -- Build files have been written to: /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug
