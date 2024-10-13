@@ -42,7 +42,7 @@ public:
     ~Solution(){
 
     }
-    struct TreeNode {
+   struct TreeNode {
         int val;
         TreeNode *left;
         TreeNode *right;
@@ -50,6 +50,7 @@ public:
         TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
         TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
     };
+
 
     // [1,null,2,3]
     //       1
@@ -173,23 +174,23 @@ public:
 
     //时间复杂度: O(n)
     //空间复杂度:
-    vector<int> preorderTraversal(TreeNode* root) {
+    vector<int> inorderTraversal(TreeNode* root) {
         if(root == nullptr){
             return {};
         }
 
         vector<int> rs_vec = {};
 
+        //左
+        vector<int> left_tmp=inorderTraversal(root->left);
+        rs_vec.insert(rs_vec.end(),left_tmp.begin(),left_tmp.end());
+
         //中
         rs_vec.push_back(root->val);
         cout<<root->val<<endl;
 
-        //左
-        vector<int> left_tmp=preorderTraversal(root->left);
-        rs_vec.insert(rs_vec.end(),left_tmp.begin(),left_tmp.end());
-
         //右
-        vector<int> right_tmp=preorderTraversal(root->right);
+        vector<int> right_tmp=inorderTraversal(root->right);
         rs_vec.insert(rs_vec.end(),right_tmp.begin(),right_tmp.end());
         return rs_vec;
     }
@@ -205,6 +206,7 @@ int main() {
     Solution* solut1 = new Solution();
 
 
+
     std::vector<std::optional<int>> intopt_vec1 = {1, 2, 3, 4, 5, std::nullopt, 8, std::nullopt, std::nullopt, 6, 7, 9};
     intopt_vec1.reserve(100);
 
@@ -214,7 +216,7 @@ int main() {
     Solution::TreeNode* tree1 = solut1->initLinkedlist_ints(intopt_vec1);
     //solut1->myOutput_Treenode_int(tree1);
 
-    vector<int> rs_vec1= solut1->preorderTraversal(tree1);
+    vector<int> rs_vec1= solut1->inorderTraversal(tree1);
     cout<<"result"<<endl;
 
 
