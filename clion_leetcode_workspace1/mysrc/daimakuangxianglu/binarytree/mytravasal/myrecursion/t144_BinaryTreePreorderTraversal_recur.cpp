@@ -42,7 +42,7 @@ public:
     ~Solution(){
 
     }
-   struct TreeNode {
+    struct TreeNode {
         int val;
         TreeNode *left;
         TreeNode *right;
@@ -51,8 +51,7 @@ public:
         TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
     };
 
-
-// [1,null,2,3,4,5,6,7,null]
+    // [1,null,2,3,4,5,6,7,null]
     //           1
     //    |            |
     //   null          2
@@ -203,24 +202,92 @@ public:
 
     //时间复杂度: O(n)
     //空间复杂度:
-    vector<int> inorderTraversal(TreeNode* root) {
+    // [1,null,2,3,4,5,6,7,null]
+    //           1
+    //    |            |
+    //   null          2
+    //            |         |
+    //            3         4
+    //         |     |   |    |
+    //         5     6   7   null
+    // 塞1进去根节点队列
+    // stack:[1]
+    //
+    // 弹出1 然后对根节点(局部) 1 进行其 子节点的 装配
+    // 装配完 左边null 右边2, 然后把2 丢到 根节点队列
+    // stack:[2]
+    //       1
+    //    |      |
+    //   null    2
+    //
+    // 弹出2 然后对根节点(局部) 2 进行其 子节点的 装配
+    // 装配完 左边3 右边4, 然后把3和4 按照反过来的顺序 丢到 根节点栈
+    // stack:[4, 3]         而不是 [3, 4]
+    //       2
+    //    |     |
+    //    3     4
+    //
+    // 弹出3 然后对根节点(局部) 3 进行其 子节点的 装配
+    // 装配完 左边7 右边null, 然后把 5和6 按照反过来的顺序 丢到 根节点栈
+    // stack:[4, 6, 5]      而不是 [4,5,6]
+    //       3
+    //    |     |
+    //    5     6
+    //
+    // 弹出5 然后对根节点(局部) 4 进行其 子节点的 装配
+    // 装配完 左边null 右边null, 没有任何东西 丢到 根节点栈
+    // stack:[4, 6]
+    //       5
+    //
+    // 弹出6 然后对根节点(局部) 6 进行其 子节点的 装配
+    // 装配完 左边null 右边null, 没有任何东西 丢到 根节点栈
+    // stack:[4]
+    //       6
+    //
+    // 弹出4 然后对根节点(局部) 4 进行其 子节点的 装配
+    // 装配完 左边7 右边null, 把7 丢到 根节点队列
+    // stack:[7]
+    //       4
+    //    |     |
+    //    7     null
+    //
+    // 弹出7 然后对根节点(局部) 7 进行其 子节点的 装配
+    // 装配完 左边null 右边null, 没有任何东西 丢到 根节点队列
+    // queue:[]
+    //       7
+    // 结束
+    vector<int> preorderTraversal(TreeNode* root) {
         if(root == nullptr){
             return {};
         }
 
         vector<int> rs_vec = {};
+        TreeNode* root_tmp=root;
+        stack<TreeNode*> st_root;
 
-        //左
-        vector<int> left_tmp=inorderTraversal(root->left);
-        rs_vec.insert(rs_vec.end(),left_tmp.begin(),left_tmp.end());
+        st_root.push(root);
+        for(;st_root.empty()== false;){
+            root_tmp = st_root.top();
 
-        //中
-        rs_vec.push_back(root->val);
-        cout<<root->val<<endl;
+            //中
+            rs_vec.push_back(root_tmp->val);
+            cout<<root_tmp->val<<endl;
+            st_root.pop();
 
-        //右
-        vector<int> right_tmp=inorderTraversal(root->right);
-        rs_vec.insert(rs_vec.end(),right_tmp.begin(),right_tmp.end());
+            //反顺序 放进去 因为我们用的是stack
+            // 先放右
+            if(root_tmp->right != nullptr){
+                st_root.push(root_tmp->right);
+            }
+
+            //再放左
+            if(root_tmp->left != nullptr){
+                st_root.push(root_tmp->left);
+            }
+
+
+        }
+
         return rs_vec;
     }
 
@@ -235,7 +302,6 @@ int main() {
     Solution* solut1 = new Solution();
 
 
-
     std::vector<std::optional<int>> intopt_vec1 = {1, 2, 3, 4, 5, std::nullopt, 8, std::nullopt, std::nullopt, 6, 7, 9};
     intopt_vec1.reserve(100);
 
@@ -245,7 +311,7 @@ int main() {
     Solution::TreeNode* tree1 = solut1->initLinkedlist_ints(intopt_vec1);
     //solut1->myOutput_Treenode_int(tree1);
 
-    vector<int> rs_vec1= solut1->inorderTraversal(tree1);
+    vector<int> rs_vec1= solut1->preorderTraversal(tree1);
     cout<<"result"<<endl;
 
 
