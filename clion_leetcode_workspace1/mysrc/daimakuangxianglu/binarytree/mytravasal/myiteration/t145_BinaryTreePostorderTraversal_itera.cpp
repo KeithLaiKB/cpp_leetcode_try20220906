@@ -9,29 +9,10 @@ using namespace std;
 
 /**
  *
- * Given an integer array nums and an integer k,
- * return the k most frequent elements. You may return the answer in any order.
- *
- * Example1:
- * Input: nums = [1,1,1,2,2,3], k = 2
- * Output: [1,2]
- *
- *
- * Example2:
- * Input: nums = [1], k = 1
- * Output: [1]
- *
- * Follow up: Your algorithm's time complexity must be better than O(n log n), where n is the array's size.
+ * 后序遍历(递归)
  *
  */
-class MyComparison{
-public:
-    // 小根堆
-    // 谁的second值越小 放的就是越top, 然后就是top 的先被Pop掉
-    bool operator()(const pair<int,int> &num1_freq1, const pair<int,int> &num2_freq2){
-        return num1_freq1.second > num2_freq2.second;
-    }
-};
+
 class Solution {
 private:
 

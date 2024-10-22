@@ -17,6 +17,7 @@
     -- src/t145_BinaryTreePostorderTraversal_itera.cpp will be compiled to bin/t145_BinaryTreePostorderTraversal_itera
     -- src/t94_BinaryTreeInorderTraversal_itera.cpp will be compiled to bin/t94_BinaryTreeInorderTraversal_itera
     -- src/t144_BinaryTreePreorderTraversal_recur.cpp will be compiled to bin/t144_BinaryTreePreorderTraversal_recur
+    -- src/t145_BinaryTreePostorderTraversal_recur.cpp will be compiled to bin/t145_BinaryTreePostorderTraversal_recur
     -- src/t94_BinaryTreeInorderTraversal_recur.cpp will be compiled to bin/t94_BinaryTreeInorderTraversal_recur
     -- src/t242_ValidAnagram.cpp will be compiled to bin/t242_ValidAnagram
     -- src/t1002_FindCommonCharacters.cpp will be compiled to bin/t1002_FindCommonCharacters
@@ -47,5 +48,5 @@
     -- src/learn_heapsort1_maxheap.cpp will be compiled to bin/learn_heapsort1_maxheap
     -- src/updatetocplus20test.cpp will be compiled to bin/updatetocplus20test
 -- Configuring done (0.0s)
--- Generating done (0.1s)
+-- Generating done (0.0s)
 -- Build files have been written to: /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug

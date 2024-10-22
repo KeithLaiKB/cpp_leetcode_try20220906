@@ -9,25 +9,9 @@ using namespace std;
 
 /**
  *
- * Given an integer array nums and an integer k,
- * return the k most frequent elements. You may return the answer in any order.
- *
- * Example1:
- * Input: nums = [1,1,1,2,2,3], k = 2
- * Output: [1,2]
- *
- *
- * Example2:
- * Input: nums = [1], k = 1
- * Output: [1]
- *
- * Follow up: Your algorithm's time complexity must be better than O(n log n), where n is the array's size.
+ * 中序遍历(迭代)
  *
  */
-class MyComparison{
-public:
-
-};
 class Solution {
 private:
 

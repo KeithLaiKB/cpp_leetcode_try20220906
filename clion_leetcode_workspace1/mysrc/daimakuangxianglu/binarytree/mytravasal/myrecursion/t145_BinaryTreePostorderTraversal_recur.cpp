@@ -5,11 +5,12 @@
 #include <stack>
 #include <queue>
 #include <optional>
+#include <algorithm>
 using namespace std;
 
 /**
  *
- * 前序遍历(递归)
+ * 后序遍历(迭代)
  *
  */
 
@@ -31,6 +32,16 @@ public:
         TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
         TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
     };
+
+    template <typename T>
+    void myOutput_VectorBtB(vector<T>& nums, int st_indx, int ed_indx){
+        for(int i=st_indx;i<=ed_indx;i++){
+            cout<<nums[i]<<"\t";
+            if(i==ed_indx){
+                cout<<endl;
+            }
+        }
+    }
 
     // [1,null,2,3,4,5,6,7,null]
     //           1
@@ -183,24 +194,42 @@ public:
 
     //时间复杂度: O(n)
     //空间复杂度:
-    vector<int> preorderTraversal(TreeNode* root) {
+    // 相当于从前序便利的迭代版本 上更改 从 中左右(前序便利)->中右左(代码 的左和右 相反就行了)-> 左右中(把结果集合整体反过来就行了)
+    vector<int> postorderTraversal(TreeNode* root) {
         if(root == nullptr){
             return {};
         }
 
         vector<int> rs_vec = {};
+        TreeNode* root_tmp=root;
+        stack<TreeNode*> st_root;
 
-        //中
-        rs_vec.push_back(root->val);
-        cout<<root->val<<endl;
+        st_root.push(root);
+        for(;st_root.empty()== false;){
+            root_tmp = st_root.top();
 
-        //左
-        vector<int> left_tmp=preorderTraversal(root->left);
-        rs_vec.insert(rs_vec.end(),left_tmp.begin(),left_tmp.end());
+            //中
+            rs_vec.push_back(root_tmp->val);
+            cout<<root_tmp->val<<endl;
+            st_root.pop();
 
-        //右
-        vector<int> right_tmp=preorderTraversal(root->right);
-        rs_vec.insert(rs_vec.end(),right_tmp.begin(),right_tmp.end());
+
+            //再放左
+            if(root_tmp->left != nullptr){
+                st_root.push(root_tmp->left);
+            }
+
+            //反顺序 放进去 因为我们用的是stack
+            // 先放右
+            if(root_tmp->right != nullptr){
+                st_root.push(root_tmp->right);
+            }
+
+        }
+
+
+        //结果集合反过来
+        reverse(rs_vec.begin(),rs_vec.end());
         return rs_vec;
     }
 
@@ -224,9 +253,9 @@ int main() {
     Solution::TreeNode* tree1 = solut1->initLinkedlist_ints(intopt_vec1);
     //solut1->myOutput_Treenode_int(tree1);
 
-    vector<int> rs_vec1= solut1->preorderTraversal(tree1);
+    vector<int> rs_vec1= solut1->postorderTraversal(tree1);
     cout<<"result"<<endl;
-
+    solut1->myOutput_VectorBtB(rs_vec1,0,rs_vec1.size()-1);
 
     return 0;
 }

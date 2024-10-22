@@ -24,14 +24,7 @@ using namespace std;
  * Follow up: Your algorithm's time complexity must be better than O(n log n), where n is the array's size.
  *
  */
-class MyComparison{
-public:
-    // 小根堆
-    // 谁的second值越小 放的就是越top, 然后就是top 的先被Pop掉
-    bool operator()(const pair<int,int> &num1_freq1, const pair<int,int> &num2_freq2){
-        return num1_freq1.second > num2_freq2.second;
-    }
-};
+
 class Solution {
 private:
 
