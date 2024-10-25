@@ -38,7 +38,6 @@
 
 
 
-    //还没验证过这个
     template <typename T>
     void myOutput_VectorBtB(vector<T>& nums, int st_indx, int ed_indx){
         for(int i=st_indx;i<=ed_indx;i++){
@@ -46,5 +45,16 @@
             if(i==ed_indx){
                 cout<<endl;
             }
+        }
+    }
+
+    template <typename T>
+    void myOutput_VectorBvecBtBB(vector<vector<T>>& nums, int st_indx, int ed_indx){
+        for(int i=st_indx;i<=ed_indx;i++){
+            vector<T> vec_tmp = nums[i];
+            for(int j=0;j<=vec_tmp.size()-1;j++){
+                cout<<nums[j]<<"\t";
+            }
+            cout<<endl;
         }
     }
