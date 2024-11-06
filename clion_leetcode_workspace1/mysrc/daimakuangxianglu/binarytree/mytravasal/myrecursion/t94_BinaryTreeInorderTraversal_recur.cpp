@@ -464,6 +464,11 @@ public:
     //    7    null
     //
     // 结束
+    //
+    // 统一迭代方案
+    // 统一迭代 的代码当中 在 前中后序这三种遍历 没有任何代码的增加 或减少
+    // 统一迭代 的代码当中 只有 情况一中的 右 中 左 代码的顺序不同
+    //
     vector<int> inorderTraversal(TreeNode* root) {
         if(root == nullptr){
             return {};
@@ -485,17 +490,17 @@ public:
             if(root_tmp != nullptr){
                 st_root.pop();      //先弹出这个中间节点
 
-                //反顺序 放进去 因为我们用的是stack
+                //反顺序 放进去 因为我们用的是stack ------------------------------------
                 // 先放右
                 if(root_tmp->right != nullptr){
                     st_root.push(root_tmp->right);
                 }
-                //
+                //-----------------------------------------------------------------
                 // 放中
                 st_root.push(root_tmp);
                 // 放null 用来到 stack弹出的时候 代表中间的已经 访问过左手边的节点了 (因为是反顺序放的)
                 st_root.push(nullptr);
-                //
+                //-----------------------------------------------------------------
                 //再放左
                 if(root_tmp->left != nullptr){
                     st_root.push(root_tmp->left);

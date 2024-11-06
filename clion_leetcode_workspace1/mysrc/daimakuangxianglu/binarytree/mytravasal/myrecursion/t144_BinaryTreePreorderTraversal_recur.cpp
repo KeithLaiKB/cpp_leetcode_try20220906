@@ -249,7 +249,9 @@ public:
     // queue:[]
     //       7
     // 结束
-    vector<int> preorderTraversal(TreeNode* root) {
+    //
+    // 这个方法是我的 是可以通过leetcode 的
+    vector<int> preorderTraversal_my(TreeNode* root) {
         if(root == nullptr){
             return {};
         }
@@ -284,6 +286,69 @@ public:
         return rs_vec;
     }
 
+    // 统一迭代方案
+    // 用null 放在 中节点的后面
+    // 统一迭代 的代码当中 在 前中后序这三种遍历 没有任何代码的增加 或减少
+    // 统一迭代 的代码当中 只有 情况一中的 右 左 中 代码的顺序不同
+    vector<int> preorderTraversal(TreeNode* root) {
+        if(root == nullptr){
+            return {};
+        }
+
+        vector<int> rs_vec = {};
+        TreeNode* root_tmp=root;
+        stack<TreeNode*> st_root;
+
+        st_root.push(root);
+        for(;st_root.empty()== false;){
+            root_tmp = st_root.top();
+
+            // 情况一:
+            // 如果不为空 因为我们是stack 所以要反顺序,
+            // 也就是需要先把 右边的放进 根节点stack
+            // 因为我们的stack 会放一个null作为一个 已经搜寻过跟节点的标记
+            // 所以这里会比其他两种 多一个null的判断 !!!!!!
+            if(root_tmp != nullptr){
+                st_root.pop();      //先弹出这个中间节点
+
+                //反顺序 放进去 因为我们用的是stack ------------------------------------
+                // 先放右
+                if(root_tmp->right != nullptr){
+                    st_root.push(root_tmp->right);
+                }
+                //-----------------------------------------------------------------
+                //再放左
+                if(root_tmp->left != nullptr){
+                    st_root.push(root_tmp->left);
+                }
+                //-----------------------------------------------------------------
+                // 放中
+                st_root.push(root_tmp);
+                // 放null 用来到 stack弹出的时候 代表中间的已经 访问过左手边的节点了 (因为是反顺序放的)
+                st_root.push(nullptr);
+
+            }
+            // 情况二:
+            // 如果空 则弹出这个null
+            // 并且 再弹出这个 跟节点
+            else{
+                //弹出null
+                st_root.pop();
+
+                //将中间节点 并且塞入结果集合
+                root_tmp = st_root.top();
+                rs_vec.push_back(root_tmp->val);
+                cout<<root_tmp->val<<endl;
+
+                //弹出中间节点
+                st_root.pop();
+            }
+
+        }
+
+        return rs_vec;
+    }
+
 
 };
 
@@ -304,6 +369,7 @@ int main() {
     Solution::TreeNode* tree1 = solut1->initLinkedlist_ints(intopt_vec1);
     //solut1->myOutput_Treenode_int(tree1);
 
+    //vector<int> rs_vec1= solut1->preorderTraversal_my(tree1);
     vector<int> rs_vec1= solut1->preorderTraversal(tree1);
     cout<<"result"<<endl;
 

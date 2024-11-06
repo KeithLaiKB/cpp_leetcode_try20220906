@@ -475,35 +475,35 @@ build t59_SpiralMatrixII: CXX_EXECUTABLE_LINKER__t59_SpiralMatrixII_Debug CMakeF
   TARGET_PDB = t59_SpiralMatrixII.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target t102_BinaryTreeLevelorderTraversal_itera
+# Object build statements for EXECUTABLE target t226_InvertBinaryTree_preorder_itera
 
 
 #############################################
-# Order-only phony target for t102_BinaryTreeLevelorderTraversal_itera
+# Order-only phony target for t226_InvertBinaryTree_preorder_itera
 
-build cmake_object_order_depends_target_t102_BinaryTreeLevelorderTraversal_itera: phony || CMakeFiles/t102_BinaryTreeLevelorderTraversal_itera.dir
+build cmake_object_order_depends_target_t226_InvertBinaryTree_preorder_itera: phony || CMakeFiles/t226_InvertBinaryTree_preorder_itera.dir
 
-build CMakeFiles/t102_BinaryTreeLevelorderTraversal_itera.dir/mysrc/daimakuangxianglu/binarytree/mytravasal/myiteration/t102_BinaryTreeLevelorderTraversal_itera.cpp.o: CXX_COMPILER__t102_BinaryTreeLevelorderTraversal_itera_unscanned_Debug /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/mytravasal/myiteration/t102_BinaryTreeLevelorderTraversal_itera.cpp || cmake_object_order_depends_target_t102_BinaryTreeLevelorderTraversal_itera
-  DEP_FILE = CMakeFiles/t102_BinaryTreeLevelorderTraversal_itera.dir/mysrc/daimakuangxianglu/binarytree/mytravasal/myiteration/t102_BinaryTreeLevelorderTraversal_itera.cpp.o.d
+build CMakeFiles/t226_InvertBinaryTree_preorder_itera.dir/mysrc/daimakuangxianglu/binarytree/changetree/seq5_t226_InvertBinaryTree/myiteration/t226_InvertBinaryTree_preorder_itera.cpp.o: CXX_COMPILER__t226_InvertBinaryTree_preorder_itera_unscanned_Debug /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/changetree/seq5_t226_InvertBinaryTree/myiteration/t226_InvertBinaryTree_preorder_itera.cpp || cmake_object_order_depends_target_t226_InvertBinaryTree_preorder_itera
+  DEP_FILE = CMakeFiles/t226_InvertBinaryTree_preorder_itera.dir/mysrc/daimakuangxianglu/binarytree/changetree/seq5_t226_InvertBinaryTree/myiteration/t226_InvertBinaryTree_preorder_itera.cpp.o.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles/t102_BinaryTreeLevelorderTraversal_itera.dir
-  OBJECT_FILE_DIR = CMakeFiles/t102_BinaryTreeLevelorderTraversal_itera.dir/mysrc/daimakuangxianglu/binarytree/mytravasal/myiteration
+  OBJECT_DIR = CMakeFiles/t226_InvertBinaryTree_preorder_itera.dir
+  OBJECT_FILE_DIR = CMakeFiles/t226_InvertBinaryTree_preorder_itera.dir/mysrc/daimakuangxianglu/binarytree/changetree/seq5_t226_InvertBinaryTree/myiteration
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target t102_BinaryTreeLevelorderTraversal_itera
+# Link build statements for EXECUTABLE target t226_InvertBinaryTree_preorder_itera
 
 
 #############################################
-# Link the executable t102_BinaryTreeLevelorderTraversal_itera
+# Link the executable t226_InvertBinaryTree_preorder_itera
 
-build t102_BinaryTreeLevelorderTraversal_itera: CXX_EXECUTABLE_LINKER__t102_BinaryTreeLevelorderTraversal_itera_Debug CMakeFiles/t102_BinaryTreeLevelorderTraversal_itera.dir/mysrc/daimakuangxianglu/binarytree/mytravasal/myiteration/t102_BinaryTreeLevelorderTraversal_itera.cpp.o
+build t226_InvertBinaryTree_preorder_itera: CXX_EXECUTABLE_LINKER__t226_InvertBinaryTree_preorder_itera_Debug CMakeFiles/t226_InvertBinaryTree_preorder_itera.dir/mysrc/daimakuangxianglu/binarytree/changetree/seq5_t226_InvertBinaryTree/myiteration/t226_InvertBinaryTree_preorder_itera.cpp.o
   FLAGS = -g
-  OBJECT_DIR = CMakeFiles/t102_BinaryTreeLevelorderTraversal_itera.dir
+  OBJECT_DIR = CMakeFiles/t226_InvertBinaryTree_preorder_itera.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = t102_BinaryTreeLevelorderTraversal_itera
-  TARGET_PDB = t102_BinaryTreeLevelorderTraversal_itera.dbg
+  TARGET_FILE = t226_InvertBinaryTree_preorder_itera
+  TARGET_PDB = t226_InvertBinaryTree_preorder_itera.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target t144_BinaryTreePreorderTraversal_itera
@@ -1624,7 +1624,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug
 
-build all: phony t1_TwoSum_past t1_pre1_t242_ValidAnagram t1_pre1_t242_ValidAnagram_method2 t1_pre2_t349_IntersectionofTwoArrays t121_BestTimeToBuyAndSellStock t5_pre1_t647_Palindromic_Substrings t704_BinarySearch t27_RemoveElement t977_SquaresOfASortedArray t76_MinimumSizeSubarraySum t209_MinimumSizeSubarraySum t209_MinimumSizeSubarraySum_daimakuagnixanglu t209_MinimumSizeSubarraySum_leetcode t59_SpiralMatrixII t102_BinaryTreeLevelorderTraversal_itera t144_BinaryTreePreorderTraversal_itera t145_BinaryTreePostorderTraversal_itera t94_BinaryTreeInorderTraversal_itera t102_BinaryTreeLevelorderTraversal_recur t144_BinaryTreePreorderTraversal_recur t145_BinaryTreePostorderTraversal_recur t94_BinaryTreeInorderTraversal_recur t242_ValidAnagram t1002_FindCommonCharacters t349_IntersectionofTwoArrays t202_HappyNumber t1_TwoSum t454_4SumII t383_RansomNote t15_3Sum t15_3Sum_two_index t18_4sum_two_index t206_ReverseLinkedList t206_RemoveNthNodeFromEndofList t142_LinkedListCycleII t20_ValidParentheses t1047_RemoveAllAdjacentDuplicatesInString t150_EvaluateReversePolishNotation t239_SlidingWindowMaximum t347_TopKFrequentElements t151_ReverseWordsInAString kmp t459_RepeatedSubstringPattern learn_class_generic1 learn_template_generic1 wrong_use_refer_in_method main main2 learn_heapsort1_maxheap updatetocplus20test
+build all: phony t1_TwoSum_past t1_pre1_t242_ValidAnagram t1_pre1_t242_ValidAnagram_method2 t1_pre2_t349_IntersectionofTwoArrays t121_BestTimeToBuyAndSellStock t5_pre1_t647_Palindromic_Substrings t704_BinarySearch t27_RemoveElement t977_SquaresOfASortedArray t76_MinimumSizeSubarraySum t209_MinimumSizeSubarraySum t209_MinimumSizeSubarraySum_daimakuagnixanglu t209_MinimumSizeSubarraySum_leetcode t59_SpiralMatrixII t226_InvertBinaryTree_preorder_itera t144_BinaryTreePreorderTraversal_itera t145_BinaryTreePostorderTraversal_itera t94_BinaryTreeInorderTraversal_itera t102_BinaryTreeLevelorderTraversal_recur t144_BinaryTreePreorderTraversal_recur t145_BinaryTreePostorderTraversal_recur t94_BinaryTreeInorderTraversal_recur t242_ValidAnagram t1002_FindCommonCharacters t349_IntersectionofTwoArrays t202_HappyNumber t1_TwoSum t454_4SumII t383_RansomNote t15_3Sum t15_3Sum_two_index t18_4sum_two_index t206_ReverseLinkedList t206_RemoveNthNodeFromEndofList t142_LinkedListCycleII t20_ValidParentheses t1047_RemoveAllAdjacentDuplicatesInString t150_EvaluateReversePolishNotation t239_SlidingWindowMaximum t347_TopKFrequentElements t151_ReverseWordsInAString kmp t459_RepeatedSubstringPattern learn_class_generic1 learn_template_generic1 wrong_use_refer_in_method main main2 learn_heapsort1_maxheap updatetocplus20test
 
 # =============================================================================
 # Built-in targets

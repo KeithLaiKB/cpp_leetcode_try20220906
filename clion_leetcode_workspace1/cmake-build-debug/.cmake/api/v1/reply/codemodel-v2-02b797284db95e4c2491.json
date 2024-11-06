@@ -185,13 +185,6 @@
 				},
 				{
 					"directoryIndex" : 0,
-					"id" : "t102_BinaryTreeLevelorderTraversal_itera::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-t102_BinaryTreeLevelorderTraversal_itera-Debug-0ca7bb8755a6a77fa70d.json",
-					"name" : "t102_BinaryTreeLevelorderTraversal_itera",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 0,
 					"id" : "t102_BinaryTreeLevelorderTraversal_recur::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-t102_BinaryTreeLevelorderTraversal_recur-Debug-9d4658ceb77947f1ef7d.json",
 					"name" : "t102_BinaryTreeLevelorderTraversal_recur",
@@ -363,6 +356,13 @@
 					"id" : "t20_ValidParentheses::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-t20_ValidParentheses-Debug-6e697f2834fa5d1a6cf9.json",
 					"name" : "t20_ValidParentheses",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "t226_InvertBinaryTree_preorder_itera::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-t226_InvertBinaryTree_preorder_itera-Debug-3ebee4646d21ae7b0640.json",
+					"name" : "t226_InvertBinaryTree_preorder_itera",
 					"projectIndex" : 0
 				},
 				{
