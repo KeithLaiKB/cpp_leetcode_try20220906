@@ -1,7 +1,7 @@
 注意:
 统一迭代便利思路
 stack 里 先塞入 根节点
-for(){
+for(st_root.empty()== false){
     当前节点 = stack.top
     if(当前节点 不是 null){
         stack弹出当前节点

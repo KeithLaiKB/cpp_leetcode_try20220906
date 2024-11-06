@@ -316,6 +316,7 @@ int main() {
     Solution::TreeNode* tree1 = solut1->initLinkedlist_ints(intopt_vec1);
     //solut1->myOutput_Treenode_int(tree1);
 
+    //vector<int> rs_vec1= solut1->postorderTraversal_my(tree1);
     vector<int> rs_vec1= solut1->postorderTraversal(tree1);
     cout<<"result"<<endl;
     solut1->myOutput_VectorBtB(rs_vec1,0,rs_vec1.size()-1);

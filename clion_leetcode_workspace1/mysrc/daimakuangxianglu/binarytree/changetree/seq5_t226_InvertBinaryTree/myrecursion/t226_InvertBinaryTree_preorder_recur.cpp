@@ -28,7 +28,7 @@ public:
     ~Solution(){
 
     }
-   struct TreeNode {
+    struct TreeNode {
         int val;
         TreeNode *left;
         TreeNode *right;
@@ -93,8 +93,6 @@ public:
         return rs_head;
     }
 
-
-
     void myOutput_Treenode_int(TreeNode* root){
         if(root == nullptr){
             return;
@@ -136,21 +134,69 @@ public:
     //      所以是 O(logn)
     //  对于非平衡的二叉树（例如退化成链表的二叉树），递归调用的最大深度会达到: O(n)
     //      所以是 O(n)
+    //
+    // 它的主要代码基本 和 统一的迭代 一致, 除了在情况二那里 弄了个swap而已
     TreeNode* invertTree_preorder(TreeNode* root) {
-
-
         if(root == nullptr){
-            return {};
+        return {};
         }
 
-        TreeNode* treende_tmp = root->left;
-        root->left = root->right;
-        root->right = treende_tmp;
+        //vector<int> rs_vec = {};
+        TreeNode* root_tmp=root;
+        stack<TreeNode*> st_root;
 
-        //左
-        invertTree_preorder(root->left);
-        //右
-        invertTree_preorder(root->right);
+        st_root.push(root);
+        for(;st_root.empty()== false;){
+            root_tmp = st_root.top();
+
+            // 情况一:
+            // 如果不为空 因为我们是stack 所以要反顺序,
+            // 也就是需要先把 右边的放进 根节点stack
+            // 因为我们的stack 会放一个null作为一个 已经搜寻过跟节点的标记
+            // 所以这里会比其他两种 多一个null的判断 !!!!!!
+            if(root_tmp != nullptr){
+                st_root.pop();      //先弹出这个中间节点
+
+                //反顺序 放进去 因为我们用的是stack ------------------------------------
+                // 先放右
+                if(root_tmp->right != nullptr){
+                    st_root.push(root_tmp->right);
+                }
+                //-----------------------------------------------------------------
+                //再放左
+                if(root_tmp->left != nullptr){
+                    st_root.push(root_tmp->left);
+                }
+                //-----------------------------------------------------------------
+                // 放中
+                st_root.push(root_tmp);
+                // 放null 用来到 stack弹出的时候 代表中间的已经 访问过左手边的节点了 (因为是反顺序放的)
+                st_root.push(nullptr);
+
+            }
+                // 情况二:
+                // 如果空 则弹出这个null
+                // 并且 再弹出这个 跟节点
+            else{
+                //弹出null
+                st_root.pop();
+
+                //将中间节点 并且塞入结果集合
+                root_tmp = st_root.top();
+
+                //进行swap------------
+                TreeNode *temp_toswap = root_tmp->left;
+                root_tmp->left = root_tmp->right;
+                root_tmp->right = temp_toswap;
+                //-------------------
+
+                //cout<<root_tmp->val<<endl;
+
+                //弹出中间节点
+                st_root.pop();
+            }
+
+        }
 
         return root;
     }
