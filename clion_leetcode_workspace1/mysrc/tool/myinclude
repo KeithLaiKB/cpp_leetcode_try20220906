@@ -1,0 +1,16 @@
+//-------------------------------------------
+#include <iostream>
+//-------------------------------------------
+//general的使用, 如下
+
+#include <iostream>
+#include <string>
+#include <climits> //为了INT_MAX INT_MIN 他是根据平台调整的 除非你要32 则需要#include <cstdint> 来int32_t max32 = INT32_MAX;
+//-------------------------------------------
+//vector的使用, 如下
+
+#include <vector>
+#include <optional> //为了 vector<std::optional<int>> ={1,2,std::nullopt,3}
+//-------------------------------------------
+
+
