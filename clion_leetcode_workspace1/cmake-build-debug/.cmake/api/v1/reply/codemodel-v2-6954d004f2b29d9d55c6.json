@@ -67,7 +67,8 @@
 						49,
 						50,
 						51,
-						52
+						52,
+						53
 					]
 				}
 			],
@@ -134,7 +135,8 @@
 						49,
 						50,
 						51,
-						52
+						52,
+						53
 					]
 				}
 			],
@@ -208,6 +210,13 @@
 					"id" : "t1047_RemoveAllAdjacentDuplicatesInString::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-t1047_RemoveAllAdjacentDuplicatesInString-Debug-1af14f533385a9b037ec.json",
 					"name" : "t1047_RemoveAllAdjacentDuplicatesInString",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "t104_MaximumDepthOfBinaryTree::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-t104_MaximumDepthOfBinaryTree-Debug-9b084ef5d613acdabc86.json",
+					"name" : "t104_MaximumDepthOfBinaryTree",
 					"projectIndex" : 0
 				},
 				{

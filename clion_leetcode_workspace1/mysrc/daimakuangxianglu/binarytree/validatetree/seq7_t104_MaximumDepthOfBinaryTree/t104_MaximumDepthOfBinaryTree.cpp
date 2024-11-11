@@ -159,6 +159,8 @@ public:
 
 
 
+
+
     //时间复杂度: O(n)
     //空间复杂度:
     //  对于BFS来说  影响 主要是queue的大小
@@ -168,51 +170,57 @@ public:
     // 如果你使用DFS 他每一层不是所有节点都存储的, 所以他就会出现 O(logn)~O(n)的状况
     // 如果完全平衡二叉树 每一层就存储一个, 总个数 是 2^n=k
     // 所以 层数n =log(2n)=O(logn)
-    bool isSymmetric(TreeNode* root) {
-
+    //
+    // 但是这次用的是DFS
+    //
+    //
+    // [1,null,2,3,4,5,6,7,null]
+    //           1
+    //    |            |
+    //   null          2
+    //            |         |
+    //            3         4
+    //         |     |   |    |
+    //         5     6   7   null
+    int maxDepth(TreeNode* root) {
         if(root == nullptr){
-            return false;
+            return {};
         }
 
-        queue<TreeNode*> q_root;
-        bool rs1=true;
+        vector<int> rs_vec = {};
+        TreeNode* root_tmp=root;
+        stack<pair<TreeNode*,int>> st_root;
 
-        q_root.push(root->left);
-        q_root.push(root->right);
-        for(;q_root.empty()==false;){
-            TreeNode* left_tmp = q_root.front();
-            q_root.pop();
-            TreeNode* right_tmp = q_root.front();
-            q_root.pop();
+        int depth_tmp=0;
+        int rs_depth=0;
 
-            // 都是空相等
-            if(left_tmp== nullptr && right_tmp==nullptr){
-                continue;
-            }
-            else if(left_tmp!= nullptr && right_tmp!=nullptr){
-                if(left_tmp->val == right_tmp->val){
-                    //放入左和右分别的叶子节点
-                    q_root.push(left_tmp->left);        //ll
-                    q_root.push(right_tmp->right);      //rr
-                    q_root.push(left_tmp->right);       //lr
-                    q_root.push(right_tmp->left);       //rl
-                }
-                // 左右的值不想等, 结束
-                else{
-                    rs1=false;
-                    break;
-                }
-            }
-            // 左右有一个是空的 一个不是空的, 导致不相等
-            else{
-                rs1=false;
-                break;
-            }
+        //放入根节点
+        st_root.push({root_tmp,1});
 
+        for(;st_root.empty()==false;){
+            //中
+            root_tmp = st_root.top().first;
+            depth_tmp = st_root.top().second;
+
+            st_root.pop();
+
+            //比大小
+            rs_depth = depth_tmp>rs_depth?depth_tmp:rs_depth;
+
+
+
+            //左
+            if(root_tmp->left!=nullptr){
+                st_root.push({root_tmp->left,depth_tmp+1});
+            }
+            //右
+            if(root_tmp->right!=nullptr){
+                st_root.push({root_tmp->right,depth_tmp+1});
+            }
         }
 
 
-        return rs1;
+        return rs_depth;
     }
 
 
@@ -235,7 +243,7 @@ int main() {
     Solution::TreeNode* tree1 = solut1->initLinkedlist_ints(intopt_vec1);
     //solut1->myOutput_Treenode_int(tree1);
 
-    bool rs = solut1->isSymmetric(tree1);
+    int rs = solut1->maxDepth(tree1);
     cout<<"result"<<endl;
     cout<<rs<<endl;
 
