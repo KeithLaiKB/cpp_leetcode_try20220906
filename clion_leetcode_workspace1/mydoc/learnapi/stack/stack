@@ -4,3 +4,19 @@ stack<char> st;
 ----------------------------------------------
 st.empty()
 return true 意味着 里面空了
+
+
+----------------------------------------------
+stack 里包含有一个Pair
+
+        声明
+        stack<pair<TreeNode*,int>> st_root;
+
+        //放入根节点
+        st_root.push({root_tmp,1});
+
+        //取用
+        root_tmp = st_root.top().first;
+        depth_tmp = st_root.top().second;
+
+----------------------------------------------

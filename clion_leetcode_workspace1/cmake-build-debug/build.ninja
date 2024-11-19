@@ -847,6 +847,68 @@ build t104_MaximumDepthOfBinaryTree: CXX_EXECUTABLE_LINKER__t104_MaximumDepthOfB
   TARGET_PDB = t104_MaximumDepthOfBinaryTree.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target t111_MinimumDepthOfBinaryTree
+
+
+#############################################
+# Order-only phony target for t111_MinimumDepthOfBinaryTree
+
+build cmake_object_order_depends_target_t111_MinimumDepthOfBinaryTree: phony || CMakeFiles/t111_MinimumDepthOfBinaryTree.dir
+
+build CMakeFiles/t111_MinimumDepthOfBinaryTree.dir/mysrc/daimakuangxianglu/binarytree/validatetree/seq8_t111_MinimumDepthOfBinaryTree/t111_MinimumDepthOfBinaryTree.cpp.o: CXX_COMPILER__t111_MinimumDepthOfBinaryTree_unscanned_Debug /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/validatetree/seq8_t111_MinimumDepthOfBinaryTree/t111_MinimumDepthOfBinaryTree.cpp || cmake_object_order_depends_target_t111_MinimumDepthOfBinaryTree
+  DEP_FILE = CMakeFiles/t111_MinimumDepthOfBinaryTree.dir/mysrc/daimakuangxianglu/binarytree/validatetree/seq8_t111_MinimumDepthOfBinaryTree/t111_MinimumDepthOfBinaryTree.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/t111_MinimumDepthOfBinaryTree.dir
+  OBJECT_FILE_DIR = CMakeFiles/t111_MinimumDepthOfBinaryTree.dir/mysrc/daimakuangxianglu/binarytree/validatetree/seq8_t111_MinimumDepthOfBinaryTree
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target t111_MinimumDepthOfBinaryTree
+
+
+#############################################
+# Link the executable t111_MinimumDepthOfBinaryTree
+
+build t111_MinimumDepthOfBinaryTree: CXX_EXECUTABLE_LINKER__t111_MinimumDepthOfBinaryTree_Debug CMakeFiles/t111_MinimumDepthOfBinaryTree.dir/mysrc/daimakuangxianglu/binarytree/validatetree/seq8_t111_MinimumDepthOfBinaryTree/t111_MinimumDepthOfBinaryTree.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/t111_MinimumDepthOfBinaryTree.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = t111_MinimumDepthOfBinaryTree
+  TARGET_PDB = t111_MinimumDepthOfBinaryTree.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target t222_CountCompleteTreeNodes
+
+
+#############################################
+# Order-only phony target for t222_CountCompleteTreeNodes
+
+build cmake_object_order_depends_target_t222_CountCompleteTreeNodes: phony || CMakeFiles/t222_CountCompleteTreeNodes.dir
+
+build CMakeFiles/t222_CountCompleteTreeNodes.dir/mysrc/daimakuangxianglu/binarytree/validatetree/seq9_t222_CountCompleteTreeNodes/t222_CountCompleteTreeNodes.cpp.o: CXX_COMPILER__t222_CountCompleteTreeNodes_unscanned_Debug /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/validatetree/seq9_t222_CountCompleteTreeNodes/t222_CountCompleteTreeNodes.cpp || cmake_object_order_depends_target_t222_CountCompleteTreeNodes
+  DEP_FILE = CMakeFiles/t222_CountCompleteTreeNodes.dir/mysrc/daimakuangxianglu/binarytree/validatetree/seq9_t222_CountCompleteTreeNodes/t222_CountCompleteTreeNodes.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/t222_CountCompleteTreeNodes.dir
+  OBJECT_FILE_DIR = CMakeFiles/t222_CountCompleteTreeNodes.dir/mysrc/daimakuangxianglu/binarytree/validatetree/seq9_t222_CountCompleteTreeNodes
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target t222_CountCompleteTreeNodes
+
+
+#############################################
+# Link the executable t222_CountCompleteTreeNodes
+
+build t222_CountCompleteTreeNodes: CXX_EXECUTABLE_LINKER__t222_CountCompleteTreeNodes_Debug CMakeFiles/t222_CountCompleteTreeNodes.dir/mysrc/daimakuangxianglu/binarytree/validatetree/seq9_t222_CountCompleteTreeNodes/t222_CountCompleteTreeNodes.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/t222_CountCompleteTreeNodes.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = t222_CountCompleteTreeNodes
+  TARGET_PDB = t222_CountCompleteTreeNodes.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target t242_ValidAnagram
 
 
@@ -1748,7 +1810,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug
 
-build all: phony t1_TwoSum_past t1_pre1_t242_ValidAnagram t1_pre1_t242_ValidAnagram_method2 t1_pre2_t349_IntersectionofTwoArrays t121_BestTimeToBuyAndSellStock t5_pre1_t647_Palindromic_Substrings t704_BinarySearch t27_RemoveElement t977_SquaresOfASortedArray t76_MinimumSizeSubarraySum t209_MinimumSizeSubarraySum t209_MinimumSizeSubarraySum_daimakuagnixanglu t209_MinimumSizeSubarraySum_leetcode t59_SpiralMatrixII t226_InvertBinaryTree_preorder_itera t226_InvertBinaryTree_levelorder_recur t226_InvertBinaryTree_preorder_recur t144_BinaryTreePreorderTraversal_itera t145_BinaryTreePostorderTraversal_itera t94_BinaryTreeInorderTraversal_itera t102_BinaryTreeLevelorderTraversal_recur t144_BinaryTreePreorderTraversal_recur t145_BinaryTreePostorderTraversal_recur t94_BinaryTreeInorderTraversal_recur t101_SymmetricTree t104_MaximumDepthOfBinaryTree t242_ValidAnagram t1002_FindCommonCharacters t349_IntersectionofTwoArrays t202_HappyNumber t1_TwoSum t454_4SumII t383_RansomNote t15_3Sum t15_3Sum_two_index t18_4sum_two_index t206_ReverseLinkedList t206_RemoveNthNodeFromEndofList t142_LinkedListCycleII t20_ValidParentheses t1047_RemoveAllAdjacentDuplicatesInString t150_EvaluateReversePolishNotation t239_SlidingWindowMaximum t347_TopKFrequentElements t151_ReverseWordsInAString kmp t459_RepeatedSubstringPattern learn_class_generic1 learn_template_generic1 wrong_use_refer_in_method main main2 learn_heapsort1_maxheap updatetocplus20test
+build all: phony t1_TwoSum_past t1_pre1_t242_ValidAnagram t1_pre1_t242_ValidAnagram_method2 t1_pre2_t349_IntersectionofTwoArrays t121_BestTimeToBuyAndSellStock t5_pre1_t647_Palindromic_Substrings t704_BinarySearch t27_RemoveElement t977_SquaresOfASortedArray t76_MinimumSizeSubarraySum t209_MinimumSizeSubarraySum t209_MinimumSizeSubarraySum_daimakuagnixanglu t209_MinimumSizeSubarraySum_leetcode t59_SpiralMatrixII t226_InvertBinaryTree_preorder_itera t226_InvertBinaryTree_levelorder_recur t226_InvertBinaryTree_preorder_recur t144_BinaryTreePreorderTraversal_itera t145_BinaryTreePostorderTraversal_itera t94_BinaryTreeInorderTraversal_itera t102_BinaryTreeLevelorderTraversal_recur t144_BinaryTreePreorderTraversal_recur t145_BinaryTreePostorderTraversal_recur t94_BinaryTreeInorderTraversal_recur t101_SymmetricTree t104_MaximumDepthOfBinaryTree t111_MinimumDepthOfBinaryTree t222_CountCompleteTreeNodes t242_ValidAnagram t1002_FindCommonCharacters t349_IntersectionofTwoArrays t202_HappyNumber t1_TwoSum t454_4SumII t383_RansomNote t15_3Sum t15_3Sum_two_index t18_4sum_two_index t206_ReverseLinkedList t206_RemoveNthNodeFromEndofList t142_LinkedListCycleII t20_ValidParentheses t1047_RemoveAllAdjacentDuplicatesInString t150_EvaluateReversePolishNotation t239_SlidingWindowMaximum t347_TopKFrequentElements t151_ReverseWordsInAString kmp t459_RepeatedSubstringPattern learn_class_generic1 learn_template_generic1 wrong_use_refer_in_method main main2 learn_heapsort1_maxheap updatetocplus20test
 
 # =============================================================================
 # Built-in targets
