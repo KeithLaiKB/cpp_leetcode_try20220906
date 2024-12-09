@@ -5,25 +5,13 @@
 #include <stack>
 #include <queue>
 #include <optional>
+#include <climits>
+
 using namespace std;
 
 /**
- *Given the root of a binary tree, return its maximum depth.
- * A binary tree's maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
- *
- *
- *
- *  [1,2,2,3,4,4,3,5,6,null,8,8,null,6,5]
-
-                                    1
-                    |                               |
-                    2                               2
-            |               |               |               |
-            3               4               4               3
-        |       |       |       |       |       |       |       |
-        5       6     null      8       8      null     6       5
-
-
+ * Given Given a binary tree,
+ * determine if it is height-balanced.
  *
  */
 
@@ -149,57 +137,55 @@ public:
     // 如果完全平衡二叉树 每一层就存储一个, 总个数 是 2^n=k
     // 所以 层数n =log(2n)=O(logn)
     //
-    // 但是这次用的是DFS  变种的先序遍历
-    //
-    //
-    // [1,null,2,3,4,5,6,7,null]
-    //           1
-    //    |            |
-    //   null          2
-    //            |         |
-    //            3         4
-    //         |     |   |    |
-    //         5     6   7   null
-    int maxDepth(TreeNode* root) {
+    // 但是这次用的是DFS 变种的先序遍历
+    int countHeight(TreeNode* root) {
+        if(root->left == nullptr && root->right == nullptr){
+            return 1;
+        }
+        TreeNode *root_tmp = root;
+
+        int height_l_tmp =0;
+        int height_r_tmp =0;
+
+        //分别获得 左子树 和 右子树 的height
+        if(root->left != nullptr){
+            height_l_tmp = countHeight(root->left);
+        }
+        if(root->right != nullptr){
+            height_r_tmp = countHeight(root->right);
+        }
+
+        //判断左右子树的高度差
+        if(height_l_tmp == -1 || height_r_tmp == -1){
+            return -1;
+        }
+        else if(abs(height_l_tmp-height_r_tmp)>=2){
+            return -1;
+        }
+        //完全平二叉树 左右子树高度不能超过1
+        else if(abs(height_l_tmp-height_r_tmp)<=1){
+            //返回当前 1(根节点)+ 左子树或右子树 其中的最大的高度
+            return 1 + max(height_l_tmp, height_r_tmp);
+        }
+
+        //基本不会用到这里了, 只是加上这个 有问题能马上发现
+        return -1;
+    }
+
+    bool isBalanced_recur(TreeNode* root) {
+        //空树也是 balanced binary tree
         if(root == nullptr){
-            return {};
+            return true;
         }
 
-        vector<int> rs_vec = {};
-        TreeNode* root_tmp=root;
-        stack<pair<TreeNode*,int>> st_root;
-
-        int depth_tmp=0;
-        int rs_depth=0;
-
-        //放入根节点
-        st_root.push({root_tmp,1});
-
-        for(;st_root.empty()==false;){
-            //中
-            root_tmp = st_root.top().first;
-            depth_tmp = st_root.top().second;
-
-            st_root.pop();
-
-            //比大小
-            rs_depth = depth_tmp>rs_depth?depth_tmp:rs_depth;
-
-
-            //右
-            if(root_tmp->right!=nullptr){
-                st_root.push({root_tmp->right,depth_tmp+1});
-            }
-
-            //左
-            if(root_tmp->left!=nullptr){
-                st_root.push({root_tmp->left,depth_tmp+1});
-            }
-
+        //非空树
+        int rs= countHeight(root);
+        if(rs==-1){
+            return false;
         }
-
-
-        return rs_depth;
+        else{
+            return true;
+        }
     }
 
 
@@ -213,7 +199,8 @@ int main() {
 
 
 
-    std::vector<std::optional<int>> intopt_vec1 = {1,2,2,3,4,4,3,5,6,std::nullopt,8,8,std::nullopt,6,5};
+    //std::vector<std::optional<int>> intopt_vec1 = {1,2,2,3,4,4,3,5,6,std::nullopt,8,std::nullopt,std::nullopt,6,5};
+    std::vector<std::optional<int>> intopt_vec1 = {3,9,20,std::nullopt,std::nullopt,15,7};
     intopt_vec1.reserve(100);
 
 
@@ -222,7 +209,7 @@ int main() {
     Solution::TreeNode* tree1 = solut1->initLinkedlist_ints(intopt_vec1);
     //solut1->myOutput_Treenode_int(tree1);
 
-    int rs = solut1->maxDepth(tree1);
+    int rs = solut1->isBalanced_recur(tree1);
     cout<<"result"<<endl;
     cout<<rs<<endl;
 

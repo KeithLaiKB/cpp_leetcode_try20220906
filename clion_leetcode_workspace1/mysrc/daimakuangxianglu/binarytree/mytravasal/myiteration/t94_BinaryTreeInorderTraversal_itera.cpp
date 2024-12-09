@@ -9,10 +9,9 @@ using namespace std;
 
 /**
  *
- * 中序遍历(递归)
+ * 中序遍历(迭代)
  *
  */
-
 class Solution {
 private:
 
@@ -23,7 +22,7 @@ public:
     ~Solution(){
 
     }
-   struct TreeNode {
+    struct TreeNode {
         int val;
         TreeNode *left;
         TreeNode *right;
@@ -184,28 +183,349 @@ public:
 
     //时间复杂度: O(n)
     //空间复杂度:
+    // [1,null,2,3,4,5,6,7,null]
+    //           1
+    //    |            |
+    //   null          2
+    //            |         |
+    //            3         4
+    //         |     |   |    |
+    //         5     6   7   null
+    // 塞1进去根节点队列
+    // stack:[1]
+    //
+    // 滑到1 然后对根节点(局部) 1 准备进行其 左叶子节点方向滑动
+    // stack:[1]
+    //       1
+    //    |      |
+    //   null    2
+    //
+    // 左边为null 弹出1      vec={1}
+    // 然后准备 对根节点(局部) 向 1 的右叶子节点方向滑动
+    // 然后把 右叶子节点 2 丢到 根节点栈
+    // stack:[2]
+    //       1
+    //    |      |
+    //   null    2
+    //
+    // 滑到2
+    // 左边不为null 不弹出2
+    // 然后对根节点(局部) 2 准备进行其 左叶子节点方向滑动
+    // 然后把 左叶子节点 3 丢到 根节点栈
+    // stack:[2, 3]
+    //       2
+    //    |     |
+    //    3     4
+    //
+    // 滑到3
+    // 左边不为null 不弹出3
+    // 然后对根节点(局部) 3 准备进行其 左叶子节点方向滑动
+    // 然后把 左叶子节点 5 丢到 根节点栈
+    // stack:[2, 3, 5]
+    //       3
+    //    |     |
+    //    5     6
+    //
+    // 滑到5
+    // 左边为null 弹出5      vec={1, 5}
+    // stack:[2, 3]
+    //       5
+    //
+    // 然后发现 5 的右边也为null
+    // 弹出3                vec={1, 5, 3}
+    // 然后准备 对根节点(局部) 向 3 的右叶子节点方向滑动
+    // 然后把 右叶子节点 6 丢到 根节点栈
+    // stack:[2, 6]
+    //       3
+    //    |     |
+    //    5     6
+    //
+    // 滑到6
+    // 左边为null 弹出6        vec={1, 5, 3, 6}
+    // stack:[2]
+    //       6
+    //
+    // 然后发现 6 的右边也为null
+    // 弹出2                  vec={1, 5, 3, 6, 2}
+    // 然后准备 对根节点(局部) 向 2 的右叶子节点方向滑动
+    // 然后把 右叶子节点 4 丢到 根节点栈
+    // stack:[4]
+    //       2
+    //    |     |
+    //    3     4
+    //
+    // 滑到4
+    // 左边不为null 不弹出4
+    // 然后对根节点(局部) 4 准备进行其 左叶子节点方向滑动
+    // 然后把 左叶子节点 7 丢到 根节点栈
+    // stack:[4, 7]
+    //       4
+    //    |     |
+    //    7     null
+    //
+    // 滑到7
+    // 左边为null 弹出7          vec={1, 5, 3, 6, 2, 7}
+    // stack:[4]
+    //       7
+
+    // 然后发现 7 的右边为null
+    // 弹出4                    vec={1, 5, 3, 6, 2, 7, 4}
+    // 然后准备 对根节点(局部) 向 4 的右叶子节点方向滑动
+    // 可是右边为null
+    // stack:[]
+    //       4
+    //    |     |
+    //    7     null
+    //
+    // 结束
+    //
+    // 还没弄成功
+    vector<int> inorderTraversal_notcompleted(TreeNode* root) {
+        if(root == nullptr){
+            return {};
+        }
+
+        vector<int> rs_vec = {};
+        TreeNode* root_tmp=root;
+        stack<TreeNode*> st_root;
+
+        st_root.push(root);
+
+        // 根节点栈
+        for(;st_root.empty()== false;){
+
+            // 左侧叶子节点不为空
+            if(root_tmp->left!= nullptr){
+                st_root.push(root_tmp->left);
+                //
+                //然后继续往左下延伸
+                root_tmp = root_tmp->left;
+            }
+            // 当前的根节点 左侧叶子节点为空, 那么就是剩下 左中右 里 的中和右
+            else{
+                //中
+                cout<<root_tmp->val<<endl;
+                rs_vec.push_back(root_tmp->val);
+
+                //弹出当前根节点
+                st_root.pop();
+
+                //然后处理右侧
+                //右侧叶子节点不为空
+                if(root_tmp->right!= nullptr){
+                    st_root.push(root_tmp->right);
+                    //
+                    //然后继续往右下延伸
+                    root_tmp = root_tmp->right;
+                }
+                // 右侧叶子节点为空
+                else{
+                    // 该根节点下方所有的子节点 已完成
+                    // 需要 准备下一轮 处理 之前未搜寻过右侧孩子节点 的根节点
+                    root_tmp = st_root.top();
+                    cout<<root_tmp->val<<endl;
+                    rs_vec.push_back(root_tmp->val);    //根节点放入
+                    //弹出此时的根节点
+                    st_root.pop();
+
+                    root_tmp = root_tmp->right;    //下一轮直接搜寻他的右节点
+                    st_root.push(root_tmp->right);  //下轮他是根节点 所以也要放进去
+                }
+
+
+            }
+
+        }
+
+        return rs_vec;
+    }
+
+    //时间复杂度: O(n)
+    //空间复杂度:
+    // [1,null,2,3,4,5,6,7,null]
+    //           1
+    //    |            |
+    //   null          2
+    //            |         |
+    //            3         4
+    //         |     |   |    |
+    //         5     6   7   null
+    //
+    // 注意一下stack里的null不代表任何null节点, 只是作为访问过得节点的标记而已
+    // 塞1进去根节点队列
+    // stack:[1]
+    //
+    // 弹出1, 因为不是null, 则属于第一种情况
+    // 右: 塞入2,
+    // 中: 再塞如2 的跟节点1,
+    //     1已经访问过, 所以再塞入一个null 只是 当作访问过1的标记
+    // 左: 左边为空 则 不塞入 也不需要塞入null
+    // stack:[2, 1， null]
+    //       1
+    //    |      |
+    //   null    2
+    //
+    // 弹出null, 因为是null, 则属于第二种情况 (也就是说如果此时不为null, 现在应当搜索的就是上一轮 1节点 的左叶子作为根节点, 所以 现在搜索的是1节点的右手边)
+    // 再弹出 stack上的top 1 并塞入结果集里 vec={1}
+    // stack:[2]
+    //       1
+    //    |      |
+    //   null    2
+    //
+    // 弹出2, 因为不是null, 则属于第一种情况 (所以 现在搜索的是2节点 左叶子和右叶子节点)
+    // 右: 塞入4,
+    // 中: 再塞入4 的根节点2,
+    //     2已经访问过, 所以再塞入一个null 只是 当作访问过2的标记
+    // 左: 塞入3
+    // stack:[4, 2, null, 3]
+    //       2
+    //    |     |
+    //    3     4
+    //
+    // 弹出3, 因为不是null, 则属于第一种情况 (所以 现在搜索的是3节点 左叶子和右叶子节点)
+    // 右: 塞入6,
+    // 中: 再塞如6 的根节点3,
+    //     3已经访问过, 所以再塞入一个null 只是 当作访问过3的标记
+    // 左: 左边为5
+    // stack:[4, 2， null, 6, 3, null, 5]
+    //       3
+    //    |     |
+    //    5     6
+    //
+    // 弹出5, 因为不是null, 则属于第一种情况 (所以 现在搜索的是5节点 左叶子和右叶子节点)
+    // 右: 右边为空 则 不塞入 也不需要塞入null
+    // 中: 再塞入 的根节点5,
+    //     5已经访问过, 所以再塞入一个null 只是 当作访问过5的标记
+    // 左: 左边为空 不塞入 也不需要塞入null  (这过程就是 搜索 5的左叶子节点)
+    // stack:[4, 2， null, 6, 3, null, 5, null]
+    //       5
+    //
+    // 弹出null, 因为是null, 则属于第二种情况 (也就是说如果此时不为null, 现在应当搜索的就是上一轮 5 的左叶子作为根节点, 但是 现在搜索的是5节点的右手边)
+    // 再弹出 stack上的top 5 并塞入结果集里 vec={1, 5}
+    // stack:[4, 2， null, 6, 3, null]
+    //       5
+    //
+    // 弹出null, 因为是null, 则属于第二种情况 (也就是说如果此时不为null, 搜索的就是上一轮 5 的左叶子 或右叶子节点!!!!!!!, 但是 现在搜索的是3节点的右手边)
+    // 再弹出 stack上的top 3 并塞入结果集里 vec={1, 5, 3}
+    // stack:[4, 2， null, 6]
+    //       3
+    //    |     |
+    //    5     6
+    //
+    // 弹出6, 因为不是null, 则属于第一种情况 (所以 现在搜索的是6节点 左叶子和右叶子节点)
+    // 右: 右边为空 则 不塞入 也不需要塞入null
+    // 中: 再塞入 的根节点6,
+    //     6已经访问过, 所以再塞入一个null 只是 当作访问过6的标记
+    // 左: 左边为空 不塞入 也不需要塞入null (这过程就是 搜索 6的左叶子节点)
+    // stack:[4, 2， null, 6, null]
+    //       6
+    //
+    // 弹出null, 因为是null, 则属于第二种情况 (也就是说如果此时不为null, 搜索的就是上一轮 6 的左叶子, 所以 现在搜索的是6节点的右手边)
+    // 再弹出 stack上的top 6 并塞入结果集里 vec={1, 5, 3, 6}
+    // stack:[4, 2， null]
+    //       6
+    //
+    // 弹出null, 因为是null, 则属于第二种情况 (也就是说如果此时不为null, 搜索的就是上一轮 6 的左叶子或右叶子, 所以 现在搜索的是2节点的右手边)
+    // 再弹出 stack上的top 2 并塞入结果集里 vec={1, 5, 3, 6, 2}
+    // stack:[4]
+    //       2
+    //    |     |
+    //    3     4
+    //
+    // 弹出4, 因为不是null, 则属于第一种情况 (所以 现在搜索的是4 的右叶子节点)
+    // 右: 右边为空 则 不塞入 也不需要塞入null
+    // 中: 再塞入 的根节点4,
+    //     4已经访问过, 所以再塞入一个null 只是 当作访问过2的标记
+    // 左: 塞入7
+    // stack:[4, null, 7]
+    //       4
+    //    |     |
+    //    7    null
+    //
+    //
+    // 弹出7, 因为不是null, 则属于第一种情况 (所以 现在搜索的是7 的右叶子节点)
+    // 右: 右边为空 则 不塞入 也不需要塞入null
+    // 中: 再塞入 的根节点7,
+    //     7已经访问过, 所以再塞入一个null 只是 当作访问过2的标记
+    // 左: 左边为空 不塞入 也不需要塞入null (这过程就是 搜索 7的左叶子节点)
+    // stack:[4, null, 7, null]
+    //       7
+    //
+    // 弹出null, 因为是null, 则属于第二种情况 (也就是说如果此时不为null, 搜索的就是上一轮 7 的左叶子, 所以 现在搜索的是7节点的右手边)
+    // 再弹出 stack上的top 7 并塞入结果集里 vec={1, 5, 3, 6, 2, 7}
+    // stack:[4, null]
+    //       7
+    //
+    // 弹出null, 因为是null, 则属于第二种情况 (也就是说如果此时不为null, 搜索的就是上一轮 7 的左叶子 或右叶子 !!!, 所以 现在搜索的是4节点的右手边)
+    // 再弹出 stack上的top 4 并塞入结果集里 vec={1, 5, 3, 6, 2, 7, 4}
+    // stack:[]
+    //       4
+    //    |     |
+    //    7    null
+    //
+    // 结束
+    //
+    // 统一迭代方案
+    // 统一迭代 的代码当中 在 前中后序这三种遍历 没有任何代码的增加 或减少
+    // 统一迭代 的代码当中 只有 情况一中的 右 中 左 代码的顺序不同
+    //
     vector<int> inorderTraversal(TreeNode* root) {
         if(root == nullptr){
             return {};
         }
 
         vector<int> rs_vec = {};
+        TreeNode* root_tmp=root;
+        stack<TreeNode*> st_root;
 
-        //左
-        vector<int> left_tmp=inorderTraversal(root->left);
-        rs_vec.insert(rs_vec.end(),left_tmp.begin(),left_tmp.end());
+        st_root.push(root);
+        for(;st_root.empty()== false;){
+            root_tmp = st_root.top();
 
-        //中
-        rs_vec.push_back(root->val);
-        cout<<root->val<<endl;
+            // 情况一:
+            // 如果不为空 因为我们是stack 所以要反顺序,
+            // 也就是需要先把 右边的放进 根节点stack
+            // 因为我们的stack 会放一个null作为一个 已经搜寻过跟节点的标记
+            // 所以这里会比其他两种 多一个null的判断 !!!!!!
+            if(root_tmp != nullptr){
+                st_root.pop();      //先弹出这个中间节点
 
-        //右
-        vector<int> right_tmp=inorderTraversal(root->right);
-        rs_vec.insert(rs_vec.end(),right_tmp.begin(),right_tmp.end());
+                //反顺序 放进去 因为我们用的是stack ------------------------------------
+                // 先放右
+                if(root_tmp->right != nullptr){
+                    st_root.push(root_tmp->right);
+                }
+                //-----------------------------------------------------------------
+                // 放中
+                st_root.push(root_tmp);
+                // 放null 用来到 stack弹出的时候 代表中间的已经 访问过左手边的节点了 (因为是反顺序放的)
+                st_root.push(nullptr);
+                //-----------------------------------------------------------------
+                //再放左
+                if(root_tmp->left != nullptr){
+                    st_root.push(root_tmp->left);
+                }
+            }
+            // 情况二:
+            // 如果空 则弹出这个null
+            // 并且 再弹出这个 跟节点
+            else{
+                //弹出null
+                st_root.pop();
+
+                //将中间节点 并且塞入结果集合
+                root_tmp = st_root.top();
+                rs_vec.push_back(root_tmp->val);
+                cout<<root_tmp->val<<endl;
+
+                //弹出中间节点
+                st_root.pop();
+            }
+
+        }
+
         return rs_vec;
     }
-
-
 };
 
 /**

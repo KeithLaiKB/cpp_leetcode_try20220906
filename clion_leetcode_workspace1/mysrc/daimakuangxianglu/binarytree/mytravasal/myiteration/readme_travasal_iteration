@@ -32,10 +32,10 @@ for(st_root.empty()== false){
 stack
 前序
     右左中
-    t226_InvertBinaryTree_preorder_recur
+    t226_InvertBinaryTree_preorder_itera
 中序
     右中左
-    t94_BinaryTreeInorderTraversal_recur
+    t94_BinaryTreeInorderTraversal_itera
 后序
     中右左
-    t145_BinaryTreePostorderTraversal_recur
+    t145_BinaryTreePostorderTraversal_itera

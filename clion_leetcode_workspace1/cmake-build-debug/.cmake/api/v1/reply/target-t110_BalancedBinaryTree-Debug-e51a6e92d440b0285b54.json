@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "t226_InvertBinaryTree_levelorder_recur"
+			"path" : "t110_BalancedBinaryTree"
 		}
 	],
 	"backtrace" : 1,
@@ -53,7 +53,7 @@
 			]
 		}
 	],
-	"id" : "t226_InvertBinaryTree_levelorder_recur::@6890427a1f51a3e7e1df",
+	"id" : "t110_BalancedBinaryTree::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -69,8 +69,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "t226_InvertBinaryTree_levelorder_recur",
-	"nameOnDisk" : "t226_InvertBinaryTree_levelorder_recur",
+	"name" : "t110_BalancedBinaryTree",
+	"nameOnDisk" : "t110_BalancedBinaryTree",
 	"paths" : 
 	{
 		"build" : ".",
@@ -91,7 +91,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "mysrc/daimakuangxianglu/binarytree/changetree/seq5_t226_InvertBinaryTree/myrecursion/t226_InvertBinaryTree_levelorder_recur.cpp",
+			"path" : "mysrc/daimakuangxianglu/binarytree/validatetree/seq10_t110_BalancedBinaryTree/t110_BalancedBinaryTree.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

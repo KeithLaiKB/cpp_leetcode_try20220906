@@ -29,6 +29,11 @@ using namespace std;
 
 第三层的个数为 2^(3-1)=4
 总个数 = 2^3 -1=7
+
+ 它的思路是 判断子树是否是满二叉
+    如果是的话 直接用 2^k -1
+    如果不是的话 当前节点 (+1)  + 后面判断子树是否满二叉
+    就是从底下往上一点点上去
  *
  */
 
@@ -242,7 +247,7 @@ public:
     //时间复杂度: O(log n × log n)
     //空间复杂度: O(log n)
     // 但是这次用的是 递归版的DFS
-    int countNodes_iter (TreeNode* root) {
+    int countNodes_recur (TreeNode* root) {
         if(root == nullptr){
             return 0;
         }
@@ -275,7 +280,7 @@ public:
         }
         else if(left_depth != right_depth){
             // 当前根节点 + 左子树总结点 + 右子树总结点
-            return 1 + countNodes_iter(root->left)+countNodes_iter(root->right);
+            return 1 + countNodes_recur(root->left)+countNodes_recur(root->right);
         }
 
     }
@@ -300,7 +305,7 @@ int main() {
     //solut1->myOutput_Treenode_int(tree1);
 
     //int rs = solut1->countNodes(tree1);
-    int rs = solut1->countNodes_iter(tree1);
+    int rs = solut1->countNodes_recur(tree1);
     cout<<"result"<<endl;
     cout<<rs<<endl;
 

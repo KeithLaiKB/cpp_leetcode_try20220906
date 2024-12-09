@@ -5,11 +5,12 @@
 #include <stack>
 #include <queue>
 #include <optional>
+#include <algorithm>
 using namespace std;
 
 /**
  *
- * 后序遍历(递归)
+ * 后序遍历(迭代)
  *
  */
 
@@ -23,7 +24,7 @@ public:
     ~Solution(){
 
     }
-   struct TreeNode {
+    struct TreeNode {
         int val;
         TreeNode *left;
         TreeNode *right;
@@ -32,8 +33,17 @@ public:
         TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
     };
 
+    template <typename T>
+    void myOutput_VectorBtB(vector<T>& nums, int st_indx, int ed_indx){
+        for(int i=st_indx;i<=ed_indx;i++){
+            cout<<nums[i]<<"\t";
+            if(i==ed_indx){
+                cout<<endl;
+            }
+        }
+    }
 
-// [1,null,2,3,4,5,6,7,null]
+    // [1,null,2,3,4,5,6,7,null]
     //           1
     //    |            |
     //   null          2
@@ -184,24 +194,104 @@ public:
 
     //时间复杂度: O(n)
     //空间复杂度:
+    // 相当于从前序便利的迭代版本 上更改 从 中左右(前序便利)->中右左(代码 的左和右 相反就行了)-> 左右中(把结果集合整体反过来就行了)
+    // 这个方法是我的 是可以通过leetcode 的
+    vector<int> postorderTraversal_my(TreeNode* root) {
+        if(root == nullptr){
+            return {};
+        }
+
+        vector<int> rs_vec = {};
+        TreeNode* root_tmp=root;
+        stack<TreeNode*> st_root;
+
+        st_root.push(root);
+        for(;st_root.empty()== false;){
+            root_tmp = st_root.top();
+
+            //中
+            rs_vec.push_back(root_tmp->val);
+            cout<<root_tmp->val<<endl;
+            st_root.pop();
+
+            //先放左
+            if(root_tmp->left != nullptr){
+                st_root.push(root_tmp->left);
+            }
+
+            //反顺序 放进去 因为我们用的是stack
+            //再放右
+            if(root_tmp->right != nullptr){
+                st_root.push(root_tmp->right);
+            }
+
+        }
+
+
+        //结果集合反过来
+        reverse(rs_vec.begin(),rs_vec.end());
+        return rs_vec;
+    }
+
+    // 统一迭代方案
+    // 用null 放在 中节点的后面
+    // 统一迭代 的代码当中 在 前中后序这三种遍历 没有任何代码的增加 或减少
+    // 统一迭代 的代码当中 只有 情况一中的 中 右 左  代码的顺序不同
     vector<int> postorderTraversal(TreeNode* root) {
         if(root == nullptr){
             return {};
         }
 
         vector<int> rs_vec = {};
+        TreeNode* root_tmp=root;
+        stack<TreeNode*> st_root;
 
-        //左
-        vector<int> left_tmp=postorderTraversal(root->left);
-        rs_vec.insert(rs_vec.end(),left_tmp.begin(),left_tmp.end());
+        st_root.push(root);
+        for(;st_root.empty()== false;){
+            root_tmp = st_root.top();
 
-        //右
-        vector<int> right_tmp=postorderTraversal(root->right);
-        rs_vec.insert(rs_vec.end(),right_tmp.begin(),right_tmp.end());
+            // 情况一:
+            // 如果不为空 因为我们是stack 所以要反顺序,
+            // 也就是需要先把 右边的放进 根节点stack
+            // 因为我们的stack 会放一个null作为一个 已经搜寻过跟节点的标记
+            // 所以这里会比其他两种 多一个null的判断 !!!!!!
+            if(root_tmp != nullptr){
+                st_root.pop();      //先弹出这个中间节点
 
-        //中
-        rs_vec.push_back(root->val);
-        cout<<root->val<<endl;
+                //反顺序 放进去 因为我们用的是stack ------------------------------------
+                // 先放中
+                st_root.push(root_tmp);
+                // 放null 用来到 stack弹出的时候 代表中间的已经 访问过左手边的节点了 (因为是反顺序放的)
+                st_root.push(nullptr);
+                //-----------------------------------------------------------------
+                //再放右
+                if(root_tmp->right != nullptr){
+                    st_root.push(root_tmp->right);
+                }
+                //-----------------------------------------------------------------
+                // 放左
+                if(root_tmp->left != nullptr){
+                    st_root.push(root_tmp->left);
+                }
+
+            }
+            // 情况二:
+            // 如果空 则弹出这个null
+            // 并且 再弹出这个 跟节点
+            else{
+                //弹出null
+                st_root.pop();
+
+                //将中间节点 并且塞入结果集合
+                root_tmp = st_root.top();
+                rs_vec.push_back(root_tmp->val);
+                cout<<root_tmp->val<<endl;
+
+                //弹出中间节点
+                st_root.pop();
+            }
+
+        }
 
         return rs_vec;
     }
@@ -217,7 +307,6 @@ int main() {
     Solution* solut1 = new Solution();
 
 
-
     std::vector<std::optional<int>> intopt_vec1 = {1, 2, 3, 4, 5, std::nullopt, 8, std::nullopt, std::nullopt, 6, 7, 9};
     intopt_vec1.reserve(100);
 
@@ -227,9 +316,10 @@ int main() {
     Solution::TreeNode* tree1 = solut1->initLinkedlist_ints(intopt_vec1);
     //solut1->myOutput_Treenode_int(tree1);
 
+    //vector<int> rs_vec1= solut1->postorderTraversal_my(tree1);
     vector<int> rs_vec1= solut1->postorderTraversal(tree1);
     cout<<"result"<<endl;
-
+    solut1->myOutput_VectorBtB(rs_vec1,0,rs_vec1.size()-1);
 
     return 0;
 }

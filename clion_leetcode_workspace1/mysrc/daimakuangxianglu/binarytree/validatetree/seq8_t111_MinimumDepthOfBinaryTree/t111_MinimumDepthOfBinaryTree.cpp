@@ -19,7 +19,7 @@ using namespace std;
  * 而且要小心
  * result = 1 + min(leftDepth, rightDepth);
  * 这个代码之前需要详细检查 例如
- * 这里面的 从根节点到4这里 不是最小深度
+ * 这里面的 从根节点到4这里 不是最小深度 !!!!!!!!!!!!!!!!!!!
  * 然而是  从根节点到4‘这里 是最小深度
  *
  *  [1,2,2,3,4,4,3,5,6,null,8,null,null,6,5]
@@ -157,7 +157,7 @@ public:
     // 如果完全平衡二叉树 每一层就存储一个, 总个数 是 2^n=k
     // 所以 层数n =log(2n)=O(logn)
     //
-    // 但是这次用的是DFS
+    // 但是这次用的是DFS  变种的先序遍历
     int minDepth(TreeNode* root) {
         if(root == nullptr){
             return {};
@@ -191,14 +191,16 @@ public:
             // -------------------------------------------------
 
 
-            //左
-            if(root_tmp->left!=nullptr){
-                st_root.push({root_tmp->left,depth_tmp+1});
-            }
             //右
             if(root_tmp->right!=nullptr){
                 st_root.push({root_tmp->right,depth_tmp+1});
             }
+
+            //左
+            if(root_tmp->left!=nullptr){
+                st_root.push({root_tmp->left,depth_tmp+1});
+            }
+
         }
 
 
