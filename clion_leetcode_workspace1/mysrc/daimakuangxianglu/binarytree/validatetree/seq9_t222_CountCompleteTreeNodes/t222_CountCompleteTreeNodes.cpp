@@ -257,18 +257,27 @@ public:
 
         int count_node;
 
+        // 查看当前节点下 最左边的叶子节点的 深度
+        // 注意 这里用的是 for 循环
         int left_depth=0;
         for(;left_tmp!= nullptr;){
             ++left_depth;
             left_tmp= left_tmp->left;
         }
 
+        // 查看当前节点下 最右边的叶子节点的 深度
+        //如果右边子树不为空 先增加右子树根节点 也就是+1
+        // 注意 这里用的是 for 循环
         int right_depth=0;
         for(;right_tmp!= nullptr;){
             ++right_depth;
             right_tmp= right_tmp->right;
         }
 
+        //如果 (最左边的叶子节点的 深度 == 最右边的叶子节点的) 深度
+        // 证明他是 满二叉树 full binary tree
+        // 于是 满足满二叉树的 公式:
+        // 节点树 = 2^n - 1
         if(left_depth == right_depth){
             // 从 root_tmp 开始的总层数
             int root_tmp_total_depth = (left_depth+1);
@@ -278,6 +287,11 @@ public:
 
             return sub_node_tmp;
         }
+
+        //如果 (最左边的叶子节点的 深度 != 最右边的叶子节点的) 深度
+        // 证明他是 不是满二叉树 full binary tree
+        // 但是题目已经提前说明了 已知所给的 就是完全二叉树
+        // 于是我们的公式为: 总结点数 = 1(当前根节点) + 递归当前function
         else if(left_depth != right_depth){
             // 当前根节点 + 左子树总结点 + 右子树总结点
             return 1 + countNodes_recur(root->left)+countNodes_recur(root->right);
