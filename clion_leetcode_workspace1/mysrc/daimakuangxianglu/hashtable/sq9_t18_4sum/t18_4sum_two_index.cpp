@@ -5,6 +5,7 @@
 #include <string>
 
 #include <cstring>  // 确保包含了 <cstring> 头文件, 这个提供了memset
+#include <algorithm>    //为了sort那个api
 using namespace std;
 
 /**
