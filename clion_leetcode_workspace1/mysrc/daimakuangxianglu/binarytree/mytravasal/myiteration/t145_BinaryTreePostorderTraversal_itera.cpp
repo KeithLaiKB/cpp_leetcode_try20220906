@@ -210,7 +210,7 @@ public:
             root_tmp = st_root.top();
 
             //中
-            rs_vec.push_back(root_tmp->val);
+            rs_vec.push_back(root_tmp->val);        //注意这是 放进结果集
             cout<<root_tmp->val<<endl;
             st_root.pop();
 

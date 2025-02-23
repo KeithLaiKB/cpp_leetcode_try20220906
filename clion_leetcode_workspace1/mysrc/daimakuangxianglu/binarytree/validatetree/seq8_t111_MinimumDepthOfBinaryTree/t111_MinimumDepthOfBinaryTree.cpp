@@ -185,6 +185,8 @@ public:
 
             //比大小
             // 和maximum depth 相比, 在这个操作外围 增加了这个判断------------------
+            // 因为 maximum只看最长, 而minimum必须保证左右孩子 都是空才行,
+            // 因为没有左孩子 不代表没有右孩子
             if(root_tmp->left==nullptr && root_tmp->right==nullptr){
                 rs_depth = depth_tmp<rs_depth?depth_tmp:rs_depth;
             }
