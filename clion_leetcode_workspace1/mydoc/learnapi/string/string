@@ -30,5 +30,20 @@ resize---string
             因为t151的结果 肯定是小于等于 当前大小的 所以resize在这题是可以用的
 
 
+-----------------------------------
+substr
+    s.substr(st_idx,len);
 
+-----------------------------------
+数组 转换成 str
 
+ch[] to str:
+
+    char ch[] = "Hello, C++17!";
+    std::string_view sv(ch);
+
+++++++++++++++++++
+vector to str:
+    vector<char> vec = {'H', 'e', 'l', 'l', 'o'};
+    string str(vec.begin(), vec.end());  // 直接用迭代器构造 std::string
+-----------------------------------
