@@ -47,3 +47,7 @@ vector to str:
     vector<char> vec = {'H', 'e', 'l', 'l', 'o'};
     string str(vec.begin(), vec.end());  // 直接用迭代器构造 std::string
 -----------------------------------
+append
+
+    str1 结尾追加一个字符
+        str1.append(1,word1[i]);
