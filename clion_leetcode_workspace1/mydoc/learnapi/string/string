@@ -51,3 +51,14 @@ append
 
     str1 结尾追加一个字符
         str1.append(1,word1[i]);
+    str1 结尾追加一个字符串
+        str1.append(“abc”);
+
+他和 push_back 有一点不同
+    它只能结尾追加一个字符
+        str1.push_back(word1[i]);
+
+-----------------------------------
+pop_back
+    从未端删除字符
+        str1.pop_back();
