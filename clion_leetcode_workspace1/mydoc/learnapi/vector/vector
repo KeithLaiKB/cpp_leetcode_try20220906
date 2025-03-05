@@ -87,5 +87,10 @@ main中
 void Heapsort(int r[], int len)
 
 ----------------------------------------------
+制作含有空的vector:
 
 
+TreeNode* initLinkedlist_ints(const vector<optional<int>> &arr)
+
+
+ std::vector<std::optional<int>> intopt_vec1 = {1, 2, 3, 4, 5, std::nullopt, 8, std::nullopt, std::nullopt, 6, 7, 9};

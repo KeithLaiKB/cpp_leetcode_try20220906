@@ -23,6 +23,7 @@
     -- src/t144_BinaryTreePreorderTraversal_recur.cpp will be compiled to bin/t144_BinaryTreePreorderTraversal_recur
     -- src/t145_BinaryTreePostorderTraversal_recur.cpp will be compiled to bin/t145_BinaryTreePostorderTraversal_recur
     -- src/t94_BinaryTreeInorderTraversal_recur.cpp will be compiled to bin/t94_BinaryTreeInorderTraversal_recur
+    -- src/t257_BinaryTreePaths.cpp will be compiled to bin/t257_BinaryTreePaths
     -- src/t110_BalancedBinaryTree.cpp will be compiled to bin/t110_BalancedBinaryTree
     -- src/t101_SymmetricTree.cpp will be compiled to bin/t101_SymmetricTree
     -- src/t104_MaximumDepthOfBinaryTree.cpp will be compiled to bin/t104_MaximumDepthOfBinaryTree
