@@ -1,0 +1,16 @@
+
+分割进来的内容
+
+例如输入的 内容是  "buy phone 10""
+我们可以用istrstream 获得空格分开的那些东西
+void getNetProfit(string events) {
+        istringstream istrstream_tmp(events[i]);
+        //
+        istrstream_tmp >> action_tmp;
+        istrstream_tmp >> product_tmp;
+        istrstream_tmp >> nums_tmp;
+        //
+        这样这三个 变量 就可以分别获得那些单词了
+}
+
+------------------------------------------------
