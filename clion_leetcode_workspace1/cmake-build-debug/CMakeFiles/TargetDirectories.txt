@@ -26,6 +26,7 @@
 /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug/CMakeFiles/t513_FindBottomLeftTreeValue.dir
 /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug/CMakeFiles/t110_BalancedBinaryTree.dir
 /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug/CMakeFiles/t404_SumofLeftLeaves.dir
+/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug/CMakeFiles/t112_PathSum.dir
 /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug/CMakeFiles/t101_SymmetricTree.dir
 /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug/CMakeFiles/t104_MaximumDepthOfBinaryTree.dir
 /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug/CMakeFiles/t111_MinimumDepthOfBinaryTree.dir

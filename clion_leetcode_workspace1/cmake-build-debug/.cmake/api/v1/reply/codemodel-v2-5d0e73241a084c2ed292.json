@@ -74,7 +74,8 @@
 						56,
 						57,
 						58,
-						59
+						59,
+						60
 					]
 				}
 			],
@@ -148,7 +149,8 @@
 						56,
 						57,
 						58,
-						59
+						59,
+						60
 					]
 				}
 			],
@@ -243,6 +245,13 @@
 					"id" : "t111_MinimumDepthOfBinaryTree::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-t111_MinimumDepthOfBinaryTree-Debug-80e995d868ba5aa95348.json",
 					"name" : "t111_MinimumDepthOfBinaryTree",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "t112_PathSum::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-t112_PathSum-Debug-86695d38eca6cb6f7581.json",
+					"name" : "t112_PathSum",
 					"projectIndex" : 0
 				},
 				{

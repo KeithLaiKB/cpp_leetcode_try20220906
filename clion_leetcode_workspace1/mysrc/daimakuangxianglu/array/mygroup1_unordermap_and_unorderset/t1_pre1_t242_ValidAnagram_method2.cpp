@@ -48,7 +48,7 @@ public:
                 }
             }*/
 
-            for(pair<int,int> kv:unorder_map_s){
+            for(<int,int> kv:unorder_map_s){
                 cout<<kv.first<<kv.second<<endl;
                 if(kv.second!=0){
                     findNoZero = true;
