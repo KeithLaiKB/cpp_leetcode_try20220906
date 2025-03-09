@@ -49,7 +49,31 @@ vector<int> *vec1p=new vector<int>(1,2,3,4,5)；
 vec1p他是一个指针 里面 可以 存储着地址
 	当然 你可以 指向 nullptr
 		nullptr 不是一个地址，而是一个特殊的空指针值，表示一个无效的指针或空指针
+----------------------------------------------
+vector 选择性的to vector
 
+vector<int> vec1 =vector(起始地址,(结尾idx+1)的地址);
+例如
+    方法1：
+        vector<int> vec1 =vector(arr1.begin(),arr1.end());
+
+    方法2:
+        方法2.1
+            例如这是从0
+            vector<int> vec1 =vector(&postorder[0],&postorder[0]+1);
+        方法2.2
+            vector<int> vec1;
+            vec1.assign(&postorder[0],&postorder[0]+1);
+**************************
+注意一下
+    如果 起始地址 == (结尾idx+1)的地址
+        则会产生{} 这样空的 vector
+
+    例如
+        vec1.assign(&postorder[0],&postorder[0]+0);
+    或者
+        vec1.assign(&postorder[1],&postorder[0]+1);
+**************************
 ----------------------------------------------
 resize---vector
 时间复杂度：
@@ -94,3 +118,5 @@ TreeNode* initLinkedlist_ints(const vector<optional<int>> &arr)
 
 
  std::vector<std::optional<int>> intopt_vec1 = {1, 2, 3, 4, 5, std::nullopt, 8, std::nullopt, std::nullopt, 6, 7, 9};
+
+ ----------------------------------------------
