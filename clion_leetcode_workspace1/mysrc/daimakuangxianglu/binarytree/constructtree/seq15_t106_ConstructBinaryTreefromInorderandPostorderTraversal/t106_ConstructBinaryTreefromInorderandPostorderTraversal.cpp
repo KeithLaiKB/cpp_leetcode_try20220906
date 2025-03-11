@@ -184,7 +184,7 @@ public:
     // 3. 在后序遍历中 根据上面所得的 长度  进行分割
     //
     // 注意 inEnd-inStart+1 = psEnd - psStart+1 他们的长度始终是保持一致的
-    TreeNode* backtracking(vector<int>& inorder, vector<int>& postorder, TreeNode* root){
+    TreeNode* mytraversal(vector<int>& inorder, vector<int>& postorder){
 
         //limit
         // 这样可以使得 如果后面要用rgchld_len
@@ -194,7 +194,7 @@ public:
             return nullptr;
         }
         else if(inorder.size()==1){
-            return new TreeNode(postorder[0]);
+            return new TreeNode(inorder[0]);
         }
         //
         // 因为前面的判断过了
@@ -203,12 +203,12 @@ public:
         //
         //
         //从后续遍历 中 找到 当前根节点
-        TreeNode nowRoot=postorder[postorder.size()-1];
+        TreeNode* nowRoot=new TreeNode(postorder[postorder.size()-1]);
 
         //找到 当前根节点 在 中序遍历中的位置
         int idx_inord_nowRoot=-1;
         for(int i=0;i<=inorder.size()-1;i++){
-            if(nowRoot.val == inorder[i]){
+            if(nowRoot->val == inorder[i]){
                 idx_inord_nowRoot=i;
                 break;
             }
@@ -233,7 +233,6 @@ public:
         //
 
         //
-
         // 分割后序遍历
         // 根据左子树的 长度 获得
         // inorder:
@@ -253,17 +252,20 @@ public:
         vector<int> psord_rgchild(&postorder[0]+(lfchld_len-1+1),&postorder[0]+ (postorder.size()-1-1+1));
 
 
-
-        return;
+        TreeNode* lchld = mytraversal(inord_lfchild, psord_lfchild);
+        TreeNode* rchld = mytraversal(inord_rgchild, psord_rgchild);
+        nowRoot->left = lchld;
+        nowRoot->right= rchld;
+        return nowRoot;
     }
     TreeNode* buildTree(vector<int>& inorder, vector<int>& postorder) {
         if(inorder.size()==0){
             return nullptr;
         }
-        TreeNode* root =new TreeNode(postorder[postorder.size()-1]);
-        backtracking(inorder, postorder, root);
 
-        return nullptr;
+        TreeNode* root =mytraversal(inorder, postorder);
+
+        return root;
     }
 
 

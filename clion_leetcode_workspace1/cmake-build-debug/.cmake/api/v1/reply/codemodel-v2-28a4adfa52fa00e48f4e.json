@@ -75,7 +75,8 @@
 						57,
 						58,
 						59,
-						60
+						60,
+						61
 					]
 				}
 			],
@@ -150,7 +151,8 @@
 						57,
 						58,
 						59,
-						60
+						60,
+						61
 					]
 				}
 			],
@@ -231,6 +233,13 @@
 					"id" : "t104_MaximumDepthOfBinaryTree::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-t104_MaximumDepthOfBinaryTree-Debug-9b084ef5d613acdabc86.json",
 					"name" : "t104_MaximumDepthOfBinaryTree",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "t106_ConstructBinaryTreefromInorderandPostorderTraversal::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-t106_ConstructBinaryTreefromInorderandPostorderTraversal-Debug-afbc654748d95091044a.json",
+					"name" : "t106_ConstructBinaryTreefromInorderandPostorderTraversal",
 					"projectIndex" : 0
 				},
 				{
