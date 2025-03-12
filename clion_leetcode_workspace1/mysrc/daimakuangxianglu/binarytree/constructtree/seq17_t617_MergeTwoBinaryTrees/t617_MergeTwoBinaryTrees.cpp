@@ -10,33 +10,56 @@
 using namespace std;
 
 /**
- * Given two integer arrays inorder and postorder
- * where inorder is the inorder traversal of a binary tree
- * and postorder is the postorder traversal of the same tree,
- * construct and return the binary tree.
  *
-                                    6
+ * You are given two binary trees root1 and root2.
+ * Imagine that when you put one of them to cover the other,
+ * some nodes of the two trees are overlapped while the others are not.
+ * You need to merge the two trees into a new binary tree.
+ * The merge rule is that if two nodes overlap,
+ * then sum node values up as the new value of the merged node.
+ * Otherwise, the NOT null node will be used as the node of the new tree.
+ *
+ *
+ * Return the merged tree.
+ * Note: The merging process must start from the root nodes of both trees.
+ *
+                                    1
                     |                               |
-                    3                               5
+                    3                               2
             |               |               |               |
-           null             2               0              null
-                        |       |       |       |
-                      null      1     null     null
+            5             null             null              null
+       |       |
+     null     null
 
+    和
+                                    2
+                    |                               |
+                    1                               3
+            |               |               |               |
+          null             4             null              7
+                        |       |                      |       |
+                      null     null                   null     null
+
+    形成了
+
+                                    3(1+2)
+                    |                               |
+                    4(3+1)                          5(2+3)
+            |               |               |               |
+           5                4             null              7
+                                                        |       |
+                                                       null     null
 
  * Example1:
- * Input: nums = [3,2,1,6,0,5]
- * Output: [6,3,5,null,2,0,null,null,1]
- * Explanation: The recursive calls are as follow:
- *      The largest value in [3,2,1,6,0,5] is 6. Left prefix is [3,2,1] and right suffix is [0,5].
- *          The largest value in [3,2,1] is 3. Left prefix is [] and right suffix is [2,1].
- *              Empty array, so no child.
- *              The largest value in [2,1] is 2. Left prefix is [] and right suffix is [1].
- *                  Empty array, so no child.
- *                  Only one element, so child is a node with value 1.
- *          The largest value in [0,5] is 5. Left prefix is [0] and right suffix is [].
- *              Only one element, so child is a node with value 0.
- *              Empty array, so no child.
+ * Input: root1 = [1,3,2,5], root2 = [2,1,3,null,4,null,7]
+ * Output: [3,4,5,5,4,null,7]
+ *
+ *
+ * 其实就是 如果相同的位置
+ *      都 存在数字 就相加
+ *      有一个 不是数字 就 把数字 和其下的所有子树搬上去
+ *      都不存在 则不理
+ *
  */
 
 class Solution {
@@ -156,51 +179,46 @@ public:
             }
         }
     }
-    //[3,2,1,6,0,5]
-    //                                  6
-    //                  |                               |
-    //                  3                               5
-    //          |               |               |               |
-    //         null             2               0              null
-    //                      |       |       |       |
-    //                    null      1     null     null
-    //
-    // for 数组 获得 当前数组中的 max
-    // Node(max)->left = mytraversal(max的左边);
-    // ode(max)->right = mytraversal(max的右边);
-    TreeNode* mytraversal(vector<int>&nums, int st_now, int ed_now){
-        int max_num = INT_MIN;
-        int max_num_idx = INT_MIN;
-        for(int i=st_now;i<=ed_now;i++){
-            if(max_num<nums[i]){
-                max_num=nums[i];
-                max_num_idx=i;
-            }
+
+    // 这么写当然 刷题是没问题，
+    // 但如果删除 原来的root1,root2的时候 你这个merge出来的树就会出问题了
+    //      因为你现在这个merge就像是一个蜘蛛网 连接这root1和 root2
+    TreeNode* mytraversal(TreeNode* root1, TreeNode* root2){
+        if(root1 == nullptr && root2== nullptr){
+            return nullptr;
         }
+        else if(root1 != nullptr && root2== nullptr){
+            return root1;
+        }
+        else if(root1 == nullptr && root2!= nullptr){
+            return root2;
+        }
+        else if(root1 != nullptr && root2!= nullptr){
 
-        if(max_num_idx==INT_MIN) return nullptr;
+            TreeNode* now_root =new TreeNode(0);
+            now_root->val = root1->val + root2->val;
 
+            now_root->left = mytraversal(root1->left,root2->left);
+            now_root->right = mytraversal(root1->right,root2->right);
 
-        TreeNode* root_now = new TreeNode(max_num);
-        //
-        // st_now .... max_idx .... ed_now
-        // [st_now, max_idx-1]
-        root_now->left = mytraversal(nums, st_now, max_num_idx-1);
-        // [max_idx+1, ed_now]
-        root_now->right = mytraversal(nums, max_num_idx+1, ed_now);
-
-        return root_now;
+            return now_root;
+        }
+        return nullptr;
 
     }
 
-
-        //    情况	                            时间复杂度
-        //    最坏情况（递减数组，如 [5,4,3,2,1]）	O(n²)
-        //    平均情况（随机数组）	                O(n log n)
-        //                                      因为每一层   for循环找max是 O(n),
-        //                                      然后一共有 logn 层, 所以得到 O(n log n)
-    TreeNode* constructMaximumBinaryTree(vector<int>& nums) {
-        TreeNode* root = mytraversal(nums, 0, nums.size()-1);
+    // 时间复杂度:
+    //      最坏情况: 最多递归O(max(n1, n2)) 层。
+    //      一般情况: 如果两棵树高度相近，递归深度为 O(log n)，每个层级遍历所有节点。
+    //
+    //空间复杂度:
+    //      最坏情况（链状树）：O(max(n1, n2))（最深递归栈）。
+    //      平衡二叉树：O(log max(n1, n2))（二叉树深度）。
+    //    额外空间：
+    //      你创建了新的二叉树，所以 空间复杂度等于新树的大小，即 O(min(n1, n2))。
+    //  所以最终空间复杂度是 O(min(n1, n2))
+    TreeNode* mergeTrees(TreeNode* root1, TreeNode* root2) {
+        TreeNode* root = mytraversal(root1, root2);
         return root;
     }
 
@@ -217,17 +235,19 @@ int main() {
 
     //std::vector<std::optional<int>> intopt_vec1 = {1,2,2,3,4,4,3,5,6,std::nullopt,8,std::nullopt,std::nullopt,6,5};
     //std::vector<std::optional<int>> intopt_vec1 = {3,9,20,std::nullopt,std::nullopt,15,7};
-/*
-    std::vector<std::optional<int>> intopt_vec1_inorder = {5,4,8,11,std::nullopt,13,4,7,2,std::nullopt,std::nullopt,std::nullopt,1};
-    intopt_vec1_inorder.reserve(100);
 
-    std::vector<std::optional<int>> intopt_vec1_postorder = {5,4,8,11,std::nullopt,13,4,7,2,std::nullopt,std::nullopt,std::nullopt,1};
-    intopt_vec1_postorder.reserve(100);
-*/
+    std::vector<std::optional<int>> intopt_vec1_tree1 = {1,3,2,5};
+    intopt_vec1_tree1.reserve(100);
 
-    std::vector<int> vec1_nums = {3,2,1,6,0,5};
+    std::vector<std::optional<int>> intopt_vec1_tree2 = {2,1,3,std::nullopt,4,std::nullopt,7};
+    intopt_vec1_tree2.reserve(100);
 
-    Solution::TreeNode* rs = solut1->constructMaximumBinaryTree(vec1_nums);
+    Solution::TreeNode* tree1 = solut1->initLinkedlist_ints(intopt_vec1_tree1);
+    Solution::TreeNode* tree2 = solut1->initLinkedlist_ints(intopt_vec1_tree1);
+
+    //std::vector<int> vec1_nums = {3,2,1,6,0,5};
+
+    Solution::TreeNode* rs = solut1->mergeTrees(tree1,tree2);
     //Solution::TreeNode* tree1 = solut1->initLinkedlist_ints(intopt_vec1);
 
     cout<<"result"<<endl;
