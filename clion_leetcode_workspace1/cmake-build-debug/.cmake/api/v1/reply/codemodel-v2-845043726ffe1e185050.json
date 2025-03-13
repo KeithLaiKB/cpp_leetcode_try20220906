@@ -78,7 +78,9 @@
 						60,
 						61,
 						62,
-						63
+						63,
+						64,
+						65
 					]
 				}
 			],
@@ -156,7 +158,9 @@
 						60,
 						61,
 						62,
-						63
+						63,
+						64,
+						65
 					]
 				}
 			],
@@ -563,6 +567,13 @@
 				},
 				{
 					"directoryIndex" : 0,
+					"id" : "t700_SearchInABinarySearchTree::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-t700_SearchInABinarySearchTree-Debug-6697dbbbda176c12ce7e.json",
+					"name" : "t700_SearchInABinarySearchTree",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "t704_BinarySearch::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-t704_BinarySearch-Debug-169c5f142ea0b16d756f.json",
 					"name" : "t704_BinarySearch",
@@ -594,6 +605,13 @@
 					"id" : "t977_SquaresOfASortedArray::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-t977_SquaresOfASortedArray-Debug-a10a2c27cf52e0392303.json",
 					"name" : "t977_SquaresOfASortedArray",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "t98_ValidateBinarySearchTree::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-t98_ValidateBinarySearchTree-Debug-50503374120f3d3c4c90.json",
+					"name" : "t98_ValidateBinarySearchTree",
 					"projectIndex" : 0
 				},
 				{

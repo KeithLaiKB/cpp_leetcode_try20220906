@@ -11,13 +11,17 @@ using namespace std;
 
 /**
  *
- * You are given the root of a binary search tree (BST) and an integer val.
- * Find the node in the BST that the node's value equals val
+ * Given the root of a binary tree, determine if it is a valid binary search tree (BST).
+ * A valid BST is defined as follows:
+ * The left subtree of a node contains only nodes with keys less than the node's key.
+ * The right subtree of a node contains only nodes with keys greater than the node's key.
+ * Both the left and right subtrees must also be binary search trees.
  *
- * and return the subtree rooted with that node.
- * If such a node does not exist, return null.
+ * 就验证 这个是不是 二叉搜索树
  *
- * 就是在二叉搜索树里 找数字而已
+ *
+ *
+ * -2^31 <= Node.val <= 2^31 - 1
  */
 
 class Solution {
@@ -43,7 +47,7 @@ public:
     TreeNode* initLinkedlist_ints(const vector<optional<int>> &arr){
         // 如果需要初始化的长度 <=0 就没必要初始化了
         // 或者如果 提供的数组本身 <=0 也没必要初始化了
-        // 我这里这么做 是提供 有可能 数组长度很长(例如100), 但我只需要初始化其中比较短的一部分(5)
+        // 我这里这么做 是提供 有可能 数组长null度很长(例如100), 但我只需要初始化其中比较短的一部分(5)
         //int len = sizeof(arr)/sizeof(arr[0]);
         int len = arr.size();
         if(len<=0){
@@ -138,7 +142,65 @@ public:
         }
     }
 
+    // 搜索二叉树的 中序便利一定是递增的
+    //
+    //
+    //                                  12
+    //                  |                                  |
+    //                  5                                   18
+    //          |               |                   |               |
+    //          2               9                   14             23
+    //      |       |       |       |           |       |       |       |
+    //      1       3       7       10          13       17     20       25
+    // 这个55就不对,
+    // 这个4也不对
+    // 这可以DFS 起手
 
+    // 因为是左中右,
+    // 上一个搜索过的节点 一定要比 下一个搜索节点要小
+    //
+    // 搜索完 5 的左子树后
+    // 要确保 上一个搜索节点(3) 比当前节点(5)小
+    // 然后
+    // 然后再去搜索 5 的右子树
+    //
+    // 因为DFS直接下到 5 的右子树 18 里面的左子树 13
+    // 要确保 上一个搜索节点(5) 比当前节点(13)小
+    // 然后一直下去
+    //
+    // 又或者说
+    // 搜索完 12 的左子树后
+    // 要确保 当前root左子树已经搜索过的最后一个节点(例如上面的 12) 要 比当前root(上面的12) 小
+    // 然后再去搜索 12 的右子树
+    TreeNode* searched_prev_node = nullptr;
+    bool mytraversal(TreeNode* root1){
+        // 这个判断的是子树里的 不包括源树一开始就是空树的情况
+        // 因为源树是空树的情况 早就在 之前的 入口函数 判断了
+        if(root1== nullptr){
+            return true;
+        }
+
+
+        bool left = false;
+        bool right = false;
+
+        //左
+        left = mytraversal(root1->left);
+        //中
+        // 不能出先重复数值, 而且必须搜索的结果要递增
+        // 如果 他是第一次搜下来的 那么 searched_prev_node 会出现 nullptr
+        // 因为刚开始搜, 那么就相当于 一个数组 的a[0]
+        // 那么就没必要作对比, 继续往下走就好饿
+        if(searched_prev_node!= nullptr && searched_prev_node-> val >= root1->val){
+            return false;
+        }
+        searched_prev_node = root1;
+
+        //右
+        right = mytraversal(root1->right);
+
+        return left && right;
+    }
 
 
     // 时间复杂度:
@@ -148,22 +210,12 @@ public:
     //      最坏情况: 链状 BST    :O(n)
     //      一般情况: 平衡 BST    :O(log n)
     //      递归在底层 本来就是类似一个栈一样的东西 就是 callstack
-
-    TreeNode* searchBST(TreeNode* root, int val) {
+    bool isValidBST(TreeNode* root) {
+        //空树
         if(root == nullptr){
-            return nullptr;
+            return true;
         }
-
-        if(val==root->val){
-            return root;
-        }
-        if(val<root->val){
-            return searchBST(root->left,val);
-        }
-        else if(val>root->val){
-            return searchBST(root->right,val);
-        }
-        return nullptr;
+        return mytraversal(root);
     }
 
 
@@ -191,25 +243,25 @@ int main() {
 
     //std::vector<int> vec1_nums = {3,2,1,6,0,5};
 
-    std::vector<std::optional<int>> intopt_vec1_tree1 = {4,2,7,1,3};
+    std::vector<std::optional<int>> intopt_vec1_tree1 = {2,1,3};
     intopt_vec1_tree1.reserve(100);
     Solution::TreeNode* tree1 = solut1->initLinkedlist_ints(intopt_vec1_tree1);
 
 
     int target_num= 2;
 
-    Solution::TreeNode* rs = solut1->searchBST(tree1,target_num);
+    bool rs = solut1->isValidBST(tree1);
     //Solution::TreeNode* tree1 = solut1->initLinkedlist_ints(intopt_vec1);
 
     cout<<"result"<<endl;
-    solut1->myOutput_Treenode_int(rs);
+    //solut1->myOutput_Treenode_int(rs);
 
 
 
 
 
     //solut1->myOutput_VectorBtB(rs,0,rs.size()-1);
-    //cout<<rs<<endl;
+    cout<<rs<<endl;
     return 0;
 }
 
