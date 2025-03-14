@@ -159,7 +159,7 @@ public:
     // 时间复杂度: O(n)
     //      中序遍历一次所有节点，n 为树的节点总数。遍历后计算最小差值也为 O(n)，整体为 O(n)。
     //空间复杂度:	O(n)
-    //      使用额外数组 vector<int> 保存所有节点值，因此额外空间为 O(n)。另外递归栈空间，最坏 O(n)，综合后仍为 O(n)。
+    // 使用额外数组 vector<int> 保存所有节点值，因此额外空间为 O(n)。另外递归栈空间，最坏 O(n)，综合后仍为 O(n)。
     int getMinimumDifference(TreeNode* root) {
         vector<int> rs = {};
         mytraversal(root, rs);
