@@ -661,6 +661,37 @@ build t617_MergeTwoBinaryTrees: CXX_EXECUTABLE_LINKER__t617_MergeTwoBinaryTrees_
   TARGET_PDB = t617_MergeTwoBinaryTrees.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target t236_LowestCommonAncestorofaBinaryTree
+
+
+#############################################
+# Order-only phony target for t236_LowestCommonAncestorofaBinaryTree
+
+build cmake_object_order_depends_target_t236_LowestCommonAncestorofaBinaryTree: phony || CMakeFiles/t236_LowestCommonAncestorofaBinaryTree.dir
+
+build CMakeFiles/t236_LowestCommonAncestorofaBinaryTree.dir/mysrc/daimakuangxianglu/binarytree/constructtree/seq22_t236_LowestCommonAncestorofaBinaryTree/t236_LowestCommonAncestorofaBinaryTree.cpp.o: CXX_COMPILER__t236_LowestCommonAncestorofaBinaryTree_unscanned_Debug /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/constructtree/seq22_t236_LowestCommonAncestorofaBinaryTree/t236_LowestCommonAncestorofaBinaryTree.cpp || cmake_object_order_depends_target_t236_LowestCommonAncestorofaBinaryTree
+  DEP_FILE = CMakeFiles/t236_LowestCommonAncestorofaBinaryTree.dir/mysrc/daimakuangxianglu/binarytree/constructtree/seq22_t236_LowestCommonAncestorofaBinaryTree/t236_LowestCommonAncestorofaBinaryTree.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/t236_LowestCommonAncestorofaBinaryTree.dir
+  OBJECT_FILE_DIR = CMakeFiles/t236_LowestCommonAncestorofaBinaryTree.dir/mysrc/daimakuangxianglu/binarytree/constructtree/seq22_t236_LowestCommonAncestorofaBinaryTree
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target t236_LowestCommonAncestorofaBinaryTree
+
+
+#############################################
+# Link the executable t236_LowestCommonAncestorofaBinaryTree
+
+build t236_LowestCommonAncestorofaBinaryTree: CXX_EXECUTABLE_LINKER__t236_LowestCommonAncestorofaBinaryTree_Debug CMakeFiles/t236_LowestCommonAncestorofaBinaryTree.dir/mysrc/daimakuangxianglu/binarytree/constructtree/seq22_t236_LowestCommonAncestorofaBinaryTree/t236_LowestCommonAncestorofaBinaryTree.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/t236_LowestCommonAncestorofaBinaryTree.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = t236_LowestCommonAncestorofaBinaryTree
+  TARGET_PDB = t236_LowestCommonAncestorofaBinaryTree.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target t102_BinaryTreeLevelorderTraversal_itera
 
 
@@ -2182,7 +2213,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug
 
-build all: phony t1_TwoSum_past t1_pre1_t242_ValidAnagram t1_pre1_t242_ValidAnagram_method2 t1_pre2_t349_IntersectionofTwoArrays t121_BestTimeToBuyAndSellStock t5_pre1_t647_Palindromic_Substrings t704_BinarySearch t27_RemoveElement t977_SquaresOfASortedArray t76_MinimumSizeSubarraySum t209_MinimumSizeSubarraySum t209_MinimumSizeSubarraySum_daimakuagnixanglu t209_MinimumSizeSubarraySum_leetcode t59_SpiralMatrixII t226_InvertBinaryTree_levelorder_itera t226_InvertBinaryTree_preorder_itera t226_InvertBinaryTree_preorder_recur t106_ConstructBinaryTreefromInorderandPostorderTraversal t654_MaximumBinaryTree t617_MergeTwoBinaryTrees t102_BinaryTreeLevelorderTraversal_itera t144_BinaryTreePreorderTraversal_itera t145_BinaryTreePostorderTraversal_itera t94_BinaryTreeInorderTraversal_itera t144_BinaryTreePreorderTraversal_recur t145_BinaryTreePostorderTraversal_recur t94_BinaryTreeInorderTraversal_recur t257_BinaryTreePaths t513_FindBottomLeftTreeValue t700_SearchInABinarySearchTree t110_BalancedBinaryTree t404_SumofLeftLeaves t112_PathSum t98_ValidateBinarySearchTree t530_MinimumAbsoluteDifferenceinBST t501_FindModeinBinarySearchTree t101_SymmetricTree t104_MaximumDepthOfBinaryTree t111_MinimumDepthOfBinaryTree t222_CountCompleteTreeNodes t242_ValidAnagram t1002_FindCommonCharacters t349_IntersectionofTwoArrays t202_HappyNumber t1_TwoSum t454_4SumII t383_RansomNote t15_3Sum t15_3Sum_two_index t18_4sum_two_index t206_ReverseLinkedList t206_RemoveNthNodeFromEndofList t142_LinkedListCycleII t20_ValidParentheses t1047_RemoveAllAdjacentDuplicatesInString t150_EvaluateReversePolishNotation t239_SlidingWindowMaximum t347_TopKFrequentElements t151_ReverseWordsInAString kmp t459_RepeatedSubstringPattern learn_class_generic1 learn_template_generic1 wrong_use_refer_in_method main main2 learn_heapsort1_maxheap updatetocplus20test
+build all: phony t1_TwoSum_past t1_pre1_t242_ValidAnagram t1_pre1_t242_ValidAnagram_method2 t1_pre2_t349_IntersectionofTwoArrays t121_BestTimeToBuyAndSellStock t5_pre1_t647_Palindromic_Substrings t704_BinarySearch t27_RemoveElement t977_SquaresOfASortedArray t76_MinimumSizeSubarraySum t209_MinimumSizeSubarraySum t209_MinimumSizeSubarraySum_daimakuagnixanglu t209_MinimumSizeSubarraySum_leetcode t59_SpiralMatrixII t226_InvertBinaryTree_levelorder_itera t226_InvertBinaryTree_preorder_itera t226_InvertBinaryTree_preorder_recur t106_ConstructBinaryTreefromInorderandPostorderTraversal t654_MaximumBinaryTree t617_MergeTwoBinaryTrees t236_LowestCommonAncestorofaBinaryTree t102_BinaryTreeLevelorderTraversal_itera t144_BinaryTreePreorderTraversal_itera t145_BinaryTreePostorderTraversal_itera t94_BinaryTreeInorderTraversal_itera t144_BinaryTreePreorderTraversal_recur t145_BinaryTreePostorderTraversal_recur t94_BinaryTreeInorderTraversal_recur t257_BinaryTreePaths t513_FindBottomLeftTreeValue t700_SearchInABinarySearchTree t110_BalancedBinaryTree t404_SumofLeftLeaves t112_PathSum t98_ValidateBinarySearchTree t530_MinimumAbsoluteDifferenceinBST t501_FindModeinBinarySearchTree t101_SymmetricTree t104_MaximumDepthOfBinaryTree t111_MinimumDepthOfBinaryTree t222_CountCompleteTreeNodes t242_ValidAnagram t1002_FindCommonCharacters t349_IntersectionofTwoArrays t202_HappyNumber t1_TwoSum t454_4SumII t383_RansomNote t15_3Sum t15_3Sum_two_index t18_4sum_two_index t206_ReverseLinkedList t206_RemoveNthNodeFromEndofList t142_LinkedListCycleII t20_ValidParentheses t1047_RemoveAllAdjacentDuplicatesInString t150_EvaluateReversePolishNotation t239_SlidingWindowMaximum t347_TopKFrequentElements t151_ReverseWordsInAString kmp t459_RepeatedSubstringPattern learn_class_generic1 learn_template_generic1 wrong_use_refer_in_method main main2 learn_heapsort1_maxheap updatetocplus20test
 
 # =============================================================================
 # Built-in targets
