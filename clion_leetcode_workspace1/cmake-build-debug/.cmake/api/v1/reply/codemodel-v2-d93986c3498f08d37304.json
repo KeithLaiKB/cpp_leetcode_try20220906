@@ -81,7 +81,8 @@
 						63,
 						64,
 						65,
-						66
+						66,
+						67
 					]
 				}
 			],
@@ -162,7 +163,8 @@
 						63,
 						64,
 						65,
-						66
+						66,
+						67
 					]
 				}
 			],
@@ -530,6 +532,13 @@
 					"id" : "t459_RepeatedSubstringPattern::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-t459_RepeatedSubstringPattern-Debug-083d3273fdd895d518df.json",
 					"name" : "t459_RepeatedSubstringPattern",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "t501_FindModeinBinarySearchTree::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-t501_FindModeinBinarySearchTree-Debug-b95d55653c92e66aedd2.json",
+					"name" : "t501_FindModeinBinarySearchTree",
 					"projectIndex" : 0
 				},
 				{

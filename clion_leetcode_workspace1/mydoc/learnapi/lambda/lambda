@@ -37,7 +37,17 @@ sort(vec.begin(), vec.end(), [](int a, int b) {
     return a < b;  // 正确：严格小于
 });
 -------------------------------------------------------------
+当然 我该更建议独立出来
 
+    例如 unorder_map的弄成vector
+
+    bool static mycomp(const pair<int,int>& a, const pair<int,int> b){
+        return a.second<b.second;
+    };
+
+    然后 在 我们自己的方法里
+        vector<pair<int, int>> vec(map.begin(), map.end());
+        sort(vec.begin(), vec.end(), mycomp); // 给频率排个序
 
 
 

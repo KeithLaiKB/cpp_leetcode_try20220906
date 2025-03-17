@@ -6,18 +6,33 @@
 #include <queue>
 #include <optional>
 #include <climits>
-
+#include <algorithm>
+#include <unordered_map>
 using namespace std;
 
 /**
  *
- * Given the root of a Binary Search Tree (BST), return the minimum absolute difference between the values of any two different nodes in the tree.
+ * Given the root of a binary search tree (BST) with duplicates, return all the mode(s) (i.e., the most frequently occurred element) in it.
+ * If the tree has more than one mode, return them in any order.
+ * Assume a BST is defined as follows:
+ *      The left subtree of a node contains only nodes with keys less than or equal to the node's key.
+ *      The right subtree of a node contains only nodes with keys greater than or equal to the node's key.
+ *      Both the left and right subtrees must also be binary search trees.
  *
+ * Example1:
+ * Input: root = [1,null,2,2]
+ * Output: [2]
  *
+ * My Example1:
+ * Input: root = [1,null,2,2,3,3]
+ * Output: [2,3]
  *
- * 总之就是 这是二叉搜索树
+ * 因为 最高重复次数 是2
+ * 但是
+ *  重复两次 的不仅仅只有一个结点
+ *  因为重复的有 2和3
+ *  所以要返回2和3
  *
- * 里面的任意节点 做减法 然后呢 绝对值的最小值
  */
 
 class Solution {
@@ -139,40 +154,74 @@ public:
     }
 
 
+    //  从大到小
+    bool static mycomp(const pair<int,int> &a,const pair<int,int> &b){
+        return a.second>b.second;
+    }
     //
     // BST
     // 中序遍历 就会出现 递增 的顺序
-    int mytraversal(TreeNode* root1, vector<int> &rs1){
+    //TreeNode searched_prev_node;
+
+
+    int mytraversal(TreeNode* root1, unordered_map<int,int> &map1){
         if(root1== nullptr){
             return -1;
         }
 
         //左
-        mytraversal(root1->left,rs1);
+        mytraversal(root1->left,map1);
         //中
-        rs1.push_back(root1->val);
+        // 初始化 或 已存在的对应map的value+1
+        if(map1.find(root1->val)!=map1.end()){
+            map1[root1->val]++;
+        }
+        else{
+            map1[root1->val]=0;
+        }
         //右
-        mytraversal(root1->right,rs1);
+        mytraversal(root1->right,map1);
         return 0;
     }
 
+
     // 时间复杂度: O(n)
     //      中序遍历一次所有节点，n 为树的节点总数。遍历后计算最小差值也为 O(n)，整体为 O(n)。
-    //空间复杂度:	O(n)
-    // 使用额外数组 vector<int> 保存所有节点值，因此额外空间为 O(n)。另外递归栈空间，最坏 O(n)，综合后仍为 O(n)。
-    int getMinimumDifference(TreeNode* root) {
-        vector<int> rs = {};
-        mytraversal(root, rs);
+    //      unorder_map 插入是O(1), 一共n个数字 所以O(n)
+    //      sort: O(nlogn)
+    //      然后for vec_map1 是O(n)
+    //      所以一共是 O(n)+O(n)+O(nlogn)+O(n) = O(nlogn)
+    //
+    // 空间复杂度:	O(n)
+    // 使用额外数组 vector<int> 保存所有频率值，因此额外空间为 O(n)。另外递归栈空间，最坏 O(n)，综合后仍为 O(n)。
 
-        int min_dif= INT_MAX;
-        for(int i=0;i<=rs.size()-1-1;i++){
-            int min_tmp=rs[i+1]-rs[i];
-            if(min_tmp<min_dif){
-                min_dif = min_tmp;
+    vector<int> findMode(TreeNode* root) {
+        //
+        vector<int> rs={};
+        rs.reserve(100);
+
+        //
+        // num, freq
+        unordered_map<int,int> map_num_freq;
+        mytraversal(root,map_num_freq);
+
+        //大到小排列
+        vector<pair<int,int>> vec_map1(map_num_freq.begin(),map_num_freq.end());
+        sort(vec_map1.begin(),vec_map1.end(), mycomp);
+
+        // vec[0] 是最大的，如果例如 2,2,3,3,1
+        // 出现最大频率的就有两个，
+        // 最后的1发现 只出现1次就可以不理, break就行了
+        for(int i=0;i<=vec_map1.size()-1;i++){
+            if(vec_map1[i].second==vec_map1[0].second){
+                rs.push_back(vec_map1[i].first);
+            }
+            else{
+                break;
             }
         }
 
-        return min_dif;
+        return rs;
     }
 
 
@@ -200,14 +249,14 @@ int main() {
 
     //std::vector<int> vec1_nums = {3,2,1,6,0,5};
 
-    std::vector<std::optional<int>> intopt_vec1_tree1 = {2,1,3};
+    std::vector<std::optional<int>> intopt_vec1_tree1 = {1,std::nullopt,2,2};
     intopt_vec1_tree1.reserve(100);
     Solution::TreeNode* tree1 = solut1->initLinkedlist_ints(intopt_vec1_tree1);
 
 
     int target_num= 2;
 
-    bool rs = solut1->getMinimumDifference(tree1);
+    vector<int> rs1 = solut1->findMode(tree1);
     //Solution::TreeNode* tree1 = solut1->initLinkedlist_ints(intopt_vec1);
 
     cout<<"result"<<endl;
@@ -217,8 +266,8 @@ int main() {
 
 
 
-    //solut1->myOutput_VectorBtB(rs,0,rs.size()-1);
-    cout<<rs<<endl;
+    solut1->myOutput_VectorBtB(rs1,0,rs1.size()-1);
+    //cout<<rs1<<endl;
     return 0;
 }
 

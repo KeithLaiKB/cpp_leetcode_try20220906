@@ -16,7 +16,7 @@ std::unordered_map	哈希表	key无序	key不可重复	    key不可修改	O(1) 
     }
 */
 
-
+------------------------------------------------------------
 
 unordered_map<char,int> target_freq;
 //如果找不到的话, target_freq.find(og[st_indx]) 的返回值是 target_freq.end()

@@ -34,6 +34,7 @@
     -- src/t112_PathSum.cpp will be compiled to bin/t112_PathSum
     -- src/t98_ValidateBinarySearchTree.cpp will be compiled to bin/t98_ValidateBinarySearchTree
     -- src/t530_MinimumAbsoluteDifferenceinBST.cpp will be compiled to bin/t530_MinimumAbsoluteDifferenceinBST
+    -- src/t501_FindModeinBinarySearchTree.cpp will be compiled to bin/t501_FindModeinBinarySearchTree
     -- src/t101_SymmetricTree.cpp will be compiled to bin/t101_SymmetricTree
     -- src/t104_MaximumDepthOfBinaryTree.cpp will be compiled to bin/t104_MaximumDepthOfBinaryTree
     -- src/t111_MinimumDepthOfBinaryTree.cpp will be compiled to bin/t111_MinimumDepthOfBinaryTree
@@ -66,6 +67,6 @@
     -- src/main2.cpp will be compiled to bin/main2
     -- src/learn_heapsort1_maxheap.cpp will be compiled to bin/learn_heapsort1_maxheap
     -- src/updatetocplus20test.cpp will be compiled to bin/updatetocplus20test
--- Configuring done (0.0s)
--- Generating done (0.0s)
+-- Configuring done (0.2s)
+-- Generating done (0.2s)
 -- Build files have been written to: /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug
