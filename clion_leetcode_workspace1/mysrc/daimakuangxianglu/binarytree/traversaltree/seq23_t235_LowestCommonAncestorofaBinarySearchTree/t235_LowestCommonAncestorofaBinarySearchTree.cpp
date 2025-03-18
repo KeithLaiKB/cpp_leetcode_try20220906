@@ -157,62 +157,52 @@ public:
     // 从下往上
     // 那肯定是DFS
     // BST 那么他的核心关键点就是中序遍历
-    TreeNode* backtracking(TreeNode* root1, TreeNode* p, TreeNode* q){
+    // 或者
+    // 左<根<右, 可利用从上到下，可能用到前序遍历
+    //
+    // 我们这里用的是 左<根<右
+    TreeNode* mytraversal(TreeNode* root1, TreeNode* p, TreeNode* q){
 
         // limit
         if(root1== nullptr){
             return nullptr;
         }
-        else if(root1 != nullptr && (root1==p||root1==q)){
-            return root1;
-        }
 
-        // construct
+        TreeNode* lchild= nullptr;
+        TreeNode* rchild= nullptr;
 
-        // for
-        vector<TreeNode*> children1 = {root1->left,root1->right};
-        //
-        // rs 只能是 p 或q, 或者是root
-        // rs 是nullptr就证明没找到
-        TreeNode* lf_rs = nullptr;
-        TreeNode* rg_rs = nullptr;
-
-        for(TreeNode* child_tmp: children1){
-
-            if(child_tmp == root1->left){
-                lf_rs = backtracking(root1->left, p, q);
-            }
-            else if(child_tmp == root1->right){
-                rg_rs = backtracking(root1->right, p, q);
+        // p和q 都在 root的左边
+        if(root1->val>p->val && root1->val>q->val){
+            lchild=mytraversal(root1->left,p,q);
+            if(lchild!= nullptr){
+                return lchild;
             }
         }
-
-        //左右边 都不为空 证明两边都找到了
-        if(lf_rs!= nullptr && rg_rs!= nullptr){
+        // p和q 都在 root的右边
+        else if(root1->val<p->val && root1->val<q->val){
+            rchild=mytraversal(root1->right,p,q);
+            if(rchild!= nullptr){
+                return rchild;
+            }
+        }
+        // p和q 各自在root的两边
+        else{
             return root1;
         }
-        //只找到左边有, 可能是p, 可能是q, 也有可能是 lowest common ancestor, 当然p和q 也可以是lowest common ancestor
-        else if(lf_rs!= nullptr && rg_rs== nullptr){
-            return lf_rs;
-        }
-        //只找到右边有, 可能是p, 可能是q, 也有可能是 lowest common ancestor, 当然p和q 也可以是lowest common ancestor
-        else if(lf_rs== nullptr && rg_rs!= nullptr){
-            return rg_rs;
-        }
-
 
         return nullptr;
 
     }
 
     // 时间复杂度:
-    //      遍历所有的节点所以是O(n)
+    //      平衡BST            :O(logn)
+    //      最坏情况（链状树）   :O(n)（最深递归栈）。
     //
     //空间复杂度:
     //      最坏情况（链状树）：O(n)（最深递归栈）。
     //      平衡二叉树：O(logn)（二叉树深度）。
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
-        return backtracking(root,p,q);
+        return mytraversal(root,p,q);
     }
 
 
