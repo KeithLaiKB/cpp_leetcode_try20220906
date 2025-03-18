@@ -6,3 +6,26 @@ BFS（队列迭代）	O(N)	    O(N)（最坏情况）
 
 递归就是DFS
 递归一般不适用于BFS
+
+
+
+--------------------------------------
+Binary search tree
+
+
+查找一个数字
+    二叉搜索树 时间复杂度 是比普通树低的
+    二叉搜索树: O(logn)
+    普通树: O(n)
+
+
+
+操作	                            普通二叉树（Unordered Binary Tree）	平衡 BST（Balanced Binary Search Tree）	不平衡 BST（Degenerate BST / Linked List）
+查找 (Search)	                                            O(n)	                            O(log n)	                                O(n)
+插入 (Insert)	                    (无序遍历找到可插入位置)    O(n)	       	                    O(log n)	                                O(n)
+删除 (Delete)	                    (无序遍历找到节点)         O(n)	       	                    O(log n)	                                O(n)
+最小值/最大值 (Min/Max)	            (遍历所有节点)            O(n)	      (向左/右递归到底) 	    O(log n)	                                O(n)
+中序遍历 (Inorder Traversal)	                                O(n)	                            O(n)	                                    O(n)
+前驱/后继 (Predecessor / Successor)	                        O(n)	                            O(log n)	                                O(n)
+高度计算 (Height Calculation)	                            O(n)	                            O(log n)	                                O(n)
+构造树 (Build Tree)	                                        O(n)	      (若需排序输入)          O(n log n) 	          (插入有序数据时)         O(n^2)

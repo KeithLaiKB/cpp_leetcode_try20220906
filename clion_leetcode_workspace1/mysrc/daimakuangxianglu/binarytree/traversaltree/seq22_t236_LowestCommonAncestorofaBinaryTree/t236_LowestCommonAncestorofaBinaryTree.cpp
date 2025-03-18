@@ -6,33 +6,28 @@
 #include <queue>
 #include <optional>
 #include <climits>
-#include <algorithm>
-#include <unordered_map>
+
 using namespace std;
 
 /**
  *
- * Given the root of a binary search tree (BST) with duplicates, return all the mode(s) (i.e., the most frequently occurred element) in it.
- * If the tree has more than one mode, return them in any order.
- * Assume a BST is defined as follows:
- *      The left subtree of a node contains only nodes with keys less than or equal to the node's key.
- *      The right subtree of a node contains only nodes with keys greater than or equal to the node's key.
- *      Both the left and right subtrees must also be binary search trees.
+ * Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.
+ * According to the definition of LCA on Wikipedia:
+ * “The lowest common ancestor is defined between two nodes p and q as the lowest node in T
+ * that has both p and q as descendants (where we allow a node to be a descendant of itself).”
  *
- * Example1:
- * Input: root = [1,null,2,2]
- * Output: [2]
- *
- * My Example1:
- * Input: root = [1,null,2,2,3,3]
- * Output: [2,3]
- *
- * 因为 最高重复次数 是2
- * 但是
- *  重复两次 的不仅仅只有一个结点
- *  因为重复的有 2和3
- *  所以要返回2和3
- *
+                                    1
+                    |                               |
+                    2                               3
+            |               |               |               |
+            4               5               6               7
+       |       |        |       |       |       |       |       |
+       8       9       null    11      12      null    14       15
+
+       例如
+ *          8 和 9 的最近祖先 是 4
+ *          2 和 9 的最近祖先 是 2
+ *          8 和 5 的最近祖先 是 2
  */
 
 class Solution {
@@ -58,7 +53,7 @@ public:
     TreeNode* initLinkedlist_ints(const vector<optional<int>> &arr){
         // 如果需要初始化的长度 <=0 就没必要初始化了
         // 或者如果 提供的数组本身 <=0 也没必要初始化了
-        // 我这里这么做 是提供 有可能 数组长null度很长(例如100), 但我只需要初始化其中比较短的一部分(5)
+        // 我这里这么做 是提供 有可能 数组长度很长(例如100), 但我只需要初始化其中比较短的一部分(5)
         //int len = sizeof(arr)/sizeof(arr[0]);
         int len = arr.size();
         if(len<=0){
@@ -153,75 +148,65 @@ public:
         }
     }
 
-
-    //  从大到小
-    bool static mycomp(const pair<int,int> &a,const pair<int,int> &b){
-        return a.second>b.second;
-    }
     //
-    // BST
-    // 中序遍历 就会出现 递增 的顺序
-    //TreeNode searched_prev_node;
+    // 从下往上
+    // 那肯定是DFS
+    TreeNode* backtracking(TreeNode* root1, TreeNode* p, TreeNode* q){
 
-
-    int mytraversal(TreeNode* root1, unordered_map<int,int> &map1){
+        // limit
         if(root1== nullptr){
-            return -1;
+            return nullptr;
+        }
+        else if(root1 != nullptr && (root1==p||root1==q)){
+            return root1;
         }
 
-        //左
-        mytraversal(root1->left,map1);
-        //中
-        // 初始化 或 已存在的对应map的value+1
-        if(map1.find(root1->val)!=map1.end()){
-            map1[root1->val]++;
+        // construct
+
+        // for
+        vector<TreeNode*> children1 = {root1->left,root1->right};
+        //
+        // rs 只能是 p 或q, 或者是root
+        // rs 是nullptr就证明没找到
+        TreeNode* lf_rs = nullptr;
+        TreeNode* rg_rs = nullptr;
+
+        for(TreeNode* child_tmp: children1){
+
+            if(child_tmp == root1->left){
+                lf_rs = backtracking(root1->left, p, q);
+            }
+            else if(child_tmp == root1->right){
+                rg_rs = backtracking(root1->right, p, q);
+            }
         }
-        else{
-            map1[root1->val]=0;
+
+        //左右边 都不为空 证明两边都找到了
+        if(lf_rs!= nullptr && rg_rs!= nullptr){
+            return root1;
         }
-        //右
-        mytraversal(root1->right,map1);
-        return 0;
+        //只找到左边有, 可能是p, 可能是q, 也有可能是 lowest common ancestor, 当然p和q 也可以是lowest common ancestor
+        else if(lf_rs!= nullptr && rg_rs== nullptr){
+            return lf_rs;
+        }
+        //只找到右边有, 可能是p, 可能是q, 也有可能是 lowest common ancestor, 当然p和q 也可以是lowest common ancestor
+        else if(lf_rs== nullptr && rg_rs!= nullptr){
+            return rg_rs;
+        }
+
+
+        return nullptr;
+
     }
 
-
-    // 时间复杂度: O(n)
-    //      中序遍历一次所有节点，n 为树的节点总数。遍历后计算最小差值也为 O(n)，整体为 O(n)。
-    //      unorder_map 插入是O(1), 一共n个数字 所以O(n)
-    //      sort: O(nlogn)
-    //      然后for vec_map1 是O(n)
-    //      所以一共是 O(n)+O(n)+O(nlogn)+O(n) = O(nlogn)
+    // 时间复杂度:
+    //      遍历所有的节点所以是O(n)
     //
-    // 空间复杂度:	O(n)
-    // 使用额外数组 vector<int> 保存所有频率值，因此额外空间为 O(n)。另外递归栈空间，最坏 O(n)，综合后仍为 O(n)。
-
-    vector<int> findMode(TreeNode* root) {
-        //
-        vector<int> rs={};
-        rs.reserve(100);
-
-        //
-        // num, freq
-        unordered_map<int,int> map_num_freq;
-        mytraversal(root,map_num_freq);
-
-        //大到小排列
-        vector<pair<int,int>> vec_map1(map_num_freq.begin(),map_num_freq.end());
-        sort(vec_map1.begin(),vec_map1.end(), mycomp);
-
-        // vec[0] 是最大的，如果例如 2,2,3,3,1
-        // 出现最大频率的就有两个，
-        // 最后的1发现 只出现1次就可以不理, break就行了
-        for(int i=0;i<=vec_map1.size()-1;i++){
-            if(vec_map1[i].second==vec_map1[0].second){
-                rs.push_back(vec_map1[i].first);
-            }
-            else{
-                break;
-            }
-        }
-
-        return rs;
+    //空间复杂度:
+    //      最坏情况（链状树）：O(n)（最深递归栈）。
+    //      平衡二叉树：O(logn)（二叉树深度）。
+    TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
+        return backtracking(root,p,q);
     }
 
 
@@ -238,9 +223,9 @@ int main() {
     //std::vector<std::optional<int>> intopt_vec1 = {1,2,2,3,4,4,3,5,6,std::nullopt,8,std::nullopt,std::nullopt,6,5};
     //std::vector<std::optional<int>> intopt_vec1 = {3,9,20,std::nullopt,std::nullopt,15,7};
 
-//    std::vector<std::optional<int>> intopt_vec1_tree1 = {1,3,2,5};
-//    intopt_vec1_tree1.reserve(100);
-//
+    std::vector<std::optional<int>> intopt_vec1_tree1 = {3,5,1,6,2,0,8,std::nullopt,std::nullopt,7,4};
+    intopt_vec1_tree1.reserve(100);
+
 //    std::vector<std::optional<int>> intopt_vec1_tree2 = {2,1,3,std::nullopt,4,std::nullopt,7};
 //    intopt_vec1_tree2.reserve(100);
 //
@@ -249,25 +234,19 @@ int main() {
 
     //std::vector<int> vec1_nums = {3,2,1,6,0,5};
 
-    std::vector<std::optional<int>> intopt_vec1_tree1 = {1,std::nullopt,2,2};
-    intopt_vec1_tree1.reserve(100);
     Solution::TreeNode* tree1 = solut1->initLinkedlist_ints(intopt_vec1_tree1);
+    Solution::TreeNode* rs = solut1->lowestCommonAncestor(tree1,tree1->left,tree1->right);
 
-
-    int target_num= 2;
-
-    vector<int> rs1 = solut1->findMode(tree1);
-    //Solution::TreeNode* tree1 = solut1->initLinkedlist_ints(intopt_vec1);
 
     cout<<"result"<<endl;
-    //solut1->myOutput_Treenode_int(rs);
+    solut1->myOutput_Treenode_int(rs);
 
 
 
 
 
-    solut1->myOutput_VectorBtB(rs1,0,rs1.size()-1);
-    //cout<<rs1<<endl;
+    //solut1->myOutput_VectorBtB(rs,0,rs.size()-1);
+    //cout<<rs<<endl;
     return 0;
 }
 

@@ -11,23 +11,28 @@ using namespace std;
 
 /**
  *
- * Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.
+ * Given a binary search tree (BST), find the lowest common ancestor (LCA) node of two given nodes in the BST.
  * According to the definition of LCA on Wikipedia:
  * “The lowest common ancestor is defined between two nodes p and q as the lowest node in T
  * that has both p and q as descendants (where we allow a node to be a descendant of itself).”
  *
-                                    1
+ *
+ *
+                                    50
                     |                               |
-                    2                               3
+                   20                              100
             |               |               |               |
-            4               5               6               7
+           10              35              70              130
        |       |        |       |       |       |       |       |
-       8       9       null    11      12      null    14       15
+       5       17      32      40      63      80      120     140
 
        例如
- *          8 和 9 的最近祖先 是 4
- *          2 和 9 的最近祖先 是 2
- *          8 和 5 的最近祖先 是 2
+ *          10 和 35 的最近祖先 是 20
+ *          20 和 10 的最近祖先 是 20
+ *          5 和  35 的最近祖先 是 20
+ *
+ *    这题 和 236的区别是 , 这里的树 本身就是一个 二叉搜索树(BST)
+ *
  */
 
 class Solution {
@@ -151,7 +156,8 @@ public:
     //
     // 从下往上
     // 那肯定是DFS
-    TreeNode* mytraversal(TreeNode* root1, TreeNode* p, TreeNode* q){
+    // BST 那么他的核心关键点就是中序遍历
+    TreeNode* backtracking(TreeNode* root1, TreeNode* p, TreeNode* q){
 
         // limit
         if(root1== nullptr){
@@ -174,10 +180,10 @@ public:
         for(TreeNode* child_tmp: children1){
 
             if(child_tmp == root1->left){
-                lf_rs = mytraversal(root1->left, p, q);
+                lf_rs = backtracking(root1->left, p, q);
             }
             else if(child_tmp == root1->right){
-                rg_rs = mytraversal(root1->right, p, q);
+                rg_rs = backtracking(root1->right, p, q);
             }
         }
 
@@ -206,7 +212,7 @@ public:
     //      最坏情况（链状树）：O(n)（最深递归栈）。
     //      平衡二叉树：O(logn)（二叉树深度）。
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
-        return mytraversal(root,p,q);
+        return backtracking(root,p,q);
     }
 
 
@@ -223,7 +229,7 @@ int main() {
     //std::vector<std::optional<int>> intopt_vec1 = {1,2,2,3,4,4,3,5,6,std::nullopt,8,std::nullopt,std::nullopt,6,5};
     //std::vector<std::optional<int>> intopt_vec1 = {3,9,20,std::nullopt,std::nullopt,15,7};
 
-    std::vector<std::optional<int>> intopt_vec1_tree1 = {3,5,1,6,2,0,8,std::nullopt,std::nullopt,7,4};
+    std::vector<std::optional<int>> intopt_vec1_tree1 = {6,2,8,0,4,7,9,std::nullopt,std::nullopt,3,5};
     intopt_vec1_tree1.reserve(100);
 
 //    std::vector<std::optional<int>> intopt_vec1_tree2 = {2,1,3,std::nullopt,4,std::nullopt,7};
@@ -246,7 +252,7 @@ int main() {
 
 
     //solut1->myOutput_VectorBtB(rs,0,rs.size()-1);
-    cout<<rs<<endl;
+    //cout<<rs<<endl;
     return 0;
 }
 
