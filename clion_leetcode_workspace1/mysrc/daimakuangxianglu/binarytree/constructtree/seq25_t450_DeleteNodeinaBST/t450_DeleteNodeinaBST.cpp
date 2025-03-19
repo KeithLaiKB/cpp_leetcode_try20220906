@@ -11,54 +11,15 @@ using namespace std;
 
 /**
  *
- * You are given the root node of a binary search tree (BST) and a value to insert into the tree.
+ * Given a root node reference of a BST and a key, delete the node with the given key in the BST.
  *
- * Return the root node of the BST after the insertion.
- * It is guaranteed that the new value does not exist in the original BST.
- *
- * Notice that there may exist multiple valid ways for the insertion,
- * as long as the tree remains a BST after insertion. You can return any of them.
- *
+ * Return the root node reference (possibly updated) of the BST.
+ * Basically, the deletion can be divided into two stages:
+ * Search for a node to remove.
+ * If the node is found, delete the node.
  *
  *
-                                    50
-                    |                               |
-                   20                              100
-            |               |               |               |
-           10              35              70              130
-       |       |        |       |       |       |       |       |
-       5       17      32      40      63      80      120     140
-
-
- * 插法有很多种,
- * 比如
-
-
-                   20
-            |               |
-           10              35
-       |       |        |       |
-       5       17      32      40
  *
- *  插入一个 19 它可以变成
- *
-                   20
-            |               |
-           10              35
-       |       |        |       |
-       5       17      32      40
-                 |
-                19
-
- *
- *  也可以变成
-                   19
-            |               |
-           10              20
-       |       |        |       |
-       5       17      32       35
-                                  |
-                                  40
  *
  * 但注意一下 你这个本身不是AVL树 不带height的 所以 就不要用AVL树那种东西来搞了，别管什么左旋右旋了
  *
@@ -186,13 +147,11 @@ public:
     //
     // 树的构造一般不会用backtracking
     // 直接 利用 BST 的  左<根<右 就好了
-
     TreeNode* mytraversal(TreeNode* root, int val){
 
         // limit
         if(root == nullptr){
-            TreeNode* node_insrt = new TreeNode(val);
-            return node_insrt;
+            return nullptr;
         }
 
         //去左
@@ -205,6 +164,68 @@ public:
             root->right = mytraversal(root->right, val);
             return root;
         }
+        else if(val == root->val){
+            TreeNode* lchild = root->left;
+            TreeNode* rchild = root->right;
+
+            if(lchild == nullptr && rchild== nullptr){
+                delete(root);
+                return nullptr;
+            }
+            //          preroot
+            //              |
+            //            root
+            //         |        |
+            //         9        null
+            else if(lchild != nullptr && rchild== nullptr){
+                delete(root);
+                return lchild;
+            }
+            //          preroot
+            //              |
+            //            root
+            //         |        |
+            //        null     10
+            else if(lchild == nullptr && rchild!= nullptr){
+                delete(root);
+                return rchild;
+            }
+            //                      preroot
+            //              |                   |
+            //            root                  18
+            //         |        |
+            //        9        10
+            //      |    |    |   |
+            //     11   12   13   14
+            //
+            //  此时有两种方法
+            //      第一种 9和其的所有子节点   移动到 10 的节点左子树的最左边
+            //      第二中 10和其的所有子节点  移动到 9 的节点右子树的最右边
+            //
+            //      我这里采用的是第一种, 其实这两种 没什么太大区别的, 怎么舒服怎么来就好
+            //
+            //                      preroot
+            //              |                   |
+            //             10                  18
+            //         |        |
+            //        13        14
+            //     |
+            //     9
+            //   |   |
+            //  11  12
+            //
+            else if(lchild != nullptr && rchild!= nullptr){
+                TreeNode* tmp =rchild;
+                for(;tmp->left!= nullptr;){
+                    tmp=tmp->left;
+                }
+                tmp->left = lchild;
+
+
+                delete(root);
+                return rchild;
+            }
+        }
 
         return nullptr;
     }
@@ -216,8 +237,8 @@ public:
     //空间复杂度:
     //      平衡二叉树：O(logn)（二叉树深度）。
     //      最坏情况（链状树）：O(n)（最深递归栈）。
-    TreeNode* insertIntoBST(TreeNode* root, int val) {
-        return mytraversal(root, val);
+    TreeNode* deleteNode(TreeNode* root, int key) {
+        return mytraversal(root, key);
     }
 
 
