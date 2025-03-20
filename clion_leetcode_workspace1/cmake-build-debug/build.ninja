@@ -661,6 +661,99 @@ build t617_MergeTwoBinaryTrees: CXX_EXECUTABLE_LINKER__t617_MergeTwoBinaryTrees_
   TARGET_PDB = t617_MergeTwoBinaryTrees.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target t701_InsertintoaBinarySearchTree
+
+
+#############################################
+# Order-only phony target for t701_InsertintoaBinarySearchTree
+
+build cmake_object_order_depends_target_t701_InsertintoaBinarySearchTree: phony || CMakeFiles/t701_InsertintoaBinarySearchTree.dir
+
+build CMakeFiles/t701_InsertintoaBinarySearchTree.dir/mysrc/daimakuangxianglu/binarytree/constructtree/seq24_t701_InsertintoaBinarySearchTree/t701_InsertintoaBinarySearchTree.cpp.o: CXX_COMPILER__t701_InsertintoaBinarySearchTree_unscanned_Debug /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/constructtree/seq24_t701_InsertintoaBinarySearchTree/t701_InsertintoaBinarySearchTree.cpp || cmake_object_order_depends_target_t701_InsertintoaBinarySearchTree
+  DEP_FILE = CMakeFiles/t701_InsertintoaBinarySearchTree.dir/mysrc/daimakuangxianglu/binarytree/constructtree/seq24_t701_InsertintoaBinarySearchTree/t701_InsertintoaBinarySearchTree.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/t701_InsertintoaBinarySearchTree.dir
+  OBJECT_FILE_DIR = CMakeFiles/t701_InsertintoaBinarySearchTree.dir/mysrc/daimakuangxianglu/binarytree/constructtree/seq24_t701_InsertintoaBinarySearchTree
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target t701_InsertintoaBinarySearchTree
+
+
+#############################################
+# Link the executable t701_InsertintoaBinarySearchTree
+
+build t701_InsertintoaBinarySearchTree: CXX_EXECUTABLE_LINKER__t701_InsertintoaBinarySearchTree_Debug CMakeFiles/t701_InsertintoaBinarySearchTree.dir/mysrc/daimakuangxianglu/binarytree/constructtree/seq24_t701_InsertintoaBinarySearchTree/t701_InsertintoaBinarySearchTree.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/t701_InsertintoaBinarySearchTree.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = t701_InsertintoaBinarySearchTree
+  TARGET_PDB = t701_InsertintoaBinarySearchTree.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target t450_DeleteNodeinaBST
+
+
+#############################################
+# Order-only phony target for t450_DeleteNodeinaBST
+
+build cmake_object_order_depends_target_t450_DeleteNodeinaBST: phony || CMakeFiles/t450_DeleteNodeinaBST.dir
+
+build CMakeFiles/t450_DeleteNodeinaBST.dir/mysrc/daimakuangxianglu/binarytree/constructtree/seq25_t450_DeleteNodeinaBST/t450_DeleteNodeinaBST.cpp.o: CXX_COMPILER__t450_DeleteNodeinaBST_unscanned_Debug /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/constructtree/seq25_t450_DeleteNodeinaBST/t450_DeleteNodeinaBST.cpp || cmake_object_order_depends_target_t450_DeleteNodeinaBST
+  DEP_FILE = CMakeFiles/t450_DeleteNodeinaBST.dir/mysrc/daimakuangxianglu/binarytree/constructtree/seq25_t450_DeleteNodeinaBST/t450_DeleteNodeinaBST.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/t450_DeleteNodeinaBST.dir
+  OBJECT_FILE_DIR = CMakeFiles/t450_DeleteNodeinaBST.dir/mysrc/daimakuangxianglu/binarytree/constructtree/seq25_t450_DeleteNodeinaBST
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target t450_DeleteNodeinaBST
+
+
+#############################################
+# Link the executable t450_DeleteNodeinaBST
+
+build t450_DeleteNodeinaBST: CXX_EXECUTABLE_LINKER__t450_DeleteNodeinaBST_Debug CMakeFiles/t450_DeleteNodeinaBST.dir/mysrc/daimakuangxianglu/binarytree/constructtree/seq25_t450_DeleteNodeinaBST/t450_DeleteNodeinaBST.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/t450_DeleteNodeinaBST.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = t450_DeleteNodeinaBST
+  TARGET_PDB = t450_DeleteNodeinaBST.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target t669_TrimaBinarySearchTree
+
+
+#############################################
+# Order-only phony target for t669_TrimaBinarySearchTree
+
+build cmake_object_order_depends_target_t669_TrimaBinarySearchTree: phony || CMakeFiles/t669_TrimaBinarySearchTree.dir
+
+build CMakeFiles/t669_TrimaBinarySearchTree.dir/mysrc/daimakuangxianglu/binarytree/constructtree/seq26_t669_TrimaBinarySearchTree/t669_TrimaBinarySearchTree.cpp.o: CXX_COMPILER__t669_TrimaBinarySearchTree_unscanned_Debug /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/constructtree/seq26_t669_TrimaBinarySearchTree/t669_TrimaBinarySearchTree.cpp || cmake_object_order_depends_target_t669_TrimaBinarySearchTree
+  DEP_FILE = CMakeFiles/t669_TrimaBinarySearchTree.dir/mysrc/daimakuangxianglu/binarytree/constructtree/seq26_t669_TrimaBinarySearchTree/t669_TrimaBinarySearchTree.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/t669_TrimaBinarySearchTree.dir
+  OBJECT_FILE_DIR = CMakeFiles/t669_TrimaBinarySearchTree.dir/mysrc/daimakuangxianglu/binarytree/constructtree/seq26_t669_TrimaBinarySearchTree
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target t669_TrimaBinarySearchTree
+
+
+#############################################
+# Link the executable t669_TrimaBinarySearchTree
+
+build t669_TrimaBinarySearchTree: CXX_EXECUTABLE_LINKER__t669_TrimaBinarySearchTree_Debug CMakeFiles/t669_TrimaBinarySearchTree.dir/mysrc/daimakuangxianglu/binarytree/constructtree/seq26_t669_TrimaBinarySearchTree/t669_TrimaBinarySearchTree.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/t669_TrimaBinarySearchTree.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = t669_TrimaBinarySearchTree
+  TARGET_PDB = t669_TrimaBinarySearchTree.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target t102_BinaryTreeLevelorderTraversal_itera
 
 
@@ -1031,6 +1124,37 @@ build t236_LowestCommonAncestorofaBinaryTree: CXX_EXECUTABLE_LINKER__t236_Lowest
   PRE_LINK = :
   TARGET_FILE = t236_LowestCommonAncestorofaBinaryTree
   TARGET_PDB = t236_LowestCommonAncestorofaBinaryTree.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target t235_LowestCommonAncestorofaBinarySearchTree
+
+
+#############################################
+# Order-only phony target for t235_LowestCommonAncestorofaBinarySearchTree
+
+build cmake_object_order_depends_target_t235_LowestCommonAncestorofaBinarySearchTree: phony || CMakeFiles/t235_LowestCommonAncestorofaBinarySearchTree.dir
+
+build CMakeFiles/t235_LowestCommonAncestorofaBinarySearchTree.dir/mysrc/daimakuangxianglu/binarytree/traversaltree/seq23_t235_LowestCommonAncestorofaBinarySearchTree/t235_LowestCommonAncestorofaBinarySearchTree.cpp.o: CXX_COMPILER__t235_LowestCommonAncestorofaBinarySearchTree_unscanned_Debug /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/traversaltree/seq23_t235_LowestCommonAncestorofaBinarySearchTree/t235_LowestCommonAncestorofaBinarySearchTree.cpp || cmake_object_order_depends_target_t235_LowestCommonAncestorofaBinarySearchTree
+  DEP_FILE = CMakeFiles/t235_LowestCommonAncestorofaBinarySearchTree.dir/mysrc/daimakuangxianglu/binarytree/traversaltree/seq23_t235_LowestCommonAncestorofaBinarySearchTree/t235_LowestCommonAncestorofaBinarySearchTree.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/t235_LowestCommonAncestorofaBinarySearchTree.dir
+  OBJECT_FILE_DIR = CMakeFiles/t235_LowestCommonAncestorofaBinarySearchTree.dir/mysrc/daimakuangxianglu/binarytree/traversaltree/seq23_t235_LowestCommonAncestorofaBinarySearchTree
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target t235_LowestCommonAncestorofaBinarySearchTree
+
+
+#############################################
+# Link the executable t235_LowestCommonAncestorofaBinarySearchTree
+
+build t235_LowestCommonAncestorofaBinarySearchTree: CXX_EXECUTABLE_LINKER__t235_LowestCommonAncestorofaBinarySearchTree_Debug CMakeFiles/t235_LowestCommonAncestorofaBinarySearchTree.dir/mysrc/daimakuangxianglu/binarytree/traversaltree/seq23_t235_LowestCommonAncestorofaBinarySearchTree/t235_LowestCommonAncestorofaBinarySearchTree.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/t235_LowestCommonAncestorofaBinarySearchTree.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = t235_LowestCommonAncestorofaBinarySearchTree
+  TARGET_PDB = t235_LowestCommonAncestorofaBinarySearchTree.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target t110_BalancedBinaryTree
@@ -2213,7 +2337,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug
 
-build all: phony t1_TwoSum_past t1_pre1_t242_ValidAnagram t1_pre1_t242_ValidAnagram_method2 t1_pre2_t349_IntersectionofTwoArrays t121_BestTimeToBuyAndSellStock t5_pre1_t647_Palindromic_Substrings t704_BinarySearch t27_RemoveElement t977_SquaresOfASortedArray t76_MinimumSizeSubarraySum t209_MinimumSizeSubarraySum t209_MinimumSizeSubarraySum_daimakuagnixanglu t209_MinimumSizeSubarraySum_leetcode t59_SpiralMatrixII t226_InvertBinaryTree_levelorder_itera t226_InvertBinaryTree_preorder_itera t226_InvertBinaryTree_preorder_recur t106_ConstructBinaryTreefromInorderandPostorderTraversal t654_MaximumBinaryTree t617_MergeTwoBinaryTrees t102_BinaryTreeLevelorderTraversal_itera t144_BinaryTreePreorderTraversal_itera t145_BinaryTreePostorderTraversal_itera t94_BinaryTreeInorderTraversal_itera t144_BinaryTreePreorderTraversal_recur t145_BinaryTreePostorderTraversal_recur t94_BinaryTreeInorderTraversal_recur t257_BinaryTreePaths t513_FindBottomLeftTreeValue t700_SearchInABinarySearchTree t501_FindModeinBinarySearchTree t236_LowestCommonAncestorofaBinaryTree t110_BalancedBinaryTree t404_SumofLeftLeaves t112_PathSum t98_ValidateBinarySearchTree t530_MinimumAbsoluteDifferenceinBST t101_SymmetricTree t104_MaximumDepthOfBinaryTree t111_MinimumDepthOfBinaryTree t222_CountCompleteTreeNodes t242_ValidAnagram t1002_FindCommonCharacters t349_IntersectionofTwoArrays t202_HappyNumber t1_TwoSum t454_4SumII t383_RansomNote t15_3Sum t15_3Sum_two_index t18_4sum_two_index t206_ReverseLinkedList t206_RemoveNthNodeFromEndofList t142_LinkedListCycleII t20_ValidParentheses t1047_RemoveAllAdjacentDuplicatesInString t150_EvaluateReversePolishNotation t239_SlidingWindowMaximum t347_TopKFrequentElements t151_ReverseWordsInAString kmp t459_RepeatedSubstringPattern learn_class_generic1 learn_template_generic1 wrong_use_refer_in_method main main2 learn_heapsort1_maxheap updatetocplus20test
+build all: phony t1_TwoSum_past t1_pre1_t242_ValidAnagram t1_pre1_t242_ValidAnagram_method2 t1_pre2_t349_IntersectionofTwoArrays t121_BestTimeToBuyAndSellStock t5_pre1_t647_Palindromic_Substrings t704_BinarySearch t27_RemoveElement t977_SquaresOfASortedArray t76_MinimumSizeSubarraySum t209_MinimumSizeSubarraySum t209_MinimumSizeSubarraySum_daimakuagnixanglu t209_MinimumSizeSubarraySum_leetcode t59_SpiralMatrixII t226_InvertBinaryTree_levelorder_itera t226_InvertBinaryTree_preorder_itera t226_InvertBinaryTree_preorder_recur t106_ConstructBinaryTreefromInorderandPostorderTraversal t654_MaximumBinaryTree t617_MergeTwoBinaryTrees t701_InsertintoaBinarySearchTree t450_DeleteNodeinaBST t669_TrimaBinarySearchTree t102_BinaryTreeLevelorderTraversal_itera t144_BinaryTreePreorderTraversal_itera t145_BinaryTreePostorderTraversal_itera t94_BinaryTreeInorderTraversal_itera t144_BinaryTreePreorderTraversal_recur t145_BinaryTreePostorderTraversal_recur t94_BinaryTreeInorderTraversal_recur t257_BinaryTreePaths t513_FindBottomLeftTreeValue t700_SearchInABinarySearchTree t501_FindModeinBinarySearchTree t236_LowestCommonAncestorofaBinaryTree t235_LowestCommonAncestorofaBinarySearchTree t110_BalancedBinaryTree t404_SumofLeftLeaves t112_PathSum t98_ValidateBinarySearchTree t530_MinimumAbsoluteDifferenceinBST t101_SymmetricTree t104_MaximumDepthOfBinaryTree t111_MinimumDepthOfBinaryTree t222_CountCompleteTreeNodes t242_ValidAnagram t1002_FindCommonCharacters t349_IntersectionofTwoArrays t202_HappyNumber t1_TwoSum t454_4SumII t383_RansomNote t15_3Sum t15_3Sum_two_index t18_4sum_two_index t206_ReverseLinkedList t206_RemoveNthNodeFromEndofList t142_LinkedListCycleII t20_ValidParentheses t1047_RemoveAllAdjacentDuplicatesInString t150_EvaluateReversePolishNotation t239_SlidingWindowMaximum t347_TopKFrequentElements t151_ReverseWordsInAString kmp t459_RepeatedSubstringPattern learn_class_generic1 learn_template_generic1 wrong_use_refer_in_method main main2 learn_heapsort1_maxheap updatetocplus20test
 
 # =============================================================================
 # Built-in targets
