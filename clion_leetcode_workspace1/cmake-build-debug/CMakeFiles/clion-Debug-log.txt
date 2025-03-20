@@ -22,6 +22,8 @@
     -- src/t701_InsertintoaBinarySearchTree.cpp will be compiled to bin/t701_InsertintoaBinarySearchTree
     -- src/t450_DeleteNodeinaBST.cpp will be compiled to bin/t450_DeleteNodeinaBST
     -- src/t669_TrimaBinarySearchTree.cpp will be compiled to bin/t669_TrimaBinarySearchTree
+    -- src/t108_ConvertSortedArraytoBinarySearchTree.cpp will be compiled to bin/t108_ConvertSortedArraytoBinarySearchTree
+    -- src/t538_ConvertBSTtoGreaterTree.cpp will be compiled to bin/t538_ConvertBSTtoGreaterTree
     -- src/t102_BinaryTreeLevelorderTraversal_itera.cpp will be compiled to bin/t102_BinaryTreeLevelorderTraversal_itera
     -- src/t144_BinaryTreePreorderTraversal_itera.cpp will be compiled to bin/t144_BinaryTreePreorderTraversal_itera
     -- src/t145_BinaryTreePostorderTraversal_itera.cpp will be compiled to bin/t145_BinaryTreePostorderTraversal_itera
