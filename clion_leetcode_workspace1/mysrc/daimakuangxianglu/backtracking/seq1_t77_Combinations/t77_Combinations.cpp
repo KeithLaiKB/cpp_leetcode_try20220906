@@ -56,7 +56,21 @@ public:
             //deal
 
             //for
-            for(int i=st_num;i<=ed_num;i++){
+            // 方法一: 成功
+            //for(int i=st_num;i<=ed_num;i++){
+            // 方法二: 代码狂想录上有解释,我这里改了一下
+            //for (int i = st_num; i<= ed_num && vec1.size()+k<=ed_num ; i++){
+            // 方法三：
+            //  假设我们还需要选择 k 个元素，当前位置是 i，那么：
+            //        当前位置 i 可以选择一个元素
+            //        我们还需要从 i+1 到 ed_num 之间选择 k-1 个元素
+            //  所以，i 的最大可能值应该满足：从 i+1 到 ed_num 至少有 k-1 个元素可选, 这意味着：
+            //
+            //        ed_num - (i+1) + 1 ≥ k-1
+            //        简化得：ed_num - i ≥ k-1
+            //        进一步变形：i ≤ ed_num - (k-1)
+            //
+            for(int i = st_num; i <= ed_num-(k-1); i++) {
                 //deal
                 vec1.push_back(i);
                 backtracking(i+1,ed_num,k-1,vec1,vec_rs1);
