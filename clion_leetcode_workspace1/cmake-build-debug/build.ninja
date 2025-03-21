@@ -475,6 +475,37 @@ build t59_SpiralMatrixII: CXX_EXECUTABLE_LINKER__t59_SpiralMatrixII_Debug CMakeF
   TARGET_PDB = t59_SpiralMatrixII.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target t77_Combinations
+
+
+#############################################
+# Order-only phony target for t77_Combinations
+
+build cmake_object_order_depends_target_t77_Combinations: phony || CMakeFiles/t77_Combinations.dir
+
+build CMakeFiles/t77_Combinations.dir/mysrc/daimakuangxianglu/backtracking/seq1_t77_Combinations/t77_Combinations.cpp.o: CXX_COMPILER__t77_Combinations_unscanned_Debug /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/backtracking/seq1_t77_Combinations/t77_Combinations.cpp || cmake_object_order_depends_target_t77_Combinations
+  DEP_FILE = CMakeFiles/t77_Combinations.dir/mysrc/daimakuangxianglu/backtracking/seq1_t77_Combinations/t77_Combinations.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/t77_Combinations.dir
+  OBJECT_FILE_DIR = CMakeFiles/t77_Combinations.dir/mysrc/daimakuangxianglu/backtracking/seq1_t77_Combinations
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target t77_Combinations
+
+
+#############################################
+# Link the executable t77_Combinations
+
+build t77_Combinations: CXX_EXECUTABLE_LINKER__t77_Combinations_Debug CMakeFiles/t77_Combinations.dir/mysrc/daimakuangxianglu/backtracking/seq1_t77_Combinations/t77_Combinations.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/t77_Combinations.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = t77_Combinations
+  TARGET_PDB = t77_Combinations.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target t226_InvertBinaryTree_levelorder_itera
 
 
@@ -1498,6 +1529,37 @@ build t222_CountCompleteTreeNodes: CXX_EXECUTABLE_LINKER__t222_CountCompleteTree
   TARGET_PDB = t222_CountCompleteTreeNodes.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target t455_AssignCookies
+
+
+#############################################
+# Order-only phony target for t455_AssignCookies
+
+build cmake_object_order_depends_target_t455_AssignCookies: phony || CMakeFiles/t455_AssignCookies.dir
+
+build CMakeFiles/t455_AssignCookies.dir/mysrc/daimakuangxianglu/greedy/seq1_t455_AssignCookies/t455_AssignCookies.cpp.o: CXX_COMPILER__t455_AssignCookies_unscanned_Debug /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/greedy/seq1_t455_AssignCookies/t455_AssignCookies.cpp || cmake_object_order_depends_target_t455_AssignCookies
+  DEP_FILE = CMakeFiles/t455_AssignCookies.dir/mysrc/daimakuangxianglu/greedy/seq1_t455_AssignCookies/t455_AssignCookies.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/t455_AssignCookies.dir
+  OBJECT_FILE_DIR = CMakeFiles/t455_AssignCookies.dir/mysrc/daimakuangxianglu/greedy/seq1_t455_AssignCookies
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target t455_AssignCookies
+
+
+#############################################
+# Link the executable t455_AssignCookies
+
+build t455_AssignCookies: CXX_EXECUTABLE_LINKER__t455_AssignCookies_Debug CMakeFiles/t455_AssignCookies.dir/mysrc/daimakuangxianglu/greedy/seq1_t455_AssignCookies/t455_AssignCookies.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/t455_AssignCookies.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = t455_AssignCookies
+  TARGET_PDB = t455_AssignCookies.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target t242_ValidAnagram
 
 
@@ -2399,7 +2461,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug
 
-build all: phony t1_TwoSum_past t1_pre1_t242_ValidAnagram t1_pre1_t242_ValidAnagram_method2 t1_pre2_t349_IntersectionofTwoArrays t121_BestTimeToBuyAndSellStock t5_pre1_t647_Palindromic_Substrings t704_BinarySearch t27_RemoveElement t977_SquaresOfASortedArray t76_MinimumSizeSubarraySum t209_MinimumSizeSubarraySum t209_MinimumSizeSubarraySum_daimakuagnixanglu t209_MinimumSizeSubarraySum_leetcode t59_SpiralMatrixII t226_InvertBinaryTree_levelorder_itera t226_InvertBinaryTree_preorder_itera t226_InvertBinaryTree_preorder_recur t106_ConstructBinaryTreefromInorderandPostorderTraversal t654_MaximumBinaryTree t617_MergeTwoBinaryTrees t701_InsertintoaBinarySearchTree t450_DeleteNodeinaBST t669_TrimaBinarySearchTree t108_ConvertSortedArraytoBinarySearchTree t538_ConvertBSTtoGreaterTree t102_BinaryTreeLevelorderTraversal_itera t144_BinaryTreePreorderTraversal_itera t145_BinaryTreePostorderTraversal_itera t94_BinaryTreeInorderTraversal_itera t144_BinaryTreePreorderTraversal_recur t145_BinaryTreePostorderTraversal_recur t94_BinaryTreeInorderTraversal_recur t257_BinaryTreePaths t513_FindBottomLeftTreeValue t700_SearchInABinarySearchTree t501_FindModeinBinarySearchTree t236_LowestCommonAncestorofaBinaryTree t235_LowestCommonAncestorofaBinarySearchTree t110_BalancedBinaryTree t404_SumofLeftLeaves t112_PathSum t98_ValidateBinarySearchTree t530_MinimumAbsoluteDifferenceinBST t101_SymmetricTree t104_MaximumDepthOfBinaryTree t111_MinimumDepthOfBinaryTree t222_CountCompleteTreeNodes t242_ValidAnagram t1002_FindCommonCharacters t349_IntersectionofTwoArrays t202_HappyNumber t1_TwoSum t454_4SumII t383_RansomNote t15_3Sum t15_3Sum_two_index t18_4sum_two_index t206_ReverseLinkedList t206_RemoveNthNodeFromEndofList t142_LinkedListCycleII t20_ValidParentheses t1047_RemoveAllAdjacentDuplicatesInString t150_EvaluateReversePolishNotation t239_SlidingWindowMaximum t347_TopKFrequentElements t151_ReverseWordsInAString kmp t459_RepeatedSubstringPattern learn_class_generic1 learn_template_generic1 wrong_use_refer_in_method main main2 learn_heapsort1_maxheap updatetocplus20test
+build all: phony t1_TwoSum_past t1_pre1_t242_ValidAnagram t1_pre1_t242_ValidAnagram_method2 t1_pre2_t349_IntersectionofTwoArrays t121_BestTimeToBuyAndSellStock t5_pre1_t647_Palindromic_Substrings t704_BinarySearch t27_RemoveElement t977_SquaresOfASortedArray t76_MinimumSizeSubarraySum t209_MinimumSizeSubarraySum t209_MinimumSizeSubarraySum_daimakuagnixanglu t209_MinimumSizeSubarraySum_leetcode t59_SpiralMatrixII t77_Combinations t226_InvertBinaryTree_levelorder_itera t226_InvertBinaryTree_preorder_itera t226_InvertBinaryTree_preorder_recur t106_ConstructBinaryTreefromInorderandPostorderTraversal t654_MaximumBinaryTree t617_MergeTwoBinaryTrees t701_InsertintoaBinarySearchTree t450_DeleteNodeinaBST t669_TrimaBinarySearchTree t108_ConvertSortedArraytoBinarySearchTree t538_ConvertBSTtoGreaterTree t102_BinaryTreeLevelorderTraversal_itera t144_BinaryTreePreorderTraversal_itera t145_BinaryTreePostorderTraversal_itera t94_BinaryTreeInorderTraversal_itera t144_BinaryTreePreorderTraversal_recur t145_BinaryTreePostorderTraversal_recur t94_BinaryTreeInorderTraversal_recur t257_BinaryTreePaths t513_FindBottomLeftTreeValue t700_SearchInABinarySearchTree t501_FindModeinBinarySearchTree t236_LowestCommonAncestorofaBinaryTree t235_LowestCommonAncestorofaBinarySearchTree t110_BalancedBinaryTree t404_SumofLeftLeaves t112_PathSum t98_ValidateBinarySearchTree t530_MinimumAbsoluteDifferenceinBST t101_SymmetricTree t104_MaximumDepthOfBinaryTree t111_MinimumDepthOfBinaryTree t222_CountCompleteTreeNodes t455_AssignCookies t242_ValidAnagram t1002_FindCommonCharacters t349_IntersectionofTwoArrays t202_HappyNumber t1_TwoSum t454_4SumII t383_RansomNote t15_3Sum t15_3Sum_two_index t18_4sum_two_index t206_ReverseLinkedList t206_RemoveNthNodeFromEndofList t142_LinkedListCycleII t20_ValidParentheses t1047_RemoveAllAdjacentDuplicatesInString t150_EvaluateReversePolishNotation t239_SlidingWindowMaximum t347_TopKFrequentElements t151_ReverseWordsInAString kmp t459_RepeatedSubstringPattern learn_class_generic1 learn_template_generic1 wrong_use_refer_in_method main main2 learn_heapsort1_maxheap updatetocplus20test
 
 # =============================================================================
 # Built-in targets

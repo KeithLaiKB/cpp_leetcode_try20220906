@@ -45,7 +45,8 @@ vector<int> intvec_result(3,6);
 vector vec1={1,2,3}
 vec1是一个 对象 而不是 指针
 
-vector<int> *vec1p=new vector<int>(1,2,3,4,5)；
+//vector<int> *vec1p=new vector<int>(1,2,3,4,5)；
+vector<int>* p_intvec = new vector<int>({-1,0,3,5,9,12});
 vec1p他是一个指针 里面 可以 存储着地址
 	当然 你可以 指向 nullptr
 		nullptr 不是一个地址，而是一个特殊的空指针值，表示一个无效的指针或空指针
