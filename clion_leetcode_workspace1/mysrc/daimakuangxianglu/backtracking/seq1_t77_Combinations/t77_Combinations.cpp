@@ -25,6 +25,8 @@ using namespace std;
  * Output: [[1]]
  * Explanation: There is 1 choose 1 = 1 total combination.
  *
+ * 就是从[1,n]的范围内, 找出所有 能拼成 元素数量为k的 集合
+ *
  */
 class Solution {
 public:

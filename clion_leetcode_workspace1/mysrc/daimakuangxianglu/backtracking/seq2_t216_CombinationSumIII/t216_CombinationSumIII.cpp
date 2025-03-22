@@ -38,6 +38,7 @@ using namespace std;
  * Using 4 different numbers in the range [1,9],
  * the smallest sum we can get is 1+2+3+4 = 10 and since 10 > 1, there are no valid combination.
  *
+ * 这个就是 k 个 数字 组成一个 sum=n的 vector<vector<int>>
  *
  *
  */
