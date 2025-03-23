@@ -67,55 +67,70 @@ public:
             }
         }
     }
+    // 假设 target=7
+    //
+    // 我们拿最小值, 这样可以获得最长的路径
+    // 可以看到 树的最高深度为 7/2 =3                  ->  深度 = T(target)/M(最小值)
+    // 然后树的每个节点 在不剪枝的情况下 都有3个节点       ->  每个节点的可能性 = n
+    //
+    // 所以时间复杂度: O( n* (T/M) )
+    // 空间复杂度: O(T/M)
+    //      因为最多就是 长度为 最长的path= target/ 最小值   从而得到的最大深度，也就是空间复杂度，
+    //      其他的不用怎么看 就算是有小的复杂度 也不会高于它, 不会太影响这个数字
+    //
+    //                                  [2,3,5]
+    //                   |               |               |
+    //                   2               3               5
+    //               |   |   |        |
+    //               2   3   5        5 (这里是5而不是2, 因为不用往前找了)
+    //             |
+    //            2
+    vector<string> backtracking(vector<int>& candidates, int candd_idx, int &now_sum, const int target, vector<int> &vec_ele,vector<vector<int>> &rs1){
+        //limit
 
-    vector<string> backtracking(vector<int> digits, int st_idx, string &now_content, vector<string>& vec_rs){
-            //limit
-            // 这题目很好的告诉了你 不是动不动就size-1的
-            if(st_idx==digits.size()){
-                vec_rs.push_back(now_content);
-                return {};
-            }
-
-            //deal
-            // 如 key=3 中里 有"def"
-            string letter = pad1[digits[st_idx]];
-
-            //for
-            // for最底层的对象, 所以不是for 那个digits  例如“23”
-            // 而是 for 那个pad 中的每个key里的content, 例如"abc" "def" 那些
-            for(int i =0;i<=letter.size()-1;i++){
-                //"a"->"ab"
-                now_content.push_back(letter[i]);
-
-                //backtracking
-                backtracking(digits,st_idx+1,now_content,vec_rs);
-
-                //pop
-                // 例如 我们的"23"例子中,
-                // 假设 当前的情况是 我们经过了d 现在深入到当前这个key_content[i]=g
-                // 在上面的backtracking当中 我们已经把 “dg” 放进了rs
-                // 此时我们要把 “dg”中的 "g"弹出, 准备装 下一个key_content[i+1]=h, 从而获得 "dh"
-                now_content.pop_back();
-
-            }
-
+        if(now_sum==target){
+            rs1.push_back(vec_ele);
             return {};
+        }
+        // 总数超了
+        else if(now_sum>target){
+            return {};
+        }
+        //当前的这个已经超了, 就没必要往后看了
+        if(candidates[candd_idx]>target){
+            return {};
+        }
+
+
+        //deal
+
+        //for
+        for(int i =candd_idx;i<=candidates.size()-1;i++){
+
+            now_sum+=candidates[i];
+            vec_ele.push_back(candidates[i]);
+
+            //backtracking
+            backtracking(candidates,i,now_sum,target,vec_ele,rs1);
+
+            //pop
+            vec_ele.pop_back();
+            now_sum-=candidates[i];
+
+        }
+
+        return {};
     }
+    //
+    //
+    vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
+        vector<vector<int>> rs1={};
 
-    vector<string> letterCombinations(string digits) {
-        vector<string> rs1={};
-        vector<int> vec_digits={};
-        string content="";
-
-        if(digits==""){
-            return {};
+        for(int i=0;i<=candidates.size()-1;i++){
+            vector<int> vec_ele={candidates[i]};
+            int sum_tmp=candidates[i];
+            backtracking(candidates,i,sum_tmp,target,vec_ele,rs1);
         }
-
-        for(char ch_tmp: digits){
-            vec_digits.push_back(ch_tmp-'0');
-        }
-
-        backtracking(vec_digits,0,content,rs1);
 
         return rs1;
     }
@@ -127,20 +142,18 @@ int main() {
     Solution* solut1 = new Solution();
 
     //vector<int>* p_intvec = new vector<int>({-1,0,3,5,9,12});
-   // vector<int> intvec1 ={-1,0,3,5,9,12};
-
-
-    //int mytarget = 5;
+    vector<int> intvec1 ={2,3,6,7};
+    int mytarget = 7;
 
 //    int indx_rs1 = -1;
 //
 //    int k = 3;
 //    int n =7;
 
-    vector<string> rs1 = solut1->letterCombinations("23");
+    vector<vector<int>> rs1 = solut1->combinationSum(intvec1,mytarget);
     cout<<"result:"<<endl;
 
-    solut1->myOutput_VectorBtB(rs1,0,rs1.size()-1);
+    solut1->myOutput_VectorBVectorBintBB(rs1,0,rs1.size()-1);
     return 0;
 }
 
