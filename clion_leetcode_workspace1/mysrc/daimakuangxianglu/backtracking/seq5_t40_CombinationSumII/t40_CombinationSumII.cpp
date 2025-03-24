@@ -168,8 +168,16 @@ public:
 
         return {};
     }
+
+    //时间复杂度: O(n * 2^n)
+    //  因为每个candidate_idx 在同一个结果集中 只能出现一次,
+    //  也就是 有  出现 或者 不出现 两种情况 所以右 2^n
+    //  每次超过一维的vector 关于，push_back的时间为 O(n),
+    //      因为push_back对于基本类型和指针是O(1)，
+    //          但对于需要深拷贝的复杂对象（如向量），它是O(对象大小)的。
+    //  所以是 O(n * 2^n)
     //
-    //
+    //空间复杂度: O(n)
     vector<vector<int>> combinationSum2(vector<int>& candidates, int target) {
 
         //方便剪枝 先排序

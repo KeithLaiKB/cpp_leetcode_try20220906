@@ -18,6 +18,7 @@
     -- src/t17_LetterCombinationsofaPhoneNumber.cpp will be compiled to bin/t17_LetterCombinationsofaPhoneNumber
     -- src/t39_CombinationSum.cpp will be compiled to bin/t39_CombinationSum
     -- src/t40_CombinationSumII.cpp will be compiled to bin/t40_CombinationSumII
+    -- src/t131_PalindromePartitioning.cpp will be compiled to bin/t131_PalindromePartitioning
     -- src/t226_InvertBinaryTree_levelorder_itera.cpp will be compiled to bin/t226_InvertBinaryTree_levelorder_itera
     -- src/t226_InvertBinaryTree_preorder_itera.cpp will be compiled to bin/t226_InvertBinaryTree_preorder_itera
     -- src/t226_InvertBinaryTree_preorder_recur.cpp will be compiled to bin/t226_InvertBinaryTree_preorder_recur
@@ -81,5 +82,5 @@
     -- src/learn_heapsort1_maxheap.cpp will be compiled to bin/learn_heapsort1_maxheap
     -- src/updatetocplus20test.cpp will be compiled to bin/updatetocplus20test
 -- Configuring done (0.1s)
--- Generating done (0.2s)
+-- Generating done (0.3s)
 -- Build files have been written to: /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug
