@@ -34,7 +34,9 @@ using namespace std;
  * Input: candidates = [2], target = 1
  * Output: []
  *
- *
+ * 根据已有数字的数组, 从中选出 若干个数字, 从而组成集合 从而得到 sum==target
+ * 注意
+ *  每个数字可重复, 但组成的每个集合不能重复
  *
  */
 class Solution {
