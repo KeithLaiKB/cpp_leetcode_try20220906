@@ -79,6 +79,7 @@ public:
         return true;
     }
 
+    //
     //                                                                                                                                  [a,b,b,c]
     //                                                    |                                                                                 |                                   |                             |
     //                                                   [a] 下面去分片[b,b,c]                                                       [a,b] 下面去分片[b,c]              [a,b,b] 下面去分片[c]           [a,b,b,c]
@@ -137,7 +138,15 @@ public:
         return false;
     }
     //
+    // 时间复杂度: O(n*2^n)
+    //      n代表的是每次回文的判断
+    //      假设一共有N个数字, 那么就有n-1个缝隙,
+    //              每个缝隙可以选择切或者不切 从而形成组合
+    //      也就是一共有2^(n-1) 的组合
+    //      所以总共是 O(n*2^n)
     //
+    // 空间复杂度: O(n)
+    //      因为最高深度n层
     vector<vector<string>> partition(string s) {
         vector<vector<string>> rs1={};
         vector<string> now_content = {};
