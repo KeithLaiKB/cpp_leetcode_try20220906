@@ -171,15 +171,12 @@ public:
         return 0;
     }
     //
-    // 时间复杂度: O(n*2^n)
-    //      n代表的是每次回文的判断
-    //      假设一共有N个数字, 那么就有n-1个缝隙,
-    //              每个缝隙可以选择切或者不切 从而形成组合
-    //      也就是一共有2^(n-1) 的组合
-    //      所以总共是 O(n*2^n)
+    // 时间复杂度: O(1)
+    //      最多 3^4 = 81 种分割方式
     //
-    // 空间复杂度: O(n)
-    //      因为最高深度n层
+    // 空间复杂度: O(4 + k) = O(k)，
+    //      4是栈的深度
+    //      k 是结果数量
     vector<string> restoreIpAddresses(string s) {
         vector<string> rs1={};
         vector<string> now_content={};
