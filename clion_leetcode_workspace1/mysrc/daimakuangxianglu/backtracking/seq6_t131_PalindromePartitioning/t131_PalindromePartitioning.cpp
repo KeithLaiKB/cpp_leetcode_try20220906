@@ -132,6 +132,13 @@ public:
 
             //pop
             // 因为要看兄弟节点, 所以要把当前的pop掉
+            // 其实 你会说 为什么 要pop,
+            // 因为我们的做法是,
+            //      1. "b" 放进 now_content
+            //      2. now_content 弹出 "b"
+            //      3. 然后"b" 自增到 "bc"
+            //      4. 再重新压入now_content
+            //      而并不是  "b" 放进 now_content 后 直接在 now_content 里面做自增
             now_content.pop_back();
         }
 
