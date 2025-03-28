@@ -20,9 +20,9 @@ using namespace std;
  * Example2:
  * Input: nums = [0]
  * Output: [[],[0]]
-
  *
- *
+ * 输入数组 不会相同
+ *  找出所有子集
  *
  *
  */
