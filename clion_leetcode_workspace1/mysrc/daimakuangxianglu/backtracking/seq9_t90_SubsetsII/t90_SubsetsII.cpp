@@ -62,18 +62,6 @@ public:
         return a<b;
     }
 
-    // 假设 target=7
-    //
-    // 我们拿最小值, 这样可以获得最长的路径
-    // 可以看到 树的最高深度为 7/2 =3                  ->  深度 = T(target)/M(最小值)
-    // 然后树的每个节点 在不剪枝的情况下 都有3个节点       ->  每个节点的可能性 = n
-    //
-    // 所以时间复杂度: O( n* (T/M) )
-    // 空间复杂度: O(T/M)
-    //      因为最多就是 长度为 最长的path= target/ 最小值   从而得到的最大深度，也就是空间复杂度，
-    //      其他的不用怎么看 就算是有小的复杂度 也不会高于它, 不会太影响这个数字
-    //
-    // 基本上和 t40一致 我就不解释了 而且我有文档的按照t40的来就行
     vector<string> backtracking(vector<int>& candidates, int candd_idx, vector<int> &vec_ele,vector<vector<int>> &rs1, vector<int> &path_arrvied){
         //limit
         //-----------和t40的区别------------------

@@ -13,6 +13,7 @@
     -- src/t209_MinimumSizeSubarraySum_daimakuagnixanglu.cpp will be compiled to bin/t209_MinimumSizeSubarraySum_daimakuagnixanglu
     -- src/t209_MinimumSizeSubarraySum_leetcode.cpp will be compiled to bin/t209_MinimumSizeSubarraySum_leetcode
     -- src/t59_SpiralMatrixII.cpp will be compiled to bin/t59_SpiralMatrixII
+    -- src/t491_NondecreasingSubsequences.cpp will be compiled to bin/t491_NondecreasingSubsequences
     -- src/t77_Combinations.cpp will be compiled to bin/t77_Combinations
     -- src/t216_CombinationSumIII.cpp will be compiled to bin/t216_CombinationSumIII
     -- src/t17_LetterCombinationsofaPhoneNumber.cpp will be compiled to bin/t17_LetterCombinationsofaPhoneNumber
@@ -84,6 +85,6 @@
     -- src/main2.cpp will be compiled to bin/main2
     -- src/learn_heapsort1_maxheap.cpp will be compiled to bin/learn_heapsort1_maxheap
     -- src/updatetocplus20test.cpp will be compiled to bin/updatetocplus20test
--- Configuring done (0.1s)
--- Generating done (0.1s)
+-- Configuring done (0.2s)
+-- Generating done (0.2s)
 -- Build files have been written to: /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug

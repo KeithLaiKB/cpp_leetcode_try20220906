@@ -3,6 +3,7 @@
 #include <unordered_map>
 #include <string>
 #include <climits>
+#include <unordered_set>
 
 #include <algorithm>
 
@@ -62,19 +63,8 @@ public:
         return a<b;
     }
 
-    // 假设 target=7
-    //
-    // 我们拿最小值, 这样可以获得最长的路径
-    // 可以看到 树的最高深度为 7/2 =3                  ->  深度 = T(target)/M(最小值)
-    // 然后树的每个节点 在不剪枝的情况下 都有3个节点       ->  每个节点的可能性 = n
-    //
-    // 所以时间复杂度: O( n* (T/M) )
-    // 空间复杂度: O(T/M)
-    //      因为最多就是 长度为 最长的path= target/ 最小值   从而得到的最大深度，也就是空间复杂度，
-    //      其他的不用怎么看 就算是有小的复杂度 也不会高于它, 不会太影响这个数字
-    //
-    // 基本上和 t40一致 我就不解释了 而且我有文档的按照t40的来就行
-    vector<string> backtracking(vector<int>& candidates, int candd_idx, vector<int> &vec_ele,vector<vector<int>> &rs1, vector<int> &path_arrvied){
+
+    vector<string> backtracking(vector<int>& candidates, int candd_idx, vector<int> &vec_ele,vector<vector<int>> &rs1){
         //limit
         //-----------和t40的区别------------------
         // 检查上轮结果
@@ -82,35 +72,41 @@ public:
             return {};
         }
 
+
         //--------------------------------------
 
         //deal
-
+        unordered_set<int> unord_set1={};
         //for
         for(int i =candd_idx;i<=candidates.size()-1;i++){
-            unordered_set<>
-            //-----------和t39的区别------------------
+
+
             //去重
-            //发现 candidates[i-1] 与 candidates[i] 是 同一父节点 下同一层的兄弟节点
-            if(path_arrvied[i-1]==0 && candidates[i-1] == candidates[i]){
+            if (unord_set1.find(candidates[i]) != unord_set1.end()) {
                 continue;
             }
-            //--------------------------------------
 
+            // 如果和已经放进集合里的 最后一个元素形成 递减
+            // 则继续看他的兄弟节点
+            // 例如 [4,7,3,9] ,从上一层 到这里时[4,7],
+            // 扫描这一层的时候3 不成功 不要break, 因为可以看兄弟9, 从而形成[4,7,9]
+            //
+            if(vec_ele.size()>=1 && vec_ele[vec_ele.size()-1]>candidates[i]){
+                continue;
+            }
 
-            path_arrvied[i] =1;
+            unord_set1.insert(candidates[i]);
             vec_ele.push_back(candidates[i]);
-            rs1.push_back(vec_ele);
-            //-----------和t39的区别------------------
+
+            if(vec_ele.size()>=2){
+                rs1.push_back(vec_ele);
+            }
+
             //backtracking
-            backtracking(candidates,i+1,vec_ele,rs1,path_arrvied);
-            //--------------------------------------
+            backtracking(candidates,i+1,vec_ele,rs1);
 
             //pop
             vec_ele.pop_back();
-            //-----------和t39的区别------------------
-            path_arrvied[i] =0;
-            //--------------------------------------
 
         }
 
@@ -132,39 +128,26 @@ public:
 
 
         vector<vector<int>> rs1={};
-
-        vector<int> path_arrvied(nums.size(),0);
+        //deal
+        unordered_set<int> unord_set1={};
+        vector<int> vec_ele={};
 
         for(int i=0;i<=nums.size()-1;i++){
 
-            //-----------和t39的区别------------------
             //去重
-            // 如果path_arrvied[i]==0 那意味着 这个不是从 前一个节点下来的
-            if(i>=1 && nums[i-1] == nums[i] ){
+            if (unord_set1.find(nums[i]) != unord_set1.end()) {
                 continue;
             }
-            path_arrvied[i]=1;
-            //--------------------------------------
 
-            vector<int> vec_ele={nums[i]};
+            vec_ele.push_back(nums[i]);
+            unord_set1.insert(nums[i]);
 
-            //-----------和t40的区别------------------
-            rs1.push_back(vec_ele);
-            //--------------------------------------
-
-            //-----------和t39的区别------------------
-            path_arrvied[i]=1;
-            backtracking(nums,i+1,vec_ele,rs1,path_arrvied);
+            //backtracking
+            backtracking(nums,i+1,vec_ele,rs1);
 
             //pop
-            path_arrvied[i]=0;
-            //--------------------------------------
+            vec_ele.pop_back();
         }
-
-        //-----------和t40的区别------------------
-        // 因为它还包括 空集 所以额外加进去就好
-        rs1.push_back({});
-        //--------------------------------------
 
         return rs1;
     }
@@ -176,7 +159,7 @@ int main() {
     Solution* solut1 = new Solution();
 
     //vector<int>* p_intvec = new vector<int>({-1,0,3,5,9,12});
-    vector<int> intvec1 ={1,2,3};
+    vector<int> intvec1 ={4,6,7,7};
     //int mytarget = 8;
 
 //    int indx_rs1 = -1;
@@ -184,7 +167,7 @@ int main() {
 //    int k = 3;
 //    int n =7;
     //string str1 ="101023";
-    vector<vector<int>> rs1 = solut1->subsetsWithDup(intvec1);
+    vector<vector<int>> rs1 = solut1->findSubsequences(intvec1);
     cout<<"result:"<<endl;
 
     solut1->myOutput_VectorBVectorBintBB(rs1,0,rs1.size()-1);

@@ -475,6 +475,37 @@ build t59_SpiralMatrixII: CXX_EXECUTABLE_LINKER__t59_SpiralMatrixII_Debug CMakeF
   TARGET_PDB = t59_SpiralMatrixII.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target t491_NondecreasingSubsequences
+
+
+#############################################
+# Order-only phony target for t491_NondecreasingSubsequences
+
+build cmake_object_order_depends_target_t491_NondecreasingSubsequences: phony || CMakeFiles/t491_NondecreasingSubsequences.dir
+
+build CMakeFiles/t491_NondecreasingSubsequences.dir/mysrc/daimakuangxianglu/backtracking/seq10_t491_NondecreasingSubsequences/t491_NondecreasingSubsequences.cpp.o: CXX_COMPILER__t491_NondecreasingSubsequences_unscanned_Debug /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/backtracking/seq10_t491_NondecreasingSubsequences/t491_NondecreasingSubsequences.cpp || cmake_object_order_depends_target_t491_NondecreasingSubsequences
+  DEP_FILE = CMakeFiles/t491_NondecreasingSubsequences.dir/mysrc/daimakuangxianglu/backtracking/seq10_t491_NondecreasingSubsequences/t491_NondecreasingSubsequences.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/t491_NondecreasingSubsequences.dir
+  OBJECT_FILE_DIR = CMakeFiles/t491_NondecreasingSubsequences.dir/mysrc/daimakuangxianglu/backtracking/seq10_t491_NondecreasingSubsequences
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target t491_NondecreasingSubsequences
+
+
+#############################################
+# Link the executable t491_NondecreasingSubsequences
+
+build t491_NondecreasingSubsequences: CXX_EXECUTABLE_LINKER__t491_NondecreasingSubsequences_Debug CMakeFiles/t491_NondecreasingSubsequences.dir/mysrc/daimakuangxianglu/backtracking/seq10_t491_NondecreasingSubsequences/t491_NondecreasingSubsequences.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/t491_NondecreasingSubsequences.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = t491_NondecreasingSubsequences
+  TARGET_PDB = t491_NondecreasingSubsequences.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target t77_Combinations
 
 
@@ -2709,7 +2740,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug
 
-build all: phony t1_TwoSum_past t1_pre1_t242_ValidAnagram t1_pre1_t242_ValidAnagram_method2 t1_pre2_t349_IntersectionofTwoArrays t121_BestTimeToBuyAndSellStock t5_pre1_t647_Palindromic_Substrings t704_BinarySearch t27_RemoveElement t977_SquaresOfASortedArray t76_MinimumSizeSubarraySum t209_MinimumSizeSubarraySum t209_MinimumSizeSubarraySum_daimakuagnixanglu t209_MinimumSizeSubarraySum_leetcode t59_SpiralMatrixII t77_Combinations t216_CombinationSumIII t17_LetterCombinationsofaPhoneNumber t39_CombinationSum t40_CombinationSumII t131_PalindromePartitioning t93_RestoreIPAddresses t78_Subsets t90_SubsetsII t226_InvertBinaryTree_levelorder_itera t226_InvertBinaryTree_preorder_itera t226_InvertBinaryTree_preorder_recur t106_ConstructBinaryTreefromInorderandPostorderTraversal t654_MaximumBinaryTree t617_MergeTwoBinaryTrees t701_InsertintoaBinarySearchTree t450_DeleteNodeinaBST t669_TrimaBinarySearchTree t108_ConvertSortedArraytoBinarySearchTree t538_ConvertBSTtoGreaterTree t102_BinaryTreeLevelorderTraversal_itera t144_BinaryTreePreorderTraversal_itera t145_BinaryTreePostorderTraversal_itera t94_BinaryTreeInorderTraversal_itera t144_BinaryTreePreorderTraversal_recur t145_BinaryTreePostorderTraversal_recur t94_BinaryTreeInorderTraversal_recur t257_BinaryTreePaths t513_FindBottomLeftTreeValue t700_SearchInABinarySearchTree t501_FindModeinBinarySearchTree t236_LowestCommonAncestorofaBinaryTree t235_LowestCommonAncestorofaBinarySearchTree t110_BalancedBinaryTree t404_SumofLeftLeaves t112_PathSum t98_ValidateBinarySearchTree t530_MinimumAbsoluteDifferenceinBST t101_SymmetricTree t104_MaximumDepthOfBinaryTree t111_MinimumDepthOfBinaryTree t222_CountCompleteTreeNodes t455_AssignCookies t242_ValidAnagram t1002_FindCommonCharacters t349_IntersectionofTwoArrays t202_HappyNumber t1_TwoSum t454_4SumII t383_RansomNote t15_3Sum t15_3Sum_two_index t18_4sum_two_index t206_ReverseLinkedList t206_RemoveNthNodeFromEndofList t142_LinkedListCycleII t20_ValidParentheses t1047_RemoveAllAdjacentDuplicatesInString t150_EvaluateReversePolishNotation t239_SlidingWindowMaximum t347_TopKFrequentElements t151_ReverseWordsInAString kmp t459_RepeatedSubstringPattern learn_class_generic1 learn_template_generic1 wrong_use_refer_in_method main main2 learn_heapsort1_maxheap updatetocplus20test
+build all: phony t1_TwoSum_past t1_pre1_t242_ValidAnagram t1_pre1_t242_ValidAnagram_method2 t1_pre2_t349_IntersectionofTwoArrays t121_BestTimeToBuyAndSellStock t5_pre1_t647_Palindromic_Substrings t704_BinarySearch t27_RemoveElement t977_SquaresOfASortedArray t76_MinimumSizeSubarraySum t209_MinimumSizeSubarraySum t209_MinimumSizeSubarraySum_daimakuagnixanglu t209_MinimumSizeSubarraySum_leetcode t59_SpiralMatrixII t491_NondecreasingSubsequences t77_Combinations t216_CombinationSumIII t17_LetterCombinationsofaPhoneNumber t39_CombinationSum t40_CombinationSumII t131_PalindromePartitioning t93_RestoreIPAddresses t78_Subsets t90_SubsetsII t226_InvertBinaryTree_levelorder_itera t226_InvertBinaryTree_preorder_itera t226_InvertBinaryTree_preorder_recur t106_ConstructBinaryTreefromInorderandPostorderTraversal t654_MaximumBinaryTree t617_MergeTwoBinaryTrees t701_InsertintoaBinarySearchTree t450_DeleteNodeinaBST t669_TrimaBinarySearchTree t108_ConvertSortedArraytoBinarySearchTree t538_ConvertBSTtoGreaterTree t102_BinaryTreeLevelorderTraversal_itera t144_BinaryTreePreorderTraversal_itera t145_BinaryTreePostorderTraversal_itera t94_BinaryTreeInorderTraversal_itera t144_BinaryTreePreorderTraversal_recur t145_BinaryTreePostorderTraversal_recur t94_BinaryTreeInorderTraversal_recur t257_BinaryTreePaths t513_FindBottomLeftTreeValue t700_SearchInABinarySearchTree t501_FindModeinBinarySearchTree t236_LowestCommonAncestorofaBinaryTree t235_LowestCommonAncestorofaBinarySearchTree t110_BalancedBinaryTree t404_SumofLeftLeaves t112_PathSum t98_ValidateBinarySearchTree t530_MinimumAbsoluteDifferenceinBST t101_SymmetricTree t104_MaximumDepthOfBinaryTree t111_MinimumDepthOfBinaryTree t222_CountCompleteTreeNodes t455_AssignCookies t242_ValidAnagram t1002_FindCommonCharacters t349_IntersectionofTwoArrays t202_HappyNumber t1_TwoSum t454_4SumII t383_RansomNote t15_3Sum t15_3Sum_two_index t18_4sum_two_index t206_ReverseLinkedList t206_RemoveNthNodeFromEndofList t142_LinkedListCycleII t20_ValidParentheses t1047_RemoveAllAdjacentDuplicatesInString t150_EvaluateReversePolishNotation t239_SlidingWindowMaximum t347_TopKFrequentElements t151_ReverseWordsInAString kmp t459_RepeatedSubstringPattern learn_class_generic1 learn_template_generic1 wrong_use_refer_in_method main main2 learn_heapsort1_maxheap updatetocplus20test
 
 # =============================================================================
 # Built-in targets

@@ -196,7 +196,7 @@ public:
 
         //deal
         //-----------t491的unordered set方案------------------
-        unordered_set<int> uset; // 使用set对本层元素进行去重
+        unordered_set<int> unord_set1; // 使用set对本层元素进行去重
         //--------------------------------------
         //for
         for(int i =candd_idx;i<=candidates.size()-1;i++){
@@ -209,10 +209,10 @@ public:
             */
 
             //-----------t491的unordered set方案------------------
-            if (uset.find(candidates[i]) != uset.end()) {
+            if (unord_set1.find(candidates[i]) != unord_set1.end()) {
                 continue;
             }
-            uset.insert(candidates[i]);
+            unord_set1.insert(candidates[i]);
             //--------------------------------------
 
             now_sum+=candidates[i];

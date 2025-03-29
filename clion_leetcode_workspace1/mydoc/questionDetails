@@ -10,3 +10,9 @@ t209 中所说的 subarray指的是连续的
         而{1,4,3}不是, 因为它不连续
 
 grater than 和 equal to 是两个 他们之间是不包含的关系
+
+
+non-decreasing subsequences
+指的是非递减序列 不代表是递增
+    例如{4,7,7}
+    这里的7和7相等 所以没问题, 参考t491
