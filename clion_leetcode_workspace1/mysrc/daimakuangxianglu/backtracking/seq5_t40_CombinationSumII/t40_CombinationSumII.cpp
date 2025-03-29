@@ -4,6 +4,7 @@
 #include <string>
 
 #include <algorithm>
+#include <unordered_set>
 
 using namespace std;
 
@@ -168,6 +169,76 @@ public:
 
         return {};
     }
+
+
+    // 这是t491的unorder set方案  完全可以通过leetcode
+    // 这个里面不会用到path_arrvied, 但是我就不删除了 方便你对着看, 这里相比正式的 增加了两处
+    //
+    vector<string> backtracking_v2(vector<int>& candidates, int candd_idx, int &now_sum, const int target, vector<int> &vec_ele,vector<vector<int>> &rs1, vector<int> &path_arrvied){
+        //limit
+
+        // 检查上轮结果
+        if(now_sum==target){
+            rs1.push_back(vec_ele);
+            return {};
+        }
+            // 总数超了
+        else if(now_sum>target){
+            return {};
+        }
+
+        //当前的这个已经超了, 就没必要往后看了, 剪枝
+        //  例如当前元素  是 5, target是3, 那就没有必要往后看了
+        if(candd_idx<=candidates.size()-1 && candidates[candd_idx]>target){
+            return {};
+        }
+
+
+        //deal
+        //-----------t491的unordered set方案------------------
+        unordered_set<int> uset; // 使用set对本层元素进行去重
+        //--------------------------------------
+        //for
+        for(int i =candd_idx;i<=candidates.size()-1;i++){
+            /*
+            //去重
+            //发现 candidates[i-1] 与 candidates[i] 是 同一父节点 下同一层的兄弟节点
+            if(path_arrvied[i-1]==0 && candidates[i-1] == candidates[i]){
+                continue;
+            }
+            */
+
+            //-----------t491的unordered set方案------------------
+            if (uset.find(candidates[i]) != uset.end()) {
+                continue;
+            }
+            uset.insert(candidates[i]);
+            //--------------------------------------
+
+            now_sum+=candidates[i];
+            path_arrvied[i] =1;
+            vec_ele.push_back(candidates[i]);
+
+
+            //backtracking
+            backtracking(candidates,i+1,now_sum,target,vec_ele,rs1,path_arrvied);
+
+
+            //pop
+            vec_ele.pop_back();
+            now_sum-=candidates[i];
+
+            path_arrvied[i] =0;
+
+
+        }
+
+        return {};
+    }
+
+
+
+
 
     //时间复杂度: O(n * 2^n)
     //  因为每个candidate_idx 在同一个结果集中 只能出现一次,

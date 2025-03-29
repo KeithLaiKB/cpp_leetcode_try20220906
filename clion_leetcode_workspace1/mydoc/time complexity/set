@@ -6,3 +6,8 @@ std::multiset           底层实现都是红黑树
 std::unordered_set      底层实现是哈希表,使用unordered_set 读写效率是最高的，并不需要对数据进行排序
 
 -----------------------------------------
+
+容器类型	            底层结构	        插入 Insert	    删除 Erase	    查找 Find	    遍历          Traverse	    是否有序	空间复杂度（约）
+std::set	        红黑树	        O(logn)	        O(logn)	        O(logn)	        O(n)	        是有序	    O(n) + 红黑树额外指针开销
+std::multiset	    红黑树	        O(logn)	        O(logn)	        O(logn)	        O(n)	        是有序	    O(n) + 红黑树额外指针开销
+std::unordered_set	哈希表	        O(1) 均摊	    O(1) 均摊	    O(1) 均摊	    O(n) 无序	    无序	        O(n) + 哈希桶开销

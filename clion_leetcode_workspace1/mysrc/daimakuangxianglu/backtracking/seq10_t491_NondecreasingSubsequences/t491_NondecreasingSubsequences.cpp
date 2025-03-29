@@ -10,19 +10,19 @@ using namespace std;
 
 /**
  *
- * Given an integer array nums that may contain duplicates, return all possible subsets (the power set).
- * The solution set must not contain duplicate subsets. Return the solution in any order.
+ * Given an integer array nums, return all the different possible non-decreasing subsequences of the given array with at least two elements. You may return the answer in any order.
  *
  * Example1:
- * Input: nums = [1,2,2]
- * Output: [[],[1],[1,2],[1,2,2],[2],[2,2]]
+ * Input: nums = [4,6,7,7]
+ * Output: [[4,6],[4,6,7],[4,6,7,7],[4,7],[4,7,7],[6,7],[6,7,7],[7,7]]
  *
  * Example2:
- * Input: nums = [0]
- * Output: [[],[0]]
+ * Input: nums = [4,4,3,2,1]
+ * Output: [[4,4]]
  *
- * 输入数组 可能会相同
- *  找出所有子集
+ * 输入数组 不能被重新排序,并且不能少于两个数字
+ *  找出所有递增的子集
+ *  感觉这个是 t40的升级版, 因为t40它本身是允许 自己排序的
  *
  */
 class Solution {
@@ -88,6 +88,7 @@ public:
 
         //for
         for(int i =candd_idx;i<=candidates.size()-1;i++){
+            unordered_set<>
             //-----------和t39的区别------------------
             //去重
             //发现 candidates[i-1] 与 candidates[i] 是 同一父节点 下同一层的兄弟节点
@@ -126,10 +127,9 @@ public:
     //  所以是 O(n * 2^n)
     //
     //空间复杂度: O(n)
-    vector<vector<int>> subsetsWithDup(vector<int>& nums) {
+    vector<vector<int>> findSubsequences(vector<int>& nums) {
 
-        //方便剪枝 先排序
-        sort(nums.begin(),nums.end(), mycomp);
+
 
         vector<vector<int>> rs1={};
 
