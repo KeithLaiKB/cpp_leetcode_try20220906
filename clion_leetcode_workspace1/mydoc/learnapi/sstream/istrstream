@@ -14,3 +14,35 @@ void getNetProfit(string events) {
 }
 
 ------------------------------------------------
+    如果输入是
+    15 20
+    30 40
+    70 90
+
+    string line;
+    while (getline(cin, line)) { // 持续从控制台读取每一行
+        if (line.empty()) continue; // 忽略空行
+
+        string action, product;
+        int number;
+
+        istringstream iss(line);
+        iss >> action >> product >> number;
+    }
+
+ ------------------------------------------------
+        如果输入是(里面有逗号的)
+        15,20,30,20
+        30,20,10,20
+        70,20,30,20
+    vector<int> parseCommaSeparatedLine(const string& line) {
+        vector<int> result;
+        stringstream ss(line);
+        string token;
+
+        while (getline(ss, token, ',')) {
+            result.push_back(stoi(token));
+        }
+
+        return result;
+    }
