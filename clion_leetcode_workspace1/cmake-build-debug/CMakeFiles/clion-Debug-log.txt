@@ -15,6 +15,7 @@
     -- src/t59_SpiralMatrixII.cpp will be compiled to bin/t59_SpiralMatrixII
     -- src/t491_NondecreasingSubsequences.cpp will be compiled to bin/t491_NondecreasingSubsequences
     -- src/t46_Permutations.cpp will be compiled to bin/t46_Permutations
+    -- src/t47_PermutationsII.cpp will be compiled to bin/t47_PermutationsII
     -- src/t77_Combinations.cpp will be compiled to bin/t77_Combinations
     -- src/t216_CombinationSumIII.cpp will be compiled to bin/t216_CombinationSumIII
     -- src/t17_LetterCombinationsofaPhoneNumber.cpp will be compiled to bin/t17_LetterCombinationsofaPhoneNumber
@@ -87,5 +88,5 @@
     -- src/learn_heapsort1_maxheap.cpp will be compiled to bin/learn_heapsort1_maxheap
     -- src/updatetocplus20test.cpp will be compiled to bin/updatetocplus20test
 -- Configuring done (0.1s)
--- Generating done (0.1s)
+-- Generating done (0.3s)
 -- Build files have been written to: /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug

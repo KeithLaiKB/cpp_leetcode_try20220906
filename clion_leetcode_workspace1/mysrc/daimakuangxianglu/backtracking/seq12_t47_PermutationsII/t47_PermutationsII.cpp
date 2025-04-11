@@ -11,23 +11,29 @@ using namespace std;
 
 /**
  *
- * Given an array nums of distinct integers, return all the possible permutations. You can return the answer in any order.
+ * Given a collection of numbers, nums, that might contain duplicates, return all possible unique permutations in any order.
  *
  * Example1:
+ * Input: nums = [1,1,2]
+ * Output:
+ * [[1,1,2],
+ * [1,2,1],
+ * [2,1,1]]
+ *
+ * Example2:
  * Input: nums = [1,2,3]
  * Output: [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
  *
- * Example2:
- * Input: nums = [0,1]
- * Output: [[0,1],[1,0]]
- *
- * Example2:
- * Input: nums = [1]
- * Output: [[1]]
  *
  *
- * 他是t40基础上 对used数组的进行玩法, 他就是循环used数组
+ * 意义上:
+ * 他是t46基础上 多出了一个前提条件 就是 源数组内有重复元素
+ * 返回的话 跟46差不多 也是要求unique(当然46他本身就是unique的)
+ * 对used数组的进行玩法, 他就是循环used数组
  * 他是找所有的可能性, 而不需要求和
+ *
+ * 写法上:
+ * 当前题和t40的写法基本一样, 除了for循环是 i=0开始 而不是i=layer_index开始
  *
  */
 class Solution {
@@ -70,38 +76,39 @@ public:
 
     vector<string> backtracking(vector<int>& candidates, vector<int> &vec_ele,vector<vector<int>> &rs1, vector<int> &path_arrvied){
         //limit
-        //-----------和t40的区别------------------
+
         // 检查上轮结果
         if(vec_ele.size()==candidates.size()){
             rs1.push_back(vec_ele);
             return {};
         }
 
+
         //deal
-        //-----------和t40的区别 这里是对 used数组的循环 而不是 candidate------------------
+
         //for
-        for(int i =0;i<=path_arrvied.size()-1;i++){
+        //-----------和t40的区别 主要这里i就是从0开始------------------
+        for(int i =0;i<=candidates.size()-1;i++){
+        //--------------------------------------
 
-
-            //去重
-            //发现 用过了去重
-            if(path_arrvied[i]==1){
+            if( (path_arrvied[i]==1) || (i-1>=0 && path_arrvied[i-1]==0 && candidates[i-1] == candidates[i])){
                 continue;
             }
 
-            //deal
+
+            path_arrvied[i] =1;
             vec_ele.push_back(candidates[i]);
-            path_arrvied[i]=1;
 
-
+            //-----------和t39的区别------------------
             //backtracking
             backtracking(candidates,vec_ele,rs1,path_arrvied);
-
+            //--------------------------------------
 
             //pop
             vec_ele.pop_back();
-            path_arrvied[i]=0;
-
+            //-----------和t39的区别------------------
+            path_arrvied[i] =0;
+            //--------------------------------------
 
         }
 
@@ -117,16 +124,27 @@ public:
     //  所以是O(n * n!), 但如果不考虑拷贝的复杂度的话就是 O(n!)
     //
     //空间复杂度: O(n)
-    vector<vector<int>> permute(vector<int>& nums) {
+    vector<vector<int>> permuteUnique(vector<int>& nums) {
+
+        //方便剪枝 先排序
+        sort(nums.begin(),nums.end(), mycomp);
 
         vector<vector<int>> rs1={};
+
         vector<int> path_arrvied(nums.size(),0);
 
         for(int i=0;i<=nums.size()-1;i++){
 
-            vector<int> vec_ele={nums[i]};
 
+            //去重
+            // 如果path_arrvied[i]==0 那意味着 这个不是从 前一个节点下来的
+            if(i>=1 && nums[i-1] == nums[i] ){
+                continue;
+            }
+
+            vector<int> vec_ele={nums[i]};
             path_arrvied[i]=1;
+
             backtracking(nums,vec_ele,rs1,path_arrvied);
 
             //pop
@@ -143,7 +161,7 @@ int main() {
     Solution* solut1 = new Solution();
 
     //vector<int>* p_intvec = new vector<int>({-1,0,3,5,9,12});
-    vector<int> intvec1 ={1,2,3};
+    vector<int> intvec1 ={1,1,2};
     //int mytarget = 8;
 
 //    int indx_rs1 = -1;
@@ -151,7 +169,7 @@ int main() {
 //    int k = 3;
 //    int n =7;
     //string str1 ="101023";
-    vector<vector<int>> rs1 = solut1->permute(intvec1);
+    vector<vector<int>> rs1 = solut1->permuteUnique(intvec1);
     cout<<"result:"<<endl;
 
     solut1->myOutput_VectorBVectorBintBB(rs1,0,rs1.size()-1);
