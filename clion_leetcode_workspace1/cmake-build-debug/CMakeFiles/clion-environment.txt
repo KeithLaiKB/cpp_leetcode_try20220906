@@ -1,3 +1,4 @@
-ToolSet: 1.0 (local)Options: 
+ToolSet: 1.0 (local)Ninja: 1.12.1@/home/kt/MySoftware/MyProgram/JetBrains/Clion/clion-2023.3.4/bin/ninja/linux/x64/ninja
+Options: 
 
 Options:-DCMAKE_MAKE_PROGRAM=/home/kt/MySoftware/MyProgram/JetBrains/Clion/clion-2023.3.4/bin/ninja/linux/x64/ninja
