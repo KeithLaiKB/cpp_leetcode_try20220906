@@ -145,7 +145,7 @@ int main() {
     Solution* solut1 = new Solution();
 
     //vector<int>* p_intvec = new vector<int>({-1,0,3,5,9,12});
-    vector<int> intvec1 ={4,6,7,7};
+    vector<int> intvec1 ={1,2,3};
     //int mytarget = 8;
 
 //    int indx_rs1 = -1;

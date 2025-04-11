@@ -1,3 +1,5 @@
 # ninja log v6
 6	1970	1743661935391813811	CMakeFiles/t491_NondecreasingSubsequences.dir/mysrc/daimakuangxianglu/backtracking/seq10_t491_NondecreasingSubsequences/t491_NondecreasingSubsequences.cpp.o	dfcb65265d2f2200
 1970	2058	1743661937355836110	t491_NondecreasingSubsequences	d0856735a5ab94b5
+7	2252	1744331287866464549	CMakeFiles/t46_Permutations.dir/mysrc/daimakuangxianglu/backtracking/seq11_t46_Permutations/t46_Permutations.cpp.o	479e3c0692584844
+2252	2444	1744331290112487385	t46_Permutations	6089160848d44eeb
