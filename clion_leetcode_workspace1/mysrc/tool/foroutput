@@ -53,7 +53,7 @@
         for(int i=st_indx;i<=ed_indx;i++){
             vector<T> vec_tmp = nums[i];
             for(int j=0;j<=vec_tmp.size()-1;j++){
-                cout<<nums[j]<<"\t";
+                cout<<vec_tmp[j]<<"\t";
             }
             cout<<endl;
         }

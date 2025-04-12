@@ -103,7 +103,8 @@
 						85,
 						86,
 						87,
-						88
+						88,
+						89
 					]
 				}
 			],
@@ -206,7 +207,8 @@
 						85,
 						86,
 						87,
-						88
+						88,
+						89
 					]
 				}
 			],
@@ -686,6 +688,13 @@
 					"id" : "t513_FindBottomLeftTreeValue::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-t513_FindBottomLeftTreeValue-Debug-e065e4b86c5697db73bb.json",
 					"name" : "t513_FindBottomLeftTreeValue",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "t51_NQueens::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-t51_NQueens-Debug-66ace5cb18dd4932a2e7.json",
+					"name" : "t51_NQueens",
 					"projectIndex" : 0
 				},
 				{
