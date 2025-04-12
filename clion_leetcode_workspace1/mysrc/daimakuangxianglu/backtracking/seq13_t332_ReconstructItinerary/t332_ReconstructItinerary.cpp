@@ -34,7 +34,9 @@ using namespace std;
  *
  * 也就是说这题关注的是线  而不是点
  * 而used数组关注的是点
- * 既然关注的是线那么我们
+ * 既然 我们 关注的是线
+ * 我们的 逻辑树就是对 当前这个 起始地departure
+ *      对他的那个 终点站 destination map 的每一站 进行尝试搜索和回溯
  *
  */
 class Solution {

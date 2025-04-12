@@ -29,6 +29,12 @@ using namespace std;
  * Output: [["Q"]]
  *
  *
+ * 他做的是对chessboard进行处理
+ * 你要思考 他是怎么变成逻辑树的
+ *      他只不过是 对 vector<vector<string>> 进行一个个搜
+ *
+ * 你可能会很糊涂 为什么for循环只是针对 col来做, 他明明就是 二维数组?
+ *      但你要记得 本身递归 他就已经代表了一层for循环了!!!!!!!!
  *
 
  *
