@@ -1,3 +1,25 @@
+
+常用的map的for循环
+    例如t332
+
+    正确写法
+    map<string,int> &routes= flight_routes[now_depart];
+    for(pair<const string,int> &route: routes){
+        route.second=0;
+    }
+
+    错误写法1.
+    map<string,int> routes= flight_routes[now_depart];   //错误示范, 不用引用(&) 里面是无法修改值的
+        不能把map这样提取出来, 因为你提取出来以后 你修改map 不会影响到 flight_routes[now_depart]
+        因为这个map只是一个副本
+
+    错误写法2.
+    for(pair<string,int> route: routes){                 //错误示范, 不用引用(&) 里面是无法修改值的
+
+
+
+------------------------------------------------
+
     for (const auto& pair : myMap) {
         std::cout << "Key: " << pair.first << ", Value: " << pair.second << std::endl;
     }
