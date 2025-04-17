@@ -630,6 +630,37 @@ build t51_NQueens: CXX_EXECUTABLE_LINKER__t51_NQueens_Debug CMakeFiles/t51_NQuee
   TARGET_PDB = t51_NQueens.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target t37_SudokuSolver
+
+
+#############################################
+# Order-only phony target for t37_SudokuSolver
+
+build cmake_object_order_depends_target_t37_SudokuSolver: phony || .
+
+build CMakeFiles/t37_SudokuSolver.dir/mysrc/daimakuangxianglu/backtracking/seq15_t37_SudokuSolver/t37_SudokuSolver.cpp.o: CXX_COMPILER__t37_SudokuSolver_unscanned_Debug /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/backtracking/seq15_t37_SudokuSolver/t37_SudokuSolver.cpp || cmake_object_order_depends_target_t37_SudokuSolver
+  DEP_FILE = CMakeFiles/t37_SudokuSolver.dir/mysrc/daimakuangxianglu/backtracking/seq15_t37_SudokuSolver/t37_SudokuSolver.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/t37_SudokuSolver.dir
+  OBJECT_FILE_DIR = CMakeFiles/t37_SudokuSolver.dir/mysrc/daimakuangxianglu/backtracking/seq15_t37_SudokuSolver
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target t37_SudokuSolver
+
+
+#############################################
+# Link the executable t37_SudokuSolver
+
+build t37_SudokuSolver: CXX_EXECUTABLE_LINKER__t37_SudokuSolver_Debug CMakeFiles/t37_SudokuSolver.dir/mysrc/daimakuangxianglu/backtracking/seq15_t37_SudokuSolver/t37_SudokuSolver.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/t37_SudokuSolver.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = t37_SudokuSolver
+  TARGET_PDB = t37_SudokuSolver.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target t77_Combinations
 
 
@@ -2864,7 +2895,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug
 
-build all: phony t1_TwoSum_past t1_pre1_t242_ValidAnagram t1_pre1_t242_ValidAnagram_method2 t1_pre2_t349_IntersectionofTwoArrays t121_BestTimeToBuyAndSellStock t5_pre1_t647_Palindromic_Substrings t704_BinarySearch t27_RemoveElement t977_SquaresOfASortedArray t76_MinimumSizeSubarraySum t209_MinimumSizeSubarraySum t209_MinimumSizeSubarraySum_daimakuagnixanglu t209_MinimumSizeSubarraySum_leetcode t59_SpiralMatrixII t491_NondecreasingSubsequences t46_Permutations t47_PermutationsII t332_ReconstructItinerary t51_NQueens t77_Combinations t216_CombinationSumIII t17_LetterCombinationsofaPhoneNumber t39_CombinationSum t40_CombinationSumII t131_PalindromePartitioning t93_RestoreIPAddresses t78_Subsets t90_SubsetsII t226_InvertBinaryTree_levelorder_itera t226_InvertBinaryTree_preorder_itera t226_InvertBinaryTree_preorder_recur t106_ConstructBinaryTreefromInorderandPostorderTraversal t654_MaximumBinaryTree t617_MergeTwoBinaryTrees t701_InsertintoaBinarySearchTree t450_DeleteNodeinaBST t669_TrimaBinarySearchTree t108_ConvertSortedArraytoBinarySearchTree t538_ConvertBSTtoGreaterTree t102_BinaryTreeLevelorderTraversal_itera t144_BinaryTreePreorderTraversal_itera t145_BinaryTreePostorderTraversal_itera t94_BinaryTreeInorderTraversal_itera t144_BinaryTreePreorderTraversal_recur t145_BinaryTreePostorderTraversal_recur t94_BinaryTreeInorderTraversal_recur t257_BinaryTreePaths t513_FindBottomLeftTreeValue t700_SearchInABinarySearchTree t501_FindModeinBinarySearchTree t236_LowestCommonAncestorofaBinaryTree t235_LowestCommonAncestorofaBinarySearchTree t110_BalancedBinaryTree t404_SumofLeftLeaves t112_PathSum t98_ValidateBinarySearchTree t530_MinimumAbsoluteDifferenceinBST t101_SymmetricTree t104_MaximumDepthOfBinaryTree t111_MinimumDepthOfBinaryTree t222_CountCompleteTreeNodes t455_AssignCookies t242_ValidAnagram t1002_FindCommonCharacters t349_IntersectionofTwoArrays t202_HappyNumber t1_TwoSum t454_4SumII t383_RansomNote t15_3Sum t15_3Sum_two_index t18_4sum_two_index t206_ReverseLinkedList t206_RemoveNthNodeFromEndofList t142_LinkedListCycleII t20_ValidParentheses t1047_RemoveAllAdjacentDuplicatesInString t150_EvaluateReversePolishNotation t239_SlidingWindowMaximum t347_TopKFrequentElements t151_ReverseWordsInAString kmp t459_RepeatedSubstringPattern learn_class_generic1 learn_template_generic1 wrong_use_refer_in_method main main2 learn_heapsort1_maxheap updatetocplus20test
+build all: phony t1_TwoSum_past t1_pre1_t242_ValidAnagram t1_pre1_t242_ValidAnagram_method2 t1_pre2_t349_IntersectionofTwoArrays t121_BestTimeToBuyAndSellStock t5_pre1_t647_Palindromic_Substrings t704_BinarySearch t27_RemoveElement t977_SquaresOfASortedArray t76_MinimumSizeSubarraySum t209_MinimumSizeSubarraySum t209_MinimumSizeSubarraySum_daimakuagnixanglu t209_MinimumSizeSubarraySum_leetcode t59_SpiralMatrixII t491_NondecreasingSubsequences t46_Permutations t47_PermutationsII t332_ReconstructItinerary t51_NQueens t37_SudokuSolver t77_Combinations t216_CombinationSumIII t17_LetterCombinationsofaPhoneNumber t39_CombinationSum t40_CombinationSumII t131_PalindromePartitioning t93_RestoreIPAddresses t78_Subsets t90_SubsetsII t226_InvertBinaryTree_levelorder_itera t226_InvertBinaryTree_preorder_itera t226_InvertBinaryTree_preorder_recur t106_ConstructBinaryTreefromInorderandPostorderTraversal t654_MaximumBinaryTree t617_MergeTwoBinaryTrees t701_InsertintoaBinarySearchTree t450_DeleteNodeinaBST t669_TrimaBinarySearchTree t108_ConvertSortedArraytoBinarySearchTree t538_ConvertBSTtoGreaterTree t102_BinaryTreeLevelorderTraversal_itera t144_BinaryTreePreorderTraversal_itera t145_BinaryTreePostorderTraversal_itera t94_BinaryTreeInorderTraversal_itera t144_BinaryTreePreorderTraversal_recur t145_BinaryTreePostorderTraversal_recur t94_BinaryTreeInorderTraversal_recur t257_BinaryTreePaths t513_FindBottomLeftTreeValue t700_SearchInABinarySearchTree t501_FindModeinBinarySearchTree t236_LowestCommonAncestorofaBinaryTree t235_LowestCommonAncestorofaBinarySearchTree t110_BalancedBinaryTree t404_SumofLeftLeaves t112_PathSum t98_ValidateBinarySearchTree t530_MinimumAbsoluteDifferenceinBST t101_SymmetricTree t104_MaximumDepthOfBinaryTree t111_MinimumDepthOfBinaryTree t222_CountCompleteTreeNodes t455_AssignCookies t242_ValidAnagram t1002_FindCommonCharacters t349_IntersectionofTwoArrays t202_HappyNumber t1_TwoSum t454_4SumII t383_RansomNote t15_3Sum t15_3Sum_two_index t18_4sum_two_index t206_ReverseLinkedList t206_RemoveNthNodeFromEndofList t142_LinkedListCycleII t20_ValidParentheses t1047_RemoveAllAdjacentDuplicatesInString t150_EvaluateReversePolishNotation t239_SlidingWindowMaximum t347_TopKFrequentElements t151_ReverseWordsInAString kmp t459_RepeatedSubstringPattern learn_class_generic1 learn_template_generic1 wrong_use_refer_in_method main main2 learn_heapsort1_maxheap updatetocplus20test
 
 # =============================================================================
 # Built-in targets

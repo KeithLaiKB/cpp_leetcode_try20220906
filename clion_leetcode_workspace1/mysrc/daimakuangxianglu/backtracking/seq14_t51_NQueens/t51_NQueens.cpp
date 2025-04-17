@@ -36,7 +36,7 @@ using namespace std;
  * 你可能会很糊涂 为什么for循环只是针对 col来做, 他明明就是 二维数组?
  *      但你要记得 本身递归 他就已经代表了一层for循环了!!!!!!!!
  *
-
+ * 它就是那种 回溯 + 二维数组的valid
  *
  */
 class Solution {

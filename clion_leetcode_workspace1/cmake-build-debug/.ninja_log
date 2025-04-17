@@ -9,3 +9,5 @@
 4	1678	1744418224537371788	CMakeFiles/t332_ReconstructItinerary.dir/mysrc/daimakuangxianglu/backtracking/seq13_t332_ReconstructItinerary/t332_ReconstructItinerary.cpp.o	8c06289e4a3197cb
 11	1520	1744424148785402532	CMakeFiles/t51_NQueens.dir/mysrc/daimakuangxianglu/backtracking/seq14_t51_NQueens/t51_NQueens.cpp.o	a2c058ed14418c61
 1520	1677	1744424150296405216	t51_NQueens	284f42159a066e45
+5	1362	1744854690716885134	CMakeFiles/t37_SudokuSolver.dir/mysrc/daimakuangxianglu/backtracking/seq15_t37_SudokuSolver/t37_SudokuSolver.cpp.o	bf633a162810d2b1
+1362	1491	1744854692074142993	t37_SudokuSolver	5716127f1513bee3

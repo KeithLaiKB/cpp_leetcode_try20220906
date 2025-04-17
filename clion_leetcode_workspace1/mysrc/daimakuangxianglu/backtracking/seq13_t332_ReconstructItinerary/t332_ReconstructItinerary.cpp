@@ -38,6 +38,8 @@ using namespace std;
  * 我们的 逻辑树就是对 当前这个 起始地departure
  *      对他的那个 终点站 destination map 的每一站 进行尝试搜索和回溯
  *
+ * 它就是那种 回溯 + map(并且利用map的自动排序功能)
+ *
  */
 class Solution {
 public:
