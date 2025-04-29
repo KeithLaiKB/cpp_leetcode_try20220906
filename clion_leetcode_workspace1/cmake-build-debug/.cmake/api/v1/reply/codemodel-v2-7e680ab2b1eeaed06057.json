@@ -105,7 +105,8 @@
 						87,
 						88,
 						89,
-						90
+						90,
+						91
 					]
 				}
 			],
@@ -210,7 +211,8 @@
 						87,
 						88,
 						89,
-						90
+						90,
+						91
 					]
 				}
 			],
@@ -599,6 +601,13 @@
 					"id" : "t349_IntersectionofTwoArrays::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-t349_IntersectionofTwoArrays-Debug-480491b0bbe0b2f173a0.json",
 					"name" : "t349_IntersectionofTwoArrays",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "t376_WiggleSubsequence::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-t376_WiggleSubsequence-Debug-c550134f8afc25b526c0.json",
+					"name" : "t376_WiggleSubsequence",
 					"projectIndex" : 0
 				},
 				{
