@@ -63,6 +63,7 @@
     -- src/t222_CountCompleteTreeNodes.cpp will be compiled to bin/t222_CountCompleteTreeNodes
     -- src/t455_AssignCookies.cpp will be compiled to bin/t455_AssignCookies
     -- src/t376_WiggleSubsequence.cpp will be compiled to bin/t376_WiggleSubsequence
+    -- src/t53_MaximumSubarray.cpp will be compiled to bin/t53_MaximumSubarray
     -- src/t242_ValidAnagram.cpp will be compiled to bin/t242_ValidAnagram
     -- src/t1002_FindCommonCharacters.cpp will be compiled to bin/t1002_FindCommonCharacters
     -- src/t349_IntersectionofTwoArrays.cpp will be compiled to bin/t349_IntersectionofTwoArrays

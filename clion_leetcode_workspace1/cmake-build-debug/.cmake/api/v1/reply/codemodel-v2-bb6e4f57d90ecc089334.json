@@ -106,7 +106,8 @@
 						88,
 						89,
 						90,
-						91
+						91,
+						92
 					]
 				}
 			],
@@ -212,7 +213,8 @@
 						88,
 						89,
 						90,
-						91
+						91,
+						92
 					]
 				}
 			],
@@ -727,6 +729,13 @@
 					"id" : "t538_ConvertBSTtoGreaterTree::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-t538_ConvertBSTtoGreaterTree-Debug-e7b6344d35d9abc9cb55.json",
 					"name" : "t538_ConvertBSTtoGreaterTree",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "t53_MaximumSubarray::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-t53_MaximumSubarray-Debug-04e07a4d2abbc6f12eab.json",
+					"name" : "t53_MaximumSubarray",
 					"projectIndex" : 0
 				},
 				{
