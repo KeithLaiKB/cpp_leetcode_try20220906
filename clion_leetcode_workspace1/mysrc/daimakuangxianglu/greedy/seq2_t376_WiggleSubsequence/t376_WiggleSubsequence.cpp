@@ -38,6 +38,8 @@ using namespace std;
  * Input: nums = [1,2,3,4,5,6,7,8,9]
  * Output: 2
  *
+ * 求得摆动序列 中的 点 一共有多少个
+ *
  */
 class Solution {
 public:

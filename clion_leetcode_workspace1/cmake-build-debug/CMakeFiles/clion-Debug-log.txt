@@ -64,6 +64,8 @@
     -- src/t455_AssignCookies.cpp will be compiled to bin/t455_AssignCookies
     -- src/t376_WiggleSubsequence.cpp will be compiled to bin/t376_WiggleSubsequence
     -- src/t53_MaximumSubarray.cpp will be compiled to bin/t53_MaximumSubarray
+    -- src/t122_BestTimetoBuyandSellStockII_greedy.cpp will be compiled to bin/t122_BestTimetoBuyandSellStockII_greedy
+    -- src/t55_JumpGame.cpp will be compiled to bin/t55_JumpGame
     -- src/t242_ValidAnagram.cpp will be compiled to bin/t242_ValidAnagram
     -- src/t1002_FindCommonCharacters.cpp will be compiled to bin/t1002_FindCommonCharacters
     -- src/t349_IntersectionofTwoArrays.cpp will be compiled to bin/t349_IntersectionofTwoArrays
@@ -93,5 +95,5 @@
     -- src/learn_heapsort1_maxheap.cpp will be compiled to bin/learn_heapsort1_maxheap
     -- src/updatetocplus20test.cpp will be compiled to bin/updatetocplus20test
 -- Configuring done (0.1s)
--- Generating done (0.4s)
+-- Generating done (0.2s)
 -- Build files have been written to: /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug
