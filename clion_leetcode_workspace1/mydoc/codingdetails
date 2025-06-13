@@ -2,7 +2,7 @@
 for的问题
 在C++当中
 例如
-nums.size() 他是一个无符号的数字
+nums.size() 他是一个无符号的数字 他的类型是size_t
 你最多能合理的做到 nums.size()-1
 然而如果你做了 nums.size()-2
     他是会出问题的
