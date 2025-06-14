@@ -60,8 +60,15 @@ using namespace std;
  *                                                                                                                          所以 再进行一次 count_step ++
  *  0 -> 2 -> 6 ->8, 一共三次step
  *
+ * 和 t55一样
+ * 每次都 和之前 最大范围 的方案 做比较
  *
- *  每次都 和之前 最大范围 的方案 做比较
+ * 和 t55的区别
+ *  需要一直记录 已经跳步时 (i==cur_max_id 才需要跳步)
+ *      例如已经做了 跳到 idx=i, 从 i 能跳到的最大距离 cur_max_id= nums[i]
+ *
+ *  不断更新当前的最大方案
+ *
  *  一旦 此时走到 cur_max_id, 并且还有 next_max_id > cur_max_id, 则 继续往下走
  */
 class Solution {
@@ -79,9 +86,6 @@ public:
     // 首先这种就是分钟类
     //
     int jump(vector<int>& nums) {
-
-        int better_range_idx =0;        //代表从idx=0 开始 到 better_range_idx 这个位置
-
 
         int rs=0;
 

@@ -3,6 +3,7 @@
 #include <unordered_map>
 #include <string>
 #include <stack>
+#include <cstdint>
 using namespace std;
 
 /**
@@ -80,7 +81,7 @@ public:
                     rs1_tmp = num1_tmp - num2_tmp;
                 }
                 else if(str_now =="*"){
-                    rs1_tmp = num1_tmp * num2_tmp;
+                    rs1_tmp = 1LL * num1_tmp * num2_tmp;
                 }
                 else if(str_now =="/"){
                     if(num2_tmp == 0){
