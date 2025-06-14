@@ -57,15 +57,10 @@ public:
 
     }
 
-    //绝对值 从大到小 排列
-    bool static mycomp(const int &a, const int& b){
-        return abs(a)> abs(b);
-    }
 
     // 时间复杂度：O(n)
     // 空间复杂度：O(1)
-
-
+    //
     // 1. 先查看 是否有可能完成 一圈
     //      所以 先不管中途是否 出现负数, 只有总体 total_gas > total_cost
     //      就能跑完整一圈, 只是需要看 从哪开始而已
@@ -91,7 +86,6 @@ public:
     //          只是我们刚才那样解释 可以方便的 分开成两个区间
     //
     int canCompleteCircuit(vector<int>& gas, vector<int>& cost){
-        int rs=0;
 
         int total_gas=0;
         int total_cost =0;
@@ -114,7 +108,8 @@ public:
 
             if(accu_rest<0){
                 accu_rest=0;
-                st_idx = (i +1) % gas.size();
+                ++st_idx;
+                //st_idx = (i +1) % gas.size();   // 虽然 这样也是没问题的, 但不需要那么写 因为假设st_idx=0搜索过了 其实 不会再从0开始了
             }
 
         }
