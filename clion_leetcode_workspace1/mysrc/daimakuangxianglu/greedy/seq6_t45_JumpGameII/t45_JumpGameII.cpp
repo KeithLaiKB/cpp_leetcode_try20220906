@@ -62,7 +62,7 @@ using namespace std;
  *
  *
  *  每次都 和之前 最大范围 的方案 做比较
- *  保留最大范围方案 的 range 和 最大范围方案的 起始位置
+ *  一旦 此时走到 cur_max_id, 并且还有 next_max_id > cur_max_id, 则 继续往下走
  */
 class Solution {
 public:
