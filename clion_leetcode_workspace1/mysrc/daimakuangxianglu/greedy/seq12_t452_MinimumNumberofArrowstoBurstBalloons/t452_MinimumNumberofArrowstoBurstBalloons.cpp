@@ -47,6 +47,9 @@ using namespace std;
  * - Shoot an arrow at x = 2, bursting the balloons [1,2] and [2,3].
  * - Shoot an arrow at x = 4, bursting the balloons [3,4] and [4,5].
  *
+ * 局部最优
+ *  排序后, 有overlap的 range, 把多余的进行切割, 实现最小的范围交集
+ *
  */
 class Solution {
 public:
