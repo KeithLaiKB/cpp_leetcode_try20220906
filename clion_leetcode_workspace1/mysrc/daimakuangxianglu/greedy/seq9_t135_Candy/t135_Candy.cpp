@@ -33,6 +33,14 @@ using namespace std;
  * The third child gets 1 candy because it satisfies the above two conditions.
  *
  *
+ * 局部最优:
+ * 1. 第一次遍历时，只照顾我比左边高。
+ * 2. 第二次遍历时，只修复我比右边高的情况
+ * 以上 所有规则都是局部的（只看相邻）
+ *
+ * 我们按两个方向都遍历了一次，每个相邻约束都被处理到了，
+ * 并且我们只在必要的情况下+1，保证是“最少分糖”
+ * 推出全局最优
  *
  */
 class Solution {
