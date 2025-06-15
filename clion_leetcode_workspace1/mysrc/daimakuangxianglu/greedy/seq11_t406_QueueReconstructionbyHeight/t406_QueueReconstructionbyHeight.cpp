@@ -91,9 +91,12 @@ public:
     }
 
 
-    // 时间复杂度：O(n)
-    // 空间复杂度：O(1)
+    // 时间复杂度：O(nlog n + n^2)
+    //              sort 用了 O(nlogn)
+    //              for 循环用了O(n), 但内层的insert需要O(n), 所以这里面一共是 O(n^2)
+    //          所以总公是 O(nlog n + n^2)
 
+    // 空间复杂度：O(n)
     vector<vector<int>> reconstructQueue(vector<vector<int>>& people) {
         sort(people.begin(),people.end(),mycomp);
 
