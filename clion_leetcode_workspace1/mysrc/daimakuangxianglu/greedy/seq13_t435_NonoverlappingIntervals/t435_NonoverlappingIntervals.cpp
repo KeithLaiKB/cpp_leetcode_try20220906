@@ -35,6 +35,13 @@ using namespace std;
  * Output: 0
  * Explanation: You don't need to remove any of the intervals since they're already non-overlapping.
  *
+ * 和t452比较像
+ * 先根据 左边的那个点的大小 拿来排序
+ * 因为我们要尽可能的 减少remove的量
+ *      每次比较都取右边 的最小值, 从而形成一个 比较紧实的 range
+ *      这样可以给 更多的区间 给 后面的集合
+ *          从而减少remove的数量
+ *
  *
  */
 class Solution {
@@ -75,6 +82,7 @@ public:
     // 局部优化:
     // 尽量保证 往左靠, 不要霸占右边的位置
     int eraseOverlapIntervals(vector<vector<int>>& intervals) {
+        // 先根据 左边的那个点的大小 拿来排序
         sort(intervals.begin(),intervals.end(),mycomp);
 
         int removed_count=0;
