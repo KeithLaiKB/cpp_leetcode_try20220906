@@ -37,39 +37,48 @@ using namespace std;
  *
  * 和t452比较像
  * 先根据 左边的那个点的大小 拿来排序
+ *
  * 因为我们要尽可能的 减少remove的量
  *      每次比较都取右边 的最小值, 从而形成一个 比较紧实的 range
  *      这样可以给 更多的区间 给 后面的集合
  *          从而减少remove的数量
  *
+ *  和t452区别
+ *  他不是对overlap进行切割, 而是把范围大的 那个范围直接删除
+ *  例如此时已经拍好序了
+ *      {{1,5},{2,3},{3,7},{7,12}}
+ *  当{1,5} 的最右是5> {2,3}里的3
+ *  则删掉{1,5}
+ *  最终结果是
+ *  {{2,3},{3,7},{7,12}}
  *
  */
 class Solution {
 public:
-    Solution(){
-
-    }
-    ~Solution(){
+    Solution() {
 
     }
 
-    template <typename T>
-    void myOutput_VectorBvecBtBB(vector<vector<T>> &nums,int st_indx, int ed_indx){
-        for(int i=st_indx; i<=ed_indx;i++){
+    ~Solution() {
+
+    }
+
+    template<typename T>
+    void myOutput_VectorBvecBtBB(vector<vector<T>> &nums, int st_indx, int ed_indx) {
+        for (int i = st_indx; i <= ed_indx; i++) {
             vector<T> vec_tmp = nums[i];
-            for(int j=0;j<=vec_tmp.size()-1;j++){
-                cout<<vec_tmp[j]<<"\t";
+            for (int j = 0; j <= vec_tmp.size() - 1; j++) {
+                cout << vec_tmp[j] << "\t";
             }
-            cout<<endl;
+            cout << endl;
         }
     }
 
-    bool static mycomp(const vector<int> &a, const vector<int> &b){
-        if(a[0]==b[0]){
-            return a[1]<b[1];
-        }
-        else{
-            return a[0]<b[0];
+    bool static mycomp(const vector<int> &a, const vector<int> &b) {
+        if (a[0] == b[0]) {
+            return a[1] < b[1];
+        } else {
+            return a[0] < b[0];
         }
     }
 
@@ -81,14 +90,14 @@ public:
     //
     // 局部优化:
     // 尽量保证 往左靠, 不要霸占右边的位置
-    int eraseOverlapIntervals(vector<vector<int>>& intervals) {
+    int eraseOverlapIntervals(vector<vector<int>> &intervals) {
         // 先根据 左边的那个点的大小 拿来排序
-        sort(intervals.begin(),intervals.end(),mycomp);
+        sort(intervals.begin(), intervals.end(), mycomp);
 
-        int removed_count=0;
+        int removed_count = 0;
 
-        int now_left_bound_idx=intervals[0][0];
-        int now_right_bound_idx=intervals[0][1];
+        int now_left_bound_idx = intervals[0][0];
+        int now_right_bound_idx = intervals[0][1];
         for(int i=1;i<=intervals.size()-1;i++){
 
             if(now_left_bound_idx<=intervals[i][0] && intervals[i][0]<now_right_bound_idx){

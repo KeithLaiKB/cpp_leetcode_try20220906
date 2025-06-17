@@ -261,7 +261,10 @@ public:
         return len_in_vecstr1;
     }
 
-
+    // 时间复杂度：O(n)
+    //
+    // 空间复杂度：O(1)
+    //
     vector<int> partitionLabels(string s){
         vector<int> len_in_vecstr1;
         int ch_longestpos_idx[26] = {};
