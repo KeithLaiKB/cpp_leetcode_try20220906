@@ -67,6 +67,7 @@
     -- src/t435_NonoverlappingIntervals.cpp will be compiled to bin/t435_NonoverlappingIntervals
     -- src/t736_PartitionLabels.cpp will be compiled to bin/t736_PartitionLabels
     -- src/t56_MergeIntervals.cpp will be compiled to bin/t56_MergeIntervals
+    -- src/t738_MonotoneIncreasingDigits.cpp will be compiled to bin/t738_MonotoneIncreasingDigits
     -- src/t455_AssignCookies.cpp will be compiled to bin/t455_AssignCookies
     -- src/t376_WiggleSubsequence.cpp will be compiled to bin/t376_WiggleSubsequence
     -- src/t53_MaximumSubarray.cpp will be compiled to bin/t53_MaximumSubarray
@@ -104,6 +105,6 @@
     -- src/main2.cpp will be compiled to bin/main2
     -- src/learn_heapsort1_maxheap.cpp will be compiled to bin/learn_heapsort1_maxheap
     -- src/updatetocplus20test.cpp will be compiled to bin/updatetocplus20test
--- Configuring done (0.1s)
--- Generating done (0.2s)
+-- Configuring done (0.2s)
+-- Generating done (0.4s)
 -- Build files have been written to: /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug
