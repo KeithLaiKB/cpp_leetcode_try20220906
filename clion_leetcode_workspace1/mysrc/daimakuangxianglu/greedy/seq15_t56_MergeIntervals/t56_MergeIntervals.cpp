@@ -117,15 +117,15 @@ int main() {
 
     //vector<int> vec_int1={5,5,10,10,20};
     //vector<int> vec_int2={2,-3,-1,5,-4};
-    vector<vector<int>> vec_vec_int1={{10,16},{2,8},{1,6},{7,12}};
+    vector<vector<int>> vec_vec_int1={{1,3},{2,6},{8,10},{15,18}};
 
     //string str1 = "babacacbdfgdhshf";
     //string str1 = "ababcbacadefegdehijhklij";
 
-    vector<int> rs1 = solut1->merge(vec_vec_int1);
+    vector<vector<int>> rs1 = solut1->merge(vec_vec_int1);
     cout<<"result:"<<endl;
     //cout<<rs1<<endl;
-    solut1->myOutput_VectorBtB(rs1,0,rs1.size()-1);
+    solut1->myOutput_VectorBvecBtBB(rs1,0,rs1.size()-1);
     return 0;
 }
 
