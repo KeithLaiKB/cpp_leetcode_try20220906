@@ -1,0 +1,6 @@
+
+数字变成字符串
+string str_num1=to_string(n);
+
+字符串变成数字
+int a = stoi(str_num1);
