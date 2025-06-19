@@ -276,7 +276,7 @@ public:
         //   pos{0}                 a
         //   pos{0, 1}              ab
         //   pos{0, 1, 0, 2}        abd
-        //   pos{3, 1, 0, 2}        abda 更新 a的最远距离
+        //   pos{3, 1, 0, 2}        abda 更新 a的最远距离, 从 0 变成 3
         for(int i=0;i<=s.size()-1;i++){
             char ch_tmp=s[i];
             ch_longestpos_idx[ch_tmp-'a']=i;

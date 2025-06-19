@@ -43,6 +43,8 @@ using namespace std;
  * 满足 x<=y
  * 所以最大的数字是229
  *
+ *
+ * 其实就是 找出高位需要改变成9的位置, 然后把后面的都变成9
  */
 class Solution {
 public:
@@ -62,7 +64,6 @@ public:
     //
     // 空间复杂度：O(n)
     //
-
     int monotoneIncreasingDigits(int n) {
         string str_num1=to_string(n);
 
