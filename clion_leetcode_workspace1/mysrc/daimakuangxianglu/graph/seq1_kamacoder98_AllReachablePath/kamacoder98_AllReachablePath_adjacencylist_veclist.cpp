@@ -6,6 +6,7 @@
 #include <queue>
 #include <optional>
 #include <climits>
+#include <list>
 
 using namespace std;
 
@@ -31,14 +32,22 @@ using namespace std;
           \/  \/
             5
  *
+ * 这里 我们是用邻接表
+ * 但是 我们这里
+ * vector<list<int>> 来存放 邻接表
  *
- * vector<vecotr<int>> 来存放 邻接矩阵
  *
  * 本题我们会有n 个节点，因为节点标号是从1开始的，为了节点标号和下标对齐，我们申请 n + 1 * n + 1 这么大的二维数组。
  * 所以 纵向(n+1) * 横向(n+1)
  * 所以有
- * vector<vector<int>> graph(n + 1, vector<int>(n + 1, 0));
+ * 方案一(当前代码文件 使用的方案):
+ *      vector<list<int>> graph(n + 1);
+ * 或者
  *
+ * 方案二:
+ *      vector<vector<int>> graph(n + 1, vector<int>);
+ *          但是 这种 和邻接矩阵 很像, 但会有点不一样,
+ *          因为 这里里面的  vector 他的长度是不固定的
  *
  *
  *
@@ -46,7 +55,7 @@ using namespace std;
  * 所以 纵向(n+1) * 横向(list 未知)
  * vector<list<int>> graph(n + 1); // 邻接表，list为C++里的链表
  *
- * 当然咯 chatgpt说邻接表
+ * 当然 chatgpt说邻接表
  *      vector<vector<int>> graph;
  * 这样更推荐
  *
@@ -66,7 +75,6 @@ public:
     ~Solution(){
 
     }
-
     template <typename T>
     void myOutput_VectorBvecBtBB(vector<vector<T>>& nums, int st_indx, int ed_indx){
         for(int i=st_indx;i<=ed_indx;i++){
@@ -79,10 +87,22 @@ public:
     }
 
 
+    template <typename T>
+    void myOutput_VectorBlistBtBB(vector<list<T>>& nums, int st_indx, int ed_indx){
+        for(int i=st_indx;i<=ed_indx;i++){
+            list<T> vec_tmp = nums[i];
+            for(int &num: vec_tmp){
+                cout<<num<<"\t";
+            }
+            cout<<endl;
+        }
+    }
+
+
 
 
     // 临接矩阵
-    vector<vector<int>> initAdjacencyMatrix_ints(){
+    vector<list<int>> initAdjacencyList_list_ints(){
 
         //----------------- 模拟console 进来的参数  ---------------------
 
@@ -106,16 +126,22 @@ public:
         //--------------------------------------------------------------
 
 
-        //创建 邻接矩阵
-        vector<vector<int>> adjMatrix1 (nodes_n+1, vector<int>(nodes_n+1,0));
+        //创建 邻接表
+        // 这里的 list<int>() 不会创建什么 值为0的节点 先塞进去 之类的,
+        //      因为他是链表, 此时 是空的链表
+        vector<list<int>> adjList (nodes_n+1, list<int>());         // 和 邻接矩阵 不同！！！！！！！！！！！！！！！
+        //vector<list<int>> adjList (nodes_n+1);                            //和上面的写法 等价
+        //
 
-        // idx/idx  0    1    2    3    4    5
-        //  0       0    0    0    0    0    0
-        //  1       0    0    1    1    0    0
-        //  2       0    0    0    0    1    0
-        //  3       0    0    0    0    0    1
-        //  4       0    0    0    0    0    1
-        //  5       0    0    0    0    0    0
+        // 这个表也 和 邻接矩阵 不同！！！！！！！！！！！！！！！
+        //
+        // idx     list(链表)
+        //  0
+        //  1       2    3
+        //  2       4
+        //  3       5
+        //  4       5
+        //  5
         //
         // 开始
         // 根据 console 进来的参数 进行 邻接矩阵的 填写
@@ -125,10 +151,10 @@ public:
 
             // 第一行 和 第一列 都是0 基本是不用的,
             // 我们只要按照数字 作为下标 当作Node就可以了
-            adjMatrix1[node_tmp1][node_tmp2]=1;
+            adjList[node_tmp1].push_back(node_tmp2);                    // 和 邻接矩阵 不同！！！！！！！！！！！！！！！
         }
 
-        return adjMatrix1;
+        return adjList;
     }
 
 
@@ -139,7 +165,7 @@ public:
     //空间复杂度:
     //
     // 基于dfs 走回溯的方式
-    void backtracking_dfs (const vector<vector<int>>& graph, int node_num, int dest_node, vector<int> &now_path, vector<vector<int>>& rs) {
+    void backtracking_dfs (const vector<list<int>>& graph, int node_num, int dest_node, vector<int> &now_path, vector<vector<int>>& rs) {
 
         //limit
         //当前已经到达了目的地了
@@ -154,22 +180,19 @@ public:
         //for
         // 因为 他是邻接矩阵, 所以每一行 的数量都是固定的 用graph[0].size() 是没问题的,
         // 当然 你也可以用 i <= max_num
-        for(int i=0;i<=graph[node_num].size()-1;i++){
-            if(graph[node_num][i]==1){
-                now_path.push_back(i);
-                backtracking_dfs (graph, i, dest_node, now_path, rs);
-                //
-                //pop
-                // 本来回溯 就像树一样的逻辑, 一条子路径搞完, 就看另外一条子路径
-                now_path.pop_back();
-
-            }
+        for(const int& dst_tmp : graph[node_num]){                                              // 和 邻接矩阵 不同！！！！！！！！！！！！！！！
+            now_path.push_back(dst_tmp);                                                    // 和 邻接矩阵 不同！！！！！！！！！！！！！！！
+            backtracking_dfs (graph, dst_tmp, dest_node, now_path, rs);     // 和 邻接矩阵 不同！！！！！！！！！！！！！！！
+            //
+            //pop
+            // 本来回溯 就像树一样的逻辑, 一条子路径搞完, 就看另外一条子路径
+            now_path.pop_back();
         }
 
     }
 
 
-    vector<vector<int>> getAllReachablePath(const vector<vector<int>>graph, int dest_node){
+    vector<vector<int>> getAllReachablePath(const vector<list<int>>graph, int dest_node){
         vector<vector<int>> rs;
         vector<int> now_path;
 
@@ -190,16 +213,16 @@ int main() {
     Solution* solut1 = new Solution();
 
     // 初始化 图
-    vector<vector<int>> adjacencyMatrix1 = solut1->initAdjacencyMatrix_ints();
-    solut1->myOutput_VectorBvecBtBB(adjacencyMatrix1, 0, adjacencyMatrix1.size()-1);
+    vector<list<int>> adjacencyList1 = solut1->initAdjacencyList_list_ints();
+    solut1->myOutput_VectorBlistBtBB(adjacencyList1, 0, adjacencyList1.size()-1);
 
     // 我这里 就把 最后的那个 点 当作 终点好了,
     //      例如 我们有 1~5 个node, 我们实际会有 5+1个空间,
     //          我这里打算 把 5 当作终点
     //      因为 本题我们会有n 个节点，因为节点标号是从1开始的，为了节点标号和下标对齐，我们申请 n + 1 * n + 1 这么大的二维数组。
     // 当然 你也可以改终点
-    int dest_node = adjacencyMatrix1.size()-1;
-    vector<vector<int>> rs1 = solut1->getAllReachablePath(adjacencyMatrix1,dest_node);
+    int dest_node = adjacencyList1.size()-1;
+    vector<vector<int>> rs1 = solut1->getAllReachablePath(adjacencyList1,dest_node);
 
 
 

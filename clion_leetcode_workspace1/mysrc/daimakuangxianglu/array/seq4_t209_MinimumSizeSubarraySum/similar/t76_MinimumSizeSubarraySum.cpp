@@ -68,9 +68,9 @@ public:
 
         //window中存在的有效数字
         //例如 target中
-        //    A=1 B=1 C=2
+        //          target_freq:        A=1 B=1 C=2
         //    但是window中
-        //    A=1 B=2 C=2 eff_len仍然是3, B多余的那个我不算在内
+        //          og_window_freq :    A=1 B=2 C=2 eff_len仍然是3, B多余的那个我不算在内
         int eff_total_len = 0;
 
         for(int i=0;i<=target.size()-1;i++){
@@ -122,7 +122,7 @@ public:
                                 //删除该字符出现的次数
                                 --og_window_freq[ch_tmp2];
 
-                                // 如果删除 该字符以后 他的有效次数不达标
+                                // 如果删除 该字符以后 他出现的次数 不达标  该字符应该出现的 有效次数
                                 if(og_window_freq[ch_tmp2] < target_freq[ch_tmp2]){
                                     // 意味着 删除 该字符以后 影响到总有效次数了 例如:BA 删除了有效的字符B了
                                     --eff_total_len; //总有效次数也减
