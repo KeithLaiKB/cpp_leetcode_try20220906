@@ -12,9 +12,14 @@ using namespace std;
 
 /**
  *
- * You are given a list of airline tickets where tickets[i] = [fromi, toi] represent the departure and the arrival airports of one flight. Reconstruct the itinerary in order and return it.
- * All of the tickets belong to a man who departs from "JFK", thus, the itinerary must begin with "JFK". If there are multiple valid itineraries, you should return the itinerary that has the smallest lexical order when read as a single string.
- * For example, the itinerary ["JFK", "LGA"] has a smaller lexical order than ["JFK", "LGB"].
+ * You are given a list of airline tickets where tickets[i] = [fromi, toi] represent the departure and the arrival airports of one flight.
+ * Reconstruct the itinerary in order and return it.
+ *
+ * All of the tickets belong to a man who departs from "JFK",
+ * thus, the itinerary must begin with "JFK". If there are multiple valid itineraries,
+ * you should return the itinerary that has the smallest lexical order when read as a single string.
+ *
+ * For example, the itinerary ["JFK", "LGA"] has a smaller lexical order than ["JFK", "LGB"].       因为 LGA 里的A 比  LGB里的 B小
  * You may assume all tickets form at least one valid itinerary. You must use all the tickets once and only once.
  *
  * Example1:
@@ -26,7 +31,8 @@ using namespace std;
  * Output: ["JFK","ATL","JFK","SFO","ATL","SFO"]
  * Explanation:
  * Another possible reconstruction is ["JFK","SFO","ATL","JFK","ATL","SFO"] but it is larger in lexical order.
- *
+ * 因为 这里 第二个的第二步 SFO 比上面第一个的第二部的 ATL 大
+ * (就是这个, 它可以用map 里面自带排序的特性来解决)
  *
  *
  * 从题目来说 每个机票只能用一次,
@@ -78,7 +84,8 @@ public:
 
     /**
      * 所有机票都要用一次
-     * 注意以下 map本身是有序的 因为他本身是红黑树弄得
+     * 注意以下 unordermap 虽然是无序的
+     *      但里面的 那个map本身是有序的 因为他本身是红黑树弄得
      * @param tickets
      * @return
      *
