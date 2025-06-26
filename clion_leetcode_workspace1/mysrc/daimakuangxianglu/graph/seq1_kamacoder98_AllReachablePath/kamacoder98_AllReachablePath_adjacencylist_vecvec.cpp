@@ -108,7 +108,7 @@ public:
 
 
     // 临接矩阵
-    vector<vector<int>> initAdjacencyList_vector_ints(){
+    vector<vector<int>> init_AdjacencyList_vector_ints(){
 
         //----------------- 模拟console 进来的参数  ---------------------
 
@@ -218,7 +218,7 @@ int main() {
     Solution* solut1 = new Solution();
 
     // 初始化 图
-    vector<vector<int>> adjacencyList1 = solut1->initAdjacencyList_vector_ints();
+    vector<vector<int>> adjacencyList1 = solut1->init_AdjacencyList_vector_ints();
     solut1->myOutput_VectorBvecBtBB(adjacencyList1, 0, adjacencyList1.size()-1);
 
     // 我这里 就把 最后的那个 点 当作 终点好了,
