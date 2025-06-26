@@ -179,7 +179,7 @@ public:
 
         //放入当前节点
         q_root.push(pair<int,int>(row,col));                            // 和 dfs 写法不一样!!!!!!!!!!!!!!!!!!!!!!!
-        visited[row][col]=true;                                                 // 立马标记
+        visited[row][col]=true;                                                 // 立马标记!!!!!!!!!!!!!!!
 
         while(!q_root.empty()){                                                 // 和 dfs 写法不一样!!!!!!!!!!!!!!!!!!!!!!!
             pair<int,int> now_node = q_root.front();
@@ -201,7 +201,7 @@ public:
                     if(visited[row_tmp][col_tmp]!=true && islandmap[row_tmp][col_tmp]!=0){
                         q_root.push(pair<int,int>(row_tmp,col_tmp));        // 和 dfs 写法不一样!!!!!!!!!!!!!!!!!!!!!!!
                         // deal
-                        visited[row_tmp][col_tmp]=true;                              // 立马标记
+                        visited[row_tmp][col_tmp]=true;                              // 立马标记!!!!!!!!!!!!!!!
                     }
 
                 }

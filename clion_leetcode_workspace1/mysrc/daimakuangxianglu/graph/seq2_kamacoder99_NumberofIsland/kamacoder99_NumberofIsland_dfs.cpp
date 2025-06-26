@@ -129,6 +129,48 @@ public:
     }
 
 
+    //这个就是虽然 不是那么好理解 甚至不太像回溯(当然也不是回溯, 写成像回溯只是说为了好背)
+    //但这种写法不容易超时
+    void my_dfs_better(const vector<vector<int>> &islandmap, vector<vector<bool>>& visited, int row, int col){
+        //分别 代表 从当前idx
+        // 往上, 所以 row-1
+        // 往右, 所以 col+1
+        // 往下, 所以 row+1
+        // 往左, 所以 col-1
+        vector<vector<int>> direction= {{-1,0},
+                                        {0,1},
+                                        {1,0},
+                                        {0,-1}};
+
+        // limit
+        // 如果 这个被访问过, 或者他不是陆地, 则不进行下一步了
+
+
+        // deal
+        visited[row][col]=true;
+
+        // for
+        for(int i=0;i<=direction.size()-1;i++){
+            int row_tmp = row + direction[i][0];
+            int col_tmp = col + direction[i][1];
+
+            if(0<=row_tmp && row_tmp<=islandmap.size()-1 && 0<=col_tmp && col_tmp<=islandmap[0].size()-1 ){
+                if(visited[row_tmp][col_tmp]!=true && islandmap[row_tmp][col_tmp]!=0){
+                    visited[row][col]=true;                                                     // 立马标记!!!!!!!!!!!!!!!
+                    my_dfs_better(islandmap, visited, row_tmp, col_tmp);
+                }
+
+            }
+            else{
+                //do nothing
+            }
+
+        }
+
+        return ;
+    }
+
+
     // 时间复杂度:O(n × m)
     //      外层双重循环遍历所有格子 O(n × m)
     //          因为 visited数组 保证 每个位置不能 重复的往下 dfs
@@ -160,7 +202,8 @@ public:
             for (int j = 0; j <= islandmap[0].size()-1; j++) {
                 if(visited[i][j]==false && islandmap[i][j]==1){
                     ++rs;
-                    my_dfs(islandmap, visited, i, j);
+                    //my_dfs(islandmap, visited, i, j);
+                    my_dfs_better(islandmap, visited, i, j);
                 }
 
             }
