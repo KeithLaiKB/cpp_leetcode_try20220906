@@ -31,6 +31,10 @@ using namespace std;
           \/  \/
             5
  *
+ * 结果:
+ * 1->3->5
+ * 1->2->4->5
+ *
  *
  * vector<vecotr<int>> 来存放 邻接矩阵
  *
