@@ -128,7 +128,9 @@
 						110,
 						111,
 						112,
-						113
+						113,
+						114,
+						115
 					]
 				}
 			],
@@ -256,7 +258,9 @@
 						110,
 						111,
 						112,
-						113
+						113,
+						114,
+						115
 					]
 				}
 			],
@@ -274,6 +278,20 @@
 					"id" : "kamacoder100_MaximumAreaOfIsland_dfs::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-kamacoder100_MaximumAreaOfIsland_dfs-Debug-263991be4e85500a4f6d.json",
 					"name" : "kamacoder100_MaximumAreaOfIsland_dfs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "kamacoder101_TotalAreaOfAllIsolatedIslands_bfs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kamacoder101_TotalAreaOfAllIsolatedIslands_bfs-Debug-0f6d4feb1f1f67316014.json",
+					"name" : "kamacoder101_TotalAreaOfAllIsolatedIslands_bfs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "kamacoder101_TotalAreaOfAllIsolatedIslands_dfs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kamacoder101_TotalAreaOfAllIsolatedIslands_dfs-Debug-f57e10ad8e24956552c9.json",
+					"name" : "kamacoder101_TotalAreaOfAllIsolatedIslands_dfs",
 					"projectIndex" : 0
 				},
 				{
