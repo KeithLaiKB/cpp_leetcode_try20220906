@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "kamacoder100_MaximumAreaofIsland_bfs"
+			"path" : "kamacoder99_NumberOfIsland_bfs"
 		}
 	],
 	"backtrace" : 1,
@@ -53,7 +53,7 @@
 			]
 		}
 	],
-	"id" : "kamacoder100_MaximumAreaofIsland_bfs::@6890427a1f51a3e7e1df",
+	"id" : "kamacoder99_NumberOfIsland_bfs::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -69,8 +69,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "kamacoder100_MaximumAreaofIsland_bfs",
-	"nameOnDisk" : "kamacoder100_MaximumAreaofIsland_bfs",
+	"name" : "kamacoder99_NumberOfIsland_bfs",
+	"nameOnDisk" : "kamacoder99_NumberOfIsland_bfs",
 	"paths" : 
 	{
 		"build" : ".",
@@ -91,7 +91,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "mysrc/daimakuangxianglu/graph/seq3_kamacoder100_MaximumAreaofIsland/kamacoder100_MaximumAreaofIsland_bfs.cpp",
+			"path" : "mysrc/daimakuangxianglu/graph/seq2_kamacoder99_NumberOfIsland/kamacoder99_NumberOfIsland_bfs.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

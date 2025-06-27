@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "kamacoder99_NumberofIsland_dfs"
+			"path" : "kamacoder99_NumberOfIsland_dfs"
 		}
 	],
 	"backtrace" : 1,
@@ -53,7 +53,7 @@
 			]
 		}
 	],
-	"id" : "kamacoder99_NumberofIsland_dfs::@6890427a1f51a3e7e1df",
+	"id" : "kamacoder99_NumberOfIsland_dfs::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -69,8 +69,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "kamacoder99_NumberofIsland_dfs",
-	"nameOnDisk" : "kamacoder99_NumberofIsland_dfs",
+	"name" : "kamacoder99_NumberOfIsland_dfs",
+	"nameOnDisk" : "kamacoder99_NumberOfIsland_dfs",
 	"paths" : 
 	{
 		"build" : ".",
@@ -91,7 +91,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "mysrc/daimakuangxianglu/graph/seq2_kamacoder99_NumberofIsland/kamacoder99_NumberofIsland_dfs.cpp",
+			"path" : "mysrc/daimakuangxianglu/graph/seq2_kamacoder99_NumberOfIsland/kamacoder99_NumberOfIsland_dfs.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

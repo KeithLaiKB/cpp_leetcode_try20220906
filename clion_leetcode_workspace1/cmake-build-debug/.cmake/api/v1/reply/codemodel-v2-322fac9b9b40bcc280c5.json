@@ -264,16 +264,16 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "kamacoder100_MaximumAreaofIsland_bfs::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-kamacoder100_MaximumAreaofIsland_bfs-Debug-eb358458c0f324c92145.json",
-					"name" : "kamacoder100_MaximumAreaofIsland_bfs",
+					"id" : "kamacoder100_MaximumAreaOfIsland_bfs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kamacoder100_MaximumAreaOfIsland_bfs-Debug-e74539ea140a1b025ccf.json",
+					"name" : "kamacoder100_MaximumAreaOfIsland_bfs",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
-					"id" : "kamacoder100_MaximumAreaofIsland_dfs::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-kamacoder100_MaximumAreaofIsland_dfs-Debug-8bfe92c15bb752b78647.json",
-					"name" : "kamacoder100_MaximumAreaofIsland_dfs",
+					"id" : "kamacoder100_MaximumAreaOfIsland_dfs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kamacoder100_MaximumAreaOfIsland_dfs-Debug-263991be4e85500a4f6d.json",
+					"name" : "kamacoder100_MaximumAreaOfIsland_dfs",
 					"projectIndex" : 0
 				},
 				{
@@ -299,16 +299,16 @@
 				},
 				{
 					"directoryIndex" : 0,
-					"id" : "kamacoder99_NumberofIsland_bfs::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-kamacoder99_NumberofIsland_bfs-Debug-e9fb72bf145bcac361ea.json",
-					"name" : "kamacoder99_NumberofIsland_bfs",
+					"id" : "kamacoder99_NumberOfIsland_bfs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kamacoder99_NumberOfIsland_bfs-Debug-d7cfebd3bc7160823b41.json",
+					"name" : "kamacoder99_NumberOfIsland_bfs",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
-					"id" : "kamacoder99_NumberofIsland_dfs::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-kamacoder99_NumberofIsland_dfs-Debug-46d864986083e4f01135.json",
-					"name" : "kamacoder99_NumberofIsland_dfs",
+					"id" : "kamacoder99_NumberOfIsland_dfs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kamacoder99_NumberOfIsland_dfs-Debug-17a7b7e99318537b6d89.json",
+					"name" : "kamacoder99_NumberOfIsland_dfs",
 					"projectIndex" : 0
 				},
 				{
