@@ -18,7 +18,7 @@ using namespace std;
  *
  *
  * 输出:
- *  输出一个整数，表示岛屿的数量。如果不存在岛屿，则输出 0。
+ *  输出一个整数，表示岛屿的最大面积。如果不存在岛屿，则输出 0。
  *
  *
  *
@@ -28,6 +28,8 @@ using namespace std;
  *  1 1 0 0 0
  *  0 0 1 0 0
  *  0 0 0 1 1
+ *
+ * 例如这个 最大的面积的岛屿 的面积是 4
  *
  *
  */
@@ -101,7 +103,7 @@ public:
     //
     // 注意 我这种 写法 虽然 很好理解, 也很好背, 但是数据量大 会超时
     //      因为 我 并不是 入队就立马 标记 visited =true;
-    void my_bfs(const vector<vector<int>> &islandmap, vector<vector<bool>>& visited, int row, int col){
+    void my_bfs(const vector<vector<int>> &islandmap, vector<vector<bool>>& visited, int row, int col, int &now_area, int& max_area){
         //分别 代表 从当前idx
         // 往上, 所以 row-1
         // 往右, 所以 col+1
@@ -136,6 +138,13 @@ public:
             // deal
             visited[now_row][now_col]=true;
 
+            //----------岛屿面积处理---------------
+            ++now_area;                                                                         // 岛屿面积+1
+            if(now_area>max_area){
+                max_area = now_area;
+            }
+            //-----------------------------------
+
             // for
             for(int i=0;i<=direction.size()-1;i++){
                 int row_tmp = now_row + direction[i][0];
@@ -160,7 +169,7 @@ public:
 
     //这个就是虽然 不是那么好理解 甚至不太像回溯(当然也不是回溯, 写成像回溯只是说为了好背)
     //但这种写法不容易超时
-    void my_bfs_better(const vector<vector<int>> &islandmap, vector<vector<bool>>& visited, int row, int col){
+    void my_bfs_better(const vector<vector<int>> &islandmap, vector<vector<bool>>& visited, int row, int col, int &now_area, int& max_area){
         //分别 代表 从当前idx
         // 往上, 所以 row-1
         // 往右, 所以 col+1
@@ -200,6 +209,13 @@ public:
                         q_root.push(pair<int,int>(row_tmp,col_tmp));        // 和 dfs 写法不一样!!!!!!!!!!!!!!!!!!!!!!!
                         // deal
                         visited[row_tmp][col_tmp]=true;                              // 立马标记!!!!!!!!!!!!!!!
+
+                        //----------岛屿面积处理---------------
+                        ++now_area;                                                                         // 岛屿面积+1
+                        if(now_area>max_area){
+                            max_area = now_area;
+                        }
+                        //-----------------------------------
                     }
 
                 }
@@ -236,26 +252,37 @@ public:
     //      如果当前这个点不是海 并且 没搜过, 于是做 同样的操作 从这个点出发
     //          搜到 周围都没得搜了,
     //              那么刚才搜的区域  就自成一片, 也就是岛屿+1
-    int countNumberofIsland_bfs(const vector<vector<int>> &islandmap){
+    int maxAreaOfIsland_bfs(const vector<vector<int>> &islandmap){
         int row_num = islandmap.size();
         int col_num = islandmap[0].size();
 
         //初始化 一个 与islandmap 对应的visited数组 为 false
         vector<vector<bool>> visited(row_num,vector<bool>(col_num,false));
 
-        int rs =0;
+        int now_area=0;
+        int max_area=0;
 
         for(int i=0;i<=islandmap.size()-1;i++){
             for (int j = 0; j <= islandmap[0].size()-1; j++) {
                 if(visited[i][j]==false && islandmap[i][j]==1){
-                    ++rs;
-                    //my_bfs(islandmap, visited, i, j);
-                    my_bfs_better(islandmap, visited, i, j);
+
+                    //----------岛屿面积处理---------------
+
+                    //now_area=0;       //如果用my_bfs, 则用这个
+                    now_area=1;         //如果用my_bfs_better, 则用这个
+                    if(now_area>max_area){
+                        max_area = now_area;
+                    }
+
+                    //-----------------------------------
+
+                    //my_bfs(islandmap, visited, i, j,now_area,max_area);
+                    my_bfs_better(islandmap, visited, i, j,now_area,max_area);
                 }
 
             }
         }
-        return rs;
+        return max_area;
     }
 
 
@@ -272,7 +299,7 @@ int main() {
     solut1->myOutput_VectorBvecBtBB(islandMapInts1, 0, islandMapInts1.size()-1);
 
     // 开始
-    int rs1 = solut1->countNumberofIsland_bfs(islandMapInts1);
+    int rs1 = solut1->maxAreaOfIsland_bfs(islandMapInts1);
 
 
     cout<<"result"<<endl;

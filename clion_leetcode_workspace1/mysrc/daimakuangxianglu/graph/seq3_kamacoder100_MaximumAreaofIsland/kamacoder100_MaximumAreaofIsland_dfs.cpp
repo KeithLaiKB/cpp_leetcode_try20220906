@@ -18,7 +18,7 @@ using namespace std;
  *
  *
  * 输出:
- *  输出一个整数，表示岛屿的数量。如果不存在岛屿，则输出 0。
+ *  输出一个整数，表示岛屿的最大面积。如果不存在岛屿，则输出 0。
  *
  *
  *
@@ -28,6 +28,8 @@ using namespace std;
  *  1 1 0 0 0
  *  0 0 1 0 0
  *  0 0 0 1 1
+ *
+ * 例如这个 最大的面积的岛屿 的面积是 4
  *
  *
  */
@@ -89,7 +91,7 @@ public:
     // 其实你可以看到 这个dfs 写法很像回溯 但是他是没有那个 pop的
     //
     // row 和 col 从0开始
-    void my_dfs(const vector<vector<int>> &islandmap, vector<vector<bool>>& visited, int row, int col){
+    void my_dfs(const vector<vector<int>> &islandmap, vector<vector<bool>>& visited, int row, int col, int &now_area, int& max_area){
         //分别 代表 从当前idx
         // 往上, 所以 row-1
         // 往右, 所以 col+1
@@ -109,13 +111,20 @@ public:
         // deal
         visited[row][col]=true;
 
+        //----------岛屿面积处理---------------
+        ++now_area;                                                                         // 岛屿面积+1
+        if(now_area>max_area){
+            max_area = now_area;
+        }
+        //-----------------------------------
+
         // for
         for(int i=0;i<=direction.size()-1;i++){
             int row_tmp = row + direction[i][0];
             int col_tmp = col + direction[i][1];
 
             if(0<=row_tmp && row_tmp<=islandmap.size()-1 && 0<=col_tmp && col_tmp<=islandmap[0].size()-1 ){
-                my_dfs(islandmap, visited, row_tmp, col_tmp);
+                my_dfs(islandmap, visited, row_tmp, col_tmp, now_area, max_area);
             }
             else{
                 //do nothing
@@ -126,10 +135,20 @@ public:
         return ;
     }
 
-
+    // 1 1
+    // 1 0
+    //
+    // 这种情况 去用回溯的pop now_area 是不行的
+    // 你可以看到这样算法, 他结果其实是2,
+    //      就算是 [0,1] 那个地方 他也 到不了[1,0]
+    //      因为 还是要从[0,0]出发
+    // 然后最外层循环 只要没visited 过都是起始为1或者0起步
+    // 因此这种并不是回溯
+    //
+    //
     //这个就是虽然 不是那么好理解 甚至不太像回溯(当然也不是回溯, 写成像回溯只是说为了好背)
     //但这种写法不容易超时
-    void my_dfs_better(const vector<vector<int>> &islandmap, vector<vector<bool>>& visited, int row, int col){
+    void my_dfs_better(const vector<vector<int>> &islandmap, vector<vector<bool>>& visited, int row, int col, int &now_area, int& max_area){
         //分别 代表 从当前idx
         // 往上, 所以 row-1
         // 往右, 所以 col+1
@@ -155,7 +174,17 @@ public:
             if(0<=row_tmp && row_tmp<=islandmap.size()-1 && 0<=col_tmp && col_tmp<=islandmap[0].size()-1 ){
                 if(visited[row_tmp][col_tmp]!=true && islandmap[row_tmp][col_tmp]!=0){
                     visited[row_tmp][col_tmp]=true;                                                     // 立马标记!!!!!!!!!!!!!!!
-                    my_dfs_better(islandmap, visited, row_tmp, col_tmp);
+
+                    //----------岛屿面积处理---------------
+                    ++now_area;                                                                         // 岛屿面积+1
+                    if(now_area>max_area){
+                        max_area = now_area;
+                    }
+                    //-----------------------------------
+
+                    my_dfs_better(islandmap, visited, row_tmp, col_tmp,now_area,max_area);
+
+
                 }
 
             }
@@ -187,26 +216,40 @@ public:
     //      如果当前这个点不是海 并且 没搜过, 于是做 同样的操作 从这个点出发
     //          搜到 周围都没得搜了,
     //              那么刚才搜的区域  就自成一片, 也就是岛屿+1
-    int countNumberofIsland_dfs(const vector<vector<int>> &islandmap){
+    int maxAreaOfIsland_dfs(vector<vector<int>>& islandmap) {
         int row_num = islandmap.size();
         int col_num = islandmap[0].size();
 
         //初始化 一个 与islandmap 对应的visited数组 为 false
         vector<vector<bool>> visited(row_num,vector<bool>(col_num,false));
 
-        int rs =0;
+        //int rs =0;
+        int now_area=0;
+        int max_area=0;
 
         for(int i=0;i<=islandmap.size()-1;i++){
             for (int j = 0; j <= islandmap[0].size()-1; j++) {
                 if(visited[i][j]==false && islandmap[i][j]==1){
-                    ++rs;
-                    //my_dfs(islandmap, visited, i, j);
-                    my_dfs_better(islandmap, visited, i, j);
+
+                    //----------岛屿面积处理---------------
+
+                    //now_area=0;       //如果用my_dfs, 则用这个
+                    now_area=1;         //如果用my_dfs_better, 则用这个
+                    if(now_area>max_area){
+                        max_area = now_area;
+                    }
+
+                    //-----------------------------------
+
+                    //my_dfs(islandmap, visited, i, j,now_area,max_area);
+                    my_dfs_better(islandmap, visited, i, j,now_area,max_area);
+
+
                 }
 
             }
         }
-        return rs;
+        return max_area;
     }
 
 
@@ -223,7 +266,7 @@ int main() {
     solut1->myOutput_VectorBvecBtBB(islandMapInts1, 0, islandMapInts1.size()-1);
 
     // 开始
-    int rs1 = solut1->countNumberofIsland_dfs(islandMapInts1);
+    int rs1 = solut1->maxAreaOfIsland_dfs(islandMapInts1);
 
 
     cout<<"result"<<endl;
