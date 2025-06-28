@@ -70,6 +70,7 @@
     -- src/kamacoder100_MaximumAreaOfIsland_dfs.cpp will be compiled to bin/kamacoder100_MaximumAreaOfIsland_dfs
     -- src/kamacoder101_TotalAreaOfAllIsolatedIslands_bfs.cpp will be compiled to bin/kamacoder101_TotalAreaOfAllIsolatedIslands_bfs
     -- src/kamacoder101_TotalAreaOfAllIsolatedIslands_dfs.cpp will be compiled to bin/kamacoder101_TotalAreaOfAllIsolatedIslands_dfs
+    -- src/kamacoder102_RemainingIslandsAfterSubmersion_bfs.cpp will be compiled to bin/kamacoder102_RemainingIslandsAfterSubmersion_bfs
     -- src/kamacoder102_RemainingIslandsAfterSubmersion_dfs.cpp will be compiled to bin/kamacoder102_RemainingIslandsAfterSubmersion_dfs
     -- src/t860_LemonadeChange.cpp will be compiled to bin/t860_LemonadeChange
     -- src/t406_QueueReconstructionbyHeight.cpp will be compiled to bin/t406_QueueReconstructionbyHeight
@@ -117,5 +118,5 @@
     -- src/learn_heapsort1_maxheap.cpp will be compiled to bin/learn_heapsort1_maxheap
     -- src/updatetocplus20test.cpp will be compiled to bin/updatetocplus20test
 -- Configuring done (0.1s)
--- Generating done (0.4s)
+-- Generating done (0.1s)
 -- Build files have been written to: /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug

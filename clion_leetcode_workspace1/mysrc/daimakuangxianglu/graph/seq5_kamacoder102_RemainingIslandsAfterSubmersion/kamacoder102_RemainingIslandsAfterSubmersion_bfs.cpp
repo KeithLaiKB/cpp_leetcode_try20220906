@@ -143,7 +143,6 @@ public:
 
 
 
-
     //
     //
     //这个就是虽然 不是那么好理解 甚至不太像回溯(当然也不是回溯, 写成像回溯只是说为了好背)
@@ -155,7 +154,7 @@ public:
     //      而且不需要有什么改动, 删掉对应的代码就可以
     //      我现在这里写 只是说 让你去发现和其他的 图论题目  有个对应而已
     //
-    void my_dfs_better(vector<vector<int>> &islandmap, vector<vector<bool>>& visited, int row, int col){
+    void my_bfs_better(vector<vector<int>> &islandmap, vector<vector<bool>>& visited, int row, int col){
         //分别 代表 从当前idx
         // 往上, 所以 row-1
         // 往右, 所以 col+1
@@ -166,37 +165,50 @@ public:
                                         {1,0},
                                         {0,-1}};
 
-        // limit
-        // 如果 这个被访问过, 或者他不是陆地, 则不进行下一步了
+        //         row,col
+        // 其实和树的那个interation的 层序遍历有点像, 我这里名字 就跟他靠拢好了 q_root
+        queue<pair<int,int>> q_root;                                            // 和 dfs 写法不一样!!!!!!!!!!!!!!!!!!!!!!!
 
+        //放入当前节点
+        q_root.push(pair<int,int>(row,col));                            // 和 dfs 写法不一样!!!!!!!!!!!!!!!!!!!!!!!
+        visited[row][col]=true;                                                 // 立马标记!!!!!!!!!!!!!!!
 
-        // deal
-        visited[row][col]=true;
+        while(!q_root.empty()){                                                 // 和 dfs 写法不一样!!!!!!!!!!!!!!!!!!!!!!!
+            pair<int,int> now_node = q_root.front();
+            q_root.pop();
 
-        // for
-        for(int i=0;i<=direction.size()-1;i++){
-            int row_tmp = row + direction[i][0];
-            int col_tmp = col + direction[i][1];
+            int now_row = now_node.first;
+            int now_col = now_node.second;
 
-            if(0<=row_tmp && row_tmp<=islandmap.size()-1 && 0<=col_tmp && col_tmp<=islandmap[0].size()-1 ){
-                if(visited[row_tmp][col_tmp]!=true && islandmap[row_tmp][col_tmp]!=0
-                    && islandmap[row_tmp][col_tmp]!=2){                                                 //与kamarcoder101不同!!!!!!!!!!!!!!!!!!!!!!!
+            // ---------------------里面这一部分 和 dfs 比较一致------------------------------------
+            // 做 隐藏的limit
 
-                    visited[row_tmp][col_tmp]=true;                                                     // 立马标记!!!!!!!!!!!!!!!
+            // for
+            for(int i=0;i<=direction.size()-1;i++){
+                int row_tmp = now_row + direction[i][0];
+                int col_tmp = now_col + direction[i][1];
 
-                    //----------岛屿面积处理---------------
-                    islandmap[row_tmp][col_tmp]=2;                                                       //与kamarcoder101不同!!!!!!!!!!!!!!!!!!!!!!!
-                    //-----------------------------------
+                if(0<=row_tmp && row_tmp<=islandmap.size()-1 && 0<=col_tmp && col_tmp<=islandmap[0].size()-1 ){
+                    if(visited[row_tmp][col_tmp]!=true && islandmap[row_tmp][col_tmp]!=0
+                       && islandmap[row_tmp][col_tmp]!=2){                                                 //与kamarcoder101不同!!!!!!!!!!!!!!!!!!!!!!!
 
-                    //进一步搜索
-                    my_dfs_better(islandmap, visited, row_tmp, col_tmp);
+                        q_root.push(pair<int,int>(row_tmp,col_tmp));        // 和 dfs 写法不一样!!!!!!!!!!!!!!!!!!!!!!!
+                        // deal
+                        visited[row_tmp][col_tmp]=true;                              // 立马标记!!!!!!!!!!!!!!!
 
+                        //----------岛屿面积处理---------------
+                        islandmap[row_tmp][col_tmp]=2;                                                       // 清零
+                        //-----------------------------------
+                    }
+
+                }
+                else{
+                    //do nothing
                 }
 
             }
-            else{
-                //do nothing
-            }
+            // -----------------------------------------------------------------------
+
 
         }
 
@@ -216,7 +228,7 @@ public:
     //      我们要沾着 上下左右四个边界来 玩搜索,
     //      把所有沾边的岛屿全部清零
     //      从而留下的1 就是孤岛
-    int getMap_RemainingIslandsAfterSubmersion_dfs(vector<vector<int>>& islandmap) {
+    int getMap_RemainingIslandsAfterSubmersion_bfs(vector<vector<int>>& islandmap) {
         int row_num = islandmap.size();
         int col_num = islandmap[0].size();
 
@@ -234,7 +246,7 @@ public:
 
             // 上边界
             if(islandmap[0][j]==1){
-                my_dfs_better(islandmap, visited, 0, j);
+                my_bfs_better(islandmap, visited, 0, j);
                 //----------岛屿面积处理---------------
                 islandmap[0][j]=2;                                                       // 当前入口变成2 与kamarcoder101不同!!!!!!!!!!!!!!!!!!!!!!!
                 //-----------------------------------
@@ -242,7 +254,7 @@ public:
 
             // 下边界
             if(islandmap[islandmap.size()-1][j]==1){
-                my_dfs_better(islandmap, visited, islandmap.size()-1, j);
+                my_bfs_better(islandmap, visited, islandmap.size()-1, j);
                 //----------岛屿面积处理---------------
                 islandmap[islandmap.size()-1][j]=2;                                      // 当前入口变成2 与kamarcoder101不同!!!!!!!!!!!!!!!!!!!!!!!
                 //-----------------------------------
@@ -255,14 +267,14 @@ public:
 
             // 左边界
             if(islandmap[i][0]==1){
-                my_dfs_better(islandmap, visited, i, 0);
+                my_bfs_better(islandmap, visited, i, 0);
 
                 islandmap[i][0]=2;                                                       // 当前入口变成2 与kamarcoder101不同!!!!!!!!!!!!!!!!!!!!!!!
             }
 
             // 右边界
             if(islandmap[i][islandmap[0].size()-1]==1){
-                my_dfs_better(islandmap, visited, i, islandmap[0].size()-1);
+                my_bfs_better(islandmap, visited, i, islandmap[0].size()-1);
 
                 islandmap[i][islandmap[0].size()-1]=2;                                   // 当前入口变成2 与kamarcoder101不同!!!!!!!!!!!!!!!!!!!!!!!
             }
@@ -283,6 +295,7 @@ public:
         //展示清1后的样子
         myOutput_VectorBvecBtBB(islandmap, 0, islandmap.size()-1);
         cout<<endl;
+
 
         //---------------------- 剩下的2 就是去掉孤岛剩下的岛, 然后把2改成1 ------------------------
         //
@@ -315,7 +328,7 @@ int main() {
     cout<<endl;
 
     // 开始
-    int rs1 = solut1->getMap_RemainingIslandsAfterSubmersion_dfs(islandMapInts1);
+    int rs1 = solut1->getMap_RemainingIslandsAfterSubmersion_bfs(islandMapInts1);
 
 
     cout<<"result"<<endl;
