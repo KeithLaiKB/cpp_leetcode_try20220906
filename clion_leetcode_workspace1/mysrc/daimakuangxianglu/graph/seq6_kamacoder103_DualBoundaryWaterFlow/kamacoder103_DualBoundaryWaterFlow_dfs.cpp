@@ -10,18 +10,25 @@
 using namespace std;
 
 /**
- * 给定一个由 1（陆地）和 0（水）组成的矩阵，岛屿指的是由水平或垂直方向上相邻的陆地单元格组成的区域，且完全被水域单元格包围。
- * 孤岛是那些位于矩阵内部、所有单元格都不接触边缘的岛屿
+ * 现有一个 N × M 的矩阵，每个单元格包含一个数值，
+ * 这个数值代表该位置的相对高度。
+ *
+ * 矩阵的左边界和上边界被认为是第一组边界，
+ * 而矩阵的右边界和下边界被视为第二组边界。
+ *
+ * 矩阵模拟了一个地形，当雨水落在上面时，水会根据地形的倾斜向低处流动，
+ * 但只能从较高或等高的地点流向较低或等高并且相邻（上下左右方向）的地点。
+ *
+ * 我们的目标是确定那些单元格，从这些单元格出发的水可以达到第一组边界和第二组边界。
  *
  * 输入:
- * 第一行包含两个整数 N, M，表示矩阵的行数和列数。
- * 后续 N 行，每行包含 M 个数字，数字为 1 或者 0。
+ * 第一行包含两个整数 N 和 M，分别表示矩阵的行数和列数。
+ * 后续 N 行，每行包含 M 个整数，表示矩阵中的每个单元格的高度。
  *
  *
  * 输出:
- *  输出将孤岛“沉没”之后的岛屿矩阵。 注意：每个元素后面都有一个空格
- *  (这里获得的是地图, kamacoder101 是计算面积，
- *  但101那种弄法也是 先弄出地图 才算面积的)
+ *  输出共有多行，每行输出两个整数，用一个空格隔开，
+ *  表示可达第一组边界和第二组边界的单元格的坐标，输出顺序任意。
  *
  *
  *  4 5
@@ -73,19 +80,15 @@ using namespace std;
  * 处理方式如下, 把所有 沾了上下左右边的 岛屿全部清零
  * 于是得到:
  *
- *  2 0 0 0 0 0 0
- *  0 0 1 1 0 0 0
- *  2 2 0 0 1 0 0
- *  0 2 0 2 0 0 0
- ×  0 2 0 2 2 0 0
+ *  1 1 1 1 1 1 1
+ *  1 1 1 1 1 4 1
+ *  1 2 1 5 2 1 1
+ *  1 2 3 6 1 1 1
+ ×  1 4 7 2 1 1 1
  *
- *  然后for循环 把所有的1 变成0 就行了
  *
- *  2 0 0 0 0 0 0
- *  0 0 0 0 0 0 0
- *  2 2 0 0 0 0 0
- *  0 2 0 2 0 0 0
- ×  0 2 0 2 2 0 0
+ * 上左  为边界A
+ * 右下   为边界B
  *
  */
 
@@ -216,9 +219,12 @@ public:
     //      我们要沾着 上下左右四个边界来 玩搜索,
     //      把所有沾边的岛屿全部清零
     //      从而留下的1 就是孤岛
-    int getMap_RemainingIslandsAfterSubmersion_dfs(vector<vector<int>>& islandmap) {
+    vector<vector<int>> getMap_MountainPeeks_dfs(vector<vector<int>>& islandmap) {
         int row_num = islandmap.size();
         int col_num = islandmap[0].size();
+
+        vector<vector<bool>> MountainPeeksTo_UL(row_num,vector<bool>(col_num,false));       //左上
+        vector<vector<bool>> MountainPeeksTo_DR(row_num,vector<bool>(col_num,false));       //右下
 
         //初始化 一个 与islandmap 对应的visited数组 为 false
         vector<vector<bool>> visited(row_num,vector<bool>(col_num,false));
@@ -234,24 +240,21 @@ public:
 
             // 上边界
             if(islandmap[0][j]==1){
-
                 //----------岛屿面积处理---------------
-                islandmap[0][j]=2;                                                       // 当前入口变成2 与kamarcoder101不同!!!!!!!!!!!!!!!!!!!!!!!
+                MountainPeeksTo_DR[0][j]=true;                                                       // 当前变成true 与kamarcoder101不同!!!!!!!!!!!!!!!!!!!!!!!
                 //-----------------------------------
 
-                my_dfs_better(islandmap, visited, 0, j);
+                my_dfs_better(islandmap, MountainPeeksTo_UL, 0, j);
 
             }
 
             // 下边界
             if(islandmap[islandmap.size()-1][j]==1){
-
                 //----------岛屿面积处理---------------
-                islandmap[islandmap.size()-1][j]=2;                                      // 当前入口变成2 与kamarcoder101不同!!!!!!!!!!!!!!!!!!!!!!!
+                MountainPeeksTo_DR[islandmap.size()-1][j]=true;                                      // 当前变成true 与kamarcoder101不同!!!!!!!!!!!!!!!!!!!!!!!
                 //-----------------------------------
 
-                my_dfs_better(islandmap, visited, islandmap.size()-1, j);
-
+                my_dfs_better(islandmap, MountainPeeksTo_DR, islandmap.size()-1, j);
             }
         }
 
@@ -261,17 +264,16 @@ public:
 
             // 左边界
             if(islandmap[i][0]==1){
-                islandmap[i][0]=2;                                                       // 当前入口变成2 与kamarcoder101不同!!!!!!!!!!!!!!!!!!!!!!!
+                MountainPeeksTo_DR[i][0]=true;                                                       // 当前变成true 与kamarcoder101不同!!!!!!!!!!!!!!!!!!!!!!!
 
-                my_dfs_better(islandmap, visited, i, 0);
-
+                my_dfs_better(islandmap, MountainPeeksTo_UL, i, 0);
             }
 
             // 右边界
             if(islandmap[i][islandmap[0].size()-1]==1){
-                islandmap[i][islandmap[0].size()-1]=2;                                   // 当前入口变成2 与kamarcoder101不同!!!!!!!!!!!!!!!!!!!!!!!
+                MountainPeeksTo_DR[i][islandmap[0].size()-1]=true;                                   // 当前变成true 与kamarcoder101不同!!!!!!!!!!!!!!!!!!!!!!!
 
-                my_dfs_better(islandmap, visited, i, islandmap[0].size()-1);
+                my_dfs_better(islandmap, MountainPeeksTo_DR, i, islandmap[0].size()-1);
 
             }
         }
@@ -291,7 +293,6 @@ public:
         //展示清1后的样子
         myOutput_VectorBvecBtBB(islandmap, 0, islandmap.size()-1);
         cout<<endl;
-
 
         //---------------------- 剩下的2 就是去掉孤岛剩下的岛, 然后把2改成1 ------------------------
         //

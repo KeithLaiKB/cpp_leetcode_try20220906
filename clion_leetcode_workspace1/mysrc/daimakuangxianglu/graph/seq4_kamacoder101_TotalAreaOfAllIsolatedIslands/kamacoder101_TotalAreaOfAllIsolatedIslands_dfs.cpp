@@ -220,18 +220,24 @@ public:
 
             // 上边界
             if(islandmap[0][j]==1){
-                my_dfs_better(islandmap, visited, 0, j);
+
                 //----------岛屿面积处理---------------
                 islandmap[0][j]=0;                                                       // 清零当前入口
                 //-----------------------------------
+
+                my_dfs_better(islandmap, visited, 0, j);
+
             }
 
             // 下边界
             if(islandmap[islandmap.size()-1][j]==1){
-                my_dfs_better(islandmap, visited, islandmap.size()-1, j);
+
                 //----------岛屿面积处理---------------
                 islandmap[islandmap.size()-1][j]=0;                                      // 清零当前入口
                 //-----------------------------------
+
+                my_dfs_better(islandmap, visited, islandmap.size()-1, j);
+
             }
         }
 
@@ -241,16 +247,20 @@ public:
 
             // 左边界
             if(islandmap[i][0]==1){
-                my_dfs_better(islandmap, visited, i, 0);
 
                 islandmap[i][0]=0;                                                       // 清零当前入口
+
+                my_dfs_better(islandmap, visited, i, 0);
+
             }
 
             // 右边界
             if(islandmap[i][islandmap[0].size()-1]==1){
-                my_dfs_better(islandmap, visited, i, islandmap[0].size()-1);
 
                 islandmap[i][islandmap[0].size()-1]=0;                                   // 清零当前入口
+
+                my_dfs_better(islandmap, visited, i, islandmap[0].size()-1);
+
             }
         }
         //--------------------------------------------------------------------
