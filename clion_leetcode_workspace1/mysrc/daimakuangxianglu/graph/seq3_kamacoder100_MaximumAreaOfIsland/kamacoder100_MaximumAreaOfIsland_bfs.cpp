@@ -186,7 +186,11 @@ public:
 
         //放入当前节点
         q_root.push(pair<int,int>(row,col));                            // 和 dfs 写法不一样!!!!!!!!!!!!!!!!!!!!!!!
-        visited[row][col]=true;                                                 // 立马标记!!!!!!!!!!!!!!!
+
+
+        // deal something before for
+        visited[row][col]=true;                                                                         //我的建议是 删掉这里 把它提到入口处(maxAreaOfIsland_bfs)!!!!!!!!!!!!!
+
 
         while(!q_root.empty()){                                                 // 和 dfs 写法不一样!!!!!!!!!!!!!!!!!!!!!!!
             pair<int,int> now_node = q_root.front();
@@ -277,6 +281,8 @@ public:
                     //-----------------------------------
 
                     //my_bfs(islandmap, visited, i, j,now_area,max_area);
+
+                    //visited[i][j]=true;                                                                         //我的建议是 删掉上面 deal下那一行的visited[row][col]=true; 然后把它提到这里!!!!!!!!!!!!!!
                     my_bfs_better(islandmap, visited, i, j,now_area,max_area);
                 }
 

@@ -171,7 +171,8 @@ public:
 
         //放入当前节点
         q_root.push(pair<int,int>(row,col));                            // 和 dfs 写法不一样!!!!!!!!!!!!!!!!!!!!!!!
-        visited[row][col]=true;                                                 // 立马标记!!!!!!!!!!!!!!!
+
+        //deal
 
         while(!q_root.empty()){                                                 // 和 dfs 写法不一样!!!!!!!!!!!!!!!!!!!!!!!
             pair<int,int> now_node = q_root.front();
@@ -182,6 +183,9 @@ public:
 
             // ---------------------里面这一部分 和 dfs 比较一致------------------------------------
             // 做 隐藏的limit
+
+            // deal something before for
+            //islandmap[row][col]=2;                                                      // 因为我们走的是 立马标记的 风格, 所以我们已经提到外面的入口处了
 
             // for
             for(int i=0;i<=direction.size()-1;i++){

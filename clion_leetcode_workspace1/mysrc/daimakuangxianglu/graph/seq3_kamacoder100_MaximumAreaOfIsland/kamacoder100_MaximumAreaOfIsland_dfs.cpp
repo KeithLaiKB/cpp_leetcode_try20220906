@@ -148,6 +148,10 @@ public:
     //
     //这个就是虽然 不是那么好理解 甚至不太像回溯(当然也不是回溯, 写成像回溯只是说为了好背)
     //但这种写法不容易超时
+    //
+    // 在这个基础上 因为是立马标记
+    // 所以我不想把 visited[row][col]=true; 放在这里,
+    // 因为它的作用 只对 入口有用, 所以我的建议是把它给提出去
     void my_dfs_better(const vector<vector<int>> &islandmap, vector<vector<bool>>& visited, int row, int col, int &now_area, int& max_area){
         //分别 代表 从当前idx
         // 往上, 所以 row-1
@@ -163,8 +167,8 @@ public:
         // 如果 这个被访问过, 或者他不是陆地, 则不进行下一步了
 
 
-        // deal
-        visited[row][col]=true;
+        // deal something before for
+        visited[row][col]=true;                                                                         //我的建议是 删掉这里 把它提到入口处(maxAreaOfIsland_dfs)!!!!!!!!!!!!!
 
         // for
         for(int i=0;i<=direction.size()-1;i++){
@@ -242,6 +246,9 @@ public:
                     //-----------------------------------
 
                     //my_dfs(islandmap, visited, i, j,now_area,max_area);
+
+
+                    //visited[i][j]=true;                                                                         //我的建议是 删掉上面 deal下那一行的visited[row][col]=true; 然后把它提到这里!!!!!!!!!!!!!!
                     my_dfs_better(islandmap, visited, i, j,now_area,max_area);
 
 

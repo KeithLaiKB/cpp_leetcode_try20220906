@@ -170,8 +170,8 @@ public:
         // 如果 这个被访问过, 或者他不是陆地, 则不进行下一步了
 
 
-        // deal
-        visited[row][col]=true;
+        // deal something before for
+        //islandmap[row][col]=2;                                                      // 因为我们走的是 立马标记的 风格, 所以我们已经提到外面的入口处了
 
         // for
         for(int i=0;i<=direction.size()-1;i++){
