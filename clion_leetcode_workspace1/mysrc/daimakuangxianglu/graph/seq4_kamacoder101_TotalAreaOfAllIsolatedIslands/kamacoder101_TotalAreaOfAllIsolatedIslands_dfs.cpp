@@ -159,7 +159,8 @@ public:
 
 
         // deal something before for
-        // islandmap[row][col]=0;                                                  // 因为我们走的是 立马标记的 风格, 所以我们已经提到外面的入口处了
+        // islandmap[row][col]=0;                                                  // 当然我们这样写也行, 但他也就只给最外面的入口有用,
+                                                                                   // 因为我们走的是 立马标记的 风格, 所以我们已经提到外面的入口处了
 
 
         // for
