@@ -6,6 +6,8 @@
 #include <queue>
 #include <optional>
 #include <climits>
+#include <map>
+#include <unordered_set>
 
 using namespace std;
 
@@ -41,7 +43,7 @@ using namespace std;
  *      找到 新生成能够成为的最大面积 的方案
  *      并返回这个 最大面积 的值
  *
- *      1. 把所有的岛屿 进行 搜索, 然后把地图上的每一个格子都做成 编号
+ *      1. 把所有的岛屿 进行 搜索(dfs/bfs), 然后把地图上的每一个格子都做成 编号
  *              例如 第一个 岛屿 里的 所有格子 从1 改成2
  *              例如 第二个 岛屿 里的 所有格子 从1 改成3
  *              因为我们要改的是地图
@@ -51,6 +53,14 @@ using namespace std;
  *
  *              注意我们这个地图上的 2,3,4,5 不代表 这个岛屿的面积, 而是编号
  *                  面积会有 map来存储
+ *
+ *      2. 遍历所有 海水格子
+ *              查询他们上下左右 有没有 直接 相接壤的岛 (这一步不需要dfs/bfs)
+ *              如果有就加起来return
+ *                  并查看是否成为最大的面积
+ *
+ *     结束
+ *
  *
  *
  * 例如:
@@ -67,7 +77,7 @@ using namespace std;
  *  0 4 0 6 0 0 0
  ×  0 4 0 6 6 0 0
  *
- *  你看如果从 1 和 0 开始标号这些岛屿
+ *  你看如果从 1 和 0 开始标号这些岛屿return
  *  就会和 上面的 海水 和 将要flip的区域 其冲突了
  *
  */
@@ -92,6 +102,7 @@ public:
             }
             cout<<endl;
         }
+        return;
     }
 
 
@@ -138,7 +149,7 @@ public:
     //      而且不需要有什么改动, 删掉对应的代码就可以
     //      我现在这里写 只是说 让你去发现和其他的 图论题目  有个对应而已
     //
-    void my_dfs_better(vector<vector<int>> &islandmap, vector<vector<bool>>& visited, int row, int col){
+    int my_dfs_better(vector<vector<int>> &islandmap, int row, int col, int island_id){
         //分别 代表 从当前idx
         // 往上, 所以 row-1
         // 往右, 所以 col+1
@@ -154,7 +165,7 @@ public:
 
 
         // deal
-        visited[row][col]=true;
+        int count_area=0;
 
         // for
         for(int i=0;i<=direction.size()-1;i++){
@@ -166,13 +177,14 @@ public:
                 // 但是我们因为是从边缘出发, 找mountain peek
                 // 所以 下一个位置 需要 比当前位置高
                 // 这样到后面才能成为 mountain peek
-                if(visited[row_tmp][col_tmp]!=true && islandmap[row][col]<=islandmap[row_tmp][col_tmp]){                                                 //与kamarcoder102不同!!!!!!!!!!!!!!!!!!!!!!!
+                if(islandmap[row_tmp][col_tmp]==1){                                                 // 如果是1 并且 还没打上 岛屿的记号island_id,
+                                                                                                    // 这就代表它没有 visited过, 这样 可以代替掉visited数组的作用
 
-                    visited[row_tmp][col_tmp]=true;                                                     // 立马标记!!!!!!!!!!!!!!!
+                    islandmap[row_tmp][col_tmp]=island_id;
 
-
+                    ++count_area;           //加上当前面积块
                     //进一步搜索
-                    my_dfs_better(islandmap, visited, row_tmp, col_tmp);
+                    count_area += my_dfs_better(islandmap, row_tmp, col_tmp, island_id);
 
                 }
 
@@ -183,7 +195,7 @@ public:
 
         }
 
-        return ;
+        return count_area;
     }
 
 
@@ -199,59 +211,132 @@ public:
     //      我们要沾着 上下左右四个边界来 玩搜索,
     //      把所有沾边的岛屿全部清零
     //      从而留下的1 就是孤岛
-    vector<vector<int>> getMap_MountainPeeks_dfs(vector<vector<int>>& islandmap) {
+    int getLargestIslandAfterOneFlip_dfs(vector<vector<int>>& islandmap) {
         int row_num = islandmap.size();
         int col_num = islandmap[0].size();
 
-        vector<vector<bool>> MountainPeeksTo_UL(row_num,vector<bool>(col_num,false));       //左上
-        vector<vector<bool>> MountainPeeksTo_DR(row_num,vector<bool>(col_num,false));       //右下
+        map<int,int> map_id_area;
+        vector<vector<int>> direction= {{-1,0},
+                                        {0,1},
+                                        {1,0},
+                                        {0,-1}};
+
 
         //初始化 一个 与islandmap 对应的visited数组 为 false
         //vector<vector<bool>> visited(row_num,vector<bool>(col_num,false));
 
-        vector<vector<int>> rs;
+        int max_area=INT_MIN;
+        int island_id = 2;                  //从2开始, 因为要在地图上改写1 变成组编号, 以免 和地图 上的0和1相冲突
 
 
-        //----------------------我们要沾着 上下左右四个边界来 玩搜索 并且清零------------------------
+        bool judgeAllGrid = true;           // 标记是否整个地图都是陆地, 因为如果全是陆地的话, 他就没办法flip, 也进行不了 面积的累加的步骤了
 
-        // 上下边 同时来, 融合在一起写,
-        // 当然 你也可以分开写
-        for(int j=0;j<=islandmap[0].size()-1;j++){
+        //---------------------- 第一步 用dfs/bfs 给所有的 岛做标记 ------------------------
 
-            // 上边界
-            my_dfs_better(islandmap, MountainPeeksTo_UL, 0, j);
-
-            // 下边界
-            my_dfs_better(islandmap, MountainPeeksTo_DR, islandmap.size()-1, j);
-
-        }
-
-        // 左右边 同时来, 融合在一起写,
-        // 当然 你也可以分开写
         for(int i=0;i<=islandmap.size()-1;i++){
-
-            // 左边界
-            my_dfs_better(islandmap, MountainPeeksTo_UL, i, 0);
-
-            // 右边界
-            my_dfs_better(islandmap, MountainPeeksTo_DR, i, islandmap[0].size()-1);
+            for(int j=0;j<=islandmap[0].size()-1;j++){
 
 
+
+                if(islandmap[i][j]==1){                                                 // 如果是1 并且 还没打上 岛屿的记号island_id,
+
+                    islandmap[i][j] = island_id;                            //立马打标记
+                    int now_area = 1;                                       //入口位置, 立马把当前面积初始为1
+
+                    now_area += my_dfs_better(islandmap, i, j, island_id);
+
+                    map_id_area.insert(pair<int,int>(island_id,now_area));      // 记录每个岛屿编号 对应的面积的大小
+
+                    ++island_id;
+                }
+
+                // 如果含有海, 那么他就不是全陆地, 其实 不用太去管这个逻辑, 这个不参与我们的 dfs,
+                // 他就是类似一个全地图都是陆地 则不需要dfs
+                if(islandmap[i][j]==0){
+                    judgeAllGrid = false;
+                }
+
+            }
         }
         //--------------------------------------------------------------------
+        myOutput_VectorBvecBtBB(islandmap,0,islandmap.size()-1);
+        //---------------------- 第二步 给所有的 海格子 进行flip ------------------------
+
+        //        2 0 2 0 0 0
+        //        2 2 2 0 3 0
+        //        0 0 0 0 0 0
+        // 我们可以看到 上面 这个被2包围的0
+        // 我们需要一个 visitedIslandId 来记录 本次访问过的 island id
+        // 不然 面积累加的时候  会重复把这个2的岛屿加进去
+        unordered_set<int> uordset_visitedIslandId;           //记录本次格子, 查询上下左右, 查完重新清0
 
 
+        //如果全是陆地, 提前结束
+        if(judgeAllGrid==true){
+            return islandmap.size()*islandmap[0].size();
+        }
 
+
+        // 开始搜索海格子
         for(int i=0;i<=islandmap.size()-1;i++){
-            for (int j = 0; j <= islandmap[0].size()-1; j++) {
-                if(MountainPeeksTo_UL[i][j]&&MountainPeeksTo_DR[i][j]==true){
-                    rs.push_back({i,j});
+            for(int j=0;j<=islandmap[0].size()-1;j++){
+
+                // 如果不是海则跳过, 因为我们要flip海格子
+                if (islandmap[i][j]!=0){
+                    continue;
                 }
+
+
+                int now_area =1;        //当前这个flip的本身
+                uordset_visitedIslandId.clear();    //新的海格子, 周围还没查过, 所以要清空
+
+
+                //遍历 直接 的上下左右 位置
+                for(int k=0;k<=direction.size()-1;k++){
+
+                    int row_tmp=i+direction[k][0];
+                    int col_tmp=j+direction[k][1];
+
+
+                    //以免越界
+                    if(0<=row_tmp && row_tmp<=islandmap.size()-1 && 0<=col_tmp && col_tmp<=islandmap[0].size()-1 ){
+
+                        // 如果 当前这个相邻的节点 是海 就不用管了
+                        if(islandmap[row_tmp][col_tmp]==0){
+                            continue;
+                        }
+
+
+
+                        int id_tmp = islandmap[row_tmp][col_tmp];       //查看当前这个相邻的 有id
+
+                        //那个节点 的上下左右 已经有过当前 islandID了
+                        // 这里就不要重复 累加面积了
+                        if(uordset_visitedIslandId.find(id_tmp)!=uordset_visitedIslandId.end()){
+                            continue;
+                        }
+
+
+                        now_area += map_id_area[id_tmp];                //累加这个岛的面积
+                        uordset_visitedIslandId.insert(id_tmp);
+
+
+                    }
+                }
+
+                if (now_area>max_area){
+                    max_area = now_area;
+                }
+
+
             }
         }
 
 
-        return rs;
+        //--------------------------------------------------------------------
+
+
+        return max_area;
     }
 
 
@@ -269,12 +354,12 @@ int main() {
     cout<<endl;
 
     // 开始
-    vector<vector<int>>  rs1 = solut1->getMap_MountainPeeks_dfs(islandMapInts1);
+    int  rs1 = solut1->getLargestIslandAfterOneFlip_dfs(islandMapInts1);
 
 
     cout<<"result"<<endl;
-    //cout<<rs1<<endl;
-    solut1->myOutput_VectorBvecBtBB(rs1, 0, rs1.size()-1);
+    cout<<rs1<<endl;
+    //solut1->myOutput_VectorBvecBtBB(rs1, 0, rs1.size()-1);
     return 0;
 }
 

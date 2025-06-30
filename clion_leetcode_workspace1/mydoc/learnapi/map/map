@@ -1,4 +1,11 @@
+声明与插入
 
+map<int,int> map1;
+
+map1.insert(pair<int,int>(key1,value1));
+
+
+------------------------------------------------
 常用的map的for循环
     例如t332
 
