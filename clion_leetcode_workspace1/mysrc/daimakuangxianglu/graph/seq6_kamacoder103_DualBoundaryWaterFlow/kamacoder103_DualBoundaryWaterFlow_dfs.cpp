@@ -178,9 +178,10 @@ public:
     //
     // +++++++++++++++++++++++++++++
     // 过程如下
-    //      我们要沾着 上下左右四个边界来 玩搜索,
-    //      把所有沾边的岛屿全部清零
-    //      从而留下的1 就是孤岛
+    //      我们要沾着 上左 右下 两组边界来 玩搜索
+    //          1. 上左  为边界A, 找出UL 的peeks
+    //          2. 右下  为边界B, 找出DR 的peeks
+    //            然后这两个 Peeks相交 得到的就是 能到双边界的 peeks
     vector<vector<int>> getMap_MountainPeeks_dfs(vector<vector<int>>& islandmap) {
         int row_num = islandmap.size();
         int col_num = islandmap[0].size();
