@@ -23,7 +23,7 @@ kamacoder98
 
 
 ------------------------------------------------------------
-岛的路径(kamacoder98)
+岛的路径                                                                                        (kamacoder98)       ---邻接矩阵
     1.dfs
     2.bfs
     他们会需要一个direction
@@ -32,11 +32,11 @@ kamacoder98
                                         {1,0},
                                         {0,-1}};
 
-岛的数量                                                                                        (kamacoder99)
+岛的数量                                                                                        (kamacoder99)       ---邻接矩阵
     base: 岛的路径的代码上
     need: 在最外层for循环的开头,     对没有visited过的且是岛  来 count++
 
-岛的面积                                                                                        (kamacoder100)
+岛的面积                                                                                        (kamacoder100)       ---邻接矩阵
     base: 岛的路径的代码上,
     need: 在最外层for循环的开头,     对没有visited过的且是岛 重头开始算(1或者0 开始)
 
@@ -52,7 +52,7 @@ kamacoder98
             // 然后最外层循环 只要没visited 过都是起始为1或者0起步
             // 因此这种并不是回溯
 
-孤独岛的面积总和                                                                                (kamacoder101)
+孤独岛的面积总和                                                                                (kamacoder101)       ---邻接矩阵
     base: 岛的路径的代码上
             (可以不用visited数组, 因为这题目 清0这个操作就类似 visited了)
     need: 最外层for循环 对上下左右边界位置的节点来搜索
@@ -62,7 +62,7 @@ kamacoder98
     然后根据 剩下的1 进行累积 得到结果
 
 
-去掉孤独岛的后的地图                                                                              (kamacoder102)
+去掉孤独岛的后的地图                                                                              (kamacoder102)       ---邻接矩阵
     和kamacoder101非常像
 
     base: 岛的路径的代码上
@@ -75,7 +75,7 @@ kamacoder98
     然后根据 剩下的2 变1
 
 
-能流到上左 下右 两组边界 的peeks (格子)                                                           (kamacoder103)
+能流到上左 下右 两组边界 的peeks (格子)                                                           (kamacoder103)       ---邻接矩阵
     和kamacoder102有点像
 
     base: 岛的路径的代码上
@@ -86,7 +86,7 @@ kamacoder98
          然后这两个 Peeks相交 得到的就是 能到双边界的 peeks
 
 
-把其中哪一个海区域 变成陆地,能够使得 这整副地图中 获得一个最大面积的岛           不建议看, 没什么意义         (kamacoder104)
+把其中哪一个海区域 变成陆地,能够使得 这整副地图中 获得一个最大面积的岛           不建议看, 没什么意义         (kamacoder104)       ---邻接矩阵
     base: 岛的路径的代码上
             (可以不用visited数组, 用岛的id 当作visited就可以了)
     need: 给每个岛都设计编号, 直接把地图中的1 改成 编号 从2开始 (dfs/bfs)

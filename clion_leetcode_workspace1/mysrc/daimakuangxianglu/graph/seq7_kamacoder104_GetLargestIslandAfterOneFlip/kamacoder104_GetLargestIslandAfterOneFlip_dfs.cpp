@@ -215,7 +215,7 @@ public:
         //int row_num = islandmap.size();
         //int col_num = islandmap[0].size();
 
-        map<int,int> map_id_area;
+        unordered_map<int,int> unordmap_id_area;
         vector<vector<int>> direction= {{-1,0},
                                         {0,1},
                                         {1,0},
@@ -245,7 +245,7 @@ public:
 
                     now_area += my_dfs_better(islandmap, i, j, island_id);
 
-                    map_id_area.insert(pair<int,int>(island_id,now_area));      // 记录每个岛屿编号 对应的面积的大小
+                    unordmap_id_area.insert(pair<int,int>(island_id,now_area));      // 记录每个岛屿编号 对应的面积的大小
 
                     ++island_id;
                 }
@@ -317,7 +317,7 @@ public:
                         }
 
 
-                        now_area += map_id_area[id_tmp];                //累加这个岛的面积
+                        now_area += unordmap_id_area[id_tmp];                //累加这个岛的面积
                         uordset_visitedIslandId.insert(id_tmp);
 
 

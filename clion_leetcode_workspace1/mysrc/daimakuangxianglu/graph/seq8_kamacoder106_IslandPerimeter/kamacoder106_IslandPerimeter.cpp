@@ -179,141 +179,87 @@ public:
     // 时间复杂度:O(n × m)
     //      外层双重循环遍历所有格子 O(n × m)
     //          因为 visited数组 保证 每个位置不能 重复的往下 dfs
-    // 空间复杂度:O(n × m)
-    //      direction数组：O(1) - 固定大小4×2的数组
-    //      递归调用栈：O(m × n) - 最坏情况下（比如整个网格都是连通的陆地），递归深度可能达到m×n
+    // 空间复杂度:O(1)
+    //      direction 数组：固定大小 4×2，占用常数空间
+    //      rs_perimeter、row_tmp、col_tmp 等变量：常数空间
     //
     // +++++++++++++++++++++++++++++
     // 过程如下
-    //      我们要沾着 上下左右四个边界来 玩搜索,
-    //      把所有沾边的岛屿全部清零
-    //      从而留下的1 就是孤岛
-    int getIslandPerimeter_dfs(vector<vector<int>>& islandmap) {
+    //
+    // 这里不需要做什么dfs/bfs
+    // 直接对每个格子进行处理就可以了
+    //
+    // 针对每一个节点 对其上下左右看
+    // 1. 如果 触碰到 海 (0)
+    //          则边长+1
+    // 2. 如果 触碰到 上边界
+    //          则边长+1
+    // 3. 如果 触碰到 右边界
+    //          则边长+1
+    // 4. 如果 触碰到 下边界
+    //          则边长+1
+    // 5. 如果 触碰到 左边界
+    //          则边长+1
+    //
+    //  0 0 1 0 0 0 0
+    //  0 0 1 1 1 0 0
+    //  0 0 1 1 1 0 0
+    //  例如 探测到 左上角 这个 1 节点时
+    //      从该节点 上下左右 开始 探测
+    //          1. 上边 触碰到上边界,  边+1
+    //          1. 右边 触碰到海(0),  边+1
+    //          1. 下边 触碰到岛屿(1), 边不做运算, 因为cover了 没有边
+    //          1. 上边 触碰到海(0),  边+1
+    int getIslandPerimeter(vector<vector<int>>& islandmap) {
         //int row_num = islandmap.size();
         //int col_num = islandmap[0].size();
 
-        map<int,int> map_id_area;
+        //map<int,int> map_id_area;
         vector<vector<int>> direction= {{-1,0},
                                         {0,1},
                                         {1,0},
                                         {0,-1}};
 
-
-        //初始化 一个 与islandmap 对应的visited数组 为 false
-        //vector<vector<bool>> visited(row_num,vector<bool>(col_num,false));
-
-        int max_area=INT_MIN;
-        int island_id = 2;                  //从2开始, 因为要在地图上改写1 变成组编号, 以免 和地图 上的0和1相冲突
+        int rs_perimeter = 0;
 
 
-        bool judgeAllGrid = true;           // 标记是否整个地图都是陆地, 因为如果全是陆地的话, 他就没办法flip, 也进行不了 面积的累加的步骤了
-
-        //---------------------- 第一步 用dfs/bfs 给所有的 岛做标记 ------------------------
-
+        // 我们是 按顺序 每个格子都搜查, 所以不需要什么visited数组
         for(int i=0;i<=islandmap.size()-1;i++){
-            for(int j=0;j<=islandmap[0].size()-1;j++){
+            for (int j = 0; j <=islandmap[0].size()-1; j++) {
 
-
-
-                if(islandmap[i][j]==1){                                                 // 如果是1 并且 还没打上 岛屿的记号island_id,
-
-                    islandmap[i][j] = island_id;                            //立马打标记
-                    int now_area = 1;                                       //入口位置, 立马把当前面积初始为1
-
-                    now_area += my_dfs_better(islandmap, i, j, island_id);
-
-                    map_id_area.insert(pair<int,int>(island_id,now_area));      // 记录每个岛屿编号 对应的面积的大小
-
-                    ++island_id;
-                }
-
-                // 如果含有海, 那么他就不是全陆地, 其实 不用太去管这个逻辑, 这个不参与我们的 dfs,
-                // 他就是类似一个全地图都是陆地 则不需要dfs
+                //如果当前 是 海格子 就不用看了
                 if(islandmap[i][j]==0){
-                    judgeAllGrid = false;
-                }
-
-            }
-        }
-        //--------------------------------------------------------------------
-        myOutput_VectorBvecBtBB(islandmap,0,islandmap.size()-1);
-        //---------------------- 第二步 给所有的 海格子 进行flip ------------------------
-
-        //        2 0 2 0 0 0
-        //        2 2 2 0 3 0
-        //        0 0 0 0 0 0
-        // 我们可以看到 上面 这个被2包围的0
-        // 我们需要一个 visitedIslandId 来记录 本次访问过的 island id
-        // 不然 面积累加的时候  会重复把这个2的岛屿加进去
-        unordered_set<int> uordset_visitedIslandId;           //记录本次格子, 查询上下左右, 查完重新清0
-
-
-        //如果全是陆地, 提前结束
-        if(judgeAllGrid==true){
-            return islandmap.size()*islandmap[0].size();
-        }
-
-
-        // 开始搜索海格子
-        for(int i=0;i<=islandmap.size()-1;i++){
-            for(int j=0;j<=islandmap[0].size()-1;j++){
-
-                // 如果不是海则跳过, 因为我们要flip海格子
-                if (islandmap[i][j]!=0){
                     continue;
                 }
 
-
-                int now_area =1;        //当前这个flip的本身
-                uordset_visitedIslandId.clear();    //新的海格子, 周围还没查过, 所以要清空
-
-
-                //遍历 直接 的上下左右 位置
                 for(int k=0;k<=direction.size()-1;k++){
 
-                    int row_tmp=i+direction[k][0];
-                    int col_tmp=j+direction[k][1];
+                    int row_tmp= i + direction[k][0];
+                    int col_tmp= j + direction[k][1];
 
-
-                    //以免越界
-                    if(0<=row_tmp && row_tmp<=islandmap.size()-1 && 0<=col_tmp && col_tmp<=islandmap[0].size()-1 ){
-
-                        // 如果 当前这个相邻的节点 是海 就不用管了
-                        if(islandmap[row_tmp][col_tmp]==0){
-                            continue;
-                        }
-
-
-
-                        int id_tmp = islandmap[row_tmp][col_tmp];       //查看当前这个相邻的 有id
-
-                        //那个节点 的上下左右 已经有过当前 islandID了
-                        // 这里就不要重复 累加面积了
-                        if(uordset_visitedIslandId.find(id_tmp)!=uordset_visitedIslandId.end()){
-                            continue;
-                        }
-
-
-                        now_area += map_id_area[id_tmp];                //累加这个岛的面积
-                        uordset_visitedIslandId.insert(id_tmp);
-
-
+                    //如果是边界 则 +1
+                    if(row_tmp<0 || row_tmp > islandmap.size()-1 || col_tmp<0 || col_tmp > islandmap[0].size()-1){
+                        ++rs_perimeter;
+                    }
+                    // 如果是海 +1
+                    else if(islandmap[row_tmp][col_tmp]==0){
+                        ++rs_perimeter;
+                    }
+                    else{
+                        //do nothing
                     }
                 }
 
-                if (now_area>max_area){
-                    max_area = now_area;
-                }
-
-
+                cout<<rs_perimeter<<endl;
             }
         }
+
 
 
         //--------------------------------------------------------------------
 
 
-        return max_area;
+        return rs_perimeter;
     }
 
 
@@ -331,7 +277,7 @@ int main() {
     cout<<endl;
 
     // 开始
-    int  rs1 = solut1->getLargestIslandAfterOneFlip_dfs(islandMapInts1);
+    int  rs1 = solut1->getIslandPerimeter(islandMapInts1);
 
 
     cout<<"result"<<endl;
