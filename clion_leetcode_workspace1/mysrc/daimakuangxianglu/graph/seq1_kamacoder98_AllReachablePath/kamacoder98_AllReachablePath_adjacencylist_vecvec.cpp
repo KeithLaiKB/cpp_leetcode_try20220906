@@ -138,6 +138,7 @@ public:
 
 
         //创建 邻接表
+        // 节点编号从1到n，所以申请 n+1 这么大的数组
         // 这里的 list<int>() 不会创建什么 值为0的节点 先塞进去 之类的,
         //      因为他是链表, 此时 是空的链表
         vector<vector<int>> adjList (nodes_n+1, vector<int>());         // 和 邻接矩阵 不同, 这里的 vector 不需要指定 固定多少个！！！！！！！！！！！！！！！
@@ -152,6 +153,10 @@ public:
         //  3       5
         //  4       5
         //  5
+        // ...
+        //  n
+        //
+        // 也可以看到 一共是n+1
         //
         // 开始
         // 根据 console 进来的参数 进行 邻接矩阵的 填写
@@ -174,7 +179,7 @@ public:
     //时间复杂度:
     //空间复杂度:
     //
-    // 基于dfs 走回溯的方式
+    // 邻接表 基于dfs 走回溯的方式
     void backtracking_dfs (const vector<vector<int>>& graph, int node_num, int dest_node, vector<int> &now_path, vector<vector<int>>& rs) {
 
         //limit

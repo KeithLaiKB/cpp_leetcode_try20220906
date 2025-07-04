@@ -163,12 +163,15 @@ public:
 
 
 
-    //时间复杂度:
-    //空间复杂度:
+    //时间复杂度: O(N × L × 26)
+    //      N = vecstr_nodes的大小（词典中单词的数量）
+    //      L = 单词的长度
     //
-
+    //空间复杂度: O(N × L)
+    //      walked_len哈希表： O(N × L)
+    //      BFS队列 q_root： O(N)
     //
-    int WordLadderTransformation_byOneLetter_bfs(string str_st, string str_ed, vector<string> vecstr_nodes){
+    int WordLadderTransformation_byOneLetter_dfs(string str_st, string str_ed, vector<string> vecstr_nodes){
 
         // 记录 从start 走到当前str 需要多长的距离
         // 同时 它的存在 也代表它 已经走过
@@ -263,7 +266,7 @@ int main() {
     string str1 = "abc";
     string str2 = "def";
     vector<string> vecstr1 = {"efc","dbc","ebc","dec","dfc","yhn"};
-    int rs1 = solut1->WordLadderTransformation_byOneLetter_bfs(str1,str2, vecstr1);
+    int rs1 = solut1->WordLadderTransformation_byOneLetter_dfs(str1,str2, vecstr1);
 
 
 

@@ -147,6 +147,10 @@ public:
         //  3       5
         //  4       5
         //  5
+        // ...
+        //  n
+        //
+        // 也可以看到 一共是n+1
         //
         // 开始
         // 根据 console 进来的参数 进行 邻接矩阵的 填写
@@ -169,7 +173,7 @@ public:
     //时间复杂度:
     //空间复杂度:
     //
-    // 基于dfs 走回溯的方式
+    // 邻接表 基于dfs 走回溯的方式
     void backtracking_dfs (const vector<list<int>>& graph, int node_num, int dest_node, vector<int> &now_path, vector<vector<int>>& rs) {
 
         //limit

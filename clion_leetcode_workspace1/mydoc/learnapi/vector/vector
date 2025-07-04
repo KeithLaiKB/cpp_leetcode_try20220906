@@ -1,5 +1,5 @@
 
-vector的创立
+vector的创立 (跟java中的 Arraylist很像)
 
 vector 如果不是new 创立的话
     他本身对象实在栈上的
