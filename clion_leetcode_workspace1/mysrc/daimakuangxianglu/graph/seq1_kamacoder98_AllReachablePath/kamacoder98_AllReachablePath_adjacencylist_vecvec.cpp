@@ -112,7 +112,7 @@ public:
 
 
 
-    // 临接矩阵
+    // 邻接表
     vector<vector<int>> init_AdjacencyList_vector_ints(){
 
         //----------------- 模拟console 进来的参数  ---------------------

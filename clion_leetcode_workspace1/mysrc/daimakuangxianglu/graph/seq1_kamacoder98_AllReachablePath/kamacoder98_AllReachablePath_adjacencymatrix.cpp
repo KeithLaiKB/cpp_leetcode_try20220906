@@ -85,7 +85,7 @@ public:
 
 
 
-    // 临接矩阵
+    // 邻接矩阵
     vector<vector<int>> init_AdjacencyMatrix_ints(){
 
         //----------------- 模拟console 进来的参数  ---------------------
