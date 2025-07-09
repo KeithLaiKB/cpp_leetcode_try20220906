@@ -52,7 +52,7 @@ using namespace std;
  * 1
  * 因为
  *  从节点1 可以走到 里面的所有节点
- *
+ * 成功返回 1 不成功返回-1
  *
  * 可以用dfs/bfs
  *
@@ -199,7 +199,9 @@ public:
         return 0;
     }
 
-// 邻接表 基于dfs 但不是回溯的方式
+
+
+    // 邻接表 基于dfs 但不是回溯的方式
     // 我们这里用的是 visited 用 unordered_map
     // unordered_map 访问时间 平均 O(1)，最坏 O(n)
     int backtracking_dfs(const vector<vector<int>>& graph, int node_st,  vector<int> &visited) {
