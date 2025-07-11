@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "kamacoder107_CheckReachabilityBetweenTwoNodes_dfs"
+			"path" : "kamacoder107_CheckReachabilityBetweenTwoNodes"
 		}
 	],
 	"backtrace" : 1,
@@ -53,7 +53,7 @@
 			]
 		}
 	],
-	"id" : "kamacoder107_CheckReachabilityBetweenTwoNodes_dfs::@6890427a1f51a3e7e1df",
+	"id" : "kamacoder107_CheckReachabilityBetweenTwoNodes::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -69,8 +69,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "kamacoder107_CheckReachabilityBetweenTwoNodes_dfs",
-	"nameOnDisk" : "kamacoder107_CheckReachabilityBetweenTwoNodes_dfs",
+	"name" : "kamacoder107_CheckReachabilityBetweenTwoNodes",
+	"nameOnDisk" : "kamacoder107_CheckReachabilityBetweenTwoNodes",
 	"paths" : 
 	{
 		"build" : ".",
@@ -91,7 +91,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "mysrc/daimakuangxianglu/graph/seq11_kamacoder107_CheckReachabilityBetweenTwoNodes/kamacoder107_CheckReachabilityBetweenTwoNodes_dfs.cpp",
+			"path" : "mysrc/daimakuangxianglu/graph/seq11_kamacoder107_CheckReachabilityBetweenTwoNodes/kamacoder107_CheckReachabilityBetweenTwoNodes.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

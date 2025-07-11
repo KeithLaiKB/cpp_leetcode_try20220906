@@ -12,60 +12,70 @@
 using namespace std;
 
 /**
- * 给定一个包含 n 个节点的 无向图 中，节点编号从 1 到 n （含 1 和 n ）。
- * 你的任务是判断是否有一条从节点 source 出发到节点 destination 的路径存在。
+ * 有一个图，它是一棵树，他是拥有 n 个节点（节点编号1到n）和 n - 1 条边的连通无环无向图，例如如图：
+ * 现在在这棵树上的基础上，添加一条边（依然是n个节点，但有n条边），使这个图变成了有环图，如图：
  *
- * 输入:
- * 第一行包含两个正整数 N 和 M，N 代表节点的个数，M 代表边的个数。
- * 后续 M 行，每行两个正整数 s 和 t，代表从节点 s 与节点 t 之间有一条边。
- * 最后一行包含两个正整数，代表起始节点 source 和目标节点 destination。
- *
- *
- * 输出:
- *  输出一个整数，代表是否存在从节点 source 到节点 destination 的路径。如果存在，输出 1；否则，输出 0。
- *
- *
+
  *
  * 例如
  * 5 4   也就是4个节点   4条边
- * 1 2
- * 1 3
- * 2 4
- * 3 4
+ * 2 1
  * 1 4
+ * 2 3
+ * 3 5
+ * 4 5
  *
  *
  *
  *
  *
  *
- * 注意题目中说的是 无向图(undirected graph)
+                                    2
+                    |                               |
+                    1                               3
+            |               |               |               |
+           4    ------------------------------------------  5
 
-                     1  --------   2
-                     |             |
-                     |             |            5
-                     |             |
-                    3  ----------- 4
 
 
 
 
  *
- * 结果:
- * 1
- * 因为
- *  从节点1 可以走到 里面的所有节点
- * 成功返回 1 不成功返回-1
+ *输入顺序：(2,1), (1,4), (2,3), (3,5), (4,5)
+ *
+ * 因为我们发现他是形成一个环的 删除哪一个 都可以解除环
+ * 此时我们要 删除最后一个能使 其变成环 的边
+ *
+ * 例如
+ *处理过程：
+ *  1. (2,1): 2和1不连通 → 连接它们
+ *  2. (1,4): 1和4不连通 → 连接它们
+ *  3. (2,3): 2和3不连通 → 连接它们
+ *  4. (3,5): 3和5不连通 → 连接它们
+ *  5. (4,5): 4和5已经连通了！→ 这是冗余边
+ *
+ *  答案：(4,5)
+ *
+ * 注意:
+ *  这一题 是 一边prepare这个并查集
+ *      一边同时 进行判断
+ *
+ *      因为每次 新加进来的 两个点, 如果成环
+ *          打比方
+ *              加入上面的 边(4和5)
+ *                  这条边 他们的两个点的 root就是相同的
+ *                  因为他们 之前已经 有相同的root 连通了
+ *
+ *  而不是 整个并查集准备好了以后
+ *      才开始答题
  *
  *
- * 简单的说:
- *      做这道题 并没有什么特别 说查询 reachability的 难度
+ * 而且这个题目只有 一个环
+ * 我们只需要返回 使得其形成环 的那个最后一条边 就可以了!!!!!!!!!
  *
- *      它考察重点 是从 0 开始写代码
  *
- * 就是说
- *      1. 根据输入参数 写出一个并查集                           (主要是这个位置)
- *      2. 再 从我们建立好的 并查集 找出 这两个点 是否 连通
+
+
  */
 
 class Solution {
@@ -175,15 +185,24 @@ public:
     }
     //--------------------------------------------
 
-
-    int prepare_disjointFindUnion_vector_ints(vector<vector<int>> edges, vector<int>& father){
+    // 边添加新edge 边判断
+    vector<vector<int>> prepare_disjointFindUnion_and_GetLastRedundantEdge(vector<vector<int>> edges, vector<int>& father){
+        vector<vector<int>> rs;
 
         //连接两个点 形成边
         for(int i=0;i<=edges.size()-1;i++){
-            join(father, edges[i][0], edges[i][1]);
+            //如果相同根
+            if(judgeRootSame(father,edges[i][0],edges[i][1])==true){
+                rs.push_back({edges[i][0],edges[i][1]});
+                break;
+            }
+            else{
+                join(father, edges[i][0], edges[i][1]);
+            }
+
         }
 
-        return 1;
+        return rs;
     }
 
 
@@ -196,41 +215,28 @@ int main() {
     Solution* solut1 = new Solution();
 
     // 初始化 图
-    vector<vector<int>> edges = {{1,2},{1,3},{2,4},{3,4}};
+    vector<vector<int>> edges = {{1,2},{2,3},{1,3}};
     int node_n =5;
     int edge_m = 4;
 
     int node1 = 1;
     int node2 = 4;
 
-/*    // -------------------因为从题目来看 它给的 node_n=5 证明 最大的数字 有5 在edges 里是没有出现过的 我们要求出最大的值， 从而知道 father要设置多大----------------------
-    int node_num=INT_MIN;
-
-    for(int i=0;i<=edges.size()-1;i++){
-        node_n = edges[i][0] > node_num? edges[i][0] : node_num;
-        node_n = edges[i][1] > node_num? edges[i][0] : node_num;
-    }
-
-    node_n = node_n > node_num? node_n : node_num;
-    // --------------------------------------------------------------------------------------------------------------*/
 
     vector<int> father1 = solut1->init_disjointFindUnion_vector_ints(node_n);       //每个独立元素 都init一下
-    solut1->prepare_disjointFindUnion_vector_ints(edges,father1);                           // 根据题目已知 建立好那个已知的 并查表
+    vector<vector<int>> rs = solut1->prepare_disjointFindUnion_and_GetLastRedundantEdge(edges,father1);                          // 根据题目已知 建立好那个已知的 并查表
     //solut1->myOutput_VectorBvecBtBB(adjacencyList1, 0, adjacencyList1.size()-1);
 
-    // 我这里 就把 最后的那个 点 当作 终点好了,
-    //      例如 我们有 1~5 个node, 我们实际会有 5+1个空间,
-    //          我这里打算 把 5 当作终点
-    //      因为 本题我们会有n 个节点，因为节点标号是从1开始的，为了节点标号和下标对齐，我们申请 n + 1 * n + 1 这么大的二维数组。
-    // 当然 你也可以改终点
-    //int dest_node = adjacencyList1.size()-1;
-    int rs1 = solut1->judgeRootSame(father1,node1,node2);
+
+    //int rs1 = solut1->judgeRootSame(father1,node1,node2);
 
 
 
     cout<<"result"<<endl;
-    cout<<rs1<<endl;
+    //cout<<rs1<<endl;
     //solut1->myOutput_VectorBvecBtBB(rs1, 0, rs1.size()-1);
+
+    cout << rs[0][0]<<" "<<rs[0][1] << endl;
     return 0;
 }
 
