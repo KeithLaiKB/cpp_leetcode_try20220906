@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/t1_TwoSum.dir/link.d CMakeFiles/t1_TwoSum.dir/mysrc/daimakuangxianglu/hashtable/seq5_t1_TwoSum/t1_TwoSum.cpp.o -o t1_TwoSum

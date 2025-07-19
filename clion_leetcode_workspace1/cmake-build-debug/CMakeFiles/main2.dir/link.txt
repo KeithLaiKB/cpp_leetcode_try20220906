@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/main2.dir/link.d CMakeFiles/main2.dir/mysrc/main2.cpp.o -o main2

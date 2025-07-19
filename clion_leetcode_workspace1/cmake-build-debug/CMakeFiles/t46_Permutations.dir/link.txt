@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/t46_Permutations.dir/link.d CMakeFiles/t46_Permutations.dir/mysrc/daimakuangxianglu/backtracking/seq11_t46_Permutations/t46_Permutations.cpp.o -o t46_Permutations

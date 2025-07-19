@@ -1,0 +1,12 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/t106_ConstructBinaryTreefromInorderandPostorderTraversal.dir/link.d"
+  "CMakeFiles/t106_ConstructBinaryTreefromInorderandPostorderTraversal.dir/mysrc/daimakuangxianglu/binarytree/constructtree/seq15_t106_ConstructBinaryTreefromInorderandPostorderTraversal/t106_ConstructBinaryTreefromInorderandPostorderTraversal.cpp.o"
+  "CMakeFiles/t106_ConstructBinaryTreefromInorderandPostorderTraversal.dir/mysrc/daimakuangxianglu/binarytree/constructtree/seq15_t106_ConstructBinaryTreefromInorderandPostorderTraversal/t106_ConstructBinaryTreefromInorderandPostorderTraversal.cpp.o.d"
+  "t106_ConstructBinaryTreefromInorderandPostorderTraversal"
+  "t106_ConstructBinaryTreefromInorderandPostorderTraversal.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/t106_ConstructBinaryTreefromInorderandPostorderTraversal.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

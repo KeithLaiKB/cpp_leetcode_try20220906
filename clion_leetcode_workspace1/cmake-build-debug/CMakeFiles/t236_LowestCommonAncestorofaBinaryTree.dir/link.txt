@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/t236_LowestCommonAncestorofaBinaryTree.dir/link.d CMakeFiles/t236_LowestCommonAncestorofaBinaryTree.dir/mysrc/daimakuangxianglu/binarytree/traversaltree/seq22_t236_LowestCommonAncestorofaBinaryTree/t236_LowestCommonAncestorofaBinaryTree.cpp.o -o t236_LowestCommonAncestorofaBinaryTree

@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/t669_TrimaBinarySearchTree.dir/link.d CMakeFiles/t669_TrimaBinarySearchTree.dir/mysrc/daimakuangxianglu/binarytree/constructtree/seq26_t669_TrimaBinarySearchTree/t669_TrimaBinarySearchTree.cpp.o -o t669_TrimaBinarySearchTree

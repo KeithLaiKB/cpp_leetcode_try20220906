@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/t530_MinimumAbsoluteDifferenceinBST.dir/link.d CMakeFiles/t530_MinimumAbsoluteDifferenceinBST.dir/mysrc/daimakuangxianglu/binarytree/validatetree/seq20_t530_MinimumAbsoluteDifferenceinBST/t530_MinimumAbsoluteDifferenceinBST.cpp.o -o t530_MinimumAbsoluteDifferenceinBST

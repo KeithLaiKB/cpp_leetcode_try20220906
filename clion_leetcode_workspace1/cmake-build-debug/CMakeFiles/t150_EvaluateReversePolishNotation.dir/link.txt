@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/t150_EvaluateReversePolishNotation.dir/link.d CMakeFiles/t150_EvaluateReversePolishNotation.dir/mysrc/daimakuangxianglu/stack_and_queue/seq6_t150_EvaluateReversePolishNotation/t150_EvaluateReversePolishNotation.cpp.o -o t150_EvaluateReversePolishNotation

@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/t763_PartitionLabels.dir/link.d CMakeFiles/t763_PartitionLabels.dir/mysrc/daimakuangxianglu/greedy/seq14_t763_PartitionLabels/t763_PartitionLabels.cpp.o -o t763_PartitionLabels

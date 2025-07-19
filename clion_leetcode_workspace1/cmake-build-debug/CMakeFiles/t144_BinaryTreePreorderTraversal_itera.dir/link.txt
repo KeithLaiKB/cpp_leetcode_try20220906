@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/t144_BinaryTreePreorderTraversal_itera.dir/link.d CMakeFiles/t144_BinaryTreePreorderTraversal_itera.dir/mysrc/daimakuangxianglu/binarytree/mytravasal/myiteration/t144_BinaryTreePreorderTraversal_itera.cpp.o -o t144_BinaryTreePreorderTraversal_itera

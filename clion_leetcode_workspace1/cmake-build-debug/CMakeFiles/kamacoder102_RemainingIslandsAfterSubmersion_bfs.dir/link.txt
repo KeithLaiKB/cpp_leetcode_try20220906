@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/kamacoder102_RemainingIslandsAfterSubmersion_bfs.dir/link.d CMakeFiles/kamacoder102_RemainingIslandsAfterSubmersion_bfs.dir/mysrc/daimakuangxianglu/graph/seq5_kamacoder102_RemainingIslandsAfterSubmersion/kamacoder102_RemainingIslandsAfterSubmersion_bfs.cpp.o -o kamacoder102_RemainingIslandsAfterSubmersion_bfs

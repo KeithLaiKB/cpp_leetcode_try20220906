@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/t47_PermutationsII.dir/link.d CMakeFiles/t47_PermutationsII.dir/mysrc/daimakuangxianglu/backtracking/seq12_t47_PermutationsII/t47_PermutationsII.cpp.o -o t47_PermutationsII

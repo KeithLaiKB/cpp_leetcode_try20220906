@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/kamacoder53_TreasureHunt_prim.dir/link.d CMakeFiles/kamacoder53_TreasureHunt_prim.dir/mysrc/daimakuangxianglu/graph/seq14_kamacoder53_TreasureHunt/kamacoder53_TreasureHunt_prim.cpp.o -o kamacoder53_TreasureHunt_prim

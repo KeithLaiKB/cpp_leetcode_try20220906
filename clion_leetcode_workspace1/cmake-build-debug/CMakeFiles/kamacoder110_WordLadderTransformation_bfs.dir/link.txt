@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/kamacoder110_WordLadderTransformation_bfs.dir/link.d CMakeFiles/kamacoder110_WordLadderTransformation_bfs.dir/mysrc/daimakuangxianglu/graph/seq9_kamacoder110_WordLadderTransformation/kamacoder110_WordLadderTransformation_bfs.cpp.o -o kamacoder110_WordLadderTransformation_bfs

@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/t226_InvertBinaryTree_preorder_itera.dir/link.d CMakeFiles/t226_InvertBinaryTree_preorder_itera.dir/mysrc/daimakuangxianglu/binarytree/changetree/seq5_t226_InvertBinaryTree/myiteration/t226_InvertBinaryTree_preorder_itera.cpp.o -o t226_InvertBinaryTree_preorder_itera

@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/t134_GasStation.dir/link.d CMakeFiles/t134_GasStation.dir/mysrc/daimakuangxianglu/greedy/seq8_t134_GasStation/t134_GasStation.cpp.o -o t134_GasStation

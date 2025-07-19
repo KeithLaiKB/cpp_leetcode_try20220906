@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/t1005_MaximizeSumOfArrayAfterKNegations.dir/link.d CMakeFiles/t1005_MaximizeSumOfArrayAfterKNegations.dir/mysrc/daimakuangxianglu/greedy/seq7_t1005_MaximizeSumOfArrayAfterKNegations/t1005_MaximizeSumOfArrayAfterKNegations.cpp.o -o t1005_MaximizeSumOfArrayAfterKNegations

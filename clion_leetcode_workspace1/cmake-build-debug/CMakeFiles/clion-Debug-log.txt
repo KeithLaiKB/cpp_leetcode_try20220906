@@ -1,4 +1,16 @@
-/home/kt/MySoftware/MyProgram/JetBrains/Clion/clion-2023.3.4/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/kt/MySoftware/MyProgram/JetBrains/Clion/clion-2023.3.4/bin/ninja/linux/x64/ninja -G Ninja -S /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1 -B /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug
+/home/kt/MySoftware/MyProgram/JetBrains/Clion/clion-2025.1.3/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "Unix Makefiles" -S /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1 -B /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
     -- src/t1_TwoSum_past.cpp will be compiled to bin/t1_TwoSum_past
     -- src/t1_pre1_t242_ValidAnagram.cpp will be compiled to bin/t1_pre1_t242_ValidAnagram
     -- src/t1_pre1_t242_ValidAnagram_method2.cpp will be compiled to bin/t1_pre1_t242_ValidAnagram_method2
@@ -65,6 +77,7 @@
     -- src/kamacoder107_CheckReachabilityBetweenTwoNodes.cpp will be compiled to bin/kamacoder107_CheckReachabilityBetweenTwoNodes
     -- src/kamacoder108_GetLastRedundantEdge.cpp will be compiled to bin/kamacoder108_GetLastRedundantEdge
     -- src/kamacoder109_GetLastRedundantEdgeII.cpp will be compiled to bin/kamacoder109_GetLastRedundantEdgeII
+    -- src/kamacoder53_TreasureHunt_kruskal.cpp will be compiled to bin/kamacoder53_TreasureHunt_kruskal
     -- src/kamacoder53_TreasureHunt_prim.cpp will be compiled to bin/kamacoder53_TreasureHunt_prim
     -- src/kamacoder98_AllReachablePath_adjacencylist_veclist.cpp will be compiled to bin/kamacoder98_AllReachablePath_adjacencylist_veclist
     -- src/kamacoder98_AllReachablePath_adjacencylist_vecvec.cpp will be compiled to bin/kamacoder98_AllReachablePath_adjacencylist_vecvec
@@ -126,6 +139,6 @@
     -- src/main2.cpp will be compiled to bin/main2
     -- src/learn_heapsort1_maxheap.cpp will be compiled to bin/learn_heapsort1_maxheap
     -- src/updatetocplus20test.cpp will be compiled to bin/updatetocplus20test
--- Configuring done (0.1s)
--- Generating done (0.2s)
+-- Configuring done (2.0s)
+-- Generating done (0.9s)
 -- Build files have been written to: /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug

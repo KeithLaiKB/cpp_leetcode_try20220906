@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/t860_LemonadeChange.dir/link.d CMakeFiles/t860_LemonadeChange.dir/mysrc/daimakuangxianglu/greedy/seq10_t860_LemonadeChange/t860_LemonadeChange.cpp.o -o t860_LemonadeChange

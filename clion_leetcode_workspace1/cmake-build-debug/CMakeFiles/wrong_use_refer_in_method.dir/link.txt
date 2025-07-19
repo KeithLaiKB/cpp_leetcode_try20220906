@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/wrong_use_refer_in_method.dir/link.d CMakeFiles/wrong_use_refer_in_method.dir/mysrc/knowledge/pointer_reference/wrong_use_refer_in_method.cpp.o -o wrong_use_refer_in_method

@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/t45_JumpGameII.dir/link.d CMakeFiles/t45_JumpGameII.dir/mysrc/daimakuangxianglu/greedy/seq6_t45_JumpGameII/t45_JumpGameII.cpp.o -o t45_JumpGameII

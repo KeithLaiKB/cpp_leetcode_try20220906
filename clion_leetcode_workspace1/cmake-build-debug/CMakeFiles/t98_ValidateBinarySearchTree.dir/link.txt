@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/t98_ValidateBinarySearchTree.dir/link.d CMakeFiles/t98_ValidateBinarySearchTree.dir/mysrc/daimakuangxianglu/binarytree/validatetree/seq19_t98_ValidateBinarySearchTree/t98_ValidateBinarySearchTree.cpp.o -o t98_ValidateBinarySearchTree

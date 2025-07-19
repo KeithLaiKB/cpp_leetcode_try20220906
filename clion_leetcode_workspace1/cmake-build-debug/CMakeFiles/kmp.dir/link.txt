@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/kmp.dir/link.d CMakeFiles/kmp.dir/mysrc/daimakuangxianglu/string/seq6_kmp_t28/kmp.cpp.o -o kmp

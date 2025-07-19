@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/kamacoder99_NumberOfIsland_dfs.dir/link.d CMakeFiles/kamacoder99_NumberOfIsland_dfs.dir/mysrc/daimakuangxianglu/graph/seq2_kamacoder99_NumberOfIsland/kamacoder99_NumberOfIsland_dfs.cpp.o -o kamacoder99_NumberOfIsland_dfs

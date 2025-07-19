@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/t5_pre1_t647_Palindromic_Substrings.dir/link.d CMakeFiles/t5_pre1_t647_Palindromic_Substrings.dir/mysrc/daimakuangxianglu/array/mygroup22/t5_pre1_t647_Palindromic_Substrings.cpp.o -o t5_pre1_t647_Palindromic_Substrings

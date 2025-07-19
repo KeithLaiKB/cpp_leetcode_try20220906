@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/kamacoder106_IslandPerimeter.dir/link.d CMakeFiles/kamacoder106_IslandPerimeter.dir/mysrc/daimakuangxianglu/graph/seq8_kamacoder106_IslandPerimeter/kamacoder106_IslandPerimeter.cpp.o -o kamacoder106_IslandPerimeter

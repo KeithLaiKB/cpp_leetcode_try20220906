@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/t78_Subsets.dir/link.d CMakeFiles/t78_Subsets.dir/mysrc/daimakuangxianglu/backtracking/seq8_t78_Subsets/t78_Subsets.cpp.o -o t78_Subsets

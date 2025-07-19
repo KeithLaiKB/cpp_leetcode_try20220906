@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/t131_PalindromePartitioning.dir/link.d CMakeFiles/t131_PalindromePartitioning.dir/mysrc/daimakuangxianglu/backtracking/seq6_t131_PalindromePartitioning/t131_PalindromePartitioning.cpp.o -o t131_PalindromePartitioning

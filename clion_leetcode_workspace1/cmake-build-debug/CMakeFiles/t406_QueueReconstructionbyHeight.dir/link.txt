@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/t406_QueueReconstructionbyHeight.dir/link.d CMakeFiles/t406_QueueReconstructionbyHeight.dir/mysrc/daimakuangxianglu/greedy/seq11_t406_QueueReconstructionbyHeight/t406_QueueReconstructionbyHeight.cpp.o -o t406_QueueReconstructionbyHeight

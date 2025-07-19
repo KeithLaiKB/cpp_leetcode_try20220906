@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/t538_ConvertBSTtoGreaterTree.dir/link.d CMakeFiles/t538_ConvertBSTtoGreaterTree.dir/mysrc/daimakuangxianglu/binarytree/constructtree/seq28_t538_ConvertBSTtoGreaterTree/t538_ConvertBSTtoGreaterTree.cpp.o -o t538_ConvertBSTtoGreaterTree

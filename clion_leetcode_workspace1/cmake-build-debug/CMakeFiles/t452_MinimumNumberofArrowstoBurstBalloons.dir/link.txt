@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/t452_MinimumNumberofArrowstoBurstBalloons.dir/link.d CMakeFiles/t452_MinimumNumberofArrowstoBurstBalloons.dir/mysrc/daimakuangxianglu/greedy/seq12_t452_MinimumNumberofArrowstoBurstBalloons/t452_MinimumNumberofArrowstoBurstBalloons.cpp.o -o t452_MinimumNumberofArrowstoBurstBalloons

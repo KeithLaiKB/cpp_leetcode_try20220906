@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/learn_template_generic1.dir/link.d CMakeFiles/learn_template_generic1.dir/mysrc/knowledge/learn_template/template_generic/learn_template_generic1.cpp.o -o learn_template_generic1

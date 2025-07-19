@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/t1_TwoSum_past.dir/link.d CMakeFiles/t1_TwoSum_past.dir/mysrc/daimakuangxianglu/array/mygroup1_unordermap_and_unorderset/t1_TwoSum_past.cpp.o -o t1_TwoSum_past

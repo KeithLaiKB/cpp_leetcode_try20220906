@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/t404_SumofLeftLeaves.dir/link.d CMakeFiles/t404_SumofLeftLeaves.dir/mysrc/daimakuangxianglu/binarytree/validatetree/seq12_t404_SumofLeftLeaves/t404_SumofLeftLeaves.cpp.o -o t404_SumofLeftLeaves

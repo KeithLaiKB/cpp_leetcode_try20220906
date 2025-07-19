@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/kamacoder98_AllReachablePath_adjacencylist_vecvec.dir/link.d CMakeFiles/kamacoder98_AllReachablePath_adjacencylist_vecvec.dir/mysrc/daimakuangxianglu/graph/seq1_kamacoder98_AllReachablePath/kamacoder98_AllReachablePath_adjacencylist_vecvec.cpp.o -o kamacoder98_AllReachablePath_adjacencylist_vecvec

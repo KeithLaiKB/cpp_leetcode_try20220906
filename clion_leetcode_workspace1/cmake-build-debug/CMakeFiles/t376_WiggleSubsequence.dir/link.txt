@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/t376_WiggleSubsequence.dir/link.d CMakeFiles/t376_WiggleSubsequence.dir/mysrc/daimakuangxianglu/greedy/seq2_t376_WiggleSubsequence/t376_WiggleSubsequence.cpp.o -o t376_WiggleSubsequence

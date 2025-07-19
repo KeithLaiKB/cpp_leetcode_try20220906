@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/t701_InsertintoaBinarySearchTree.dir/link.d CMakeFiles/t701_InsertintoaBinarySearchTree.dir/mysrc/daimakuangxianglu/binarytree/constructtree/seq24_t701_InsertintoaBinarySearchTree/t701_InsertintoaBinarySearchTree.cpp.o -o t701_InsertintoaBinarySearchTree

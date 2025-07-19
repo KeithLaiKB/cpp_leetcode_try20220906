@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/updatetocplus20test.dir/link.d CMakeFiles/updatetocplus20test.dir/mysrc/updatetoCPlus20_test/updatetocplus20test.cpp.o -o updatetocplus20test

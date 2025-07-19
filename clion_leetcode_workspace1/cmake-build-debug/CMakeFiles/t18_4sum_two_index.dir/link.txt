@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/t18_4sum_two_index.dir/link.d CMakeFiles/t18_4sum_two_index.dir/mysrc/daimakuangxianglu/hashtable/sq9_t18_4sum/t18_4sum_two_index.cpp.o -o t18_4sum_two_index

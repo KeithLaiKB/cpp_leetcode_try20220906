@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/t77_Combinations.dir/link.d CMakeFiles/t77_Combinations.dir/mysrc/daimakuangxianglu/backtracking/seq1_t77_Combinations/t77_Combinations.cpp.o -o t77_Combinations

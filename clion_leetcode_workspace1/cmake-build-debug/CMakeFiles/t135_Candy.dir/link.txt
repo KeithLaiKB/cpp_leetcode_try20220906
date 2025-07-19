@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/t135_Candy.dir/link.d CMakeFiles/t135_Candy.dir/mysrc/daimakuangxianglu/greedy/seq9_t135_Candy/t135_Candy.cpp.o -o t135_Candy

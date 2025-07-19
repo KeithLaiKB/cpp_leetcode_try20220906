@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/kamacoder101_TotalAreaOfAllIsolatedIslands_bfs.dir/link.d CMakeFiles/kamacoder101_TotalAreaOfAllIsolatedIslands_bfs.dir/mysrc/daimakuangxianglu/graph/seq4_kamacoder101_TotalAreaOfAllIsolatedIslands/kamacoder101_TotalAreaOfAllIsolatedIslands_bfs.cpp.o -o kamacoder101_TotalAreaOfAllIsolatedIslands_bfs

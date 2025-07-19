@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/t112_PathSum.dir/link.d CMakeFiles/t112_PathSum.dir/mysrc/daimakuangxianglu/binarytree/validatetree/seq14_t112_PathSum/t112_PathSum.cpp.o -o t112_PathSum

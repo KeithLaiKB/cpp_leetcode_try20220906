@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/t968_BinaryTreeCameras.dir/link.d CMakeFiles/t968_BinaryTreeCameras.dir/mysrc/daimakuangxianglu/greedy/seq17_t968_BinaryTreeCameras/t968_BinaryTreeCameras.cpp.o -o t968_BinaryTreeCameras

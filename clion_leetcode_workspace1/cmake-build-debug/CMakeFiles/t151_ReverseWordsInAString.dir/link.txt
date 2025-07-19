@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/t151_ReverseWordsInAString.dir/link.d CMakeFiles/t151_ReverseWordsInAString.dir/mysrc/daimakuangxianglu/string/seq4_t151_ReverseWordsInAString/t151_ReverseWordsInAString.cpp.o -o t151_ReverseWordsInAString

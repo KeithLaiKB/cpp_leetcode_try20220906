@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/t90_SubsetsII.dir/link.d CMakeFiles/t90_SubsetsII.dir/mysrc/daimakuangxianglu/backtracking/seq9_t90_SubsetsII/t90_SubsetsII.cpp.o -o t90_SubsetsII

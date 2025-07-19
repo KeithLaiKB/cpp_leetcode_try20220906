@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/t383_RansomNote.dir/link.d CMakeFiles/t383_RansomNote.dir/mysrc/daimakuangxianglu/hashtable/seq7_t383_RansomNote/t383_RansomNote.cpp.o -o t383_RansomNote

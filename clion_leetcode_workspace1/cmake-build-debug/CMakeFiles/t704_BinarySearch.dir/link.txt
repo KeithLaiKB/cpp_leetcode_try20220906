@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/t704_BinarySearch.dir/link.d CMakeFiles/t704_BinarySearch.dir/mysrc/daimakuangxianglu/array/seq1_t704_binarysearch/t704_BinarySearch.cpp.o -o t704_BinarySearch

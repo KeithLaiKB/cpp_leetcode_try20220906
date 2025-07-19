@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/t122_BestTimetoBuyandSellStockII_greedy.dir/link.d CMakeFiles/t122_BestTimetoBuyandSellStockII_greedy.dir/mysrc/daimakuangxianglu/greedy/seq4_t122_BestTimetoBuyandSellStockII_greedy/t122_BestTimetoBuyandSellStockII_greedy.cpp.o -o t122_BestTimetoBuyandSellStockII_greedy

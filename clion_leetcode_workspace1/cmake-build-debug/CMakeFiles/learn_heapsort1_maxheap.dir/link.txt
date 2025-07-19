@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/learn_heapsort1_maxheap.dir/link.d CMakeFiles/learn_heapsort1_maxheap.dir/mysrc/mysort/learn_heapsort/learn_heapsort1_maxheap.cpp.o -o learn_heapsort1_maxheap

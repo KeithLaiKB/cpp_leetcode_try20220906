@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/t738_MonotoneIncreasingDigits.dir/link.d CMakeFiles/t738_MonotoneIncreasingDigits.dir/mysrc/daimakuangxianglu/greedy/seq16_t738_MonotoneIncreasingDigits/t738_MonotoneIncreasingDigits.cpp.o -o t738_MonotoneIncreasingDigits

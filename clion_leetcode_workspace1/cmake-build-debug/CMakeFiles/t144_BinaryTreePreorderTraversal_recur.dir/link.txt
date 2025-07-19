@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/t144_BinaryTreePreorderTraversal_recur.dir/link.d CMakeFiles/t144_BinaryTreePreorderTraversal_recur.dir/mysrc/daimakuangxianglu/binarytree/mytravasal/myrecursion/t144_BinaryTreePreorderTraversal_recur.cpp.o -o t144_BinaryTreePreorderTraversal_recur

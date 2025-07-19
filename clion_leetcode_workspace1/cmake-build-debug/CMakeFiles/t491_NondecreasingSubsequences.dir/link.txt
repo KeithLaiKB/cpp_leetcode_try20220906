@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/t491_NondecreasingSubsequences.dir/link.d CMakeFiles/t491_NondecreasingSubsequences.dir/mysrc/daimakuangxianglu/backtracking/seq10_t491_NondecreasingSubsequences/t491_NondecreasingSubsequences.cpp.o -o t491_NondecreasingSubsequences
