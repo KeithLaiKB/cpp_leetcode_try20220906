@@ -109,15 +109,15 @@ public:
 
     //--------------------构建 并查集 ------------------------------
     vector<int> init_disjointFindUnion_vector_ints(int node_n){
-        vector<int> father(node_n+1,0);
+        vector<int> parent(node_n+1,0);
 
         //初始化的时候 默认所有节点 都是独立的
-        //所以father都指向自己
+        //所以parent都指向自己
         for(int i=0;i<=node_n;i++){
-            father[i]=i;
+            parent[i]=i;
         }
 
-        return father;
+        return parent;
     }
     // 单次最坏时间复杂度：O(n)（第一次查找链式结构）
     // 摊还时间复杂度：O(α(n))（阿克曼函数的反函数）
@@ -128,17 +128,17 @@ public:
     // 但是实现的类型是非常像dfs的
     //
     // 找出num的 root 在哪
-    // 稍微说一下 那个vector<int> 不能叫 root 只能叫father,
-    //      虽然 可以通过father 一直往上找 找到root,
-    //      但是 那个数组 只指向他们直接的father
+    // 稍微说一下 那个vector<int> 不能叫 root 只能叫parent,
+    //      虽然 可以通过parent 一直往上找 找到root,
+    //      但是 那个数组 只指向他们直接的parent
     // 这里我们是一直往上找 所以我这里 显示说明是找root的
-    int findRoot(vector<int> &father, int num){
-        if(num==father[num]){
+    int findRoot(vector<int> &parent, int num){
+        if(num==parent[num]){
             return num;
         }
         else{
-            int root = findRoot(father, father[num]);
-            father[num] = root;                                 //每次find 都会优化 也就是压缩路径, 这个位置是非常重要的!!!!!!!!!!!!!!!!!!!!!!!
+            int root = findRoot(parent, parent[num]);
+            parent[num] = root;                                 //每次find 都会优化 也就是压缩路径, 这个位置是非常重要的!!!!!!!!!!!!!!!!!!!!!!!
 
             return root;
         }
@@ -146,9 +146,9 @@ public:
     }
 
     // 如果根不相同, 则把v的根 放在 u的根的 下方
-    void join(vector<int> &father,int u, int v){
-        int root_u = findRoot(father, u);
-        int root_v = findRoot(father, v);
+    void join(vector<int> &parent,int u, int v){
+        int root_u = findRoot(parent, u);
+        int root_v = findRoot(parent, v);
 
         if(root_u == root_v){
             return;
@@ -156,7 +156,7 @@ public:
 
         //注意这里 不是简单的就 u 和 v连接,
         // 而是 他们的root  相连接
-        father[root_v] = root_u;
+        parent[root_v] = root_u;
     }
 
     //--------------------------------------------
@@ -167,20 +167,20 @@ public:
     // 空间复杂度：O(h)
     //      （findRoot的递归栈）
 
-    bool judgeRootSame(vector<int> &father,int u, int v){
-        int root_u = findRoot(father, u);
-        int root_v = findRoot(father, v);
+    bool judgeRootSame(vector<int> &parent,int u, int v){
+        int root_u = findRoot(parent, u);
+        int root_v = findRoot(parent, v);
 
         return root_u==root_v;
     }
     //--------------------------------------------
 
 
-    int prepare_disjointFindUnion_vector_ints(vector<vector<int>> edges, vector<int>& father){
+    int prepare_disjointFindUnion_vector_ints(vector<vector<int>> edges, vector<int>& parent){
 
         //连接两个点 形成边
         for(int i=0;i<=edges.size()-1;i++){
-            join(father, edges[i][0], edges[i][1]);
+            join(parent, edges[i][0], edges[i][1]);
         }
 
         return 1;
@@ -203,7 +203,7 @@ int main() {
     int node1 = 1;
     int node2 = 4;
 
-/*    // -------------------因为从题目来看 它给的 node_n=5 证明 最大的数字 有5 在edges 里是没有出现过的 我们要求出最大的值， 从而知道 father要设置多大----------------------
+/*    // -------------------因为从题目来看 它给的 node_n=5 证明 最大的数字 有5 在edges 里是没有出现过的 我们要求出最大的值， 从而知道 parent要设置多大----------------------
     int node_num=INT_MIN;
 
     for(int i=0;i<=edges.size()-1;i++){
@@ -214,8 +214,8 @@ int main() {
     node_n = node_n > node_num? node_n : node_num;
     // --------------------------------------------------------------------------------------------------------------*/
 
-    vector<int> father1 = solut1->init_disjointFindUnion_vector_ints(node_n);       //每个独立元素 都init一下
-    solut1->prepare_disjointFindUnion_vector_ints(edges,father1);                           // 根据题目已知 建立好那个已知的 并查表
+    vector<int> parent1 = solut1->init_disjointFindUnion_vector_ints(node_n);       //每个独立元素 都init一下
+    solut1->prepare_disjointFindUnion_vector_ints(edges,parent1);                           // 根据题目已知 建立好那个已知的 并查表
     //solut1->myOutput_VectorBvecBtBB(adjacencyList1, 0, adjacencyList1.size()-1);
 
     // 我这里 就把 最后的那个 点 当作 终点好了,
@@ -224,7 +224,7 @@ int main() {
     //      因为 本题我们会有n 个节点，因为节点标号是从1开始的，为了节点标号和下标对齐，我们申请 n + 1 * n + 1 这么大的二维数组。
     // 当然 你也可以改终点
     //int dest_node = adjacencyList1.size()-1;
-    int rs1 = solut1->judgeRootSame(father1,node1,node2);
+    int rs1 = solut1->judgeRootSame(parent1,node1,node2);
 
 
 

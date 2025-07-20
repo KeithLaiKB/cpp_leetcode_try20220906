@@ -143,7 +143,7 @@ public:
 
 
 
-
+    // 根据已有的邻接矩阵 来弄
     int prim(vector<vector<int>>& graph, int node_n, int& rs_totalweight, vector<int> &rs_parent) {
         // 假设有100个数字 则 需要101
         // 因为100个数字 意味着 也可能需要 100, 那么idx就需要有100，
