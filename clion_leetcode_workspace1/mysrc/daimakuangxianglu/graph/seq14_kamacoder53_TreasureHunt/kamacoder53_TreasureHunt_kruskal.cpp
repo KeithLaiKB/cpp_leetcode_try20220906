@@ -174,10 +174,11 @@ public:
         return a[2] < b[2];
     }
 
-
+    // 上面的基本代码 和  kamacoder107 一样, 除了 这里用了 mycomp
+    // 除了 这个方法 写的会有一些区别
     // 边添加新edge 边判断
-    vector<vector<int>> prepare_disjointFindUnion_and_GetShortestPath(vector<vector<int>> edges, vector<int>& parent){
-        vector<vector<int>> rs_path;        //路径
+    int prepare_disjointFindUnion_and_GetShortestPath(vector<vector<int>> edges, vector<int>& parent, int& rs_totalweight, vector<vector<int>>& rs_path){
+        //vector<vector<int>> rs_path;        //路径
 
         sort(edges.begin(),edges.end(),mycomp);
 
@@ -192,12 +193,13 @@ public:
             //如果 不相同根
             else{
                 rs_path.push_back({edges[i][0],edges[i][1]});
+                rs_totalweight +=  edges[i][2];
                 join(parent, edges[i][0], edges[i][1]);
             }
 
         }
 
-        return rs_path;
+        return 0;
     }
 
 
@@ -215,6 +217,10 @@ int main() {
 
     int node_n =7;              //记得要跟下面的edges 中的内容一起改变
     //int edge_m = 4;
+
+    int rs_weight=0;
+    vector<vector<int>> rs_shortest_path;
+
     vector<vector<int>> edges = {
             {1, 2, 1},
             {1, 3, 1},
@@ -236,7 +242,7 @@ int main() {
     vector<int> parent1 = solut1->init_disjointFindUnion_vector_ints(node_n);       //每个独立元素 都init一下
 
     // 初始化 图
-    vector<vector<int>> rs_shortest_path =solut1->prepare_disjointFindUnion_and_GetShortestPath(edges,parent1);                           // 根据题目已知 建立好那个已知的 并查表
+    solut1->prepare_disjointFindUnion_and_GetShortestPath(edges,parent1,rs_weight,rs_shortest_path);                           // 根据题目已知 建立好那个已知的 并查表
 
     solut1->myOutput_VectorBvecBtBB(rs_shortest_path, 0, rs_shortest_path.size()-1);
     cout<<endl;
@@ -245,7 +251,7 @@ int main() {
 
 
     cout<<"result"<<endl;
-    //cout<<rs_weight<<endl;
+    cout<<rs_weight<<endl;
     //solut1->myOutput_VectorBvecBtBB(rs1, 0, rs1.size()-1);
     solut1->myOutput_VectorBtB(rs_parent, 0, rs_parent.size()-1);
     return 0;
