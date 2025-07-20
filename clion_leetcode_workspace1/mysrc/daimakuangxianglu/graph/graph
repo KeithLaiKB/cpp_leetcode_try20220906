@@ -175,8 +175,11 @@ prim(重要)
 
 Kruskal 与 prim 的区别:
     prim 维护的是 节点 的集合
+        parent 初始值都是-1
+            parent    [	-1, 		-1, 		-1,  	-1,		-1,		-1]
     kruskal 维护的是边的集合, 如果是 一个图中 节点多, 但边相对少, 那么使用kruskal更优
-
+        parent 初始值 是自己
+            parent    [	0, 		    1, 		    2,  	3,		4,		5]
 
 Kruskal(重要)
 从带权重的无向图 找出 最小生成树 (可以找出最短路径)                                                          (kamacoder53)       ---邻接矩阵
