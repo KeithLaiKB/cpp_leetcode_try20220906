@@ -12,50 +12,49 @@
 using namespace std;
 
 /**
- * 在世界的某个区域，有一些分散的神秘岛屿，每个岛屿上都有一种珍稀的资源或者宝藏。国王打算在这些岛屿上建公路，方便运输。
- * 不同岛屿之间，路途距离不同，国王希望你可以规划建公路的方案，
- * 如何可以以最短的总公路距离将所有岛屿联通起来。
+ * 某国为促进城市间经济交流，决定对货物运输提供补贴。
+ * 共有 n 个编号为 1 到 n 的城市，通过道路网络连接，网络中的道路仅允许从某个城市单向通行到另一个城市，不能反向通行。
+ *
+ *网络中的道路都有各自的运输成本和政府补贴，道路的权值计算方式为：运输成本 - 政府补贴。
+ *权值为正表示扣除了政府补贴后运输货物仍需支付的费用；
+ *权值为负则表示政府的补贴超过了支出的运输成本，实际表现为运输过程中还能赚取一定的收益。
+ *
+ *请找出从城市 1 到城市 n 的所有可能路径中，综合政府补贴后的最低运输成本。
+ *      负权回路是指一系列道路的总权值为负，这样的回路使得通过反复经过回路中的道路，理论上可以无限地减少总成本或无限地增加总收益。
  *
  * 给定一张地图，其中包括了所有的岛屿，以及它们之间的距离。以最小化公路建设长度，确保可以链接到所有岛屿。
  *
  * 输入:
- * 第一行包含两个整数V和E，V代表顶点数，E代表边数。顶点编号是从1到V。例如：V=2，一个有两个顶点，分别是1和2。
- * 接下来共有E行，每行三个整数v1，v2和val，v1和v2为边的起点和终点，val代表边的权值。
+ * 第一行包含两个正整数，第一个正整数 n 表示该国一共有 n 个城市，第二个整数 m 表示这些城市中共有 m 条道路。
+ * 接下来为 m 行，每行包括三个整数，s、t 和 v，表示 s 号城市运输货物到达 t 号城市，道路权值为 v（单向图）。
  *
  *
  * 输出:
- *  输出输出联通所有岛屿的最小路径总距离
+ *  如果能够从城市 1 到连通到城市 n， 请输出一个整数，表示运输成本。
+ *  如果该整数是负数，则表示实现了盈利。
+ *
+ *  如果从城市 1 没有路径可达城市 n，请输出 "unconnected"。
  *
  *
  *
  * 例如
- * 7 11   也就是7个节点   11条边
+ * 6 7  也就是7个节点   11条边
+ * 6 7
+ * 5 6 -2
  * 1 2 1
- * 1 3 1
- * 1 5 2
- * 2 6 1
- * 2 4 2
- * 2 3 2
- * 3 4 1
- * 4 5 1
- * 5 6 2
- * 5 7 1
- * 6 7 1
+ * 5 3 1
+ * 2 5 2
+ * 2 4 -3
+ * 4 6 4
+ * 1 3 5
  *
  *
  *
  *
  *
  *
- * 注意这里是无向图
+ * 注意这里是有向图
 
-                    (1)  ------ 1 ------ (2)
-                     |                    |
-                     |                    |            5
-                     1                    2
-                     |                    |
-                     |                    |
-                    (3)  ------ 1 ------ (4)
 
 
 
@@ -105,9 +104,9 @@ public:
     // 但他并不是邻接矩阵,
     // 因为临界矩阵 里面的含义是
     // 从 x 到 y 点 是否可达, 然后这里还带有权重
-    //  无向图的 邻接矩阵 那么 如果说2到5 权重是3，
-    //      那么graph[2][5] 和 graph[5][2] 都要填写3
-    vector<vector<int>> init_undirectedGraph_ints(int nodes_n, int edge_m, vector<vector<int>> edges_with_weight){
+    //  有向图的 邻接矩阵 那么 如果说2到5 权重是3，
+    //      那么只需要 graph[2][5] 填写3
+    vector<vector<int>> init_directedGraph_ints(int nodes_n, int edge_m, vector<vector<int>> edges_with_weight){
 
         //创建 邻接矩阵
         vector<vector<int>> adjMatrix1 (nodes_n+1, vector<int>(nodes_n+1,INT_MAX));
@@ -133,9 +132,9 @@ public:
 
             //
             //  无向图的 邻接矩阵 那么 如果说2到5 权重是3，
-            //      那么graph[2][5] 和 graph[5][2] 都要填写3
+            //      那么只需要 graph[2][5] 填写3
             adjMatrix1[node1][node2] = wgt;
-            adjMatrix1[node2][node1] = wgt;
+            //adjMatrix1[node2][node1] = wgt;
         }
 
         return adjMatrix1;
@@ -143,12 +142,15 @@ public:
 
 
 
-    // 根据已有的邻接矩阵 来弄
-    int prim(vector<vector<int>>& graph, int node_n, int& rs_totalweight, vector<int> &rs_parent) {
+    // 根据 边列表 来弄
+    // 它的 relax 是根据 边列表的输入顺序 来弄的, 并不是说输入顺序 一定影响结果什么的
+    //      而我的意思是 edgelist 不像是我们临界矩阵 那样子 所有都写好给你来慢慢玩的
+    //          他就是对每个进来的边 搞来稿去
+    int bellman_ford(vector<vector<int>>& graph, int node_n, int& rs_totalweight, vector<int> &rs_parent) {
         // 假设有100个数字 则 需要101
         // 因为100个数字 意味着 也可能需要 100, 那么idx就需要有100，
         // 所以才是 node_n+1
-        vector<int> minDist(node_n+1, INT_MAX);             //代表的是 每个点 到树的最近距离
+        vector<int> minDist(node_n+1, INT_MAX);
 
         vector<bool> judgeInTree(node_n+1, false);
 
@@ -276,7 +278,7 @@ int main() {
     int rs_weight=0;
 
     // 初始化 图
-    vector<vector<int>> undirectedGraphInts1 = solut1->init_undirectedGraph_ints(node_n,edges.size(), edges);
+    vector<vector<int>> undirectedGraphInts1 = solut1->init_directedGraph_ints(node_n,edges.size(), edges);
     solut1->myOutput_VectorBvecBtBB(undirectedGraphInts1, 0, undirectedGraphInts1.size()-1);
     cout<<endl;
 

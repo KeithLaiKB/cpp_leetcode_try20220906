@@ -62,7 +62,7 @@ using namespace std;
 
 
  *
- * 邻接矩阵
+ * 并查集
 
  */
 
