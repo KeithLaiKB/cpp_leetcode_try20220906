@@ -1,0 +1,782 @@
+[
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t1_TwoSum_past.dir/mysrc/daimakuangxianglu/array/mygroup1_unordermap_and_unorderset/t1_TwoSum_past.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/array/mygroup1_unordermap_and_unorderset/t1_TwoSum_past.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/array/mygroup1_unordermap_and_unorderset/t1_TwoSum_past.cpp",
+  "output": "CMakeFiles/t1_TwoSum_past.dir/mysrc/daimakuangxianglu/array/mygroup1_unordermap_and_unorderset/t1_TwoSum_past.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t1_pre1_t242_ValidAnagram.dir/mysrc/daimakuangxianglu/array/mygroup1_unordermap_and_unorderset/t1_pre1_t242_ValidAnagram.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/array/mygroup1_unordermap_and_unorderset/t1_pre1_t242_ValidAnagram.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/array/mygroup1_unordermap_and_unorderset/t1_pre1_t242_ValidAnagram.cpp",
+  "output": "CMakeFiles/t1_pre1_t242_ValidAnagram.dir/mysrc/daimakuangxianglu/array/mygroup1_unordermap_and_unorderset/t1_pre1_t242_ValidAnagram.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t1_pre1_t242_ValidAnagram_method2.dir/mysrc/daimakuangxianglu/array/mygroup1_unordermap_and_unorderset/t1_pre1_t242_ValidAnagram_method2.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/array/mygroup1_unordermap_and_unorderset/t1_pre1_t242_ValidAnagram_method2.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/array/mygroup1_unordermap_and_unorderset/t1_pre1_t242_ValidAnagram_method2.cpp",
+  "output": "CMakeFiles/t1_pre1_t242_ValidAnagram_method2.dir/mysrc/daimakuangxianglu/array/mygroup1_unordermap_and_unorderset/t1_pre1_t242_ValidAnagram_method2.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t1_pre2_t349_IntersectionofTwoArrays.dir/mysrc/daimakuangxianglu/array/mygroup1_unordermap_and_unorderset/t1_pre2_t349_IntersectionofTwoArrays.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/array/mygroup1_unordermap_and_unorderset/t1_pre2_t349_IntersectionofTwoArrays.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/array/mygroup1_unordermap_and_unorderset/t1_pre2_t349_IntersectionofTwoArrays.cpp",
+  "output": "CMakeFiles/t1_pre2_t349_IntersectionofTwoArrays.dir/mysrc/daimakuangxianglu/array/mygroup1_unordermap_and_unorderset/t1_pre2_t349_IntersectionofTwoArrays.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t121_BestTimeToBuyAndSellStock.dir/mysrc/daimakuangxianglu/array/mygroup2/t121_BestTimeToBuyAndSellStock.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/array/mygroup2/t121_BestTimeToBuyAndSellStock.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/array/mygroup2/t121_BestTimeToBuyAndSellStock.cpp",
+  "output": "CMakeFiles/t121_BestTimeToBuyAndSellStock.dir/mysrc/daimakuangxianglu/array/mygroup2/t121_BestTimeToBuyAndSellStock.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t5_pre1_t647_Palindromic_Substrings.dir/mysrc/daimakuangxianglu/array/mygroup22/t5_pre1_t647_Palindromic_Substrings.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/array/mygroup22/t5_pre1_t647_Palindromic_Substrings.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/array/mygroup22/t5_pre1_t647_Palindromic_Substrings.cpp",
+  "output": "CMakeFiles/t5_pre1_t647_Palindromic_Substrings.dir/mysrc/daimakuangxianglu/array/mygroup22/t5_pre1_t647_Palindromic_Substrings.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t704_BinarySearch.dir/mysrc/daimakuangxianglu/array/seq1_t704_binarysearch/t704_BinarySearch.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/array/seq1_t704_binarysearch/t704_BinarySearch.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/array/seq1_t704_binarysearch/t704_BinarySearch.cpp",
+  "output": "CMakeFiles/t704_BinarySearch.dir/mysrc/daimakuangxianglu/array/seq1_t704_binarysearch/t704_BinarySearch.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t27_RemoveElement.dir/mysrc/daimakuangxianglu/array/seq2_t27_RemoveElement/t27_RemoveElement.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/array/seq2_t27_RemoveElement/t27_RemoveElement.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/array/seq2_t27_RemoveElement/t27_RemoveElement.cpp",
+  "output": "CMakeFiles/t27_RemoveElement.dir/mysrc/daimakuangxianglu/array/seq2_t27_RemoveElement/t27_RemoveElement.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t977_SquaresOfASortedArray.dir/mysrc/daimakuangxianglu/array/seq3_t977_SquaresOfASortedArray/t977_SquaresOfASortedArray.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/array/seq3_t977_SquaresOfASortedArray/t977_SquaresOfASortedArray.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/array/seq3_t977_SquaresOfASortedArray/t977_SquaresOfASortedArray.cpp",
+  "output": "CMakeFiles/t977_SquaresOfASortedArray.dir/mysrc/daimakuangxianglu/array/seq3_t977_SquaresOfASortedArray/t977_SquaresOfASortedArray.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t76_MinimumSizeSubarraySum.dir/mysrc/daimakuangxianglu/array/seq4_t209_MinimumSizeSubarraySum/similar/t76_MinimumSizeSubarraySum.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/array/seq4_t209_MinimumSizeSubarraySum/similar/t76_MinimumSizeSubarraySum.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/array/seq4_t209_MinimumSizeSubarraySum/similar/t76_MinimumSizeSubarraySum.cpp",
+  "output": "CMakeFiles/t76_MinimumSizeSubarraySum.dir/mysrc/daimakuangxianglu/array/seq4_t209_MinimumSizeSubarraySum/similar/t76_MinimumSizeSubarraySum.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t209_MinimumSizeSubarraySum.dir/mysrc/daimakuangxianglu/array/seq4_t209_MinimumSizeSubarraySum/t209_MinimumSizeSubarraySum.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/array/seq4_t209_MinimumSizeSubarraySum/t209_MinimumSizeSubarraySum.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/array/seq4_t209_MinimumSizeSubarraySum/t209_MinimumSizeSubarraySum.cpp",
+  "output": "CMakeFiles/t209_MinimumSizeSubarraySum.dir/mysrc/daimakuangxianglu/array/seq4_t209_MinimumSizeSubarraySum/t209_MinimumSizeSubarraySum.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t209_MinimumSizeSubarraySum_daimakuagnixanglu.dir/mysrc/daimakuangxianglu/array/seq4_t209_MinimumSizeSubarraySum/t209_MinimumSizeSubarraySum_daimakuagnixanglu.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/array/seq4_t209_MinimumSizeSubarraySum/t209_MinimumSizeSubarraySum_daimakuagnixanglu.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/array/seq4_t209_MinimumSizeSubarraySum/t209_MinimumSizeSubarraySum_daimakuagnixanglu.cpp",
+  "output": "CMakeFiles/t209_MinimumSizeSubarraySum_daimakuagnixanglu.dir/mysrc/daimakuangxianglu/array/seq4_t209_MinimumSizeSubarraySum/t209_MinimumSizeSubarraySum_daimakuagnixanglu.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t209_MinimumSizeSubarraySum_leetcode.dir/mysrc/daimakuangxianglu/array/seq4_t209_MinimumSizeSubarraySum/t209_MinimumSizeSubarraySum_leetcode.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/array/seq4_t209_MinimumSizeSubarraySum/t209_MinimumSizeSubarraySum_leetcode.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/array/seq4_t209_MinimumSizeSubarraySum/t209_MinimumSizeSubarraySum_leetcode.cpp",
+  "output": "CMakeFiles/t209_MinimumSizeSubarraySum_leetcode.dir/mysrc/daimakuangxianglu/array/seq4_t209_MinimumSizeSubarraySum/t209_MinimumSizeSubarraySum_leetcode.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t59_SpiralMatrixII.dir/mysrc/daimakuangxianglu/array/seq5_t59_SpiralMatrixII/t59_SpiralMatrixII.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/array/seq5_t59_SpiralMatrixII/t59_SpiralMatrixII.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/array/seq5_t59_SpiralMatrixII/t59_SpiralMatrixII.cpp",
+  "output": "CMakeFiles/t59_SpiralMatrixII.dir/mysrc/daimakuangxianglu/array/seq5_t59_SpiralMatrixII/t59_SpiralMatrixII.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t491_NondecreasingSubsequences.dir/mysrc/daimakuangxianglu/backtracking/seq10_t491_NondecreasingSubsequences/t491_NondecreasingSubsequences.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/backtracking/seq10_t491_NondecreasingSubsequences/t491_NondecreasingSubsequences.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/backtracking/seq10_t491_NondecreasingSubsequences/t491_NondecreasingSubsequences.cpp",
+  "output": "CMakeFiles/t491_NondecreasingSubsequences.dir/mysrc/daimakuangxianglu/backtracking/seq10_t491_NondecreasingSubsequences/t491_NondecreasingSubsequences.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t46_Permutations.dir/mysrc/daimakuangxianglu/backtracking/seq11_t46_Permutations/t46_Permutations.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/backtracking/seq11_t46_Permutations/t46_Permutations.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/backtracking/seq11_t46_Permutations/t46_Permutations.cpp",
+  "output": "CMakeFiles/t46_Permutations.dir/mysrc/daimakuangxianglu/backtracking/seq11_t46_Permutations/t46_Permutations.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t47_PermutationsII.dir/mysrc/daimakuangxianglu/backtracking/seq12_t47_PermutationsII/t47_PermutationsII.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/backtracking/seq12_t47_PermutationsII/t47_PermutationsII.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/backtracking/seq12_t47_PermutationsII/t47_PermutationsII.cpp",
+  "output": "CMakeFiles/t47_PermutationsII.dir/mysrc/daimakuangxianglu/backtracking/seq12_t47_PermutationsII/t47_PermutationsII.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t332_ReconstructItinerary.dir/mysrc/daimakuangxianglu/backtracking/seq13_t332_ReconstructItinerary/t332_ReconstructItinerary.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/backtracking/seq13_t332_ReconstructItinerary/t332_ReconstructItinerary.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/backtracking/seq13_t332_ReconstructItinerary/t332_ReconstructItinerary.cpp",
+  "output": "CMakeFiles/t332_ReconstructItinerary.dir/mysrc/daimakuangxianglu/backtracking/seq13_t332_ReconstructItinerary/t332_ReconstructItinerary.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t51_NQueens.dir/mysrc/daimakuangxianglu/backtracking/seq14_t51_NQueens/t51_NQueens.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/backtracking/seq14_t51_NQueens/t51_NQueens.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/backtracking/seq14_t51_NQueens/t51_NQueens.cpp",
+  "output": "CMakeFiles/t51_NQueens.dir/mysrc/daimakuangxianglu/backtracking/seq14_t51_NQueens/t51_NQueens.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t37_SudokuSolver.dir/mysrc/daimakuangxianglu/backtracking/seq15_t37_SudokuSolver/t37_SudokuSolver.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/backtracking/seq15_t37_SudokuSolver/t37_SudokuSolver.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/backtracking/seq15_t37_SudokuSolver/t37_SudokuSolver.cpp",
+  "output": "CMakeFiles/t37_SudokuSolver.dir/mysrc/daimakuangxianglu/backtracking/seq15_t37_SudokuSolver/t37_SudokuSolver.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t77_Combinations.dir/mysrc/daimakuangxianglu/backtracking/seq1_t77_Combinations/t77_Combinations.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/backtracking/seq1_t77_Combinations/t77_Combinations.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/backtracking/seq1_t77_Combinations/t77_Combinations.cpp",
+  "output": "CMakeFiles/t77_Combinations.dir/mysrc/daimakuangxianglu/backtracking/seq1_t77_Combinations/t77_Combinations.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t216_CombinationSumIII.dir/mysrc/daimakuangxianglu/backtracking/seq2_t216_CombinationSumIII/t216_CombinationSumIII.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/backtracking/seq2_t216_CombinationSumIII/t216_CombinationSumIII.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/backtracking/seq2_t216_CombinationSumIII/t216_CombinationSumIII.cpp",
+  "output": "CMakeFiles/t216_CombinationSumIII.dir/mysrc/daimakuangxianglu/backtracking/seq2_t216_CombinationSumIII/t216_CombinationSumIII.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t17_LetterCombinationsofaPhoneNumber.dir/mysrc/daimakuangxianglu/backtracking/seq3_t17_LetterCombinationsofaPhoneNumber/t17_LetterCombinationsofaPhoneNumber.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/backtracking/seq3_t17_LetterCombinationsofaPhoneNumber/t17_LetterCombinationsofaPhoneNumber.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/backtracking/seq3_t17_LetterCombinationsofaPhoneNumber/t17_LetterCombinationsofaPhoneNumber.cpp",
+  "output": "CMakeFiles/t17_LetterCombinationsofaPhoneNumber.dir/mysrc/daimakuangxianglu/backtracking/seq3_t17_LetterCombinationsofaPhoneNumber/t17_LetterCombinationsofaPhoneNumber.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t39_CombinationSum.dir/mysrc/daimakuangxianglu/backtracking/seq4_t39_CombinationSum/t39_CombinationSum.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/backtracking/seq4_t39_CombinationSum/t39_CombinationSum.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/backtracking/seq4_t39_CombinationSum/t39_CombinationSum.cpp",
+  "output": "CMakeFiles/t39_CombinationSum.dir/mysrc/daimakuangxianglu/backtracking/seq4_t39_CombinationSum/t39_CombinationSum.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t40_CombinationSumII.dir/mysrc/daimakuangxianglu/backtracking/seq5_t40_CombinationSumII/t40_CombinationSumII.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/backtracking/seq5_t40_CombinationSumII/t40_CombinationSumII.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/backtracking/seq5_t40_CombinationSumII/t40_CombinationSumII.cpp",
+  "output": "CMakeFiles/t40_CombinationSumII.dir/mysrc/daimakuangxianglu/backtracking/seq5_t40_CombinationSumII/t40_CombinationSumII.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t131_PalindromePartitioning.dir/mysrc/daimakuangxianglu/backtracking/seq6_t131_PalindromePartitioning/t131_PalindromePartitioning.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/backtracking/seq6_t131_PalindromePartitioning/t131_PalindromePartitioning.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/backtracking/seq6_t131_PalindromePartitioning/t131_PalindromePartitioning.cpp",
+  "output": "CMakeFiles/t131_PalindromePartitioning.dir/mysrc/daimakuangxianglu/backtracking/seq6_t131_PalindromePartitioning/t131_PalindromePartitioning.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t93_RestoreIPAddresses.dir/mysrc/daimakuangxianglu/backtracking/seq7_t93_RestoreIPAddresses/t93_RestoreIPAddresses.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/backtracking/seq7_t93_RestoreIPAddresses/t93_RestoreIPAddresses.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/backtracking/seq7_t93_RestoreIPAddresses/t93_RestoreIPAddresses.cpp",
+  "output": "CMakeFiles/t93_RestoreIPAddresses.dir/mysrc/daimakuangxianglu/backtracking/seq7_t93_RestoreIPAddresses/t93_RestoreIPAddresses.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t78_Subsets.dir/mysrc/daimakuangxianglu/backtracking/seq8_t78_Subsets/t78_Subsets.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/backtracking/seq8_t78_Subsets/t78_Subsets.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/backtracking/seq8_t78_Subsets/t78_Subsets.cpp",
+  "output": "CMakeFiles/t78_Subsets.dir/mysrc/daimakuangxianglu/backtracking/seq8_t78_Subsets/t78_Subsets.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t90_SubsetsII.dir/mysrc/daimakuangxianglu/backtracking/seq9_t90_SubsetsII/t90_SubsetsII.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/backtracking/seq9_t90_SubsetsII/t90_SubsetsII.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/backtracking/seq9_t90_SubsetsII/t90_SubsetsII.cpp",
+  "output": "CMakeFiles/t90_SubsetsII.dir/mysrc/daimakuangxianglu/backtracking/seq9_t90_SubsetsII/t90_SubsetsII.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t226_InvertBinaryTree_levelorder_itera.dir/mysrc/daimakuangxianglu/binarytree/changetree/seq5_t226_InvertBinaryTree/myiteration/t226_InvertBinaryTree_levelorder_itera.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/changetree/seq5_t226_InvertBinaryTree/myiteration/t226_InvertBinaryTree_levelorder_itera.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/changetree/seq5_t226_InvertBinaryTree/myiteration/t226_InvertBinaryTree_levelorder_itera.cpp",
+  "output": "CMakeFiles/t226_InvertBinaryTree_levelorder_itera.dir/mysrc/daimakuangxianglu/binarytree/changetree/seq5_t226_InvertBinaryTree/myiteration/t226_InvertBinaryTree_levelorder_itera.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t226_InvertBinaryTree_preorder_itera.dir/mysrc/daimakuangxianglu/binarytree/changetree/seq5_t226_InvertBinaryTree/myiteration/t226_InvertBinaryTree_preorder_itera.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/changetree/seq5_t226_InvertBinaryTree/myiteration/t226_InvertBinaryTree_preorder_itera.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/changetree/seq5_t226_InvertBinaryTree/myiteration/t226_InvertBinaryTree_preorder_itera.cpp",
+  "output": "CMakeFiles/t226_InvertBinaryTree_preorder_itera.dir/mysrc/daimakuangxianglu/binarytree/changetree/seq5_t226_InvertBinaryTree/myiteration/t226_InvertBinaryTree_preorder_itera.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t226_InvertBinaryTree_preorder_recur.dir/mysrc/daimakuangxianglu/binarytree/changetree/seq5_t226_InvertBinaryTree/myrecursion/t226_InvertBinaryTree_preorder_recur.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/changetree/seq5_t226_InvertBinaryTree/myrecursion/t226_InvertBinaryTree_preorder_recur.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/changetree/seq5_t226_InvertBinaryTree/myrecursion/t226_InvertBinaryTree_preorder_recur.cpp",
+  "output": "CMakeFiles/t226_InvertBinaryTree_preorder_recur.dir/mysrc/daimakuangxianglu/binarytree/changetree/seq5_t226_InvertBinaryTree/myrecursion/t226_InvertBinaryTree_preorder_recur.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t106_ConstructBinaryTreefromInorderandPostorderTraversal.dir/mysrc/daimakuangxianglu/binarytree/constructtree/seq15_t106_ConstructBinaryTreefromInorderandPostorderTraversal/t106_ConstructBinaryTreefromInorderandPostorderTraversal.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/constructtree/seq15_t106_ConstructBinaryTreefromInorderandPostorderTraversal/t106_ConstructBinaryTreefromInorderandPostorderTraversal.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/constructtree/seq15_t106_ConstructBinaryTreefromInorderandPostorderTraversal/t106_ConstructBinaryTreefromInorderandPostorderTraversal.cpp",
+  "output": "CMakeFiles/t106_ConstructBinaryTreefromInorderandPostorderTraversal.dir/mysrc/daimakuangxianglu/binarytree/constructtree/seq15_t106_ConstructBinaryTreefromInorderandPostorderTraversal/t106_ConstructBinaryTreefromInorderandPostorderTraversal.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t654_MaximumBinaryTree.dir/mysrc/daimakuangxianglu/binarytree/constructtree/seq16_t654_MaximumBinaryTree/t654_MaximumBinaryTree.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/constructtree/seq16_t654_MaximumBinaryTree/t654_MaximumBinaryTree.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/constructtree/seq16_t654_MaximumBinaryTree/t654_MaximumBinaryTree.cpp",
+  "output": "CMakeFiles/t654_MaximumBinaryTree.dir/mysrc/daimakuangxianglu/binarytree/constructtree/seq16_t654_MaximumBinaryTree/t654_MaximumBinaryTree.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t617_MergeTwoBinaryTrees.dir/mysrc/daimakuangxianglu/binarytree/constructtree/seq17_t617_MergeTwoBinaryTrees/t617_MergeTwoBinaryTrees.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/constructtree/seq17_t617_MergeTwoBinaryTrees/t617_MergeTwoBinaryTrees.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/constructtree/seq17_t617_MergeTwoBinaryTrees/t617_MergeTwoBinaryTrees.cpp",
+  "output": "CMakeFiles/t617_MergeTwoBinaryTrees.dir/mysrc/daimakuangxianglu/binarytree/constructtree/seq17_t617_MergeTwoBinaryTrees/t617_MergeTwoBinaryTrees.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t701_InsertintoaBinarySearchTree.dir/mysrc/daimakuangxianglu/binarytree/constructtree/seq24_t701_InsertintoaBinarySearchTree/t701_InsertintoaBinarySearchTree.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/constructtree/seq24_t701_InsertintoaBinarySearchTree/t701_InsertintoaBinarySearchTree.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/constructtree/seq24_t701_InsertintoaBinarySearchTree/t701_InsertintoaBinarySearchTree.cpp",
+  "output": "CMakeFiles/t701_InsertintoaBinarySearchTree.dir/mysrc/daimakuangxianglu/binarytree/constructtree/seq24_t701_InsertintoaBinarySearchTree/t701_InsertintoaBinarySearchTree.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t450_DeleteNodeinaBST.dir/mysrc/daimakuangxianglu/binarytree/constructtree/seq25_t450_DeleteNodeinaBST/t450_DeleteNodeinaBST.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/constructtree/seq25_t450_DeleteNodeinaBST/t450_DeleteNodeinaBST.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/constructtree/seq25_t450_DeleteNodeinaBST/t450_DeleteNodeinaBST.cpp",
+  "output": "CMakeFiles/t450_DeleteNodeinaBST.dir/mysrc/daimakuangxianglu/binarytree/constructtree/seq25_t450_DeleteNodeinaBST/t450_DeleteNodeinaBST.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t669_TrimaBinarySearchTree.dir/mysrc/daimakuangxianglu/binarytree/constructtree/seq26_t669_TrimaBinarySearchTree/t669_TrimaBinarySearchTree.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/constructtree/seq26_t669_TrimaBinarySearchTree/t669_TrimaBinarySearchTree.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/constructtree/seq26_t669_TrimaBinarySearchTree/t669_TrimaBinarySearchTree.cpp",
+  "output": "CMakeFiles/t669_TrimaBinarySearchTree.dir/mysrc/daimakuangxianglu/binarytree/constructtree/seq26_t669_TrimaBinarySearchTree/t669_TrimaBinarySearchTree.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t108_ConvertSortedArraytoBinarySearchTree.dir/mysrc/daimakuangxianglu/binarytree/constructtree/seq27_t108_ConvertSortedArraytoBinarySearchTree/t108_ConvertSortedArraytoBinarySearchTree.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/constructtree/seq27_t108_ConvertSortedArraytoBinarySearchTree/t108_ConvertSortedArraytoBinarySearchTree.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/constructtree/seq27_t108_ConvertSortedArraytoBinarySearchTree/t108_ConvertSortedArraytoBinarySearchTree.cpp",
+  "output": "CMakeFiles/t108_ConvertSortedArraytoBinarySearchTree.dir/mysrc/daimakuangxianglu/binarytree/constructtree/seq27_t108_ConvertSortedArraytoBinarySearchTree/t108_ConvertSortedArraytoBinarySearchTree.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t538_ConvertBSTtoGreaterTree.dir/mysrc/daimakuangxianglu/binarytree/constructtree/seq28_t538_ConvertBSTtoGreaterTree/t538_ConvertBSTtoGreaterTree.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/constructtree/seq28_t538_ConvertBSTtoGreaterTree/t538_ConvertBSTtoGreaterTree.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/constructtree/seq28_t538_ConvertBSTtoGreaterTree/t538_ConvertBSTtoGreaterTree.cpp",
+  "output": "CMakeFiles/t538_ConvertBSTtoGreaterTree.dir/mysrc/daimakuangxianglu/binarytree/constructtree/seq28_t538_ConvertBSTtoGreaterTree/t538_ConvertBSTtoGreaterTree.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t102_BinaryTreeLevelorderTraversal_itera.dir/mysrc/daimakuangxianglu/binarytree/mytravasal/myiteration/t102_BinaryTreeLevelorderTraversal_itera.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/mytravasal/myiteration/t102_BinaryTreeLevelorderTraversal_itera.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/mytravasal/myiteration/t102_BinaryTreeLevelorderTraversal_itera.cpp",
+  "output": "CMakeFiles/t102_BinaryTreeLevelorderTraversal_itera.dir/mysrc/daimakuangxianglu/binarytree/mytravasal/myiteration/t102_BinaryTreeLevelorderTraversal_itera.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t144_BinaryTreePreorderTraversal_itera.dir/mysrc/daimakuangxianglu/binarytree/mytravasal/myiteration/t144_BinaryTreePreorderTraversal_itera.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/mytravasal/myiteration/t144_BinaryTreePreorderTraversal_itera.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/mytravasal/myiteration/t144_BinaryTreePreorderTraversal_itera.cpp",
+  "output": "CMakeFiles/t144_BinaryTreePreorderTraversal_itera.dir/mysrc/daimakuangxianglu/binarytree/mytravasal/myiteration/t144_BinaryTreePreorderTraversal_itera.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t145_BinaryTreePostorderTraversal_itera.dir/mysrc/daimakuangxianglu/binarytree/mytravasal/myiteration/t145_BinaryTreePostorderTraversal_itera.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/mytravasal/myiteration/t145_BinaryTreePostorderTraversal_itera.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/mytravasal/myiteration/t145_BinaryTreePostorderTraversal_itera.cpp",
+  "output": "CMakeFiles/t145_BinaryTreePostorderTraversal_itera.dir/mysrc/daimakuangxianglu/binarytree/mytravasal/myiteration/t145_BinaryTreePostorderTraversal_itera.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t94_BinaryTreeInorderTraversal_itera.dir/mysrc/daimakuangxianglu/binarytree/mytravasal/myiteration/t94_BinaryTreeInorderTraversal_itera.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/mytravasal/myiteration/t94_BinaryTreeInorderTraversal_itera.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/mytravasal/myiteration/t94_BinaryTreeInorderTraversal_itera.cpp",
+  "output": "CMakeFiles/t94_BinaryTreeInorderTraversal_itera.dir/mysrc/daimakuangxianglu/binarytree/mytravasal/myiteration/t94_BinaryTreeInorderTraversal_itera.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t144_BinaryTreePreorderTraversal_recur.dir/mysrc/daimakuangxianglu/binarytree/mytravasal/myrecursion/t144_BinaryTreePreorderTraversal_recur.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/mytravasal/myrecursion/t144_BinaryTreePreorderTraversal_recur.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/mytravasal/myrecursion/t144_BinaryTreePreorderTraversal_recur.cpp",
+  "output": "CMakeFiles/t144_BinaryTreePreorderTraversal_recur.dir/mysrc/daimakuangxianglu/binarytree/mytravasal/myrecursion/t144_BinaryTreePreorderTraversal_recur.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t145_BinaryTreePostorderTraversal_recur.dir/mysrc/daimakuangxianglu/binarytree/mytravasal/myrecursion/t145_BinaryTreePostorderTraversal_recur.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/mytravasal/myrecursion/t145_BinaryTreePostorderTraversal_recur.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/mytravasal/myrecursion/t145_BinaryTreePostorderTraversal_recur.cpp",
+  "output": "CMakeFiles/t145_BinaryTreePostorderTraversal_recur.dir/mysrc/daimakuangxianglu/binarytree/mytravasal/myrecursion/t145_BinaryTreePostorderTraversal_recur.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t94_BinaryTreeInorderTraversal_recur.dir/mysrc/daimakuangxianglu/binarytree/mytravasal/myrecursion/t94_BinaryTreeInorderTraversal_recur.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/mytravasal/myrecursion/t94_BinaryTreeInorderTraversal_recur.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/mytravasal/myrecursion/t94_BinaryTreeInorderTraversal_recur.cpp",
+  "output": "CMakeFiles/t94_BinaryTreeInorderTraversal_recur.dir/mysrc/daimakuangxianglu/binarytree/mytravasal/myrecursion/t94_BinaryTreeInorderTraversal_recur.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t257_BinaryTreePaths.dir/mysrc/daimakuangxianglu/binarytree/traversaltree/seq11_t257_BinaryTreePaths/t257_BinaryTreePaths.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/traversaltree/seq11_t257_BinaryTreePaths/t257_BinaryTreePaths.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/traversaltree/seq11_t257_BinaryTreePaths/t257_BinaryTreePaths.cpp",
+  "output": "CMakeFiles/t257_BinaryTreePaths.dir/mysrc/daimakuangxianglu/binarytree/traversaltree/seq11_t257_BinaryTreePaths/t257_BinaryTreePaths.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t513_FindBottomLeftTreeValue.dir/mysrc/daimakuangxianglu/binarytree/traversaltree/seq13_t513_FindBottomLeftTreeValue/t513_FindBottomLeftTreeValue.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/traversaltree/seq13_t513_FindBottomLeftTreeValue/t513_FindBottomLeftTreeValue.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/traversaltree/seq13_t513_FindBottomLeftTreeValue/t513_FindBottomLeftTreeValue.cpp",
+  "output": "CMakeFiles/t513_FindBottomLeftTreeValue.dir/mysrc/daimakuangxianglu/binarytree/traversaltree/seq13_t513_FindBottomLeftTreeValue/t513_FindBottomLeftTreeValue.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t700_SearchInABinarySearchTree.dir/mysrc/daimakuangxianglu/binarytree/traversaltree/seq18_t700_SearchInABinarySearchTree/t700_SearchInABinarySearchTree.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/traversaltree/seq18_t700_SearchInABinarySearchTree/t700_SearchInABinarySearchTree.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/traversaltree/seq18_t700_SearchInABinarySearchTree/t700_SearchInABinarySearchTree.cpp",
+  "output": "CMakeFiles/t700_SearchInABinarySearchTree.dir/mysrc/daimakuangxianglu/binarytree/traversaltree/seq18_t700_SearchInABinarySearchTree/t700_SearchInABinarySearchTree.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t501_FindModeinBinarySearchTree.dir/mysrc/daimakuangxianglu/binarytree/traversaltree/seq21_t501_FindModeinBinarySearchTree/t501_FindModeinBinarySearchTree.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/traversaltree/seq21_t501_FindModeinBinarySearchTree/t501_FindModeinBinarySearchTree.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/traversaltree/seq21_t501_FindModeinBinarySearchTree/t501_FindModeinBinarySearchTree.cpp",
+  "output": "CMakeFiles/t501_FindModeinBinarySearchTree.dir/mysrc/daimakuangxianglu/binarytree/traversaltree/seq21_t501_FindModeinBinarySearchTree/t501_FindModeinBinarySearchTree.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t236_LowestCommonAncestorofaBinaryTree.dir/mysrc/daimakuangxianglu/binarytree/traversaltree/seq22_t236_LowestCommonAncestorofaBinaryTree/t236_LowestCommonAncestorofaBinaryTree.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/traversaltree/seq22_t236_LowestCommonAncestorofaBinaryTree/t236_LowestCommonAncestorofaBinaryTree.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/traversaltree/seq22_t236_LowestCommonAncestorofaBinaryTree/t236_LowestCommonAncestorofaBinaryTree.cpp",
+  "output": "CMakeFiles/t236_LowestCommonAncestorofaBinaryTree.dir/mysrc/daimakuangxianglu/binarytree/traversaltree/seq22_t236_LowestCommonAncestorofaBinaryTree/t236_LowestCommonAncestorofaBinaryTree.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t235_LowestCommonAncestorofaBinarySearchTree.dir/mysrc/daimakuangxianglu/binarytree/traversaltree/seq23_t235_LowestCommonAncestorofaBinarySearchTree/t235_LowestCommonAncestorofaBinarySearchTree.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/traversaltree/seq23_t235_LowestCommonAncestorofaBinarySearchTree/t235_LowestCommonAncestorofaBinarySearchTree.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/traversaltree/seq23_t235_LowestCommonAncestorofaBinarySearchTree/t235_LowestCommonAncestorofaBinarySearchTree.cpp",
+  "output": "CMakeFiles/t235_LowestCommonAncestorofaBinarySearchTree.dir/mysrc/daimakuangxianglu/binarytree/traversaltree/seq23_t235_LowestCommonAncestorofaBinarySearchTree/t235_LowestCommonAncestorofaBinarySearchTree.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t110_BalancedBinaryTree.dir/mysrc/daimakuangxianglu/binarytree/validatetree/seq10_t110_BalancedBinaryTree/t110_BalancedBinaryTree.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/validatetree/seq10_t110_BalancedBinaryTree/t110_BalancedBinaryTree.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/validatetree/seq10_t110_BalancedBinaryTree/t110_BalancedBinaryTree.cpp",
+  "output": "CMakeFiles/t110_BalancedBinaryTree.dir/mysrc/daimakuangxianglu/binarytree/validatetree/seq10_t110_BalancedBinaryTree/t110_BalancedBinaryTree.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t404_SumofLeftLeaves.dir/mysrc/daimakuangxianglu/binarytree/validatetree/seq12_t404_SumofLeftLeaves/t404_SumofLeftLeaves.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/validatetree/seq12_t404_SumofLeftLeaves/t404_SumofLeftLeaves.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/validatetree/seq12_t404_SumofLeftLeaves/t404_SumofLeftLeaves.cpp",
+  "output": "CMakeFiles/t404_SumofLeftLeaves.dir/mysrc/daimakuangxianglu/binarytree/validatetree/seq12_t404_SumofLeftLeaves/t404_SumofLeftLeaves.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t112_PathSum.dir/mysrc/daimakuangxianglu/binarytree/validatetree/seq14_t112_PathSum/t112_PathSum.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/validatetree/seq14_t112_PathSum/t112_PathSum.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/validatetree/seq14_t112_PathSum/t112_PathSum.cpp",
+  "output": "CMakeFiles/t112_PathSum.dir/mysrc/daimakuangxianglu/binarytree/validatetree/seq14_t112_PathSum/t112_PathSum.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t98_ValidateBinarySearchTree.dir/mysrc/daimakuangxianglu/binarytree/validatetree/seq19_t98_ValidateBinarySearchTree/t98_ValidateBinarySearchTree.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/validatetree/seq19_t98_ValidateBinarySearchTree/t98_ValidateBinarySearchTree.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/validatetree/seq19_t98_ValidateBinarySearchTree/t98_ValidateBinarySearchTree.cpp",
+  "output": "CMakeFiles/t98_ValidateBinarySearchTree.dir/mysrc/daimakuangxianglu/binarytree/validatetree/seq19_t98_ValidateBinarySearchTree/t98_ValidateBinarySearchTree.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t530_MinimumAbsoluteDifferenceinBST.dir/mysrc/daimakuangxianglu/binarytree/validatetree/seq20_t530_MinimumAbsoluteDifferenceinBST/t530_MinimumAbsoluteDifferenceinBST.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/validatetree/seq20_t530_MinimumAbsoluteDifferenceinBST/t530_MinimumAbsoluteDifferenceinBST.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/validatetree/seq20_t530_MinimumAbsoluteDifferenceinBST/t530_MinimumAbsoluteDifferenceinBST.cpp",
+  "output": "CMakeFiles/t530_MinimumAbsoluteDifferenceinBST.dir/mysrc/daimakuangxianglu/binarytree/validatetree/seq20_t530_MinimumAbsoluteDifferenceinBST/t530_MinimumAbsoluteDifferenceinBST.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t101_SymmetricTree.dir/mysrc/daimakuangxianglu/binarytree/validatetree/seq6_t101_SymmetricTree/t101_SymmetricTree.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/validatetree/seq6_t101_SymmetricTree/t101_SymmetricTree.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/validatetree/seq6_t101_SymmetricTree/t101_SymmetricTree.cpp",
+  "output": "CMakeFiles/t101_SymmetricTree.dir/mysrc/daimakuangxianglu/binarytree/validatetree/seq6_t101_SymmetricTree/t101_SymmetricTree.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t104_MaximumDepthOfBinaryTree.dir/mysrc/daimakuangxianglu/binarytree/validatetree/seq7_t104_MaximumDepthOfBinaryTree/t104_MaximumDepthOfBinaryTree.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/validatetree/seq7_t104_MaximumDepthOfBinaryTree/t104_MaximumDepthOfBinaryTree.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/validatetree/seq7_t104_MaximumDepthOfBinaryTree/t104_MaximumDepthOfBinaryTree.cpp",
+  "output": "CMakeFiles/t104_MaximumDepthOfBinaryTree.dir/mysrc/daimakuangxianglu/binarytree/validatetree/seq7_t104_MaximumDepthOfBinaryTree/t104_MaximumDepthOfBinaryTree.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t111_MinimumDepthOfBinaryTree.dir/mysrc/daimakuangxianglu/binarytree/validatetree/seq8_t111_MinimumDepthOfBinaryTree/t111_MinimumDepthOfBinaryTree.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/validatetree/seq8_t111_MinimumDepthOfBinaryTree/t111_MinimumDepthOfBinaryTree.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/validatetree/seq8_t111_MinimumDepthOfBinaryTree/t111_MinimumDepthOfBinaryTree.cpp",
+  "output": "CMakeFiles/t111_MinimumDepthOfBinaryTree.dir/mysrc/daimakuangxianglu/binarytree/validatetree/seq8_t111_MinimumDepthOfBinaryTree/t111_MinimumDepthOfBinaryTree.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t222_CountCompleteTreeNodes.dir/mysrc/daimakuangxianglu/binarytree/validatetree/seq9_t222_CountCompleteTreeNodes/t222_CountCompleteTreeNodes.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/validatetree/seq9_t222_CountCompleteTreeNodes/t222_CountCompleteTreeNodes.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/binarytree/validatetree/seq9_t222_CountCompleteTreeNodes/t222_CountCompleteTreeNodes.cpp",
+  "output": "CMakeFiles/t222_CountCompleteTreeNodes.dir/mysrc/daimakuangxianglu/binarytree/validatetree/seq9_t222_CountCompleteTreeNodes/t222_CountCompleteTreeNodes.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/kamacoder105_CheckFullReachabilityFromNodeOne_dfs.dir/mysrc/daimakuangxianglu/graph/seq10_kamacoder105_CheckFullReachabilityFromNodeOne/kamacoder105_CheckFullReachabilityFromNodeOne_dfs.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/graph/seq10_kamacoder105_CheckFullReachabilityFromNodeOne/kamacoder105_CheckFullReachabilityFromNodeOne_dfs.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/graph/seq10_kamacoder105_CheckFullReachabilityFromNodeOne/kamacoder105_CheckFullReachabilityFromNodeOne_dfs.cpp",
+  "output": "CMakeFiles/kamacoder105_CheckFullReachabilityFromNodeOne_dfs.dir/mysrc/daimakuangxianglu/graph/seq10_kamacoder105_CheckFullReachabilityFromNodeOne/kamacoder105_CheckFullReachabilityFromNodeOne_dfs.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/kamacoder107_CheckReachabilityBetweenTwoNodes.dir/mysrc/daimakuangxianglu/graph/seq11_kamacoder107_CheckReachabilityBetweenTwoNodes/kamacoder107_CheckReachabilityBetweenTwoNodes.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/graph/seq11_kamacoder107_CheckReachabilityBetweenTwoNodes/kamacoder107_CheckReachabilityBetweenTwoNodes.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/graph/seq11_kamacoder107_CheckReachabilityBetweenTwoNodes/kamacoder107_CheckReachabilityBetweenTwoNodes.cpp",
+  "output": "CMakeFiles/kamacoder107_CheckReachabilityBetweenTwoNodes.dir/mysrc/daimakuangxianglu/graph/seq11_kamacoder107_CheckReachabilityBetweenTwoNodes/kamacoder107_CheckReachabilityBetweenTwoNodes.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/kamacoder108_GetLastRedundantEdge.dir/mysrc/daimakuangxianglu/graph/seq12_kamacoder108_GetLastRedundantEdge/kamacoder108_GetLastRedundantEdge.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/graph/seq12_kamacoder108_GetLastRedundantEdge/kamacoder108_GetLastRedundantEdge.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/graph/seq12_kamacoder108_GetLastRedundantEdge/kamacoder108_GetLastRedundantEdge.cpp",
+  "output": "CMakeFiles/kamacoder108_GetLastRedundantEdge.dir/mysrc/daimakuangxianglu/graph/seq12_kamacoder108_GetLastRedundantEdge/kamacoder108_GetLastRedundantEdge.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/kamacoder109_GetLastRedundantEdgeII.dir/mysrc/daimakuangxianglu/graph/seq13_kamacoder109_GetLastRedundantEdgeII/kamacoder109_GetLastRedundantEdgeII.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/graph/seq13_kamacoder109_GetLastRedundantEdgeII/kamacoder109_GetLastRedundantEdgeII.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/graph/seq13_kamacoder109_GetLastRedundantEdgeII/kamacoder109_GetLastRedundantEdgeII.cpp",
+  "output": "CMakeFiles/kamacoder109_GetLastRedundantEdgeII.dir/mysrc/daimakuangxianglu/graph/seq13_kamacoder109_GetLastRedundantEdgeII/kamacoder109_GetLastRedundantEdgeII.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/kamacoder53_TreasureHunt_kruskal.dir/mysrc/daimakuangxianglu/graph/seq14_kamacoder53_TreasureHunt/kamacoder53_TreasureHunt_kruskal.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/graph/seq14_kamacoder53_TreasureHunt/kamacoder53_TreasureHunt_kruskal.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/graph/seq14_kamacoder53_TreasureHunt/kamacoder53_TreasureHunt_kruskal.cpp",
+  "output": "CMakeFiles/kamacoder53_TreasureHunt_kruskal.dir/mysrc/daimakuangxianglu/graph/seq14_kamacoder53_TreasureHunt/kamacoder53_TreasureHunt_kruskal.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/kamacoder53_TreasureHunt_prim.dir/mysrc/daimakuangxianglu/graph/seq14_kamacoder53_TreasureHunt/kamacoder53_TreasureHunt_prim.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/graph/seq14_kamacoder53_TreasureHunt/kamacoder53_TreasureHunt_prim.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/graph/seq14_kamacoder53_TreasureHunt/kamacoder53_TreasureHunt_prim.cpp",
+  "output": "CMakeFiles/kamacoder53_TreasureHunt_prim.dir/mysrc/daimakuangxianglu/graph/seq14_kamacoder53_TreasureHunt/kamacoder53_TreasureHunt_prim.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/kamacoder96_SingleSourceShortestPathWithNegativeWeights_bellmanford.dir/mysrc/daimakuangxianglu/graph/seq15_kamacoder96_SingleSourceShortestPathWithNegativeWeights/kamacoder96_SingleSourceShortestPathWithNegativeWeights_bellmanford.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/graph/seq15_kamacoder96_SingleSourceShortestPathWithNegativeWeights/kamacoder96_SingleSourceShortestPathWithNegativeWeights_bellmanford.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/graph/seq15_kamacoder96_SingleSourceShortestPathWithNegativeWeights/kamacoder96_SingleSourceShortestPathWithNegativeWeights_bellmanford.cpp",
+  "output": "CMakeFiles/kamacoder96_SingleSourceShortestPathWithNegativeWeights_bellmanford.dir/mysrc/daimakuangxianglu/graph/seq15_kamacoder96_SingleSourceShortestPathWithNegativeWeights/kamacoder96_SingleSourceShortestPathWithNegativeWeights_bellmanford.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/kamacoder96_TopologicalSortingOfADirectedGraph.dir/mysrc/daimakuangxianglu/graph/seq15_kamacoder96_TopologicalSortingOfADirectedGraph/kamacoder96_TopologicalSortingOfADirectedGraph.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/graph/seq15_kamacoder96_TopologicalSortingOfADirectedGraph/kamacoder96_TopologicalSortingOfADirectedGraph.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/graph/seq15_kamacoder96_TopologicalSortingOfADirectedGraph/kamacoder96_TopologicalSortingOfADirectedGraph.cpp",
+  "output": "CMakeFiles/kamacoder96_TopologicalSortingOfADirectedGraph.dir/mysrc/daimakuangxianglu/graph/seq15_kamacoder96_TopologicalSortingOfADirectedGraph/kamacoder96_TopologicalSortingOfADirectedGraph.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/kamacoder98_AllReachablePath_adjacencylist_veclist.dir/mysrc/daimakuangxianglu/graph/seq1_kamacoder98_AllReachablePath/kamacoder98_AllReachablePath_adjacencylist_veclist.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/graph/seq1_kamacoder98_AllReachablePath/kamacoder98_AllReachablePath_adjacencylist_veclist.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/graph/seq1_kamacoder98_AllReachablePath/kamacoder98_AllReachablePath_adjacencylist_veclist.cpp",
+  "output": "CMakeFiles/kamacoder98_AllReachablePath_adjacencylist_veclist.dir/mysrc/daimakuangxianglu/graph/seq1_kamacoder98_AllReachablePath/kamacoder98_AllReachablePath_adjacencylist_veclist.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/kamacoder98_AllReachablePath_adjacencylist_vecvec.dir/mysrc/daimakuangxianglu/graph/seq1_kamacoder98_AllReachablePath/kamacoder98_AllReachablePath_adjacencylist_vecvec.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/graph/seq1_kamacoder98_AllReachablePath/kamacoder98_AllReachablePath_adjacencylist_vecvec.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/graph/seq1_kamacoder98_AllReachablePath/kamacoder98_AllReachablePath_adjacencylist_vecvec.cpp",
+  "output": "CMakeFiles/kamacoder98_AllReachablePath_adjacencylist_vecvec.dir/mysrc/daimakuangxianglu/graph/seq1_kamacoder98_AllReachablePath/kamacoder98_AllReachablePath_adjacencylist_vecvec.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/kamacoder98_AllReachablePath_adjacencymatrix.dir/mysrc/daimakuangxianglu/graph/seq1_kamacoder98_AllReachablePath/kamacoder98_AllReachablePath_adjacencymatrix.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/graph/seq1_kamacoder98_AllReachablePath/kamacoder98_AllReachablePath_adjacencymatrix.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/graph/seq1_kamacoder98_AllReachablePath/kamacoder98_AllReachablePath_adjacencymatrix.cpp",
+  "output": "CMakeFiles/kamacoder98_AllReachablePath_adjacencymatrix.dir/mysrc/daimakuangxianglu/graph/seq1_kamacoder98_AllReachablePath/kamacoder98_AllReachablePath_adjacencymatrix.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/kamacoder99_NumberOfIsland_bfs.dir/mysrc/daimakuangxianglu/graph/seq2_kamacoder99_NumberOfIsland/kamacoder99_NumberOfIsland_bfs.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/graph/seq2_kamacoder99_NumberOfIsland/kamacoder99_NumberOfIsland_bfs.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/graph/seq2_kamacoder99_NumberOfIsland/kamacoder99_NumberOfIsland_bfs.cpp",
+  "output": "CMakeFiles/kamacoder99_NumberOfIsland_bfs.dir/mysrc/daimakuangxianglu/graph/seq2_kamacoder99_NumberOfIsland/kamacoder99_NumberOfIsland_bfs.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/kamacoder99_NumberOfIsland_dfs.dir/mysrc/daimakuangxianglu/graph/seq2_kamacoder99_NumberOfIsland/kamacoder99_NumberOfIsland_dfs.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/graph/seq2_kamacoder99_NumberOfIsland/kamacoder99_NumberOfIsland_dfs.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/graph/seq2_kamacoder99_NumberOfIsland/kamacoder99_NumberOfIsland_dfs.cpp",
+  "output": "CMakeFiles/kamacoder99_NumberOfIsland_dfs.dir/mysrc/daimakuangxianglu/graph/seq2_kamacoder99_NumberOfIsland/kamacoder99_NumberOfIsland_dfs.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/kamacoder100_MaximumAreaOfIsland_bfs.dir/mysrc/daimakuangxianglu/graph/seq3_kamacoder100_MaximumAreaOfIsland/kamacoder100_MaximumAreaOfIsland_bfs.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/graph/seq3_kamacoder100_MaximumAreaOfIsland/kamacoder100_MaximumAreaOfIsland_bfs.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/graph/seq3_kamacoder100_MaximumAreaOfIsland/kamacoder100_MaximumAreaOfIsland_bfs.cpp",
+  "output": "CMakeFiles/kamacoder100_MaximumAreaOfIsland_bfs.dir/mysrc/daimakuangxianglu/graph/seq3_kamacoder100_MaximumAreaOfIsland/kamacoder100_MaximumAreaOfIsland_bfs.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/kamacoder100_MaximumAreaOfIsland_dfs.dir/mysrc/daimakuangxianglu/graph/seq3_kamacoder100_MaximumAreaOfIsland/kamacoder100_MaximumAreaOfIsland_dfs.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/graph/seq3_kamacoder100_MaximumAreaOfIsland/kamacoder100_MaximumAreaOfIsland_dfs.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/graph/seq3_kamacoder100_MaximumAreaOfIsland/kamacoder100_MaximumAreaOfIsland_dfs.cpp",
+  "output": "CMakeFiles/kamacoder100_MaximumAreaOfIsland_dfs.dir/mysrc/daimakuangxianglu/graph/seq3_kamacoder100_MaximumAreaOfIsland/kamacoder100_MaximumAreaOfIsland_dfs.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/kamacoder101_TotalAreaOfAllIsolatedIslands_bfs.dir/mysrc/daimakuangxianglu/graph/seq4_kamacoder101_TotalAreaOfAllIsolatedIslands/kamacoder101_TotalAreaOfAllIsolatedIslands_bfs.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/graph/seq4_kamacoder101_TotalAreaOfAllIsolatedIslands/kamacoder101_TotalAreaOfAllIsolatedIslands_bfs.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/graph/seq4_kamacoder101_TotalAreaOfAllIsolatedIslands/kamacoder101_TotalAreaOfAllIsolatedIslands_bfs.cpp",
+  "output": "CMakeFiles/kamacoder101_TotalAreaOfAllIsolatedIslands_bfs.dir/mysrc/daimakuangxianglu/graph/seq4_kamacoder101_TotalAreaOfAllIsolatedIslands/kamacoder101_TotalAreaOfAllIsolatedIslands_bfs.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/kamacoder101_TotalAreaOfAllIsolatedIslands_dfs.dir/mysrc/daimakuangxianglu/graph/seq4_kamacoder101_TotalAreaOfAllIsolatedIslands/kamacoder101_TotalAreaOfAllIsolatedIslands_dfs.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/graph/seq4_kamacoder101_TotalAreaOfAllIsolatedIslands/kamacoder101_TotalAreaOfAllIsolatedIslands_dfs.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/graph/seq4_kamacoder101_TotalAreaOfAllIsolatedIslands/kamacoder101_TotalAreaOfAllIsolatedIslands_dfs.cpp",
+  "output": "CMakeFiles/kamacoder101_TotalAreaOfAllIsolatedIslands_dfs.dir/mysrc/daimakuangxianglu/graph/seq4_kamacoder101_TotalAreaOfAllIsolatedIslands/kamacoder101_TotalAreaOfAllIsolatedIslands_dfs.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/kamacoder102_RemainingIslandsAfterSubmersion_bfs.dir/mysrc/daimakuangxianglu/graph/seq5_kamacoder102_RemainingIslandsAfterSubmersion/kamacoder102_RemainingIslandsAfterSubmersion_bfs.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/graph/seq5_kamacoder102_RemainingIslandsAfterSubmersion/kamacoder102_RemainingIslandsAfterSubmersion_bfs.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/graph/seq5_kamacoder102_RemainingIslandsAfterSubmersion/kamacoder102_RemainingIslandsAfterSubmersion_bfs.cpp",
+  "output": "CMakeFiles/kamacoder102_RemainingIslandsAfterSubmersion_bfs.dir/mysrc/daimakuangxianglu/graph/seq5_kamacoder102_RemainingIslandsAfterSubmersion/kamacoder102_RemainingIslandsAfterSubmersion_bfs.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/kamacoder102_RemainingIslandsAfterSubmersion_dfs.dir/mysrc/daimakuangxianglu/graph/seq5_kamacoder102_RemainingIslandsAfterSubmersion/kamacoder102_RemainingIslandsAfterSubmersion_dfs.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/graph/seq5_kamacoder102_RemainingIslandsAfterSubmersion/kamacoder102_RemainingIslandsAfterSubmersion_dfs.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/graph/seq5_kamacoder102_RemainingIslandsAfterSubmersion/kamacoder102_RemainingIslandsAfterSubmersion_dfs.cpp",
+  "output": "CMakeFiles/kamacoder102_RemainingIslandsAfterSubmersion_dfs.dir/mysrc/daimakuangxianglu/graph/seq5_kamacoder102_RemainingIslandsAfterSubmersion/kamacoder102_RemainingIslandsAfterSubmersion_dfs.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/kamacoder103_DualBoundaryWaterFlow_dfs.dir/mysrc/daimakuangxianglu/graph/seq6_kamacoder103_DualBoundaryWaterFlow/kamacoder103_DualBoundaryWaterFlow_dfs.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/graph/seq6_kamacoder103_DualBoundaryWaterFlow/kamacoder103_DualBoundaryWaterFlow_dfs.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/graph/seq6_kamacoder103_DualBoundaryWaterFlow/kamacoder103_DualBoundaryWaterFlow_dfs.cpp",
+  "output": "CMakeFiles/kamacoder103_DualBoundaryWaterFlow_dfs.dir/mysrc/daimakuangxianglu/graph/seq6_kamacoder103_DualBoundaryWaterFlow/kamacoder103_DualBoundaryWaterFlow_dfs.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/kamacoder104_GetLargestIslandAfterOneFlip_dfs.dir/mysrc/daimakuangxianglu/graph/seq7_kamacoder104_GetLargestIslandAfterOneFlip/kamacoder104_GetLargestIslandAfterOneFlip_dfs.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/graph/seq7_kamacoder104_GetLargestIslandAfterOneFlip/kamacoder104_GetLargestIslandAfterOneFlip_dfs.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/graph/seq7_kamacoder104_GetLargestIslandAfterOneFlip/kamacoder104_GetLargestIslandAfterOneFlip_dfs.cpp",
+  "output": "CMakeFiles/kamacoder104_GetLargestIslandAfterOneFlip_dfs.dir/mysrc/daimakuangxianglu/graph/seq7_kamacoder104_GetLargestIslandAfterOneFlip/kamacoder104_GetLargestIslandAfterOneFlip_dfs.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/kamacoder106_IslandPerimeter.dir/mysrc/daimakuangxianglu/graph/seq8_kamacoder106_IslandPerimeter/kamacoder106_IslandPerimeter.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/graph/seq8_kamacoder106_IslandPerimeter/kamacoder106_IslandPerimeter.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/graph/seq8_kamacoder106_IslandPerimeter/kamacoder106_IslandPerimeter.cpp",
+  "output": "CMakeFiles/kamacoder106_IslandPerimeter.dir/mysrc/daimakuangxianglu/graph/seq8_kamacoder106_IslandPerimeter/kamacoder106_IslandPerimeter.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/kamacoder110_WordLadderTransformation_bfs.dir/mysrc/daimakuangxianglu/graph/seq9_kamacoder110_WordLadderTransformation/kamacoder110_WordLadderTransformation_bfs.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/graph/seq9_kamacoder110_WordLadderTransformation/kamacoder110_WordLadderTransformation_bfs.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/graph/seq9_kamacoder110_WordLadderTransformation/kamacoder110_WordLadderTransformation_bfs.cpp",
+  "output": "CMakeFiles/kamacoder110_WordLadderTransformation_bfs.dir/mysrc/daimakuangxianglu/graph/seq9_kamacoder110_WordLadderTransformation/kamacoder110_WordLadderTransformation_bfs.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t860_LemonadeChange.dir/mysrc/daimakuangxianglu/greedy/seq10_t860_LemonadeChange/t860_LemonadeChange.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/greedy/seq10_t860_LemonadeChange/t860_LemonadeChange.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/greedy/seq10_t860_LemonadeChange/t860_LemonadeChange.cpp",
+  "output": "CMakeFiles/t860_LemonadeChange.dir/mysrc/daimakuangxianglu/greedy/seq10_t860_LemonadeChange/t860_LemonadeChange.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t406_QueueReconstructionbyHeight.dir/mysrc/daimakuangxianglu/greedy/seq11_t406_QueueReconstructionbyHeight/t406_QueueReconstructionbyHeight.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/greedy/seq11_t406_QueueReconstructionbyHeight/t406_QueueReconstructionbyHeight.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/greedy/seq11_t406_QueueReconstructionbyHeight/t406_QueueReconstructionbyHeight.cpp",
+  "output": "CMakeFiles/t406_QueueReconstructionbyHeight.dir/mysrc/daimakuangxianglu/greedy/seq11_t406_QueueReconstructionbyHeight/t406_QueueReconstructionbyHeight.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t452_MinimumNumberofArrowstoBurstBalloons.dir/mysrc/daimakuangxianglu/greedy/seq12_t452_MinimumNumberofArrowstoBurstBalloons/t452_MinimumNumberofArrowstoBurstBalloons.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/greedy/seq12_t452_MinimumNumberofArrowstoBurstBalloons/t452_MinimumNumberofArrowstoBurstBalloons.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/greedy/seq12_t452_MinimumNumberofArrowstoBurstBalloons/t452_MinimumNumberofArrowstoBurstBalloons.cpp",
+  "output": "CMakeFiles/t452_MinimumNumberofArrowstoBurstBalloons.dir/mysrc/daimakuangxianglu/greedy/seq12_t452_MinimumNumberofArrowstoBurstBalloons/t452_MinimumNumberofArrowstoBurstBalloons.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t435_NonoverlappingIntervals.dir/mysrc/daimakuangxianglu/greedy/seq13_t435_NonoverlappingIntervals/t435_NonoverlappingIntervals.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/greedy/seq13_t435_NonoverlappingIntervals/t435_NonoverlappingIntervals.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/greedy/seq13_t435_NonoverlappingIntervals/t435_NonoverlappingIntervals.cpp",
+  "output": "CMakeFiles/t435_NonoverlappingIntervals.dir/mysrc/daimakuangxianglu/greedy/seq13_t435_NonoverlappingIntervals/t435_NonoverlappingIntervals.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t763_PartitionLabels.dir/mysrc/daimakuangxianglu/greedy/seq14_t763_PartitionLabels/t763_PartitionLabels.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/greedy/seq14_t763_PartitionLabels/t763_PartitionLabels.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/greedy/seq14_t763_PartitionLabels/t763_PartitionLabels.cpp",
+  "output": "CMakeFiles/t763_PartitionLabels.dir/mysrc/daimakuangxianglu/greedy/seq14_t763_PartitionLabels/t763_PartitionLabels.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t56_MergeIntervals.dir/mysrc/daimakuangxianglu/greedy/seq15_t56_MergeIntervals/t56_MergeIntervals.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/greedy/seq15_t56_MergeIntervals/t56_MergeIntervals.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/greedy/seq15_t56_MergeIntervals/t56_MergeIntervals.cpp",
+  "output": "CMakeFiles/t56_MergeIntervals.dir/mysrc/daimakuangxianglu/greedy/seq15_t56_MergeIntervals/t56_MergeIntervals.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t738_MonotoneIncreasingDigits.dir/mysrc/daimakuangxianglu/greedy/seq16_t738_MonotoneIncreasingDigits/t738_MonotoneIncreasingDigits.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/greedy/seq16_t738_MonotoneIncreasingDigits/t738_MonotoneIncreasingDigits.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/greedy/seq16_t738_MonotoneIncreasingDigits/t738_MonotoneIncreasingDigits.cpp",
+  "output": "CMakeFiles/t738_MonotoneIncreasingDigits.dir/mysrc/daimakuangxianglu/greedy/seq16_t738_MonotoneIncreasingDigits/t738_MonotoneIncreasingDigits.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t968_BinaryTreeCameras.dir/mysrc/daimakuangxianglu/greedy/seq17_t968_BinaryTreeCameras/t968_BinaryTreeCameras.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/greedy/seq17_t968_BinaryTreeCameras/t968_BinaryTreeCameras.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/greedy/seq17_t968_BinaryTreeCameras/t968_BinaryTreeCameras.cpp",
+  "output": "CMakeFiles/t968_BinaryTreeCameras.dir/mysrc/daimakuangxianglu/greedy/seq17_t968_BinaryTreeCameras/t968_BinaryTreeCameras.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t455_AssignCookies.dir/mysrc/daimakuangxianglu/greedy/seq1_t455_AssignCookies/t455_AssignCookies.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/greedy/seq1_t455_AssignCookies/t455_AssignCookies.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/greedy/seq1_t455_AssignCookies/t455_AssignCookies.cpp",
+  "output": "CMakeFiles/t455_AssignCookies.dir/mysrc/daimakuangxianglu/greedy/seq1_t455_AssignCookies/t455_AssignCookies.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t376_WiggleSubsequence.dir/mysrc/daimakuangxianglu/greedy/seq2_t376_WiggleSubsequence/t376_WiggleSubsequence.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/greedy/seq2_t376_WiggleSubsequence/t376_WiggleSubsequence.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/greedy/seq2_t376_WiggleSubsequence/t376_WiggleSubsequence.cpp",
+  "output": "CMakeFiles/t376_WiggleSubsequence.dir/mysrc/daimakuangxianglu/greedy/seq2_t376_WiggleSubsequence/t376_WiggleSubsequence.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t53_MaximumSubarray.dir/mysrc/daimakuangxianglu/greedy/seq3_t53_MaximumSubarray/t53_MaximumSubarray.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/greedy/seq3_t53_MaximumSubarray/t53_MaximumSubarray.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/greedy/seq3_t53_MaximumSubarray/t53_MaximumSubarray.cpp",
+  "output": "CMakeFiles/t53_MaximumSubarray.dir/mysrc/daimakuangxianglu/greedy/seq3_t53_MaximumSubarray/t53_MaximumSubarray.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t122_BestTimetoBuyandSellStockII_greedy.dir/mysrc/daimakuangxianglu/greedy/seq4_t122_BestTimetoBuyandSellStockII_greedy/t122_BestTimetoBuyandSellStockII_greedy.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/greedy/seq4_t122_BestTimetoBuyandSellStockII_greedy/t122_BestTimetoBuyandSellStockII_greedy.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/greedy/seq4_t122_BestTimetoBuyandSellStockII_greedy/t122_BestTimetoBuyandSellStockII_greedy.cpp",
+  "output": "CMakeFiles/t122_BestTimetoBuyandSellStockII_greedy.dir/mysrc/daimakuangxianglu/greedy/seq4_t122_BestTimetoBuyandSellStockII_greedy/t122_BestTimetoBuyandSellStockII_greedy.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t55_JumpGame.dir/mysrc/daimakuangxianglu/greedy/seq5_t55_JumpGame/t55_JumpGame.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/greedy/seq5_t55_JumpGame/t55_JumpGame.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/greedy/seq5_t55_JumpGame/t55_JumpGame.cpp",
+  "output": "CMakeFiles/t55_JumpGame.dir/mysrc/daimakuangxianglu/greedy/seq5_t55_JumpGame/t55_JumpGame.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t45_JumpGameII.dir/mysrc/daimakuangxianglu/greedy/seq6_t45_JumpGameII/t45_JumpGameII.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/greedy/seq6_t45_JumpGameII/t45_JumpGameII.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/greedy/seq6_t45_JumpGameII/t45_JumpGameII.cpp",
+  "output": "CMakeFiles/t45_JumpGameII.dir/mysrc/daimakuangxianglu/greedy/seq6_t45_JumpGameII/t45_JumpGameII.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t1005_MaximizeSumOfArrayAfterKNegations.dir/mysrc/daimakuangxianglu/greedy/seq7_t1005_MaximizeSumOfArrayAfterKNegations/t1005_MaximizeSumOfArrayAfterKNegations.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/greedy/seq7_t1005_MaximizeSumOfArrayAfterKNegations/t1005_MaximizeSumOfArrayAfterKNegations.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/greedy/seq7_t1005_MaximizeSumOfArrayAfterKNegations/t1005_MaximizeSumOfArrayAfterKNegations.cpp",
+  "output": "CMakeFiles/t1005_MaximizeSumOfArrayAfterKNegations.dir/mysrc/daimakuangxianglu/greedy/seq7_t1005_MaximizeSumOfArrayAfterKNegations/t1005_MaximizeSumOfArrayAfterKNegations.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t134_GasStation.dir/mysrc/daimakuangxianglu/greedy/seq8_t134_GasStation/t134_GasStation.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/greedy/seq8_t134_GasStation/t134_GasStation.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/greedy/seq8_t134_GasStation/t134_GasStation.cpp",
+  "output": "CMakeFiles/t134_GasStation.dir/mysrc/daimakuangxianglu/greedy/seq8_t134_GasStation/t134_GasStation.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t135_Candy.dir/mysrc/daimakuangxianglu/greedy/seq9_t135_Candy/t135_Candy.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/greedy/seq9_t135_Candy/t135_Candy.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/greedy/seq9_t135_Candy/t135_Candy.cpp",
+  "output": "CMakeFiles/t135_Candy.dir/mysrc/daimakuangxianglu/greedy/seq9_t135_Candy/t135_Candy.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t242_ValidAnagram.dir/mysrc/daimakuangxianglu/hashtable/seq1_t242_ValidAnagram/t242_ValidAnagram.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/hashtable/seq1_t242_ValidAnagram/t242_ValidAnagram.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/hashtable/seq1_t242_ValidAnagram/t242_ValidAnagram.cpp",
+  "output": "CMakeFiles/t242_ValidAnagram.dir/mysrc/daimakuangxianglu/hashtable/seq1_t242_ValidAnagram/t242_ValidAnagram.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t1002_FindCommonCharacters.dir/mysrc/daimakuangxianglu/hashtable/seq2_t1002_FindCommonCharacters/t1002_FindCommonCharacters.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/hashtable/seq2_t1002_FindCommonCharacters/t1002_FindCommonCharacters.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/hashtable/seq2_t1002_FindCommonCharacters/t1002_FindCommonCharacters.cpp",
+  "output": "CMakeFiles/t1002_FindCommonCharacters.dir/mysrc/daimakuangxianglu/hashtable/seq2_t1002_FindCommonCharacters/t1002_FindCommonCharacters.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t349_IntersectionofTwoArrays.dir/mysrc/daimakuangxianglu/hashtable/seq3_t349_IntersectionofTwoArrays/t349_IntersectionofTwoArrays.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/hashtable/seq3_t349_IntersectionofTwoArrays/t349_IntersectionofTwoArrays.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/hashtable/seq3_t349_IntersectionofTwoArrays/t349_IntersectionofTwoArrays.cpp",
+  "output": "CMakeFiles/t349_IntersectionofTwoArrays.dir/mysrc/daimakuangxianglu/hashtable/seq3_t349_IntersectionofTwoArrays/t349_IntersectionofTwoArrays.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t202_HappyNumber.dir/mysrc/daimakuangxianglu/hashtable/seq4_t202_HappyNumber/t202_HappyNumber.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/hashtable/seq4_t202_HappyNumber/t202_HappyNumber.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/hashtable/seq4_t202_HappyNumber/t202_HappyNumber.cpp",
+  "output": "CMakeFiles/t202_HappyNumber.dir/mysrc/daimakuangxianglu/hashtable/seq4_t202_HappyNumber/t202_HappyNumber.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t1_TwoSum.dir/mysrc/daimakuangxianglu/hashtable/seq5_t1_TwoSum/t1_TwoSum.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/hashtable/seq5_t1_TwoSum/t1_TwoSum.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/hashtable/seq5_t1_TwoSum/t1_TwoSum.cpp",
+  "output": "CMakeFiles/t1_TwoSum.dir/mysrc/daimakuangxianglu/hashtable/seq5_t1_TwoSum/t1_TwoSum.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t454_4SumII.dir/mysrc/daimakuangxianglu/hashtable/seq6_t454_4SumII/t454_4SumII.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/hashtable/seq6_t454_4SumII/t454_4SumII.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/hashtable/seq6_t454_4SumII/t454_4SumII.cpp",
+  "output": "CMakeFiles/t454_4SumII.dir/mysrc/daimakuangxianglu/hashtable/seq6_t454_4SumII/t454_4SumII.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t383_RansomNote.dir/mysrc/daimakuangxianglu/hashtable/seq7_t383_RansomNote/t383_RansomNote.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/hashtable/seq7_t383_RansomNote/t383_RansomNote.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/hashtable/seq7_t383_RansomNote/t383_RansomNote.cpp",
+  "output": "CMakeFiles/t383_RansomNote.dir/mysrc/daimakuangxianglu/hashtable/seq7_t383_RansomNote/t383_RansomNote.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t15_3Sum.dir/mysrc/daimakuangxianglu/hashtable/seq8_t15_3Sum/t15_3Sum.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/hashtable/seq8_t15_3Sum/t15_3Sum.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/hashtable/seq8_t15_3Sum/t15_3Sum.cpp",
+  "output": "CMakeFiles/t15_3Sum.dir/mysrc/daimakuangxianglu/hashtable/seq8_t15_3Sum/t15_3Sum.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t15_3Sum_two_index.dir/mysrc/daimakuangxianglu/hashtable/seq8_t15_3Sum/t15_3Sum_two_index.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/hashtable/seq8_t15_3Sum/t15_3Sum_two_index.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/hashtable/seq8_t15_3Sum/t15_3Sum_two_index.cpp",
+  "output": "CMakeFiles/t15_3Sum_two_index.dir/mysrc/daimakuangxianglu/hashtable/seq8_t15_3Sum/t15_3Sum_two_index.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t18_4sum_two_index.dir/mysrc/daimakuangxianglu/hashtable/sq9_t18_4sum/t18_4sum_two_index.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/hashtable/sq9_t18_4sum/t18_4sum_two_index.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/hashtable/sq9_t18_4sum/t18_4sum_two_index.cpp",
+  "output": "CMakeFiles/t18_4sum_two_index.dir/mysrc/daimakuangxianglu/hashtable/sq9_t18_4sum/t18_4sum_two_index.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t206_ReverseLinkedList.dir/mysrc/daimakuangxianglu/linkedlist/seq3_t206_ReverseLinkedList/t206_ReverseLinkedList.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/linkedlist/seq3_t206_ReverseLinkedList/t206_ReverseLinkedList.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/linkedlist/seq3_t206_ReverseLinkedList/t206_ReverseLinkedList.cpp",
+  "output": "CMakeFiles/t206_ReverseLinkedList.dir/mysrc/daimakuangxianglu/linkedlist/seq3_t206_ReverseLinkedList/t206_ReverseLinkedList.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t206_RemoveNthNodeFromEndofList.dir/mysrc/daimakuangxianglu/linkedlist/seq4_t19_RemoveNthNodeFromEndofList/t206_RemoveNthNodeFromEndofList.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/linkedlist/seq4_t19_RemoveNthNodeFromEndofList/t206_RemoveNthNodeFromEndofList.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/linkedlist/seq4_t19_RemoveNthNodeFromEndofList/t206_RemoveNthNodeFromEndofList.cpp",
+  "output": "CMakeFiles/t206_RemoveNthNodeFromEndofList.dir/mysrc/daimakuangxianglu/linkedlist/seq4_t19_RemoveNthNodeFromEndofList/t206_RemoveNthNodeFromEndofList.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t142_LinkedListCycleII.dir/mysrc/daimakuangxianglu/linkedlist/seq7_t142_LinkedListCycleII/t142_LinkedListCycleII.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/linkedlist/seq7_t142_LinkedListCycleII/t142_LinkedListCycleII.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/linkedlist/seq7_t142_LinkedListCycleII/t142_LinkedListCycleII.cpp",
+  "output": "CMakeFiles/t142_LinkedListCycleII.dir/mysrc/daimakuangxianglu/linkedlist/seq7_t142_LinkedListCycleII/t142_LinkedListCycleII.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t20_ValidParentheses.dir/mysrc/daimakuangxianglu/stack_and_queue/seq4_t20_ValidParentheses/t20_ValidParentheses.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/stack_and_queue/seq4_t20_ValidParentheses/t20_ValidParentheses.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/stack_and_queue/seq4_t20_ValidParentheses/t20_ValidParentheses.cpp",
+  "output": "CMakeFiles/t20_ValidParentheses.dir/mysrc/daimakuangxianglu/stack_and_queue/seq4_t20_ValidParentheses/t20_ValidParentheses.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t1047_RemoveAllAdjacentDuplicatesInString.dir/mysrc/daimakuangxianglu/stack_and_queue/seq5_t1047_RemoveAllAdjacentDuplicatesInString/t1047_RemoveAllAdjacentDuplicatesInString.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/stack_and_queue/seq5_t1047_RemoveAllAdjacentDuplicatesInString/t1047_RemoveAllAdjacentDuplicatesInString.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/stack_and_queue/seq5_t1047_RemoveAllAdjacentDuplicatesInString/t1047_RemoveAllAdjacentDuplicatesInString.cpp",
+  "output": "CMakeFiles/t1047_RemoveAllAdjacentDuplicatesInString.dir/mysrc/daimakuangxianglu/stack_and_queue/seq5_t1047_RemoveAllAdjacentDuplicatesInString/t1047_RemoveAllAdjacentDuplicatesInString.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t150_EvaluateReversePolishNotation.dir/mysrc/daimakuangxianglu/stack_and_queue/seq6_t150_EvaluateReversePolishNotation/t150_EvaluateReversePolishNotation.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/stack_and_queue/seq6_t150_EvaluateReversePolishNotation/t150_EvaluateReversePolishNotation.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/stack_and_queue/seq6_t150_EvaluateReversePolishNotation/t150_EvaluateReversePolishNotation.cpp",
+  "output": "CMakeFiles/t150_EvaluateReversePolishNotation.dir/mysrc/daimakuangxianglu/stack_and_queue/seq6_t150_EvaluateReversePolishNotation/t150_EvaluateReversePolishNotation.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t239_SlidingWindowMaximum.dir/mysrc/daimakuangxianglu/stack_and_queue/seq7_t239_SlidingWindowMaximum/t239_SlidingWindowMaximum.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/stack_and_queue/seq7_t239_SlidingWindowMaximum/t239_SlidingWindowMaximum.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/stack_and_queue/seq7_t239_SlidingWindowMaximum/t239_SlidingWindowMaximum.cpp",
+  "output": "CMakeFiles/t239_SlidingWindowMaximum.dir/mysrc/daimakuangxianglu/stack_and_queue/seq7_t239_SlidingWindowMaximum/t239_SlidingWindowMaximum.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t347_TopKFrequentElements.dir/mysrc/daimakuangxianglu/stack_and_queue/seq8_t347_TopKFrequentElements/t347_TopKFrequentElements.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/stack_and_queue/seq8_t347_TopKFrequentElements/t347_TopKFrequentElements.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/stack_and_queue/seq8_t347_TopKFrequentElements/t347_TopKFrequentElements.cpp",
+  "output": "CMakeFiles/t347_TopKFrequentElements.dir/mysrc/daimakuangxianglu/stack_and_queue/seq8_t347_TopKFrequentElements/t347_TopKFrequentElements.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t151_ReverseWordsInAString.dir/mysrc/daimakuangxianglu/string/seq4_t151_ReverseWordsInAString/t151_ReverseWordsInAString.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/string/seq4_t151_ReverseWordsInAString/t151_ReverseWordsInAString.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/string/seq4_t151_ReverseWordsInAString/t151_ReverseWordsInAString.cpp",
+  "output": "CMakeFiles/t151_ReverseWordsInAString.dir/mysrc/daimakuangxianglu/string/seq4_t151_ReverseWordsInAString/t151_ReverseWordsInAString.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/kmp.dir/mysrc/daimakuangxianglu/string/seq6_kmp_t28/kmp.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/string/seq6_kmp_t28/kmp.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/string/seq6_kmp_t28/kmp.cpp",
+  "output": "CMakeFiles/kmp.dir/mysrc/daimakuangxianglu/string/seq6_kmp_t28/kmp.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/t459_RepeatedSubstringPattern.dir/mysrc/daimakuangxianglu/string/seq7_t459_RepeatedSubstringPattern/t459_RepeatedSubstringPattern.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/string/seq7_t459_RepeatedSubstringPattern/t459_RepeatedSubstringPattern.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/daimakuangxianglu/string/seq7_t459_RepeatedSubstringPattern/t459_RepeatedSubstringPattern.cpp",
+  "output": "CMakeFiles/t459_RepeatedSubstringPattern.dir/mysrc/daimakuangxianglu/string/seq7_t459_RepeatedSubstringPattern/t459_RepeatedSubstringPattern.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/learn_class_generic1.dir/mysrc/knowledge/learn_class/class_generic/learn_class_generic1.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/knowledge/learn_class/class_generic/learn_class_generic1.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/knowledge/learn_class/class_generic/learn_class_generic1.cpp",
+  "output": "CMakeFiles/learn_class_generic1.dir/mysrc/knowledge/learn_class/class_generic/learn_class_generic1.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/learn_template_generic1.dir/mysrc/knowledge/learn_template/template_generic/learn_template_generic1.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/knowledge/learn_template/template_generic/learn_template_generic1.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/knowledge/learn_template/template_generic/learn_template_generic1.cpp",
+  "output": "CMakeFiles/learn_template_generic1.dir/mysrc/knowledge/learn_template/template_generic/learn_template_generic1.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/wrong_use_refer_in_method.dir/mysrc/knowledge/pointer_reference/wrong_use_refer_in_method.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/knowledge/pointer_reference/wrong_use_refer_in_method.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/knowledge/pointer_reference/wrong_use_refer_in_method.cpp",
+  "output": "CMakeFiles/wrong_use_refer_in_method.dir/mysrc/knowledge/pointer_reference/wrong_use_refer_in_method.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/main.dir/mysrc/main.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/main.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/main.cpp",
+  "output": "CMakeFiles/main.dir/mysrc/main.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/main2.dir/mysrc/main2.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/main2.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/main2.cpp",
+  "output": "CMakeFiles/main2.dir/mysrc/main2.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/learn_heapsort1_maxheap.dir/mysrc/mysort/learn_heapsort/learn_heapsort1_maxheap.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/mysort/learn_heapsort/learn_heapsort1_maxheap.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/mysort/learn_heapsort/learn_heapsort1_maxheap.cpp",
+  "output": "CMakeFiles/learn_heapsort1_maxheap.dir/mysrc/mysort/learn_heapsort/learn_heapsort1_maxheap.cpp.o"
+},
+{
+  "directory": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/cmake-build-debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/updatetocplus20test.dir/mysrc/updatetoCPlus20_test/updatetocplus20test.cpp.o -c /home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/updatetoCPlus20_test/updatetocplus20test.cpp",
+  "file": "/home/kt/MyWorkspace/MyGitProgram/jetbrains_workspace/cpp_leetcode_try20220906/clion_leetcode_workspace1/mysrc/updatetoCPlus20_test/updatetocplus20test.cpp",
+  "output": "CMakeFiles/updatetocplus20test.dir/mysrc/updatetoCPlus20_test/updatetocplus20test.cpp.o"
+}
+]

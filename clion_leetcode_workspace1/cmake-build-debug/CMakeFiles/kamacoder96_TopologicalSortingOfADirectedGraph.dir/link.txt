@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/kamacoder96_TopologicalSortingOfADirectedGraph.dir/link.d CMakeFiles/kamacoder96_TopologicalSortingOfADirectedGraph.dir/mysrc/daimakuangxianglu/graph/seq15_kamacoder96_TopologicalSortingOfADirectedGraph/kamacoder96_TopologicalSortingOfADirectedGraph.cpp.o -o kamacoder96_TopologicalSortingOfADirectedGraph

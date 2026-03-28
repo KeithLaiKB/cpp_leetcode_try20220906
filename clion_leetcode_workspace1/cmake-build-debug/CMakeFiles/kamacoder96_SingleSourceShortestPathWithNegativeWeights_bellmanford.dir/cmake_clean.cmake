@@ -1,0 +1,12 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/kamacoder96_SingleSourceShortestPathWithNegativeWeights_bellmanford.dir/link.d"
+  "CMakeFiles/kamacoder96_SingleSourceShortestPathWithNegativeWeights_bellmanford.dir/mysrc/daimakuangxianglu/graph/seq15_kamacoder96_SingleSourceShortestPathWithNegativeWeights/kamacoder96_SingleSourceShortestPathWithNegativeWeights_bellmanford.cpp.o"
+  "CMakeFiles/kamacoder96_SingleSourceShortestPathWithNegativeWeights_bellmanford.dir/mysrc/daimakuangxianglu/graph/seq15_kamacoder96_SingleSourceShortestPathWithNegativeWeights/kamacoder96_SingleSourceShortestPathWithNegativeWeights_bellmanford.cpp.o.d"
+  "kamacoder96_SingleSourceShortestPathWithNegativeWeights_bellmanford"
+  "kamacoder96_SingleSourceShortestPathWithNegativeWeights_bellmanford.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/kamacoder96_SingleSourceShortestPathWithNegativeWeights_bellmanford.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
